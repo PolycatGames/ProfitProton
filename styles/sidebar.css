@@ -1,0 +1,23 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 69px;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    z-index: 99;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.sidebar-item{
+    margin: 10px 0px 10px 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: inline-block;
+}
+.sidebar-item:hover{
+    color: #0bc772;
+}
