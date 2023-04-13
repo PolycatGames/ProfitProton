@@ -87,3 +87,31 @@
         margin-right: 50px;
     }
 }
+@media (max-width: 550px){
+    
+    .banner-area{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media (max-width: 300px){
+    
+    .banner-area-left-title{
+        font-size: 30px;
+    }
+    .banner-area-left-description{
+        font-size: 15px;
+    }
+    .banner-area-left-buttons-button1{
+        font-size: 15px;
+        padding: 18px 24px;
+        border-radius: 18px;
+    }
+    .banner-area{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .banner{
+        padding-top: 0px;
+    }
+}
