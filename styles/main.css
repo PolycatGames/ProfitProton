@@ -1,8 +1,8 @@
 .main-content{
-    background-color: lightgreen;
+
 }
 .content-holder{
-    background-color: lightcoral;
+
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -10,7 +10,7 @@
     max-width: 1280px;
     position: relative;
     margin: auto;
-    background-color: lightblue;
+
 }
 
 .banner{
@@ -76,6 +76,7 @@
 }
 .articles-popular-title{
     font-size: 40px;
+    margin-bottom: 40px;
     text-align: center;
 }
 .articles-popular-grid{
@@ -85,9 +86,26 @@
     grid-template-columns: repeat(3, 1fr);
 }
 .articles-popular-article{
-    background-color: lightsalmon;
+
     border: 1px solid black;
     height: 400px;
+}
+.articles-popular-viewall{
+
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+
+
+}
+.articles-popular-viewall-holder{
+    margin-top: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.articles-popular-viewall-holder:hover{
+    text-decoration: underline;
 }
 
 @media (max-width: 1350px){
