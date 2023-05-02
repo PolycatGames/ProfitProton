@@ -2,7 +2,6 @@
     background-color:rgb(234, 234, 234);
     display: flex;
     height: 500px;
-    position: relative;
     align-items: center;
     justify-content: center;
     
@@ -12,20 +11,22 @@
     left: 0;
     right: 0;
     position: absolute;
-    height: 80%;
+
     display: flex;
     flex-direction: column;
 }
 .footer-content-top{
     background-color: lightsalmon;
     width: 100%;
-    height: 85%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
 }
 .footer-content-top>*{
     background-color: lightgreen;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 50px;
 }
 .footer-content-top-contact{
     border-right: 2px solid rgba(0, 0, 0, .2);
@@ -83,7 +84,6 @@
     background-color: orange;
     top: 0;
     bottom: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 10%;
@@ -96,14 +96,12 @@
     height: 25px;
     background-color: lightseagreen;
     cursor: pointer;
-    transition: height .15s, margin-bottom .15s;
+    transition: height .15s, margin-bottom .15s, margin-right .15s;
 }
 .footer-content-top-social-list-item img:hover{
     height: 28px;
     margin-bottom: 7px;
 }
-
-
 .footer-content-bottom{
     background-color: lightpink;
     width: 100%;
@@ -112,4 +110,40 @@
     justify-content: center;
     height: 15%;
     font-size: 13px;
+}
+
+@media (max-width: 1200px){
+    .footer-content-top{
+        background-color: lightsalmon;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+    }
+    .footer-content-top>*{
+        margin-bottom: 10px;
+    }
+    .footer-content-top-social-list{
+        flex-direction: row;
+    }
+    .footer-content-top-social-list-item{
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    .footer-content-top-social-list-item img:hover{
+        margin-bottom: -7px;
+        margin-right: 7px;
+    }
+    .footer-content-top-contact-branding-logo{
+        width: 30px;
+    }
+    .footer-content-top-contact-branding-name{
+        font-size: 28px;
+        margin-left: 14px;
+    }
+    .footer-content-top-contact-email{
+        margin-left: 44px;
+        margin-top: 20px;
+        background-color: orange;
+    }
 }
