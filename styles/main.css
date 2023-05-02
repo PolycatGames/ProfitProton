@@ -51,7 +51,7 @@
 .banner-area-left-buttons-button1{
     font-size: 19px;
     padding: 22px 28px;
-    background-color: #0bc772;
+    background-color: #0dd987;
     border: none;
     color: white;
     font-weight: 700;
@@ -60,10 +60,10 @@
     cursor: pointer;
 }
 .banner-area-left-buttons-button1:hover{
-    background-color: #0bc471;;
+    background-color: #0dd987;;
 }
 .banner-area-left-buttons-button1:active{
-    background-color: #0bbc6c;;
+    background-color: #0dd987;;
 }
 .banner-area-right{
     height: 100%;
@@ -150,22 +150,22 @@
     margin-bottom: 10px;
 }
 .home-suggested-platforms-grid-item-right-description{
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .home-suggested-platforms-grid-item-right-button{
-    font-size: 24px;
+    font-size: 20px;
     padding: 8px 35px;
-    color: #0bc772;
+    color: #0dd987;
     background-color: white;
-    border: 2px solid #0bc772;
+    border: 2px solid #0dd987;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color .2s, border-color .2s, color .2s;
 }
 .home-suggested-platforms-grid-item-right-button:hover{
     color: white;
-    background-color: #0bc772;
+    background-color: #0dd987;
     border-color: transparent;
 }
 
@@ -199,7 +199,7 @@
         margin-bottom: 15px;
     }
     .home-suggested-platforms-grid-item-right-button{
-        font-size: 20px;
+        font-size: 19px;
         padding: 7px 35px;
     }
 }
