@@ -89,9 +89,68 @@
     grid-template-columns: repeat(3, 1fr);
 }
 .articles-popular-article{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 15px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: border .3s, box-shadow .3s;
 }
+.articles-popular-article:hover{
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+}
+.articles-popular-article-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    height: 100%;
+}
+.articles-popular-article-content-image{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.articles-popular-article-content-info{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+}
+.articles-popular-article-content-info-date{
+    opacity: 60%;
+    flex: 1;
+}
+.articles-popular-article-content-info-new{
+    background-color: #0dd987;
+    color: white;
+    padding: 8px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+.articles-popular-article-content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.articles-popular-article-content-text-title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.articles-popular-article-content-text-description{
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+
+
 .articles-viewall{
     font-size: 20px;
     font-weight: 500;
@@ -118,8 +177,12 @@
 }
 .articles-latest-article{
     border: 1px solid black;
-    height: 180px;
+    height: 130px;
 }
+.articles-latest-article-image{
+    height: 100%;
+}
+
 
 .home-suggested-platforms{
     margin-bottom: 120px;
@@ -170,6 +233,9 @@
 }
 
 @media (max-width: 1350px){
+    .articles-latest-article{
+        height: 100px;
+    }
     .banner-area-left-title{
         font-size: 50px;
     }
@@ -178,6 +244,11 @@
     }
     .articles-popular-grid{
         grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 90px;
+    }
+    .articles-popular-article{
+        height: 500px;
     }
 }
 
@@ -186,6 +257,19 @@
         display: none;
     }
 
+    .articles-popular-grid{
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+    .articles-popular-article{
+        height: 380px;
+    }
+    .articles-latest-article{
+        height: 150px;
+    }
+    .articles-latest-grid{
+        grid-template-columns: 1fr;
+    }
     .home-suggested-platforms-grid-item-logo{
         padding-right:30px;
         width: 150px;
@@ -203,9 +287,25 @@
         padding: 7px 35px;
     }
 }
+@media (max-width: 900px){
+    .articles-latest-article{
+        height: 120px;
+    }
+}
+
 @media (max-width: 800px){
-    .articles-popular-article-phone{
-        display: none;
+    .articles-popular-grid{
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    .articles-popular-article{
+        height: 380px;
+    }
+    .articles-latest-grid{
+        row-gap: 30px;
+    }
+    .articles-latest-article{
+        height: 125px;
     }
     .content-holder{
         margin-left: 50px;
@@ -216,10 +316,6 @@
         padding: 18px 24px;
         border-radius: 18px;
     }
-    .articles-popular-grid{
-        grid-template-columns: 1fr;
-    }
-
     .home-suggested-platforms-grid-item{
         height: 140px;
     }
@@ -240,12 +336,41 @@
         padding: 7px 35px;
     }
 }
+@media (max-width: 700px){
+    .articles-popular-article{
+        height: 330px;
+    }
+    .articles-latest-article{
+        height: 110px;
+    }
+}
+@media (max-width: 600px){
+    .articles-popular-article{
+        height: 450px;
+    }
+    .articles-popular-article-phone{
+        display: none;
+    }
+    .articles-popular-grid{
+        grid-template-columns: 1fr;
+    }
+    .articles-latest-article{
+        height: 90px
+    }
+}
+
 @media (max-width: 550px){
     .content-holder{
         margin-left: 35px;
         margin-right: 35px;
     }
 
+    .articles-latest-grid{
+        row-gap: 30px;
+    }
+    .articles-latest-article{
+        height: 70px;
+    }
     .home-suggested-platforms-grid-item{
         height: 150px;
     }
@@ -270,6 +395,12 @@
     .content-holder{
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .articles-latest-grid{
+        row-gap: 30px;
+    }
+    .articles-latest-article{
+        height: 100px;
     }
     .banner-area-left-title{
         font-size: 30px;
