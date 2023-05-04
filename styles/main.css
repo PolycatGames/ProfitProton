@@ -51,7 +51,7 @@
 .banner-area-left-buttons-button1{
     font-size: 19px;
     padding: 22px 28px;
-    background-color: #0dd987;
+    background-color: #0dc97b;
     border: none;
     color: white;
     font-weight: 700;
@@ -60,10 +60,10 @@
     cursor: pointer;
 }
 .banner-area-left-buttons-button1:hover{
-    background-color: #0dd987;;
+    background-color: #11c177;
 }
 .banner-area-left-buttons-button1:active{
-    background-color: #0dd987;;
+    background-color: #0db66f;
 }
 .banner-area-right{
     height: 100%;
@@ -125,7 +125,7 @@
     flex: 1;
 }
 .articles-popular-article-content-info-new{
-    background-color: #0dd987;
+    background-color: #0dc97b;
     color: white;
     padding: 8px 13px;
     font-size: 12px;
@@ -187,12 +187,14 @@
 }
 .articles-latest-article-image{
     height: 100%;
+    width: 30%;
+    object-fit: cover;
     border-radius: 15px 0px 0px 15px;
 }
 .articles-latest-article-info{
     display: flex;
     flex-direction: column;
-    margin: 10px 0px 10px 10px;
+    margin: 10px;
 }
 .articles-latest-article-info-title{
     font-weight: 700;
@@ -247,14 +249,14 @@
     padding: 8px 35px;
     color: #0dd987;
     background-color: white;
-    border: 2px solid #0dd987;
+    border: 2px solid #0dc97b;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color .2s, border-color .2s, color .2s;
 }
 .home-suggested-platforms-grid-item-right-button:hover{
     color: white;
-    background-color: #0dd987;
+    background-color: #0dc97b;
     border-color: transparent;
 }
 
@@ -275,6 +277,13 @@
     }
     .articles-popular-article{
         height: 500px;
+    }
+    .articles-latest-article-info-title{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .articles-latest-article-info-description{
+        font-size: 14px;
     }
 }
 
@@ -311,6 +320,13 @@
     .home-suggested-platforms-grid-item-right-button{
         font-size: 19px;
         padding: 7px 35px;
+    }
+    .articles-latest-article-info-title{
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .articles-latest-article-info-description{
+        font-size: 14px;
     }
 }
 @media (max-width: 900px){
@@ -369,6 +385,13 @@
     .articles-latest-article{
         height: 110px;
     }
+    .articles-latest-article-info-title{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .articles-latest-article-info-description{
+        font-size: 12px;
+    }
 }
 @media (max-width: 600px){
     .articles-popular-article{
@@ -415,6 +438,13 @@
     .home-suggested-platforms-grid-item-right-button{
         font-size: 20px;
         padding: 7px 35px;
+    }
+    .articles-latest-article-info-title{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .articles-latest-article-info-description{
+        font-size: 10px;
     }
 }
 @media (max-width: 300px){

@@ -30,7 +30,13 @@
 }
 .header-left-text-platforms{
     font-weight: bold;
-    color: #0bc772;
+    color: #0dc97b;
+}
+.header-left-text-platforms:hover{
+
+}
+.header-left-text-platforms:active{
+    
 }
 .header-left-logo{
     object-fit: contain;
@@ -50,7 +56,7 @@
     transition: color 0.3s;
 }
 .header-left-text:hover{
-    color: #0bc772;
+    color: #0dc97b;
 }
 @media (max-width: 760px){
     .header-left-text{
