@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 function activateBurger(){
-    console.log(burgerActivated);
-    if (burgerActivated == false){
-        sidebar.style.display = "flex";
-        burgerActivated = true;
-    }
-    else{
-        deactivateBurger();
-    }
+  console.log(burgerActivated);
+  if (burgerActivated == false){
+      sidebar.style.display = "flex";
+      burgerActivated = true;
+  }
+  else{
+      deactivateBurger();
+  }
 }
 
 function deactivateBurger(){
@@ -32,4 +32,4 @@ window.addEventListener('resize', () => {
         sidebar.style.display = "none";
         burgerActivated = false;
     }
-  });
+});

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--HTML-->
+    <link rel="import" href="assets/headernav.html">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +18,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <!--Scripts-->
     <script src="scripts/main.js"></script>
+    <script src="scripts/navimport.js"></script>
     <!--System-->
     <title>ProfitProton</title>
 </head>
 <body>
+    <div include-html="assets/headernav.html"></div>
+    <script>
+        includeHTML();
+    </script>
 
     <main class="main-content">
         <article class="content-holder">
@@ -119,6 +126,7 @@
             </section>
         </article>
     </main>
-    <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."footer.html")?>
+
+
 </body>
 </html>
