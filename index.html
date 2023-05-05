@@ -18,16 +18,23 @@
     <link rel="stylesheet" href="styles/main.css">
     <!--Scripts-->
     <script src="scripts/main.js"></script>
-    <script src="scripts/navimport.js"></script>
+    <script src="scripts/htmlimport.js"></script>
+    <script src="scripts/urlrewriter.js"></script>
     <!--System-->
     <title>ProfitProton</title>
 </head>
 <body>
-    <div include-html="assets/headernav.html"></div>
+    <button id="myButton"><a href="pages/contact.html">Load Page</a></button>
     <script>
-        includeHTML();
-    </script>
-
+        const myButton = document.getElementById('myButton');
+      
+        myButton.addEventListener('click', () => {
+            console.log("sdasdasd");
+            loadPage('contact');
+        });
+      </script>
+    
+    <div include-html="assets/headernav.html"></div><script>includeHTML();</script>
     <main class="main-content">
         <article class="content-holder">
             <section class="banner">
@@ -126,7 +133,6 @@
             </section>
         </article>
     </main>
-
-
+    <div include-html="assets/footer.html"></div><script>includeHTML();</script>
 </body>
 </html>

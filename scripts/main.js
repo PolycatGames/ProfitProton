@@ -1,12 +1,19 @@
 let burgerActivated = false;
+let sidebar;
 
-document.addEventListener("DOMContentLoaded", function(){
+
+function setSidebar(){
     sidebar = document.querySelector(".sidebar");
-    sidebar.style.display = "none";
-})
+    if (sidebar !== null){
+        sidebar.style.display = "none";
+        console.log(sidebar + "found");
+    }
+    else{
+        console.log(sidebar + "not found");
+    }
+}
 
 function activateBurger(){
-  console.log(burgerActivated);
   if (burgerActivated == false){
       sidebar.style.display = "flex";
       burgerActivated = true;
