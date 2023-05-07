@@ -12,7 +12,12 @@ function includeHTML() {
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
           if (this.status == 200) {
-            elmnt.innerHTML = this.responseText;
+            if (file === "assets/head.html"){
+              elmnt.innerHTML += this.responseText;
+            }
+            else{
+              elmnt.innerHTML = this.responseText;
+            }
             console.log( file + " imported successfully");
             if (file === "assets/headernav.html"){
               setSidebar();

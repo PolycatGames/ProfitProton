@@ -17,9 +17,11 @@ function activateBurger(){
   if (burgerActivated == false){
       sidebar.style.display = "flex";
       burgerActivated = true;
+      console.log("inactive -> active")
   }
   else{
       deactivateBurger();
+      console.log("active -> inactive")
   }
 }
 
