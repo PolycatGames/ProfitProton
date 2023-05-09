@@ -1,10 +1,59 @@
+html {
+    height: 100%;
+  }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     margin: 0;
     margin-top: 70px;
+
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+main {
+    flex: 1;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.content-holder{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.content-holder >*{
+    max-width: 1280px;
+    position: relative;
+    margin: auto;
+}
+
+.page-title{
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+
+
 @media (max-width: 1350px){
-    body{
-        margin-top: 25px;
+
+}
+@media (max-width: 800px){
+    .content-holder{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 550px){
+    .content-holder{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media (max-width: 300px){
+    .content-holder{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
