@@ -12,14 +12,15 @@ function includeHTML() {
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
           if (this.status == 200) {
-            if (file === "/assets/head.html"){
+            console.log(file + "IMPORT");
+            if (file.includes("assets/head.html")){
               elmnt.innerHTML += this.responseText;
             }
             else{
               elmnt.innerHTML = this.responseText;
             }
             console.log( file + " imported successfully");
-            if (file === "/assets/headernav.html"){
+            if (file.includes("assets/headernav.html")){
               setSidebar();
             }
           }

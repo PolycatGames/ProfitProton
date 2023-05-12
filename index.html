@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head include-html="/assets/head.html">
-    <link rel="stylesheet" href="/styles/general.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/sidebar.css">
-    <link rel="stylesheet" href="/styles/home.css">
-    <script src="/scripts/htmlimport.js"></script>
-    <script src="/scripts/main.js"></script>
+	<script>
+		if (window.location.hostname === "github.io") {
+			document.write('<base href="/ProfitProton/">');
+            console.log("yea");
+		} else {
+			document.write('<base href="/">');
+            console.log("nah");
+		}
+	</script>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/htmlimport.js"></script>
+    <script src="scripts/main.js"></script>
     <script>includeHTML();</script>
 </head>
 <body>
