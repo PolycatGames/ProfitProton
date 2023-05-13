@@ -2,6 +2,10 @@
 <html lang="en">
     <head include-html="assets/head.html">
         <script>
+        console.log("NUM 1" + window.location.pathname);
+        console.log("NUM 2" + window.location.pathname.substring(1));
+        console.log("FINAL" + (window.location.pathname - window.location.pathname.substring(1))); 
+
             if (window.location.hostname === "127.0.0.1") {
                 document.write('<base href="/">');
                 console.log("Local");
