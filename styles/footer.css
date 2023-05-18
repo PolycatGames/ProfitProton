@@ -1,5 +1,6 @@
 .footer{
-    background-color:rgb(234, 234, 234);
+
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .1);
     display: flex;
     height: 500px;
     align-items: center;
@@ -26,7 +27,7 @@
     margin-bottom: 50px;
 }
 .footer-content-top-contact{
-    border-right: 2px solid rgba(0, 0, 0, .2);
+    border-right: 1px solid rgba(0, 0, 0, .2);
     justify-content: center;
 }
 .footer-content-top-contact-branding{
@@ -69,27 +70,33 @@
     text-decoration: underline;
 }
 .footer-content-top-social{
-    border-left: 2px solid rgba(0, 0, 0, .2);
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+}
+.footer-content-top-social-follow{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
 }
 .footer-content-top-social-list{
     top: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: center;
+    flex-direction: row;
 }
 .footer-content-top-social-list-item{
-    margin-bottom: 10px;
+    margin: 0px 15px;
 }
 .footer-content-top-social-list-item img{
-    height: 25px;
+    width: 25px;
     cursor: pointer;
-    transition: height .15s, margin-bottom .15s, margin-right .15s;
+    transition: width .15s, margin .15s;
 }
 .footer-content-top-social-list-item img:hover{
-    height: 28px;
-    margin-bottom: 7px;
+    width: 29px;
+    margin: 0px 13px;
 }
 .footer-content-bottom{
     width: 100%;

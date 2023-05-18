@@ -28,15 +28,16 @@
 .header-left-hamburger:hover{
     opacity: .8;
 }
-.header-left-text-platforms{
+#header-left-text-platforms{
     font-weight: bold;
     color: #0dc97b;
+    transition: color 0.15s;
 }
-.header-left-text-platforms:hover{
-
+#header-left-text-platforms:hover{
+color: #11c177;
 }
-.header-left-text-platforms:active{
-    
+#header-left-text-platforms:active{
+    color: #0db66f;
 }
 .header-left-logo{
     object-fit: contain;
