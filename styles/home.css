@@ -470,8 +470,6 @@
     .articles-latest-article{
         height: 120px;
     }
-    .home-suggested-platforms{
-    }
     .home-suggested-platforms-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
