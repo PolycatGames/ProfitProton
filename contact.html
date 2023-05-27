@@ -16,6 +16,7 @@
                 console.log("Hosted");
             }
         </script>
+        <title>Contact us</title>
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
@@ -28,45 +29,65 @@
 <body>
     <div include-html="assets/headernav.html"></div>
     <main class="main-content">
-        <article class="content-holder">
-            <div class="page-title">Contact us</div>
-            <section class="contact-page-info">
-                <div class="contact-page-info-text">Have a question, comment, or suggestion? We'd love to hear from you! Feel free to reach out to us on Instagram or send us an email at support@profitproton.com. We're always here to help with any questions you may have about making money online.</div>
-                <div class="contact-page-info-method">
-                    <img src="icons/socials/instagram.png" alt="">
-                    <div>@profitproton</div>
-                </div>
-                <div class="contact-page-info-method">
-                    <img src="icons/socials/email.png" alt="">
-                    <div>support@profitproton.com</div>
-                    <img onclick="copyToClipboard()" style="width: 20px;" class="contact-page-info-copyemail" src="icons/socials/copy.png" alt="">
-                </div>
+        <article class="content-holder greytext">
+            <div class="page-title">Get in touch</div>
+            <section>
+                <div class="contact-page">
+                    <div class="contact-page-info">
+                        <p class="contact-page-info-description">
+                            Have a question, comment or suggestion? We'd love to hear from you! We're always here to help with any question you may have.
+                        </p>
+                        <div class="contact-page-social">
+                            <div class="contact-page-social-item">
+                                <a href="https://www.instagram.com/profitproton/" target=”_blank”><button class="contact-page-button"><img class="contact-page-social-icon" src="icons/socials/instagram-white.png" alt="instagram logo"></button></a>
+                                <div class="contact-page-social-text">@profitproton</div>
+                            </div>
+                            <div class="contact-page-social-item">
+                                <a href="mailto:support@profitproton.com" target=”_blank”><button class="contact-page-button"><img class="contact-page-social-icon" src="icons/socials/email-white.png" alt="email logo"></button></a>
+                                <div class="contact-page-social-text">support@profitproton.com</div>
+                            </div>
+                        </div>
+                        <form class="contact-page-form" action="https://formsubmit.co/profitproton@gmail.com" method="POST">
+                            <input class="contact-page-form-email form-item" placeholder="Name" maxlength="100" type="name" name="name" required>
+                            <input class="contact-page-form-email form-item" placeholder="Email" maxlength="100" type="email" name="email" required>
+                            <input class="contact-page-form-email form-item" placeholder="Subject" maxlength="100" type="subject" name="subject" required>
+                            <input type="hidden" name="_captcha" value="false">
+                            <textarea class="contact-page-form-message form-item" maxlength="4000" placeholder="Message" name="message" cols="30" rows="10"></textarea>
+                            <button class="contact-page-form-submit" type="submit">Submit</button>
 
-                <script>
-                    function copyToClipboard() {
-                      /* Get the text you want to copy */
-                      var text = "support@profitproton.com";
-                    
-                      /* Create a temporary input element */
-                      var tempInput = document.createElement("input");
-                      tempInput.value = text;
-                    
-                      /* Append the input element to the body */
-                      document.body.appendChild(tempInput);
-                    
-                      /* Select the text inside the input element */
-                      tempInput.select();
-                    
-                      /* Copy the text to the clipboard */
-                      document.execCommand("copy");
-                    
-                      /* Remove the input element from the body */
-                      document.body.removeChild(tempInput);
-                    }
-                    </script>
+                            <input type="hidden" name="_next" value="https://profitproton.com/thankyou">
+                       </form>
+                    </div>
+                </div>
+                <div class="contact-page-illustration">
+
+                </div>
             </section>
         </article>
     </main>
     <div include-html="assets/footer.html"></div>
+
+    <script>
+        function copyToClipboard() {
+          /* Get the text you want to copy */
+          var text = "support@profitproton.com";
+        
+          /* Create a temporary input element */
+          var tempInput = document.createElement("input");
+          tempInput.value = text;
+        
+          /* Append the input element to the body */
+          document.body.appendChild(tempInput);
+        
+          /* Select the text inside the input element */
+          tempInput.select();
+        
+          /* Copy the text to the clipboard */
+          document.execCommand("copy");
+        
+          /* Remove the input element from the body */
+          document.body.removeChild(tempInput);
+        }
+        </script>
 </body>
 </html>

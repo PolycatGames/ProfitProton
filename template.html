@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head include-html="assets/head.html">
-	<title>Page not found</title>
-    <meta name="description" content="Page not found - 404">
-    <meta name="keywords" content="404">
-    <meta name="author" content="ProfitProton">
+	<title>ENTER TITLE</title>
+    <meta name="description" content="ENTER DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+    <meta name="author" content="AUTHOR">
+    <!--<meta name="robots" content="index, follow">-->
 
     <script>
         if (window.location.hostname.includes("github.io")){
@@ -23,18 +24,23 @@
         }
 	</script>
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/404.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
 
     <script src="scripts/htmlimport.js"></script>
     <script src="scripts/main.js"></script>
     <script>includeHTML();</script>
 </head>
 <body>
-    <div class="pnf-holder">
-        <img class="pnf-illustration" src="images/illustrations/404-page-not-found-illustration.jpg" alt="404-page-not-found-illustration">
-        <h1 class="pnf-title">Oops, we couldn't find that page.</h1>
-        <p class="pnf-description">It seems you've stumbled upon the land of nothingness. Sadly, there's no money to be found here, not even a single penny.</p>
-        <a href="/"><button class="pnf-button">Go Back Home</button></a>
-    </div>
+    <div include-html="assets/headernav.html"></div>
+    <main class="main-content">
+        <article class="content-holder">
+    
+        </article>
+    </main>
+    
+    <div include-html="assets/footer.html"></div>
 </body>
 </html>

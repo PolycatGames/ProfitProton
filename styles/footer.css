@@ -105,6 +105,11 @@
     height: 15%;
     font-size: 13px;
 }
+.footer-content-disclaimer{
+    font-size: 13px;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
 @media (max-width: 1200px){
     .footer-content-top{
@@ -154,7 +159,7 @@
         border-left: none;
     }
     .footer{
-        height: 600px;
+        height: 690px;
     }
 }
 
