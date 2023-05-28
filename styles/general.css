@@ -46,6 +46,24 @@ a {
 .greytext{
     color: rgb(50, 50, 50);
 }
+.backhome{
+    border: 2px solid var(--main-color);
+    padding: 15px 36px;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--main-color);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+.backhome:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.backhome:active{
+    background-color: var(--main-color-active);
+}
 
 
 
