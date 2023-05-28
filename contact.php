@@ -17,7 +17,7 @@
 
     <main class="main-content">
         <article class="content-holder greytext">
-            <div class="page-title">Get in touch</div>
+            <h1 class="page-title">Get in touch</h1>
             <section>
                 <div class="contact-page">
                     <div class="contact-page-info">

@@ -1,3 +1,26 @@
+#about-content-holder > *{
+    max-width: 800px;
+}
+.about-banner{
+    background-color: rgb(17, 17, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+    margin-bottom: 50px;
+}
+.about-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
 .about-text{
     font-size: 18px;
+    text-align: justify;
+}
+
+.about-text p{
+    margin-bottom: 40px;
 }
