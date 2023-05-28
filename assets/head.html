@@ -31,30 +31,42 @@
     }
   }
 </script>
-<script>
-  // Function to reload the page
-  function reloadPage() {
+  <script>
+    // Function to reload the page
+    function reloadPage() {
       location.reload();
-  }
+    }
 
-  // Function to check for changes
-  function checkForChanges() {
-      fetch(window.location.href, {
-              cache: "no-cache"
-          })
-          .then(response => response.text())
-          .then(data => {
-              if (typeof checkForChanges.lastData === "undefined") {
-                  checkForChanges.lastData = data;
-              } else if (checkForChanges.lastData !== data) {
-                  reloadPage();
-              }
-          })
-          .catch(error => console.error(error));
-  }
+    // Function to check for changes in HTML/PHP or CSS
+    function checkForChanges() {
+      fetch(window.location.href, { cache: "no-cache" })
+        .then(response => response.text())
+        .then(data => {
+          if (typeof checkForChanges.lastHTML === "undefined") {
+            checkForChanges.lastHTML = data;
+          } else if (checkForChanges.lastHTML !== data) {
+            reloadPage();
+          }
+        })
+        .catch(error => console.error(error));
 
-  // Check for changes every second
-  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-      setInterval(checkForChanges, 200);
-  }
-</script>
+      var link = document.querySelector('link[rel="stylesheet"]');
+      var href = link.href;
+      var timestamp = new Date().getTime();
+
+      if (!href.includes('?')) {
+        href += '?';
+      } else {
+        href += '&';
+      }
+
+      href += 'timestamp=' + timestamp;
+      link.href = href;
+    }
+
+    // Check for changes every second if accessing from localhost
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+      setInterval(checkForChanges, 500);
+    }
+  </script>
+
