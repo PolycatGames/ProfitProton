@@ -1,15 +1,17 @@
 let burgerActivated = false;
 let sidebar;
 
+setSidebar();
 
 function setSidebar(){
+    console.log("Ran?");
     sidebar = document.querySelector(".sidebar");
     if (sidebar !== null){
         sidebar.style.display = "none";
-        console.log(sidebar + "found");
+        console.log(sidebar + " found");
     }
     else{
-        console.log(sidebar + "not found");
+        console.log(sidebar + " not found");
     }
 }
 

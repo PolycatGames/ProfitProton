@@ -1,34 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head include-html="assets/head.html">
-        <script>
-            if (window.location.hostname.includes("github.io")) {
-                document.write('<base href="/ProfitProton/">');
-                console.log("GitHub");
-            }
-            else {
-                document.write('<base href="/">');
-    
-                if (window.location.hostname.includes("127.0.0.1")) {
-                    console.log("Local");
-                }
-                else {
-                    console.log("Domain hosted");
-                }
-            }
-        </script>
-        <title>Contact us</title>
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/sidebar.css">
-        <link rel="stylesheet" href="styles/contact.css">
-        <script src="scripts/htmlimport.js"></script>
-        <script src="scripts/main.js"></script>
-        <script>includeHTML();</script>
-    </head>
+<head>
+    <!--Meta Data-->
+    <title>Contact us</title>
+    <meta name="description" content="Contact ProfitProton for expert support and assistance. Reach out to us at support@profitproton.com for all your inquiries, feedback, and technical assistance.">
+    <meta name="keywords" content="contact us, support, assistance, online money-making, side-hustles, inquiries, feedback, technical support, maximize profits, business growth">
+    <meta name="author" content="ProfitProton">
+    <meta name="robots" content="index, follow">
+    <!--Styles-->
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <?php include 'assets/head.html'; ?>
+</head>
 <body>
-    <div include-html="assets/headernav.html"></div>
+<?php include 'assets/headernav.html'; ?>
+
     <main class="main-content">
         <article class="content-holder greytext">
             <div class="page-title">Get in touch</div>
@@ -66,7 +52,7 @@
             </section>
         </article>
     </main>
-    <div include-html="assets/footer.html"></div>
+    <?php include 'assets/footer.html'; ?>
 
     <script>
         function copyToClipboard() {
@@ -89,6 +75,6 @@
           /* Remove the input element from the body */
           document.body.removeChild(tempInput);
         }
-        </script>
+    </script>
 </body>
 </html>

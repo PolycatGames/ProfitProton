@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head include-html="assets/head.html">
+<head>
+    <!--Meta Data-->
 	<title>Page not found</title>
     <meta name="description" content="Page not found - 404">
     <meta name="keywords" content="404">
     <meta name="author" content="ProfitProton">
-
-    <script>
-        if (window.location.hostname.includes("github.io")){
-            document.write('<base href="/ProfitProton/">');
-            console.log("GitHub");
-		}
-        else{
-            document.write('<base href="/">');
-
-            if (window.location.hostname.includes("127.0.0.1")){
-                console.log("Local");
-            }
-            else{
-                console.log("Domain hosted");
-            }
-        }
-	</script>
-    <link rel="stylesheet" href="styles/general.css">
+    <meta name="robots" content="index, follow">
+    <!--Styles-->
     <link rel="stylesheet" href="styles/404.css">
 
-    <script src="scripts/htmlimport.js"></script>
-    <script src="scripts/main.js"></script>
-    <script>includeHTML();</script>
+    <?php include 'assets/head.html'; ?>
 </head>
 <body>
     <div class="pnf-holder">

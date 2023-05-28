@@ -65,8 +65,9 @@ a {
     background-color: var(--main-color-active);
 }
 
-
-
+.sidebar{
+    display: none;
+}
 
 @media (max-width: 1350px){
 
