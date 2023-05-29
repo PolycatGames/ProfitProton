@@ -21,6 +21,16 @@
   <main class="main-content">
     <section>
       <div class="about-banner">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Laag_1" data-name="Laag 1" viewBox="0 0 2160 293.19">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #0dc97b;
+              }
+            </style>
+          </defs>
+          <path class="cls-1" d="m0,282.42s373,50.58,681-67.42,550,10,886,16,593-117,593-117V0H0v282.42Z" />
+        </svg>
         <h1 class="about-title">Welcome to ProfitProton</h1>
       </div>
     </section>
