@@ -4,10 +4,10 @@
 <head>
   <!--Meta Data-->
   <title>About us</title>
-  <meta name="description" content="ENTER DESCRIPTION" />
-  <meta name="keywords" content="KEYWORDS" />
-  <meta name="author" content="AUTHOR" />
-  <!--<meta name="robots" content="index, follow">-->
+  <meta name="description" content="Get to know more about ProfitProton in our about section" />
+  <meta name="keywords" content="make money online, ProfitProton, online money-making, financial success, tips and strategies, side hustle, freelancing, passive income, online business" />
+  <meta name="author" content="ProfitProton" />
+  <meta name="robots" content="index, follow">
 
   <!--Styles-->
   <link rel="stylesheet" href="styles/about.css">
