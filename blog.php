@@ -8,7 +8,12 @@
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
     <!--<meta name="robots" content="index, follow">-->
-
+    <?php
+    // Fetch the latest commit hash or last modified timestamp from the GitHub API
+    $commitData = file_get_contents('https://api.github.com/repos/PolycatGames/ProfitProton/commits');
+    $commitData = json_decode($commitData);
+    $latestCommitHash = $commitData[0]->sha;
+    ?>
     <!--Styles-->
     <link rel="stylesheet" href="styles/blog.css">
 
