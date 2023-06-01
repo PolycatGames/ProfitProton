@@ -12,7 +12,7 @@
   <!--Styles-->
   
 
-  <?php include 'assets/head.html'; ?>
+  <?php include 'assets/head.php'; ?>
 </head>
 
 <body>

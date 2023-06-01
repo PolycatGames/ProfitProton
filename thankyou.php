@@ -10,7 +10,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="styles/thankyou.css">
 
-    <?php include 'assets/head.html'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
 

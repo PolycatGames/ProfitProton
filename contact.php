@@ -10,7 +10,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="styles/contact.css">
 
-    <?php include 'assets/head.html'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
 <?php include 'assets/headernav.html'; ?>

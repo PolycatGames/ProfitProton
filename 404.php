@@ -10,7 +10,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="styles/404.css">
 
-    <?php include 'assets/head.html'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 <body>
     <div class="pnf-holder">

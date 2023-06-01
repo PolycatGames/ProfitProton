@@ -12,7 +12,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="styles/blog.css">
 
-    <?php include 'assets/head.html'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 
 <body>

@@ -11,7 +11,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="styles/home.css">
 
-    <?php include 'assets/head.html'; ?>
+    <?php include 'assets/head.php'; ?>
 </head>
 
 <body>
