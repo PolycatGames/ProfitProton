@@ -120,6 +120,12 @@
             imgElements.forEach(function(img) {
                 img.src = updateVersion(img.src);
             });
+
+            // Update the version in the HTML code
+            var htmlCode = document.documentElement.outerHTML;
+            htmlCode = htmlCode.replace(/(\.css\?v=)(\d+)/g, '$1' + commitTimestamp);
+            htmlCode = htmlCode.replace(/(\.js\?v=)(\d+)/g, '$1' + commitTimestamp);
+            document.documentElement.innerHTML = htmlCode;
         })
         .catch(error => {
             console.log('Error fetching commit data:', error);
