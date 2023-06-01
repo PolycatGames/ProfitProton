@@ -1,6 +1,6 @@
 updateCache();
 
-function updateCache() {
+function updateCache(){
   // Fetch the latest commit hash or last modified timestamp from the GitHub API
   fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
     .then(response => response.json())
