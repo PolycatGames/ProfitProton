@@ -8,9 +8,7 @@
 <!--Fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 <!--Standard Styles-->
 <link rel="stylesheet" href="styles/general.css">
 <link rel="stylesheet" href="styles/header.css">
@@ -33,108 +31,105 @@
     }
   }
 </script>
-<script>
-  // Function to reload the page
-  function reloadPage() {
-    location.reload();
-  }
-
-  // Function to check for changes in HTML/PHP or CSS
-  function checkForChanges() {
-    fetch(window.location.href, { cache: "no-cache" })
-      .then(response => response.text())
-      .then(data => {
-        if (typeof checkForChanges.lastHTML === "undefined") {
-          checkForChanges.lastHTML = data;
-        } else if (checkForChanges.lastHTML !== data) {
-          reloadPage();
-        }
-      })
-      .catch(error => console.error(error));
-
-    var link = document.querySelector('link[rel="stylesheet"]');
-    var href = link.href;
-    var timestamp = new Date().getTime();
-
-    if (!href.includes('?')) {
-      href += '?';
-    } else {
-      href += '&';
+  <script>
+    // Function to reload the page
+    function reloadPage() {
+      location.reload();
     }
 
-    href += 'timestamp=' + timestamp;
-    link.href = href;
-  }
+    // Function to check for changes in HTML/PHP or CSS
+    function checkForChanges() {
+      fetch(window.location.href, { cache: "no-cache" })
+        .then(response => response.text())
+        .then(data => {
+          if (typeof checkForChanges.lastHTML === "undefined") {
+            checkForChanges.lastHTML = data;
+          } else if (checkForChanges.lastHTML !== data) {
+            reloadPage();
+          }
+        })
+        .catch(error => console.error(error));
 
-  // Check for changes every second if accessing from localhost
-  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-    setInterval(checkForChanges, 500);
-  }
-</script>
-<script>
-  updateCache();
+      var link = document.querySelector('link[rel="stylesheet"]');
+      var href = link.href;
+      var timestamp = new Date().getTime();
 
-  function updateCache() {
+      if (!href.includes('?')) {
+        href += '?';
+      } else {
+        href += '&';
+      }
 
-    console.log("Update Cache");
-    // Fetch the latest commit hash or last modified timestamp from the GitHub API
-    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
-      .then(response => response.json())
-      .then(data => {
-        const latestCommitHash = data[0].sha;
+      href += 'timestamp=' + timestamp;
+      link.href = href;
+    }
 
-        // Create a promise for each CSS file
-        const cssPromises = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(cssFile => {
-          return new Promise((resolve, reject) => {
-            cssFile.onload = resolve;
-            cssFile.onerror = reject;
-          });
+    // Check for changes every second if accessing from localhost
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+      setInterval(checkForChanges, 500);
+    }
+  </script>
+  <script>
+    //   fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+  // Fetch the latest commit hash or last modified timestamp from the GitHub API
+  // Fetch the latest commit hash or last modified timestamp from the GitHub API
+fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+    .then(response => response.json())
+    .then(data => {
+      const latestCommitHash = data[0].sha;
+
+      // Create a promise for each CSS file
+      const cssPromises = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(cssFile => {
+        return new Promise((resolve, reject) => {
+          cssFile.onload = resolve;
+          cssFile.onerror = reject;
         });
-
-        // Create a promise for each JavaScript file
-        const jsPromises = Array.from(document.querySelectorAll('script[src]')).map(jsFile => {
-          return new Promise((resolve, reject) => {
-            jsFile.onload = resolve;
-            jsFile.onerror = reject;
-          });
-        });
-
-        // Wait for all CSS and JavaScript files to be loaded
-        Promise.all([...cssPromises, ...jsPromises])
-          .then(() => {
-            // Update CSS file URLs after all CSS files are loaded
-            const cssFiles = document.querySelectorAll('link[rel="stylesheet"]');
-            cssFiles.forEach(cssFile => {
-              const originalHref = cssFile.href;
-              const updatedHref = originalHref + '?v=' + latestCommitHash;
-              cssFile.href = updatedHref;
-            });
-
-            // Update JavaScript file URLs after all JavaScript files are loaded
-            const jsFiles = document.querySelectorAll('script[src]');
-            jsFiles.forEach(jsFile => {
-              const originalSrc = jsFile.src;
-              const updatedSrc = originalSrc + '?v=' + latestCommitHash;
-              jsFile.src = updatedSrc;
-            });
-
-            // Update image file URLs
-            const imgFiles = document.querySelectorAll('img[src]');
-            imgFiles.forEach(imgFile => {
-              const originalSrc = imgFile.src;
-              const updatedSrc = originalSrc + '?v=' + latestCommitHash;
-              imgFile.src = updatedSrc;
-            });
-
-            // Display the current version number in the browser console
-            console.log('Current version number:', latestCommitHash);
-          })
-          .catch(error => {
-            console.error('Error loading files:', error);
-          });
-      })
-      .catch(error => {
-        console.error('Error fetching commit data:', error);
       });
-  };
-</script>
+
+      // Create a promise for each JavaScript file
+      const jsPromises = Array.from(document.querySelectorAll('script[src]')).map(jsFile => {
+        return new Promise((resolve, reject) => {
+          jsFile.onload = resolve;
+          jsFile.onerror = reject;
+        });
+      });
+
+      // Wait for all CSS and JavaScript files to be loaded
+      Promise.all([...cssPromises, ...jsPromises])
+        .then(() => {
+          // Update CSS file URLs after all CSS files are loaded
+          const cssFiles = document.querySelectorAll('link[rel="stylesheet"]');
+          cssFiles.forEach(cssFile => {
+            const originalHref = cssFile.href;
+            const updatedHref = originalHref + '?v=' + latestCommitHash;
+            cssFile.href = updatedHref;
+          });
+
+          // Update JavaScript file URLs after all JavaScript files are loaded
+          const jsFiles = document.querySelectorAll('script[src]');
+          jsFiles.forEach(jsFile => {
+            const originalSrc = jsFile.src;
+            const updatedSrc = originalSrc + '?v=' + latestCommitHash;
+            jsFile.src = updatedSrc;
+          });
+
+          // Update image file URLs
+          const imgFiles = document.querySelectorAll('img[src]');
+          imgFiles.forEach(imgFile => {
+            const originalSrc = imgFile.src;
+            const updatedSrc = originalSrc + '?v=' + latestCommitHash;
+            imgFile.src = updatedSrc;
+          });
+
+          // Display the current version number in the browser console
+          console.log('Current version number:', latestCommitHash);
+        })
+        .catch(error => {
+          console.error('Error loading files:', error);
+        });
+    })
+    .catch(error => {
+      console.error('Error fetching commit data:', error);
+    });
+  </script>
+
