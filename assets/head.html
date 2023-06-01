@@ -71,7 +71,7 @@
   </script>
   <script>
     // Fetch the latest commit hash or last modified timestamp from the GitHub API
-    fetch('https://api.github.com/repos/{username}/{repository}/commits')
+    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
       .then(response => response.json())
       .then(data => {
         const latestCommitHash = data[0].sha;
