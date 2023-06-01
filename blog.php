@@ -88,35 +88,42 @@
     <?php include 'assets/footer.html'; ?>
 </body>
 
-<?php
-// GitHub repository information
-$repoOwner = 'PolycatGames';
-$repoName = 'ProfitProton';
+<script>
+    // Fetch the commit data from the GitHub API
+    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+        .then(response => response.json())
+        .then(data => {
+            // Get the timestamp of the latest commit
+            var latestCommit = data[0];
+            var commitTimestamp = new Date(latestCommit.commit.author.date).getTime() / 1000;
 
-// GitHub API endpoint for the latest commit
-$apiUrl = "https://api.github.com/repos/$repoOwner/$repoName/commits";
+            // Function to update the version based on the commit timestamp
+            function updateVersion(url) {
+                var separator = url.indexOf('?') !== -1 ? '&' : '?'; // Check if the URL already contains a query string
+                return url + separator + 'v=' + commitTimestamp; // Append the version to the URL
+            }
 
-// Get the latest commit hash from the GitHub API
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $apiUrl);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_USERAGENT, 'Clear-Cache-Script');
-$response = curl_exec($ch);
-curl_close($ch);
+            // Update the version of all linked CSS files
+            var cssLinks = document.querySelectorAll('link[rel="stylesheet"]');
+            cssLinks.forEach(function(link) {
+                link.href = updateVersion(link.href);
+            });
 
-$commitData = json_decode($response, true);
-$commitHash = $commitData[0]['sha'] ?? '';
+            // Update the version of all linked JS files
+            var jsScripts = document.querySelectorAll('script[src]');
+            jsScripts.forEach(function(script) {
+                script.src = updateVersion(script.src);
+            });
 
-// Set a unique version string for cache busting
-$cacheVersion = 'cache-' . $commitHash;
-
-// Function to generate cache-busted asset URLs
-function asset($path)
-{
-    global $cacheVersion;
-    $queryParam = strpos($path, '?') !== false ? '&' : '?';
-    return $path . $queryParam . $cacheVersion;
-}
-?>
+            // Update the version of all linked image files
+            var imgElements = document.querySelectorAll('img[src]');
+            imgElements.forEach(function(img) {
+                img.src = updateVersion(img.src);
+            });
+        })
+        .catch(error => {
+            console.log('Error fetching commit data:', error);
+        });
+</script>
 
 </html>
