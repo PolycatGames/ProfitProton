@@ -103,6 +103,13 @@
                 return url + separator + 'v=' + commitTimestamp; // Append the version to the URL
             }
 
+            // Create a default style element with CSS rules
+            var defaultStyles = document.createElement('style');
+            defaultStyles.innerHTML = `
+        /* Add your default CSS styles here */
+      `;
+            document.head.appendChild(defaultStyles);
+
             // Update the version of all linked CSS files
             var cssLinks = document.querySelectorAll('link[rel="stylesheet"]');
             cssLinks.forEach(function(link) {
@@ -126,10 +133,14 @@
             htmlCode = htmlCode.replace(/(\.css\?v=)(\d+)/g, '$1' + commitTimestamp);
             htmlCode = htmlCode.replace(/(\.js\?v=)(\d+)/g, '$1' + commitTimestamp);
             document.documentElement.innerHTML = htmlCode;
+
+            // Remove the default style element after CSS is loaded
+            defaultStyles.remove();
         })
         .catch(error => {
             console.log('Error fetching commit data:', error);
         });
 </script>
+
 
 </html>
