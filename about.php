@@ -21,7 +21,7 @@
   <main class="main-content">
     <section>
       <div class="about-banner">
-        <svg xmlns="http://www.w3.org/2000/svg" id="Laag_1" data-name="Laag 1" viewBox="0 0 2160 293.19">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer_1" viewBox="0 0 2160 293.19">
           <defs>
             <style>
               .cls-1 {
