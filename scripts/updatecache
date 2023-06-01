@@ -1,4 +1,4 @@
-function updateCache() {
+
     console.log("Clear Cache");
 
       // Fetch the latest commit hash or last modified timestamp from the GitHub API
@@ -60,4 +60,3 @@ function updateCache() {
         .catch(error => {
           console.error('Error fetching commit data:', error);
         });
-    };
