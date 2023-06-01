@@ -72,19 +72,3 @@
 <script>
 
 </script>
-
-<?php
-// Get the current commit hash
-$commitHash = trim(shell_exec('git rev-parse HEAD'));
-
-// Set a unique version string for cache busting
-$cacheVersion = 'cache-' . $commitHash;
-
-// Function to generate cache-busted asset URLs
-function asset($path)
-{
-  global $cacheVersion;
-  $queryParam = strpos($path, '?') !== false ? '&' : '?';
-  return $path . $queryParam . $cacheVersion;
-}
-?>

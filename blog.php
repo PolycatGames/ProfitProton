@@ -88,35 +88,5 @@
     <?php include 'assets/footer.html'; ?>
 </body>
 
-<?php
-// GitHub repository information
-$repoOwner = 'PolycatGames';
-$repoName = 'ProfitProton';
-
-// GitHub API endpoint for the latest commit
-$apiUrl = "https://api.github.com/repos/$repoOwner/$repoName/commits";
-
-// Get the latest commit hash from the GitHub API
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $apiUrl);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_USERAGENT, 'Clear-Cache-Script');
-$response = curl_exec($ch);
-curl_close($ch);
-
-$commitData = json_decode($response, true);
-$commitHash = $commitData[0]['sha'] ?? '';
-
-// Set a unique version string for cache busting
-$cacheVersion = 'cache-' . $commitHash;
-
-// Function to generate cache-busted asset URLs
-function asset($path)
-{
-    global $cacheVersion;
-    $queryParam = strpos($path, '?') !== false ? '&' : '?';
-    return $path . $queryParam . $cacheVersion;
-}
-?>
 
 </html>
