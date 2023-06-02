@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
 
 
     <!--Meta Data-->
@@ -27,7 +27,7 @@
                 <div class="blog-popular-main">
                     <img src="images/placeholder/profitproton_placeholder.png" alt="">
                     <span class="blog-popular-main-category">Category</span>
-                    <h1 class="blog-popular-main-title">How to start dropshipping?</h1>
+                    <h1 class="blog-popular-main-title">Lorem ipsum dolor sit amet</h1>
                 </div>
                 <div class="blog-popular-list">
                     <div class="blog-popular-list-top">
@@ -36,20 +36,28 @@
                     </div>
                     <div class="blog-popular-list-bottom">
                         <a href="">
-                            <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                            <h3 class="blog-popular-list-bottom-title">Mastering the Art of Passive Income: Generate Money While You Sleep</h3>
+                            <button class="blog-popular-list-bottom-button">
+                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
+                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            </button>
                         </a>
                         <a href="">
-                            <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                            <h3 class="blog-popular-list-bottom-title">The Ultimate Guide to Successful Freelancing: Earn a Living on Your Own Terms</h3>
+                            <button class="blog-popular-list-bottom-button">
+                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
+                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            </button>
                         </a>
                         <a href="">
-                            <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                            <h3 class="blog-popular-list-bottom-title">Investing 101: A Beginner's Journey to Financial Growth and Wealth</h3>
+                            <button class="blog-popular-list-bottom-button">
+                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
+                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            </button>
                         </a>
                         <a href="">
-                            <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                            <h3 class="blog-popular-list-bottom-title">Unleashing the Power of E-commerce: Building a Profitable Online Store</h3>
+                            <button class="blog-popular-list-bottom-button">
+                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
+                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            </button>
                         </a>
                     </div>
                 </div>

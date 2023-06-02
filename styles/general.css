@@ -46,11 +46,11 @@ a {
     color: black;
 }
 .content-holder{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .content-holder > *{
-    max-width: 1280px;
+    max-width: 1140px;
     position: relative;
     margin: auto;
 }
@@ -102,10 +102,7 @@ a {
 
 }
 @media (max-width: 800px){
-    .content-holder{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+    
 }
 
 @media (max-width: 550px){

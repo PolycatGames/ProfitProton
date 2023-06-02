@@ -72,7 +72,8 @@
 
 <script>
   function loadUpdatedStylesheet() {
-    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+    if (location.hostname !== "localhost")
+      fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
       .then(response => response.json())
       .then(data => {
         var latestCommit = data[0].sha; // Extract the latest commit hash
