@@ -1,62 +1,3 @@
-<script>
-  function loadUpdatedStylesheet() {
-    if (location.hostname !== "localhost")
-      fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
-      .then(response => response.json())
-      .then(data => {
-        var latestCommit = data[0].sha; // Extract the latest commit hash
-        var links = document.querySelectorAll('link[rel="stylesheet"]');
-        var preloadPromises = [];
-
-        for (var i = 0; i < links.length; i++) {
-          var link = links[i];
-          var href = link.getAttribute('href');
-
-          if (href) {
-            var updatedHref = href + '?v=' + latestCommit;
-            var preloadPromise = new Promise((resolve, reject) => {
-              var preloadLink = document.createElement('link');
-              preloadLink.setAttribute('rel', 'preload');
-              preloadLink.setAttribute('as', 'style');
-              preloadLink.setAttribute('href', updatedHref);
-              preloadLink.addEventListener('load', resolve);
-              preloadLink.addEventListener('error', reject);
-              document.head.appendChild(preloadLink);
-            });
-
-            preloadPromises.push(preloadPromise);
-          }
-        }
-
-        Promise.all(preloadPromises)
-          .then(() => {
-            for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              var href = link.getAttribute('href');
-
-              if (href) {
-                var updatedHref = href + '?v=' + latestCommit;
-                var newLink = document.createElement('link');
-                newLink.setAttribute('rel', 'stylesheet');
-                newLink.setAttribute('href', updatedHref);
-                document.head.appendChild(newLink);
-                link.parentNode.removeChild(link);
-              }
-            }
-
-            // All stylesheets have been loaded, remove the default stylesheet
-            var defaultStylesheet = document.querySelector('link[href="default.css"]');
-            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
-          })
-          .catch(error => console.log(error));
-      })
-      .catch(error => console.log(error));
-  }
-
-  loadUpdatedStylesheet();
-</script>
-
-
 <!--Standard Meta Data-->
 <link rel="icon" type="image/x-icon" href="images/logo/profitproton-favicon.png" />
 <meta charset="UTF-8" />
@@ -128,6 +69,81 @@
     setInterval(checkForChanges, 500);
   }
 </script>
+
+<script>
+  function loadUpdatedStylesheet() {
+    if (location.hostname !== "localhost") {
+      // Create a blank screen overlay
+      var overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.background = '#fff'; // Set the background color to match your website's background
+
+      // Add the overlay to the body
+      document.body.appendChild(overlay);
+
+      fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+        .then(response => response.json())
+        .then(data => {
+          var latestCommit = data[0].sha; // Extract the latest commit hash
+          var links = document.querySelectorAll('link[rel="stylesheet"]');
+          var preloadPromises = [];
+
+          for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            var href = link.getAttribute('href');
+
+            if (href) {
+              var updatedHref = href + '?v=' + latestCommit;
+              var preloadPromise = new Promise((resolve, reject) => {
+                var preloadLink = document.createElement('link');
+                preloadLink.setAttribute('rel', 'preload');
+                preloadLink.setAttribute('as', 'style');
+                preloadLink.setAttribute('href', updatedHref);
+                preloadLink.addEventListener('load', resolve);
+                preloadLink.addEventListener('error', reject);
+                document.head.appendChild(preloadLink);
+              });
+
+              preloadPromises.push(preloadPromise);
+            }
+          }
+
+          Promise.all(preloadPromises)
+            .then(() => {
+              for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                var href = link.getAttribute('href');
+
+                if (href) {
+                  var updatedHref = href + '?v=' + latestCommit;
+                  var newLink = document.createElement('link');
+                  newLink.setAttribute('rel', 'stylesheet');
+                  newLink.setAttribute('href', updatedHref);
+                  document.head.appendChild(newLink);
+                  link.parentNode.removeChild(link);
+                }
+              }
+
+              // All stylesheets have been loaded, remove the default stylesheet
+              var defaultStylesheet = document.querySelector('link[href="default.css"]');
+              defaultStylesheet.parentNode.removeChild(defaultStylesheet);
+
+              // Remove the overlay to reveal the updated content
+              document.body.removeChild(overlay);
+            })
+            .catch(error => console.log(error));
+        })
+        .catch(error => console.log(error));
+    }
+  }
+
+  loadUpdatedStylesheet();
+</script>
+
 
 
 <script>
