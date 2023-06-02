@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    
+
+
     <!--Meta Data-->
     <title>ProfitProton | Blog</title>
     <meta name="description" content="ENTER DESCRIPTION" />
@@ -16,17 +19,6 @@
 </head>
 
 <body>
-    <script>
-        function appendVersion(version) {
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'scripts/main.js?v=' + version;
-            document.body.appendChild(scriptElement);
-        }
-
-        // Usage example:
-        appendVersion('2');
-    </script>
-
     <?php include 'assets/headernav.html'; ?>
 
     <main class="main-content">
