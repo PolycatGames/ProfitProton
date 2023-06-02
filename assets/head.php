@@ -76,11 +76,16 @@
       .then(response => response.json())
       .then(data => {
         var latestCommit = data[0].sha; // Extract the latest commit hash
-        var links = document.querySelectorAll('link[rel="stylesheet"]');
+        var links = document.querySelectorAll('link[rel="stylesheet"], script[src]');
         for (var i = 0; i < links.length; i++) {
           var link = links[i];
           var href = link.getAttribute('href');
-          link.setAttribute('href', href + '?v=' + latestCommit);
+          var src = link.getAttribute('src');
+          if (href) {
+            link.setAttribute('href', href + '?v=' + latestCommit);
+          } else if (src) {
+            link.setAttribute('src', src + '?v=' + latestCommit);
+          }
         }
       })
       .catch(error => console.log(error));
