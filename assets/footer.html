@@ -38,33 +38,3 @@
 </footer>
 
 <script src="scripts/main.js"></script>
-
-<script>
-    function appendVersion(version) {
-        // Match and replace CSS URLs
-        const cssLinks = document.querySelectorAll('link[rel="stylesheet"]');
-        cssLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            link.setAttribute('href', `${href}?v=${version}`);
-        });
-
-        // Match and replace JS URLs
-        const jsScripts = document.querySelectorAll('script[src]');
-        jsScripts.forEach(script => {
-            const src = script.getAttribute('src');
-            const newScript = document.createElement('script');
-            newScript.setAttribute('src', `${src}?v=${version}`);
-            script.parentNode.replaceChild(newScript, script);
-        });
-
-        // Match and replace image URLs
-        const imgElements = document.querySelectorAll('img[src]');
-        imgElements.forEach(img => {
-            const src = img.getAttribute('src');
-            img.setAttribute('src', `${src}?v=${version}`);
-        });
-    }
-
-    // Usage example:
-    appendVersion('3');
-</script>
