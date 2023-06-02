@@ -69,47 +69,20 @@
     setInterval(checkForChanges, 500);
   }
 </script>
+
 <script>
-  fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
-    .then(response => response.json())
-    .then(data => {
-      const latestCommitHash = data[0].sha;
-
-      // Create a promise for each CSS file
-      const cssPromises = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(cssFile => {
-        return new Promise((resolve, reject) => {
-          cssFile.onload = resolve;
-          cssFile.onerror = reject;
-        });
-      });
-
-      // Wait for all CSS files to be loaded
-      Promise.all(cssPromises)
-        .then(() => {
-          // Update CSS file URLs after all CSS files are loaded
-          const cssFiles = document.querySelectorAll('link[rel="stylesheet"]');
-          cssFiles.forEach(cssFile => {
-            const originalHref = cssFile.href;
-            const updatedHref = originalHref + '?v=' + latestCommitHash;
-            cssFile.href = updatedHref;
-          });
-
-          // Update image file URLs
-          const imgFiles = document.querySelectorAll('img[src]');
-          imgFiles.forEach(imgFile => {
-            const originalSrc = imgFile.src;
-            const updatedSrc = originalSrc + '?v=' + latestCommitHash;
-            imgFile.src = updatedSrc;
-          });
-
-          // Display the current version number in the browser console
-          console.log('Current version number:', latestCommitHash);
-        })
-        .catch(error => {
-          console.error('Error loading CSS files:', error);
-        });
-    })
-    .catch(error => {
-      console.error('Error fetching commit data:', error);
-    });
+  document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+      .then(response => response.json())
+      .then(data => {
+        var latestCommit = data[0].sha; // Extract the latest commit hash
+        var links = document.querySelectorAll('link[rel="stylesheet"]');
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          var href = link.getAttribute('href');
+          link.setAttribute('href', href + '?v=' + latestCommit);
+        }
+      })
+      .catch(error => console.log(error));
+  });
 </script>
