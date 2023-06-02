@@ -1,6 +1,6 @@
 let burgerActivated = false;
 let sidebar;
-
+//Test Message
 setSidebar();
 
 function setSidebar(){
