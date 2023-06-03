@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<?php include 'assets/headernav.html'; ?>
+    <?php include 'assets/headernav.html'; ?>
     <main class="main-content">
         <article class="content-holder">
             <section class="banner">
@@ -25,7 +25,7 @@
                         <div class="banner-area-left-description">Small beginnings lead to great achievements - start
                             your journey with us!</div>
                         <div class="banner-area-left-buttons">
-                            <button class="banner-area-left-buttons-button1">Get Started Today</button>
+                            <a href="/blog"><button class="banner-area-left-buttons-button1">Get Started Today</button></a>
                         </div>
                     </div>
                     <div class="banner-area-right">

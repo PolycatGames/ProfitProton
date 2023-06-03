@@ -29,6 +29,33 @@
     }
   }
 </script>
+
+<script>
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    // Function to add ".php" to the href attribute of <a> tags
+  function addPhpToLinks() {
+    // Check if the website is running on localhost
+
+    // Get all the <a> tags
+    var links = document.getElementsByTagName('a');
+
+    // Loop through each <a> tag
+    for (var i = 0; i < links.length; i++) {
+      // Get the href attribute
+      var href = links[i].getAttribute('href');
+
+      // Check if href is not empty and doesn't end with ".php"
+      if (href && !href.endsWith('.php') && href!=("/") && href!=("")) {
+        // Add ".php" to the href attribute value
+        links[i].setAttribute('href', href + '.php');
+      }
+    }
+  }
+
+  // Add event listener to run the code when the page has loaded
+  window.addEventListener('DOMContentLoaded', addPhpToLinks);
+</script>
+
 <script>
   // Function to reload the page
   function reloadPage() {
@@ -115,7 +142,7 @@
                 link.parentNode.removeChild(link);
               }
             }
-
+            console.log("All Loaded");
             // All stylesheets have been loaded, remove the default stylesheet
             var defaultStylesheet = document.querySelector('link[href="default.css"]');
             defaultStylesheet.parentNode.removeChild(defaultStylesheet);
