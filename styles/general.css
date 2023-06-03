@@ -97,7 +97,7 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--linktext);
 }
-.whitescreen{
+#whitescreen{
     position:fixed;
     z-index: 9999;
     background-color: rgb(255, 255, 255);
