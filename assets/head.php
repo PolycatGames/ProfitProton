@@ -15,9 +15,19 @@
 <link rel="stylesheet" href="styles/footer.css">
 <link rel="stylesheet" href="styles/sidebar.css">
 <!--Standard Elements-->
+<style>
+  #whitescreen {
+    position: fixed;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+</style>
 <div id="whitescreen"></div>
 <!--Standard Scripts-->
-
 <script>
   if (location.hostname !== "localhost !") {
     function fadeOutElementsByClass(className) {
@@ -35,7 +45,7 @@
           for (var i = 0; i < elements.length; i++) {
             elements[i].style.visibility = 'hidden';
           }
-        } else {
+        } else if (1 + 1 === 3){
           // Reduce the opacity and update the style
           currentOpacity -= opacityStep;
           for (var i = 0; i < elements.length; i++) {
@@ -44,7 +54,7 @@
         }
       }, interval);
     }
-  } else if (1 + 1 === 3) {
+  } else {
     var elements = document.getElementsByClassName("whitescreen");
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.visibility = 'hidden';
@@ -135,45 +145,63 @@
 </script>
 
 <script>
-  // Fetch the latest commit information from GitHub
-  fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
-    .then(response => response.json())
-    .then(data => {
-      const latestCommitSHA = data[0].sha;
+  function loadUpdatedStylesheet() {
+    if (location.hostname !== "localhost !")
+      fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+      .then(response => response.json())
+      .then(data => {
+        var latestCommit = data[0].sha; // Extract the latest commit hash
+        var links = document.querySelectorAll('link[rel="stylesheet"]');
+        var preloadPromises = [];
 
-      // Get all linked CSS files
-      const cssFiles = Array.from(document.querySelectorAll('link[rel="stylesheet"]'));
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          var href = link.getAttribute('href');
 
-      // Iterate over each CSS file and modify the version
-      cssFiles.forEach(file => {
-        const href = file.getAttribute('href');
-        const newHref = addVersionToURL(href, latestCommitSHA);
-        file.setAttribute('href', newHref);
-      });
+          if (href) {
+            var updatedHref = href + '?v=' + latestCommit;
+            var preloadPromise = new Promise((resolve, reject) => {
+              var preloadLink = document.createElement('link');
+              preloadLink.setAttribute('rel', 'preload');
+              preloadLink.setAttribute('as', 'style');
+              preloadLink.setAttribute('href', updatedHref);
+              preloadLink.addEventListener('load', resolve);
+              preloadLink.addEventListener('error', reject);
+              document.head.appendChild(preloadLink);
+            });
 
-      // Load the desired element before displaying other content
-      const desiredElement = document.getElementById('whitescreen');
+            preloadPromises.push(preloadPromise);
+          }
+        }
 
-      // Hide the content initially
-      document.body.style.visibility = 'hidden';
+        Promise.all(preloadPromises)
+          .then(() => {
+            for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              var href = link.getAttribute('href');
 
-      // Wait for the desired element to load
-      desiredElement.addEventListener('load', () => {
-        // Show the content once the desired element has loaded
-        document.body.style.visibility = 'visible';
-      });
-    })
-    .catch(error => console.error(error));
-
-  // Helper function to add a version to a URL
-  function addVersionToURL(url, version) {
-    const separator = url.includes('?') ? '&' : '?';
-    return `${url}${separator}v=${version}`;
+              if (href) {
+                var updatedHref = href + '?v=' + latestCommit;
+                var newLink = document.createElement('link');
+                newLink.setAttribute('rel', 'stylesheet');
+                newLink.setAttribute('href', updatedHref);
+                document.head.appendChild(newLink);
+                link.parentNode.removeChild(link);
+              }
+            }
+            console.log("All Loaded");
+            //fadeOutElementsByClass("whitescreen");
+            // All stylesheets have been loaded, remove the default stylesheet
+            var defaultStylesheet = document.querySelector('link[href="default.css"]');
+            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
+          })
+          .catch(error => console.log(error));
+      })
+      .catch(error => console.log(error));
   }
+
+  loadUpdatedStylesheet();
 </script>
-
-
-
 
 
 <script>
