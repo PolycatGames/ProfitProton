@@ -136,7 +136,7 @@
 
 <script>
   function loadUpdatedStylesheet() {
-    var elementToLoadFirst = document.getElementById('whitescreen');
+    var elementToLoadFirst = document.getElementById('elementToLoadFirst');
     elementToLoadFirst.style.display = 'block';
 
     fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
@@ -144,7 +144,6 @@
       .then(data => {
         var latestCommit = data[0].sha; // Extract the latest commit hash
         var links = document.querySelectorAll('link[rel="stylesheet"]');
-        var preloadPromises = [];
 
         for (var i = 0; i < links.length; i++) {
           var link = links[i];
@@ -152,47 +151,24 @@
 
           if (href) {
             var updatedHref = href + '?v=' + latestCommit;
-            var preloadPromise = new Promise((resolve, reject) => {
-              var preloadLink = document.createElement('link');
-              preloadLink.setAttribute('rel', 'preload');
-              preloadLink.setAttribute('as', 'style');
-              preloadLink.setAttribute('href', updatedHref);
-              preloadLink.addEventListener('load', resolve);
-              preloadLink.addEventListener('error', reject);
-              document.head.appendChild(preloadLink);
-            });
-
-            preloadPromises.push(preloadPromise);
+            var newLink = document.createElement('link');
+            newLink.setAttribute('rel', 'stylesheet');
+            newLink.setAttribute('href', updatedHref);
+            document.head.appendChild(newLink);
+            link.parentNode.removeChild(link);
           }
         }
 
-        Promise.all(preloadPromises)
-          .then(() => {
-            for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              var href = link.getAttribute('href');
-
-              if (href) {
-                var updatedHref = href + '?v=' + latestCommit;
-                var newLink = document.createElement('link');
-                newLink.setAttribute('rel', 'stylesheet');
-                newLink.setAttribute('href', updatedHref);
-                document.head.appendChild(newLink);
-                link.parentNode.removeChild(link);
-              }
-            }
-
-            // All stylesheets have been loaded, remove the default stylesheet
-            var defaultStylesheet = document.querySelector('link[href="default.css"]');
-            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
-          })
-          .catch(error => console.log(error));
+        // All stylesheets have been loaded, remove the default stylesheet
+        var defaultStylesheet = document.querySelector('link[href="default.css"]');
+        defaultStylesheet.parentNode.removeChild(defaultStylesheet);
       })
       .catch(error => console.log(error));
   }
 
   loadUpdatedStylesheet();
 </script>
+
 
 
 
