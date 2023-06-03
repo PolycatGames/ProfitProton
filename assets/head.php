@@ -18,36 +18,36 @@
 <div class="whitescreen"></div>
 <!--Standard Scripts-->
 <script>
-  function hideElementsByClass(className) {
-    var elements = document.getElementsByClassName(className);
+  if (location.hostname !== "localhost") {
+    function fadeOutElementsByClass(className) {
+      var elements = document.getElementsByClassName(className);
+      var duration = 200; // Duration of the fade-out animation in milliseconds
+      var interval = 10; // Interval between opacity updates in milliseconds
+      var opacityStep = 1 / (duration / interval); // Amount to reduce opacity in each interval
+
+      var currentOpacity = 1;
+
+      var fadeOutInterval = setInterval(function() {
+        if (currentOpacity <= 0) {
+          clearInterval(fadeOutInterval);
+          // Once the animation is complete, hide the elements
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.visibility = 'hidden';
+          }
+        } else {
+          // Reduce the opacity and update the style
+          currentOpacity -= opacityStep;
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.opacity = currentOpacity;
+          }
+        }
+      }, interval);
+    }
+  } else {
+    var elements = document.getElementsByClassName("whitescreen");
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.visibility = 'hidden';
     }
-  }
-
-  function fadeOutElementsByClass(className) {
-    var elements = document.getElementsByClassName(className);
-    var duration = 200; // Duration of the fade-out animation in milliseconds
-    var interval = 10; // Interval between opacity updates in milliseconds
-    var opacityStep = 1 / (duration / interval); // Amount to reduce opacity in each interval
-
-    var currentOpacity = 1;
-
-    var fadeOutInterval = setInterval(function() {
-      if (currentOpacity <= 0) {
-        clearInterval(fadeOutInterval);
-        // Once the animation is complete, hide the elements
-        for (var i = 0; i < elements.length; i++) {
-          elements[i].style.visibility = 'hidden';
-        }
-      } else {
-        // Reduce the opacity and update the style
-        currentOpacity -= opacityStep;
-        for (var i = 0; i < elements.length; i++) {
-          elements[i].style.opacity = currentOpacity;
-        }
-      }
-    }, interval);
   }
 </script>
 
@@ -65,6 +65,7 @@
     }
   }
 </script>
+
 <script>
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
     // Function to add ".php" to the href attribute of <a> tags
