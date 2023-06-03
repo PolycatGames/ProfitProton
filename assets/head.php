@@ -20,51 +20,29 @@
 
 <!--Standard Scripts-->
 <script>
-  if (location.hostname !== "localhost !") {
-    function fadeOutElementsByClass(className) {
-      var elements = document.getElementsByClassName(className);
-      var duration = 200; // Duration of the fade-out animation in milliseconds
-      var interval = 10; // Interval between opacity updates in milliseconds
-      var opacityStep = 1 / (duration / interval); // Amount to reduce opacity in each interval
-
-      var currentOpacity = 1;
-
-      var fadeOutInterval = setInterval(function() {
-        if (currentOpacity <= 0) {
-          clearInterval(fadeOutInterval);
-          // Once the animation is complete, hide the elements
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].style.visibility = 'hidden';
-          }
-        } else {
-          // Reduce the opacity and update the style
-          currentOpacity -= opacityStep;
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].style.opacity = currentOpacity;
-          }
-        }
-      }, interval);
-    }
-  } else {
+  function fadeOutElementsByClass(className) {
     var elements = document.getElementsByClassName(className);
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.visibility = 'hidden';
-    }
-  }
-</script>
+    var duration = 200; // Duration of the fade-out animation in milliseconds
+    var interval = 10; // Interval between opacity updates in milliseconds
+    var opacityStep = 1 / (duration / interval); // Amount to reduce opacity in each interval
 
-<script>
-  if (window.location.hostname.includes("github.io")) {
-    document.write('<base href="/ProfitProton/">');
-    console.log("GitHub");
-  } else {
-    document.write('<base href="/">');
+    var currentOpacity = 1;
 
-    if (window.location.hostname.includes("127.0.0.1")) {
-      console.log("Local");
-    } else {
-      console.log("Domain hosted");
-    }
+    var fadeOutInterval = setInterval(function() {
+      if (currentOpacity <= 0) {
+        clearInterval(fadeOutInterval);
+        // Once the animation is complete, hide the elements
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.visibility = 'hidden';
+        }
+      } else {
+        // Reduce the opacity and update the style
+        currentOpacity -= opacityStep;
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.opacity = currentOpacity;
+        }
+      }
+    }, interval);
   }
 </script>
 
@@ -194,13 +172,11 @@
   loadUpdatedStylesheet();
 </script>
 
-
 <script>
   let burgerActivated = false;
   let sidebar;
 
   function setSidebar() {
-    console.log("Ran?");
     sidebar = document.querySelector(".sidebar");
     if (sidebar !== null) {
       sidebar.style.display = "none";
@@ -240,6 +216,19 @@
   });
 </script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-CXQPHCFCPT');
+</script>
+
 <!--Standard Elements-->
 <style>
   .whitescreen {
@@ -253,16 +242,3 @@
   }
 </style>
 <div class="whitescreen"></div>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'G-CXQPHCFCPT');
-</script>
