@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="styles/footer.css">
 <link rel="stylesheet" href="styles/sidebar.css">
 <!--Standard Elements-->
-<!--<div class="whitescreen"></div>-->
+<div class="whitescreen"></div>
 <!--Standard Scripts-->
 <script>
   if (location.hostname !== "localhost !") {
