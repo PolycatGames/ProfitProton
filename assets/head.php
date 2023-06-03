@@ -14,7 +14,43 @@
 <link rel="stylesheet" href="styles/header.css">
 <link rel="stylesheet" href="styles/footer.css">
 <link rel="stylesheet" href="styles/sidebar.css">
+<!--Standard Elements-->
+<div class="whitescreen"></div>
 <!--Standard Scripts-->
+<script>
+  function hideElementsByClass(className) {
+    var elements = document.getElementsByClassName(className);
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.visibility = 'hidden';
+    }
+  }
+
+  function fadeOutElementsByClass(className) {
+    var elements = document.getElementsByClassName(className);
+    var duration = 200; // Duration of the fade-out animation in milliseconds
+    var interval = 10; // Interval between opacity updates in milliseconds
+    var opacityStep = 1 / (duration / interval); // Amount to reduce opacity in each interval
+
+    var currentOpacity = 1;
+
+    var fadeOutInterval = setInterval(function() {
+      if (currentOpacity <= 0) {
+        clearInterval(fadeOutInterval);
+        // Once the animation is complete, hide the elements
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.visibility = 'hidden';
+        }
+      } else {
+        // Reduce the opacity and update the style
+        currentOpacity -= opacityStep;
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.opacity = currentOpacity;
+        }
+      }
+    }, interval);
+  }
+</script>
+
 <script>
   if (window.location.hostname.includes("github.io")) {
     document.write('<base href="/ProfitProton/">');
@@ -29,7 +65,6 @@
     }
   }
 </script>
-
 <script>
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
     // Function to add ".php" to the href attribute of <a> tags
@@ -45,7 +80,7 @@
       var href = links[i].getAttribute('href');
 
       // Check if href is not empty and doesn't end with ".php"
-      if (href && !href.endsWith('.php') && href!=("/") && href!=("")) {
+      if (href && !href.endsWith('.php') && href != ("/") && href != ("")) {
         // Add ".php" to the href attribute value
         links[i].setAttribute('href', href + '.php');
       }
@@ -143,6 +178,7 @@
               }
             }
             console.log("All Loaded");
+            fadeOutElementsByClass("whitescreen");
             // All stylesheets have been loaded, remove the default stylesheet
             var defaultStylesheet = document.querySelector('link[href="default.css"]');
             defaultStylesheet.parentNode.removeChild(defaultStylesheet);
