@@ -179,7 +179,7 @@
               }
             }
             console.log("All Loaded");
-            fadeOutElementsByClass("whitescreen");
+            //fadeOutElementsByClass("whitescreen");
             // All stylesheets have been loaded, remove the default stylesheet
             var defaultStylesheet = document.querySelector('link[href="default.css"]');
             defaultStylesheet.parentNode.removeChild(defaultStylesheet);
