@@ -154,13 +154,13 @@
       // Load the desired element before displaying other content
       const desiredElement = document.getElementById('whitescreen');
 
-      // Add a class to the body element to hide other content
-      document.body.classList.add('hide-content');
+      // Hide the content initially
+      document.body.style.visibility = 'hidden';
 
       // Wait for the desired element to load
       desiredElement.addEventListener('load', () => {
-        // Remove the class from the body element to show other content
-        document.body.classList.remove('hide-content');
+        // Show the content once the desired element has loaded
+        document.body.style.visibility = 'visible';
       });
     })
     .catch(error => console.error(error));
