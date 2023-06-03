@@ -152,7 +152,7 @@
       });
 
       // Load the desired element before displaying other content
-      const desiredElement = document.getElementById('desired-element');
+      const desiredElement = document.getElementById('whitescreen');
 
       // Add a class to the body element to hide other content
       document.body.classList.add('hide-content');
