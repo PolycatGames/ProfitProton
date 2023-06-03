@@ -135,20 +135,41 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
-      .then(response => response.json())
-      .then(data => {
-        var latestCommit = data[0].sha; // Extract the latest commit hash
-        var links = document.querySelectorAll('link[rel="stylesheet"]');
-        for (var i = 0; i < links.length; i++) {
-          var link = links[i];
-          var href = link.getAttribute('href');
-          link.setAttribute('href', href + '?v=' + latestCommit);
-        }
-      })
-      .catch(error => console.log(error));
-  });
+  // Fetch the latest commit information from GitHub
+  fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+    .then(response => response.json())
+    .then(data => {
+      const latestCommitSHA = data[0].sha;
+
+      // Get all linked CSS files
+      const cssFiles = Array.from(document.querySelectorAll('link[rel="stylesheet"]'));
+
+      // Iterate over each CSS file and modify the version
+      cssFiles.forEach(file => {
+        const href = file.getAttribute('href');
+        const newHref = addVersionToURL(href, latestCommitSHA);
+        file.setAttribute('href', newHref);
+      });
+
+      // Load the desired element before displaying other content
+      const desiredElement = document.getElementById('desired-element');
+
+      // Add a class to the body element to hide other content
+      document.body.classList.add('hide-content');
+
+      // Wait for the desired element to load
+      desiredElement.addEventListener('load', () => {
+        // Remove the class from the body element to show other content
+        document.body.classList.remove('hide-content');
+      });
+    })
+    .catch(error => console.error(error));
+
+  // Helper function to add a version to a URL
+  function addVersionToURL(url, version) {
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}v=${version}`;
+  }
 </script>
 
 
