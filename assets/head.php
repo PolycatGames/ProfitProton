@@ -10,24 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 <!--Standard Styles-->
-<link rel="stylesheet" href="styles/general.css?v=2">
+<link rel="stylesheet" href="styles/general.css">
 <link rel="stylesheet" href="styles/header.css">
 <link rel="stylesheet" href="styles/footer.css">
 <link rel="stylesheet" href="styles/sidebar.css">
 <!--Standard Elements-->
 <div id="whitescreen"></div>
 <!--Standard Scripts-->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var parentElement = document.getElementById("whitescreen"); // Replace "parentElement" with the ID or class of the container element where you want to insert the new element.
-
-    var newElement = document.createElement("div"); // Create a new element (in this case, a <div> element).
-    newElement.innerHTML = "This is the new element."; // Set the content of the new element.
-
-    parentElement.insertBefore(newElement, parentElement.firstChild); // Insert the new element as the first child of the parent element.
-  });
-</script>
 
 <script>
   if (location.hostname !== "localhost !") {
@@ -145,6 +134,65 @@
   }
 </script>
 
+<script>
+  function loadUpdatedStylesheet() {
+    var elementToLoadFirst = document.getElementById('whitescreen');
+    elementToLoadFirst.style.display = 'block';
+
+    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+      .then(response => response.json())
+      .then(data => {
+        var latestCommit = data[0].sha; // Extract the latest commit hash
+        var links = document.querySelectorAll('link[rel="stylesheet"]');
+        var preloadPromises = [];
+
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          var href = link.getAttribute('href');
+
+          if (href) {
+            var updatedHref = href + '?v=' + latestCommit;
+            var preloadPromise = new Promise((resolve, reject) => {
+              var preloadLink = document.createElement('link');
+              preloadLink.setAttribute('rel', 'preload');
+              preloadLink.setAttribute('as', 'style');
+              preloadLink.setAttribute('href', updatedHref);
+              preloadLink.addEventListener('load', resolve);
+              preloadLink.addEventListener('error', reject);
+              document.head.appendChild(preloadLink);
+            });
+
+            preloadPromises.push(preloadPromise);
+          }
+        }
+
+        Promise.all(preloadPromises)
+          .then(() => {
+            for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              var href = link.getAttribute('href');
+
+              if (href) {
+                var updatedHref = href + '?v=' + latestCommit;
+                var newLink = document.createElement('link');
+                newLink.setAttribute('rel', 'stylesheet');
+                newLink.setAttribute('href', updatedHref);
+                document.head.appendChild(newLink);
+                link.parentNode.removeChild(link);
+              }
+            }
+
+            // All stylesheets have been loaded, remove the default stylesheet
+            var defaultStylesheet = document.querySelector('link[href="default.css"]');
+            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
+          })
+          .catch(error => console.log(error));
+      })
+      .catch(error => console.log(error));
+  }
+
+  loadUpdatedStylesheet();
+</script>
 
 
 
