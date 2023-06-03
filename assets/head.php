@@ -17,6 +17,18 @@
 <!--Standard Elements-->
 <div class="whitescreen"></div>
 <!--Standard Scripts-->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var parentElement = document.getElementById("whitescreen"); // Replace "parentElement" with the ID or class of the container element where you want to insert the new element.
+
+    var newElement = document.createElement("div"); // Create a new element (in this case, a <div> element).
+    newElement.innerHTML = "This is the new element."; // Set the content of the new element.
+
+    parentElement.insertBefore(newElement, parentElement.firstChild); // Insert the new element as the first child of the parent element.
+  });
+</script>
+
 <script>
   if (location.hostname !== "localhost !") {
     function fadeOutElementsByClass(className) {
