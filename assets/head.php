@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="styles/sidebar.css">
 <!--Standard Elements-->
 <style>
-  #whitescreen {
+  .whitescreen {
     position: fixed;
     z-index: 9999;
     background-color: rgb(255, 255, 255);
@@ -26,7 +26,7 @@
     top: 0;
   }
 </style>
-<div id="whitescreen"></div>
+<div class="whitescreen"></div>
 <!--Standard Scripts-->
 <script>
   if (location.hostname !== "localhost !") {
@@ -45,7 +45,7 @@
           for (var i = 0; i < elements.length; i++) {
             elements[i].style.visibility = 'hidden';
           }
-        } else if (1 + 1 === 3){
+        } else {
           // Reduce the opacity and update the style
           currentOpacity -= opacityStep;
           for (var i = 0; i < elements.length; i++) {
@@ -55,7 +55,7 @@
       }, interval);
     }
   } else {
-    var elements = document.getElementsByClassName("whitescreen");
+    var elements = document.getElementsByClassName(className);
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.visibility = 'hidden';
     }
@@ -190,7 +190,7 @@
               }
             }
             console.log("All Loaded");
-            //fadeOutElementsByClass("whitescreen");
+            fadeOutElementsByClass("whitescreen");
             // All stylesheets have been loaded, remove the default stylesheet
             var defaultStylesheet = document.querySelector('link[href="default.css"]');
             defaultStylesheet.parentNode.removeChild(defaultStylesheet);
