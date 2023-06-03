@@ -3,8 +3,6 @@
 
 <head>
 
-
-
     <!--Meta Data-->
     <title>ProfitProton | Blog</title>
     <meta name="description" content="ENTER DESCRIPTION" />
@@ -20,7 +18,6 @@
 
 <body>
     <?php include 'assets/headernav.html'; ?>
-
     <main class="main-content">
         <article class="content-holder">
             <section class="blog-popular">
