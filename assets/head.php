@@ -13,12 +13,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
 <!--Standard Styles-->
-<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/feed.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/pages.css">
+
 <link rel="stylesheet" href="styles/header.css">
 <link rel="stylesheet" href="styles/footer.css">
 <link rel="stylesheet" href="styles/sidebar.css">
-
 <!--Standard Scripts-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  if (location.hostname === "localhost")
+    $(document).ready(function() {
+      // Function to execute the AJAX request
+      function checkFileContent() {
+        $.ajax({
+          url: 'readFile.php',
+          type: 'GET',
+          success: function(response) {
+            var fileContent = response.trim();
+
+
+            if (fileContent === 'ReloadBrowser') {
+              fileContent = '';
+              console.log('done');
+              location.reload();
+            }
+          },
+          error: function(xhr, status, error) {
+            console.error(error);
+          }
+        });
+      }
+
+      // Run the initial check
+      checkFileContent();
+
+      // Set interval to check for updates every 5 seconds (adjust as needed)
+      setInterval(checkFileContent, 100);
+    });
+</script>
+
+
 <script>
   function fadeOutElementsByClass(className) {
     var elements = document.getElementsByClassName(className);
@@ -43,6 +79,16 @@
         }
       }
     }, interval);
+  }
+
+  if (location.hostname === "localhost") {
+    window.addEventListener("load", function() {
+      var elements = document.getElementsByClassName("whitescreen");
+
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.visibility = "hidden";
+      }
+    });
   }
 </script>
 
@@ -73,49 +119,8 @@
 </script>
 
 <script>
-  // Function to reload the page
-  function reloadPage() {
-    location.reload();
-  }
-
-  // Function to check for changes in HTML/PHP or CSS
-  function checkForChanges() {
-    fetch(window.location.href, {
-        cache: "no-cache"
-      })
-      .then(response => response.text())
-      .then(data => {
-        if (typeof checkForChanges.lastHTML === "undefined") {
-          checkForChanges.lastHTML = data;
-        } else if (checkForChanges.lastHTML !== data) {
-          reloadPage();
-        }
-      })
-      .catch(error => console.error(error));
-
-    var link = document.querySelector('link[rel="stylesheet"]');
-    var href = link.href;
-    var timestamp = new Date().getTime();
-
-    if (!href.includes('?')) {
-      href += '?';
-    } else {
-      href += '&';
-    }
-
-    href += 'timestamp=' + timestamp;
-    link.href = href;
-  }
-
-  // Check for changes every second if accessing from localhost
-  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-    setInterval(checkForChanges, 500);
-  }
-</script>
-
-<script>
   function loadUpdatedStylesheet() {
-    if (location.hostname !== "localhost !")
+    if (location.hostname !== "localhost")
       fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
       .then(response => response.json())
       .then(data => {
