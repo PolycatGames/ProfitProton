@@ -61,24 +61,15 @@
             </div>
         </section>
         <article class="content-holder">
-            <section class="articles-popular">
+            <section class="articles-3x">
                 <div class="articles-title">
                     Popular
                 </div>
-                <div class="articles-popular-grid">
-                    <div class="articles-popular-article">
-                        <img class="articles-popular-article-content-image" src="images/placeholder/profitproton_placeholder.png">
-                        <div class="articles-popular-article-content">
-                            <div class="articles-popular-article-content-info">
-                                <div class="articles-popular-article-content-info-date">5/3/2023</div>
-                                <div class="articles-popular-article-content-info-new">NEW</div>
-                            </div>
-                            <div class="articles-popular-article-content-text">
-                                <div class="articles-popular-article-content-text-title">Best ways to make money using
-                                    ChatGPT</div>
-                                <div class="articles-popular-article-content-text-description">The best ways to make
-                                    money with ChatGPT is to find the right...</div>
-                            </div>
+                <div class="articles-layout-3x-grid">
+                    <div class="article-3x">
+                        <img src="images/placeholder/profitproton_placeholder.png">
+                        <div class="article-3x-content">
+                            <span class="article-3x-tag">Category</span>
                         </div>
                     </div>
                     <div class="articles-popular-article">
