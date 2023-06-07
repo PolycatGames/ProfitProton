@@ -19,7 +19,7 @@
 <body>
     <?php include 'assets/headernav.html'; ?>
     <main class="main-content">
-        <article class="content-holder">
+        <article>
             <section class="banner">
                 <div class="banner-area">
                     <div class="banner-area-left">
@@ -60,58 +60,133 @@
                 </div>
             </div>
         </section>
-        <article class="content-holder">
+        <article>
+            <div class="articles-title">
+                Popular
+            </div>
             <section class="articles-3x">
-                <div class="articles-title">
-                    Popular
-                </div>
                 <div class="articles-layout-3x-grid">
                     <div class="article-3x">
                         <img src="images/placeholder/profitproton_placeholder.png">
-                        <div class="article-3x-content">
-                            <span class="article-3x-tag">Category</span>
-                        </div>
+                        <span class="article-3x-tag article-3x-content">Category</span>
+                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <span class="article-3x-date article-3x-content">6/5/2023</span>
                     </div>
-                    <div class="articles-popular-article">
+                    <div class="article-3x">
+                        <img src="images/placeholder/profitproton_placeholder.png">
+                        <span class="article-3x-tag article-3x-content">Category</span>
+                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <span class="article-3x-date article-3x-content">6/5/2023</span>
                     </div>
-                    <div class="articles-popular-article"></div>
-                    <div class="articles-popular-article articles-popular-article-phone"></div>
-                    <div class="articles-popular-article articles-popular-article-phone"></div>
-                    <div class="articles-popular-article articles-popular-article-phone"></div>
-                </div>
-                <div class="articles-viewall">
-                    <div class="articles-viewall-holder">View All</div>
+                    <div class="article-3x">
+                        <img src="images/placeholder/profitproton_placeholder.png">
+                        <span class="article-3x-tag article-3x-content">Category</span>
+                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <span class="article-3x-date article-3x-content">6/5/2023</span>
+                    </div>
+                    <div class="article-3x">
+                        <img src="images/placeholder/profitproton_placeholder.png">
+                        <span class="article-3x-tag article-3x-content">Category</span>
+                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <span class="article-3x-date article-3x-content">6/5/2023</span>
+                    </div>
+                    <div class="article-3x">
+                        <img src="images/placeholder/profitproton_placeholder.png">
+                        <span class="article-3x-tag article-3x-content">Category</span>
+                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <span class="article-3x-date article-3x-content">6/5/2023</span>
+                    </div>
+                    <div class="article-3x">
+                        <img src="images/placeholder/profitproton_placeholder.png">
+                        <span class="article-3x-tag article-3x-content">Category</span>
+                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <span class="article-3x-date article-3x-content">6/5/2023</span>
+                    </div>
                 </div>
             </section>
-            <section class="articles-latest">
-                <div class="articles-title">
-                    Latest
-                </div>
-                <div class="articles-latest-grid">
-                    <div class="articles-latest-article">
-                        <img class="articles-latest-article-image" src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="articles-latest-article-info">
-                            <div class="articles-latest-article-info-title">Best ways to make money using ChatGPT</div>
-                            <div class="articles-latest-article-info-description">The best ways to make money with
-                                ChatGPT is to find the right...</div>
+            <div class="articles-title">
+                Latest
+            </div>
+            <section class="articles-2x">
+                <div class="articles-2x-grid">
+                    <div class="article-2x">
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <div class="article-2x-info">
+                            <div class="article-2x-title">
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="article-2x-description">
+                                By ProfitProton - 6/6/2023
+                            </div>
                         </div>
                     </div>
-                    <div class="articles-latest-article"></div>
-                    <div class="articles-latest-article"></div>
-                    <div class="articles-latest-article"></div>
-                    <div class="articles-latest-article"></div>
-                    <div class="articles-latest-article"></div>
-                    <div class="articles-latest-article"></div>
-                    <div class="articles-latest-article"></div>
-                </div>
-                <div class="articles-viewall">
-                    <div class="articles-viewall-holder">View All</div>
+                    <div class="article-2x">
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <div class="article-2x-info">
+                            <div class="article-2x-title">
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="article-2x-description">
+                                By ProfitProton - 6/6/2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-2x">
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <div class="article-2x-info">
+                            <div class="article-2x-title">
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="article-2x-description">
+                                By ProfitProton - 6/6/2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-2x">
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <div class="article-2x-info">
+                            <div class="article-2x-title">
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="article-2x-description">
+                                By ProfitProton - 6/6/2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-2x">
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <div class="article-2x-info">
+                            <div class="article-2x-title">
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="article-2x-description">
+                                By ProfitProton - 6/6/2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-2x">
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <div class="article-2x-info">
+                            <div class="article-2x-title">
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            </div>
+                            <div class="article-2x-description">
+                                By ProfitProton - 6/6/2023
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+            <div class="articles-title">
+                Top Freelancing Platforms
+            </div>
             <section class="home-suggested-platforms">
-                <div class="articles-title">
-                    Top Freelancing Platforms
-                </div>
                 <div style="display: flex; justify-content: center;">
                     <div class="home-suggested-platforms-grid">
                         <div class="home-suggested-platforms-grid-item">

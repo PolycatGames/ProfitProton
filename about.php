@@ -34,7 +34,7 @@
         <h1 class="about-title">Welcome to ProfitProton</h1>
       </div>
     </section>
-    <article id="about-content-holder" class="content-holder">
+    <article id="about-content-holder">
       <section class="about-text">
         <h3>Our Goal</h3>
         <p>At ProfitProton we are dedicated to providing you with valuable insights and practical strategies to help you unlock the potential of making money online.</p>

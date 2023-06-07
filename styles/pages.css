@@ -2,3 +2,57 @@
 .pnf-illustration {
     width: 777px;
 }
+
+
+/*ABOUT PAGE*/
+#about-content-holder>* {
+    max-width: 800px;
+}
+
+.about-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.about-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.about-text {
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.about-text p {
+    margin-bottom: 40px;
+}
+
+
+/*BLOG PAGE*/
+.blog-front {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 40px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+}

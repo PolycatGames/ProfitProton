@@ -19,54 +19,59 @@
 <body>
     <?php include 'assets/headernav.html'; ?>
     <main class="main-content">
-        <article class="content-holder">
-            <section class="blog-popular">
-                <div class="blog-popular-main">
-                    <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                    <span class="blog-popular-main-category">Category</span>
-                    <h1 class="blog-popular-main-title">Lorem ipsum dolor sit amet</h1>
-                </div>
-                <div class="blog-popular-list">
-                    <div class="blog-popular-list-top">
-                        <img class="blog-popular-list-icon" src="icons/other/popular.png" alt="popular-articles-icon">
+        <article>
+            <section class="blog-front">
+                <a href="/" class="stickypost-large">
+                    <div>
+                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
+                        <span class="stickypost-large-category">Category</span>
+                        <h1 class="stickypost-large-title">Lorem ipsum dolor sit amet</h1>
+                    </div>
+                </a>
+                <div class="articles-1x">
+                    <div class="articles-1x-top">
+                        <img src="icons/other/popular.png" alt="popular-articles-icon">
                         <h2>Most Popular</h2>
                     </div>
-                    <div class="blog-popular-list-bottom">
+                    <div class="articles-1x-bottom">
                         <a href="">
-                            <button class="blog-popular-list-bottom-button">
-                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            <button>
+                                <span class="articles-1x-bottom-category">CATEGORY</span>
+                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                             </button>
                         </a>
                         <a href="">
-                            <button class="blog-popular-list-bottom-button">
-                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            <button>
+                                <span class="articles-1x-bottom-category">CATEGORY</span>
+                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                             </button>
                         </a>
                         <a href="">
-                            <button class="blog-popular-list-bottom-button">
-                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            <button>
+                                <span class="articles-1x-bottom-category">CATEGORY</span>
+                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                             </button>
                         </a>
                         <a href="">
-                            <button class="blog-popular-list-bottom-button">
-                                <span class="blog-popular-list-bottom-category">CATEGORY</span>
-                                <h3 class="blog-popular-list-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                            <button>
+                                <span class="articles-1x-bottom-category">CATEGORY</span>
+                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                             </button>
                         </a>
                     </div>
                 </div>
             </section>
-            <section class="blog-categories">
-                <div class="blog-categories-grid">
-                    <button class="blog-categories-grid-item">Category</button>
-                    <button class="blog-categories-grid-item">Category</button>
-                    <button class="blog-categories-grid-item">Category</button>
-                    <button class="blog-categories-grid-item">Category</button>
-                    <button class="blog-categories-grid-item">Category</button>
-                    <button class="blog-categories-grid-item" id="blog-categories-grid-more">
+        </article>
+
+        <nav id="categories-holder">
+            <section class="categories">
+                <div class="categories-grid">
+                    <button class="categories-item c1i1">Dropshipping</button>
+                    <button class="categories-item c1i2">Category</button>
+                    <button class="categories-item c1i3">Category</button>
+                    <button class="categories-item c1i4">Category</button>
+                    <button class="categories-item c1i5">Category</button>
+                    <button class="categories-item" id="categories-item-more">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 348.78 214.66">
                             <defs>
                                 <style>
@@ -85,11 +90,12 @@
                     </button>
                 </div>
             </section>
-            <section>
-                <div class="articles-title">
-                    Latest posts
-                </div>
-            </section>
+        </nav>
+
+        <article>
+            <div class="articles-title">
+                Latest posts
+            </div>
         </article>
     </main>
 

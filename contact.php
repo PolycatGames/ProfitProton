@@ -16,7 +16,7 @@
 <?php include 'assets/headernav.html'; ?>
 
     <main class="main-content">
-        <article class="content-holder greytext">
+        <article class="greytext">
             <h1 class="page-title">Get in touch</h1>
             <section>
                 <div class="contact-page">
