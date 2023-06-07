@@ -10,7 +10,6 @@
   <meta name="robots" content="index, follow">
 
   <!--Styles-->
-  <link rel="stylesheet" href="styles/about.css">
 
   <?php include 'assets/head.php'; ?>
 </head>
