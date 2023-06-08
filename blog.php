@@ -67,9 +67,9 @@
                 <div class="categories-grid">
                     <button class="categories-item c1i1">E-commerce</button>
                     <button class="categories-item c1i2">Freelancing</button>
-                    <button class="categories-item c1i3">AI</button>
-                    <button class="categories-item c1i4">Category</button>
-                    <button class="categories-item c1i5">Category</button>
+                    <button class="categories-item c1i3">Markting</button>
+                    <button class="categories-item c1i4">AI</button>
+                    <button class="categories-item c1i5">Blogging</button>
                     <button class="categories-item" id="categories-item-more">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 348.78 214.66">
                             <defs>

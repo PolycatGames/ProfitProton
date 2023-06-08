@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Meta Data-->
     <title>Contact us</title>
@@ -12,14 +13,16 @@
 
     <?php include 'assets/head.php'; ?>
 </head>
+
 <body>
-<?php include 'assets/headernav.html'; ?>
+    <?php include 'assets/headernav.html'; ?>
 
     <main class="main-content">
         <article class="greytext">
-            <h1 class="page-title">Get in touch</h1>
-            <section>
+            <section class="contact-page-holder">
+                <img class="contact-page-illustration" src="images/illustrations/contact-page-illustration.png">
                 <div class="contact-page">
+                    <h1 class="page-title">Get in touch</h1>
                     <div class="contact-page-info">
                         <p class="contact-page-info-description">
                             Have a question, comment or suggestion? We'd love to hear from you! We're always here to help with any question you may have.
@@ -43,11 +46,8 @@
                             <button class="contact-page-form-submit" type="submit">Submit</button>
 
                             <input type="hidden" name="_next" value="https://profitproton.com/thankyou">
-                       </form>
+                        </form>
                     </div>
-                </div>
-                <div class="contact-page-illustration">
-
                 </div>
             </section>
         </article>
@@ -56,25 +56,26 @@
 
     <script>
         function copyToClipboard() {
-          /* Get the text you want to copy */
-          var text = "support@profitproton.com";
-        
-          /* Create a temporary input element */
-          var tempInput = document.createElement("input");
-          tempInput.value = text;
-        
-          /* Append the input element to the body */
-          document.body.appendChild(tempInput);
-        
-          /* Select the text inside the input element */
-          tempInput.select();
-        
-          /* Copy the text to the clipboard */
-          document.execCommand("copy");
-        
-          /* Remove the input element from the body */
-          document.body.removeChild(tempInput);
+            /* Get the text you want to copy */
+            var text = "support@profitproton.com";
+
+            /* Create a temporary input element */
+            var tempInput = document.createElement("input");
+            tempInput.value = text;
+
+            /* Append the input element to the body */
+            document.body.appendChild(tempInput);
+
+            /* Select the text inside the input element */
+            tempInput.select();
+
+            /* Copy the text to the clipboard */
+            document.execCommand("copy");
+
+            /* Remove the input element from the body */
+            document.body.removeChild(tempInput);
         }
     </script>
 </body>
+
 </html>
