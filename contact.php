@@ -9,7 +9,6 @@
     <meta name="author" content="ProfitProton">
     <meta name="robots" content="index, follow">
     <!--Styles-->
-    <link rel="stylesheet" href="styles/contact.css">
 
     <?php include 'assets/head.php'; ?>
 </head>
