@@ -23,7 +23,6 @@
 <link rel="stylesheet" href="styles/sidebar.css">
 <!--Standard Scripts-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script>
   if (location.hostname === "localhost")
     $(document).ready(function() {
