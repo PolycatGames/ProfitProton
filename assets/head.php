@@ -16,12 +16,14 @@
 <link rel="stylesheet" href="styles/feed.css">
 <link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="styles/pages.css">
+<link rel="stylesheet" href="styles/navigation.css">
 
 <link rel="stylesheet" href="styles/header.css">
 <link rel="stylesheet" href="styles/footer.css">
 <link rel="stylesheet" href="styles/sidebar.css">
 <!--Standard Scripts-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
   if (location.hostname === "localhost")
     $(document).ready(function() {
@@ -226,7 +228,7 @@
 <script>
   if (location.hostname !== "localhost")
 
-  window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
   function gtag() {
     dataLayer.push(arguments);
