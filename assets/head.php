@@ -1,11 +1,8 @@
 <!--Standard Meta Data-->
-<link rel="icon" type="image/x-icon" href="images/logo/profitproton-favicon.png" />
+<link rel="icon" type="image/x-icon" href="/images/logo/profitproton-favicon.png" />
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!--HTML-->
-<link rel="import" href="assets/headernav.html" />
 
 <!--Fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,10 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
 <!--Standard Styles-->
-<link rel="stylesheet" href="styles/feed.css">
-<link rel="stylesheet" href="styles/main.css">
-<link rel="stylesheet" href="styles/pages.css">
-<link rel="stylesheet" href="styles/navigation.css">
+<link rel="stylesheet" href="/styles/feed.css">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/pages.css">
+<link rel="stylesheet" href="/styles/navigation.css">
 
 <!--Standard Scripts-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -26,7 +23,7 @@
       // Function to execute the AJAX request
       function checkFileContent() {
         $.ajax({
-          url: 'readFile.php',
+          url: '/readFile.php',
           type: 'GET',
           success: function(response) {
             var fileContent = response.trim();
@@ -220,7 +217,7 @@
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
 <script>
   if (location.hostname !== "localhost")
 
@@ -232,7 +229,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CXQPHCFCPT');
-</script>
+</script>-->
 
 <!--Standard Elements-->
 <style>
