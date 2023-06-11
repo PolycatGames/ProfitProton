@@ -10,6 +10,69 @@
     <meta name="author" content="AUTHOR" />
     <!--<meta name="robots" content="index, follow">-->
 
+    <!--Scripts-->
+    <?php
+    // Function to extract specific data from the text file
+    function getDataFromTextFile($entryNumber)
+    {
+        // Read the contents of the text file
+        $data = file_get_contents('data.txt');
+
+        // Remove line breaks while preserving spaces
+        $data = str_replace(array("\r\n", "\r", "\n"), '', $data);
+
+        // Modify the pattern to match the exact entry number
+        $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*}/';
+
+        // Use preg_match instead of preg_match_all to find a single match
+        preg_match($pattern, $data, $matches);
+
+        if (!empty($matches)) {
+            $title = $matches[1];
+            $description = $matches[2];
+            $date = $matches[3];
+            $category = $matches[4];
+            $link = $matches[5];
+            $thumbnail = $matches[6];
+            return array('title' => $title, 'description' => $description, 'date' => $date, 'category' => $category, 'link' => $link, 'thumbnail' => $thumbnail);
+        } else {
+            return array('title' => 'No title found.', 'description' => 'No description found.', 'date' => 'No date found.', 'category' => 'No category found.', 'link' => 'No link found.', 'thumbnail' => 'No thumbnail found.');
+        }
+    }
+
+
+    // Read the data file
+    $data = file_get_contents('data.txt');
+
+    // Parse the data into an array of entries
+    $entries = preg_split('/(?<=})\s*(?=\d)/', $data, -1, PREG_SPLIT_NO_EMPTY);
+
+    // Initialize the highest number variable
+    $highestNumber = 0;
+
+    // Loop through the entries to find the highest number
+    foreach ($entries as $entry) {
+        // Extract the number from each entry
+        preg_match('/(\d+)\s*{/', $entry, $matches);
+        $number = intval($matches[1]);
+
+        // Check if the number is higher than the current highest number
+        if ($number > $highestNumber) {
+            $highestNumber = $number;
+        }
+    }
+
+    // Check if the query parameter is present
+    if (isset($_GET['article'])) {
+        // Retrieve the value of article from the URL
+        $article = $_GET['article'];
+    } else {
+        $article = $highestNumber;
+    }
+
+    ?>
+
+
     <!--Styles-->
 
     <?php include 'assets/head.php'; ?>
@@ -67,7 +130,7 @@
                 <div class="categories-grid">
                     <button class="categories-item c1i1">E-commerce</button>
                     <button class="categories-item c1i2">Freelancing</button>
-                    <button class="categories-item c1i3">Markting</button>
+                    <button class="categories-item c1i3">Marketing</button>
                     <button class="categories-item c1i4">AI</button>
                     <button class="categories-item c1i5">Blogging</button>
                     <button class="categories-item" id="categories-item-more">
@@ -97,49 +160,220 @@
             </div>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
+                    <a <?php $entryNumber = $article;
+                        $data = getDataFromTextFile($entryNumber); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php
+                                        echo $data['thumbnail']
+                                        ?>>
+                            <span class="article-3x-tag article-3x-content">
+                                <?php
+                                echo $data['category']
+                                ?>
+                            </span>
+                            <h3 class="article-3x-title article-3x-content">
+                                <?php
+                                echo $data['title']
+                                ?>
+                            </h3>
+                            <p class="article-3x-description article-3x-content">
+                                <?php
+                                echo $data['description']
+                                ?>
+                            </p>
+                            <span class="article-3x-date article-3x-content">
+                                <?php
+                                echo $data['date']
+                                ?>
+                            </span>
+                        </div>
+
+                    </a>
+                    <a <?php $entryNumber = $article;
+                        $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php
+                                        echo $data['thumbnail']
+                                        ?>>
+                            <span class="article-3x-tag article-3x-content">
+                                <?php
+                                echo $data['category']
+                                ?>
+                            </span>
+                            <h3 class="article-3x-title article-3x-content">
+                                <?php
+                                echo $data['title']
+                                ?>
+                            </h3>
+                            <p class="article-3x-description article-3x-content">
+                                <?php
+                                echo $data['description']
+                                ?>
+                            </p>
+                            <span class="article-3x-date article-3x-content">
+                                <?php
+                                echo $data['date']
+                                ?>
+                            </span>
+                        </div>
+
+                    </a>
+                    <a <?php $entryNumber = $article;
+                        $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php
+                                        echo $data['thumbnail']
+                                        ?>>
+                            <span class="article-3x-tag article-3x-content">
+                                <?php
+                                echo $data['category']
+                                ?>
+                            </span>
+                            <h3 class="article-3x-title article-3x-content">
+                                <?php
+                                echo $data['title']
+                                ?>
+                            </h3>
+                            <p class="article-3x-description article-3x-content">
+                                <?php
+                                echo $data['description']
+                                ?>
+                            </p>
+                            <span class="article-3x-date article-3x-content">
+                                <?php
+                                echo $data['date']
+                                ?>
+                            </span>
+                        </div>
+
+                    </a>
+                    <a <?php $entryNumber = $article;
+                        $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php
+                                        echo $data['thumbnail']
+                                        ?>>
+                            <span class="article-3x-tag article-3x-content">
+                                <?php
+                                echo $data['category']
+                                ?>
+                            </span>
+                            <h3 class="article-3x-title article-3x-content">
+                                <?php
+                                echo $data['title']
+                                ?>
+                            </h3>
+                            <p class="article-3x-description article-3x-content">
+                                <?php
+                                echo $data['description']
+                                ?>
+                            </p>
+                            <span class="article-3x-date article-3x-content">
+                                <?php
+                                echo $data['date']
+                                ?>
+                            </span>
+                        </div>
+
+                    </a>
+                    <a <?php $entryNumber = $article;
+                        $data = getDataFromTextFile($entryNumber - 4); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php
+                                        echo $data['thumbnail']
+                                        ?>>
+                            <span class="article-3x-tag article-3x-content">
+                                <?php
+                                echo $data['category']
+                                ?>
+                            </span>
+                            <h3 class="article-3x-title article-3x-content">
+                                <?php
+                                echo $data['title']
+                                ?>
+                            </h3>
+                            <p class="article-3x-description article-3x-content">
+                                <?php
+                                echo $data['description']
+                                ?>
+                            </p>
+                            <span class="article-3x-date article-3x-content">
+                                <?php
+                                echo $data['date']
+                                ?>
+                            </span>
+                        </div>
+
+                    </a>
+                    <a <?php $entryNumber = $article;
+                        $data = getDataFromTextFile($entryNumber - 5); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php
+                                        echo $data['thumbnail']
+                                        ?>>
+                            <span class="article-3x-tag article-3x-content">
+                                <?php
+                                echo $data['category']
+                                ?>
+                            </span>
+                            <h3 class="article-3x-title article-3x-content">
+                                <?php
+                                echo $data['title']
+                                ?>
+                            </h3>
+                            <p class="article-3x-description article-3x-content">
+                                <?php
+                                echo $data['description']
+                                ?>
+                            </p>
+                            <span class="article-3x-date article-3x-content">
+                                <?php
+                                echo $data['date']
+                                ?>
+                            </span>
+                        </div>
+
+                    </a>
                 </div>
+            </section>
+            <section>
+
+                <button onclick="adjustarticle(6);">Previous</button>
+                <button onclick="adjustarticle(-6);">Next</button>
+
+                <script>
+                    var article = <?php echo $article; ?>;
+
+                    function adjustarticle(value) {
+                        var updatedValue = article + value;
+
+                        // Check if the updated value is valid
+                        if (updatedValue >= 1) {
+                            article = updatedValue;
+                            console.log("Updated article: " + article);
+
+                            // Update the browser URL without reloading the article
+                            var url = new URL(window.location.href);
+                            url.searchParams.set('article', article);
+                            window.history.replaceState(null, null, url);
+
+                            // Store the scroll position in local storage
+                            localStorage.setItem('scrollPosition', window.articleYOffset);
+
+                            // Reload the article with the updated URL
+                            window.location.href = url;
+                        }
+                    }
+
+                    // Restore the scroll position on article load
+                    window.onload = function() {
+                        var scrollPosition = localStorage.getItem('scrollPosition');
+                        if (scrollPosition !== null) {
+                            window.scrollTo(0, scrollPosition);
+                            localStorage.removeItem('scrollPosition');
+                        }
+                    };
+                </script>
             </section>
         </article>
     </main>

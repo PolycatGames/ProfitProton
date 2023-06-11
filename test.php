@@ -11,12 +11,6 @@
 
     <!--Styles-->
 
-
-
-
-
-
-
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/head.php'; ?>
 </head>
 
@@ -65,7 +59,6 @@
         $page = $highestNumber;
         echo $page;
     }
-
     ?>
 
     <script>

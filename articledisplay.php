@@ -11,6 +11,7 @@
 
     <!--Styles-->
 
+    <!--Scripts-->
     <?php
     // Function to extract specific data from the text file
     function getDataFromTextFile($entryNumber)
@@ -21,20 +22,27 @@
         // Remove line breaks while preserving spaces
         $data = str_replace(array("\r\n", "\r", "\n"), '', $data);
 
-        // Extract the title, description, and date based on the provided entry number using regular expressions
-        $pattern = '/' . $entryNumber . '\s*\{\s*title:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*date:\s*([\d\/]+)/';
+        // Modify the pattern to match the exact entry number
+        $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*}/';
+
+        // Use preg_match instead of preg_match_all to find a single match
         preg_match($pattern, $data, $matches);
 
-        if (isset($matches[1]) && isset($matches[2]) && isset($matches[3])) {
+        if (!empty($matches)) {
             $title = $matches[1];
             $description = $matches[2];
             $date = $matches[3];
-            return array('title' => $title, 'description' => $description, 'date' => $date);
+            $category = $matches[4];
+            $link = $matches[5];
+            $thumbnail = $matches[6];
+            return array('title' => $title, 'description' => $description, 'date' => $date, 'category' => $category, 'link' => $link, 'thumbnail' => $thumbnail);
         } else {
-            return array('title' => 'No title found.', 'description' => 'No description found.', 'date' => 'No date found.');
+            return array('title' => 'No title found.', 'description' => 'No description found.', 'date' => 'No date found.', 'category' => 'No category found.', 'link' => 'No link found.', 'thumbnail' => 'No thumbnail found.');
         }
     }
+
     ?>
+
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/head.php'; ?>
 
@@ -46,6 +54,7 @@
         <article>
             <section>
                 <?php
+
                 // Read the data file
                 $data = file_get_contents('data.txt');
 
@@ -67,17 +76,12 @@
                     }
                 }
 
-                // Set the value of page as the highest number
-                $page = $highestNumber;
-                ?>
-
-                <?php
                 // Check if the query parameter is present
                 if (isset($_GET['page'])) {
                     // Retrieve the value of page from the URL
                     $page = $_GET['page'];
                 } else {
-                    $page = 1;
+                    $page = $highestNumber;
                 }
                 ?>
 
@@ -88,7 +92,10 @@
                     $data = getDataFromTextFile($entryNumber);
                     echo "Title: " . $data['title'] . "<br>";
                     echo "Description: " . $data['description'] . "<br>";
-                    echo "Date: " . $data['date'];
+                    echo "Date: " . $data['date'] . "<br>";
+                    echo "Category: " . $data['category'] . "<br>";
+                    echo "Link: " . $data['link'] . "<br>";
+                    echo "Thumbnail: " . $data['thumbnail'];
                     ?>
                 </div>
 
@@ -99,19 +106,78 @@
                     $data = getDataFromTextFile($entryNumber);
                     echo "Title: " . $data['title'] . "<br>";
                     echo "Description: " . $data['description'] . "<br>";
-                    echo "Date: " . $data['date'];
+                    echo "Date: " . $data['date'] . "<br>";
+                    echo "Category: " . $data['category'] . "<br>";
+                    echo "Link: " . $data['link'] . "<br>";
+                    echo "Thumbnail: " . $data['thumbnail'];
+                    ?>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <?php
+                    // Usage example
+                    $entryNumber = $page - 2;
+                    $data = getDataFromTextFile($entryNumber);
+                    echo "Title: " . $data['title'] . "<br>";
+                    echo "Description: " . $data['description'] . "<br>";
+                    echo "Date: " . $data['date'] . "<br>";
+                    echo "Category: " . $data['category'] . "<br>";
+                    echo "Link: " . $data['link'] . "<br>";
+                    echo "Thumbnail: " . $data['thumbnail'];
+                    ?>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <?php
+                    // Usage example
+                    $entryNumber = $page - 3;
+                    $data = getDataFromTextFile($entryNumber);
+                    echo "Title: " . $data['title'] . "<br>";
+                    echo "Description: " . $data['description'] . "<br>";
+                    echo "Date: " . $data['date'] . "<br>";
+                    echo "Category: " . $data['category'] . "<br>";
+                    echo "Link: " . $data['link'] . "<br>";
+                    echo "Thumbnail: " . $data['thumbnail'];
+                    ?>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <?php
+                    // Usage example
+                    $entryNumber = $page - 4;
+                    $data = getDataFromTextFile($entryNumber);
+                    echo "Title: " . $data['title'] . "<br>";
+                    echo "Description: " . $data['description'] . "<br>";
+                    echo "Date: " . $data['date'] . "<br>";
+                    echo "Category: " . $data['category'] . "<br>";
+                    echo "Link: " . $data['link'] . "<br>";
+                    echo "Thumbnail: " . $data['thumbnail'];
+                    ?>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <?php
+                    // Usage example
+                    $entryNumber = $page - 5;
+                    $data = getDataFromTextFile($entryNumber);
+                    echo "Title: " . $data['title'] . "<br>";
+                    echo "Description: " . $data['description'] . "<br>";
+                    echo "Date: " . $data['date'] . "<br>";
+                    echo "Category: " . $data['category'] . "<br>";
+                    echo "Link: " . $data['link'] . "<br>";
+                    echo "Thumbnail: " . $data['thumbnail'];
                     ?>
                 </div>
             </section>
             <section>
-                <button onclick="adjustpage(-1);">Previous</button>
-                <button onclick="adjustpage(1);">Next</button>
+                <button onclick="adjustpage(6);">Previous</button>
+                <button onclick="adjustpage(-6);">Next</button>
             </section>
         </article>
     </main>
 
-    <script>
-        var page = <?php echo isset($_GET['page']) ? $_GET['page'] : 1; ?>;
+        <script>
+        var page = <?php echo $page; ?>;
 
         function adjustpage(value) {
             var updatedValue = page + value;
