@@ -161,7 +161,7 @@
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber); ?> href=<?php echo $data['link'] ?>>
+                        $data = getDataFromTextFile($entryNumber); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -190,7 +190,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?>>
+                        $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -219,7 +219,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?>>
+                        $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -248,7 +248,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?>>
+                        $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -277,7 +277,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 4); ?> href=<?php echo $data['link'] ?>>
+                        $data = getDataFromTextFile($entryNumber - 4); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -306,7 +306,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 5); ?> href=<?php echo $data['link'] ?>>
+                        $data = getDataFromTextFile($entryNumber - 5); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -318,6 +318,7 @@
                             </span>
                             <h3 class="article-3x-title article-3x-content">
                                 <?php
+
                                 echo $data['title']
                                 ?>
                             </h3>
@@ -336,10 +337,11 @@
                     </a>
                 </div>
             </section>
-            <section>
-
-                <button onclick="adjustarticle(6);">Previous</button>
-                <button onclick="adjustarticle(-6);">Next</button>
+            <section class="pagination">
+                <?php $articleamount = 6; ?>
+                <button class="pagination-button" onclick="adjustarticle(<?php echo $articleamount ?>);" <?php if ($article == $highestNumber) { ?> disabled style="cursor:default;" <?php } ?>>Previous</button>
+                <div class="pagination-page"><?php echo (($highestNumber - $article) / $articleamount + 1) ?> / <?php echo ceil($highestNumber / $articleamount) ?></div>
+                <button class="pagination-button" onclick="adjustarticle(<?php echo -$articleamount ?>);" <?php if ($article - $articleamount <= 0) { ?> disabled style="cursor:default;" <?php } ?>>Next</button>
 
                 <script>
                     var article = <?php echo $article; ?>;
