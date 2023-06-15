@@ -122,6 +122,8 @@
 .contact-page-social-text {
     font-size: 18px;
     margin-left: 12px;
+    font-weight: 500;
+    opacity: .6;
 }
 
 .form-item {

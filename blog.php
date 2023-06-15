@@ -85,9 +85,10 @@
             <section class="blog-front">
                 <a href="/" class="stickypost-large">
                     <div>
+                        <?php $data = getDataFromTextFile(5); ?>
                         <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <span class="stickypost-large-category">Category</span>
-                        <h1 class="stickypost-large-title">Lorem ipsum dolor sit amet</h1>
+                        <span class="stickypost-large-category"><?php echo $data['category'] ?></span>
+                        <h1 class="stickypost-large-title"><?php echo $data['title'] ?></h1>
                     </div>
                 </a>
                 <div class="articles-1x">
@@ -98,26 +99,30 @@
                     <div class="articles-1x-bottom">
                         <a href="">
                             <button>
-                                <span class="articles-1x-bottom-category">CATEGORY</span>
-                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <?php $data = getDataFromTextFile(5); ?>
+                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
                         <a href="">
                             <button>
-                                <span class="articles-1x-bottom-category">CATEGORY</span>
-                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <?php $data = getDataFromTextFile(3); ?>
+                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
                         <a href="">
                             <button>
-                                <span class="articles-1x-bottom-category">CATEGORY</span>
-                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <?php $data = getDataFromTextFile(6); ?>
+                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
                         <a href="">
                             <button>
-                                <span class="articles-1x-bottom-category">CATEGORY</span>
-                                <h3 class="articles-1x-bottom-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                <?php $data = getDataFromTextFile(7); ?>
+                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
                     </div>
@@ -190,7 +195,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
+                        $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -219,7 +224,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
+                        $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -248,7 +253,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
+                        $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -277,7 +282,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 4); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
+                        $data = getDataFromTextFile($entryNumber - 4); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -306,7 +311,7 @@
 
                     </a>
                     <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 5); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
+                        $data = getDataFromTextFile($entryNumber - 5); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
                         <div class="article-3x">
                             <img src=<?php
                                         echo $data['thumbnail']
@@ -375,6 +380,28 @@
                             localStorage.removeItem('scrollPosition');
                         }
                     };
+                </script>
+            </section>
+            <section class="subscribe">
+                <h1 class="subscribe-title">Enjoy our content?</h1>
+                <p class="subscribe-description">Sign up for our newsletter and stay up to date with the latest side-hustles!</p>
+                <form class="subscribe-sect" method="post" name="submit-to-google-sheet">
+                    <input class="subscribe-input" autocomplete="email" type="text" name="Email" placeholder="Enter your email" required>
+                    <button class="subscribe-button" type="submit">Subscribe</button>
+                </form>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxyoNzcKAiXGGTB-e9zgGu_v7atgUJXWpQEL7GImsFfWoDiFXOLeW07DmBCmt29ZS62w/exec'
+                    const form = document.forms['submit-to-google-sheet']
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, {
+                                method: 'POST',
+                                body: new FormData(form)
+                            })
+                            .then(response => console.log('Success!', response))
+                            .catch(error => console.error('Error!', error.message))
+                    })
                 </script>
             </section>
         </article>
