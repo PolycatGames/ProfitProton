@@ -139,21 +139,21 @@
                     <button class="categories-item c1i4">AI</button>
                     <button class="categories-item c1i5">Blogging</button>
                     <button class="categories-item" id="categories-item-more">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 348.78 214.66">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer_1" viewBox="0 0 290.5 291.99">
                             <defs>
                                 <style>
                                     .cls-1 {
                                         fill: none;
-                                        stroke: var(--main-color);
+                                        stroke: #000;
                                         stroke-linecap: round;
                                         stroke-linejoin: round;
-                                        stroke-width: 50px;
+                                        stroke-width: 35px;
                                     }
                                 </style>
                             </defs>
-                            <polyline class="cls-1" points="40 40.53 174.13 174.66 308.78 40" />
-                        </svg>
-                        <span>More</span>
+                            <polyline class="cls-1" points="252.5 156 252.5 274.49 17.5 274.49 17.5 35.39 137.66 35.39" />
+                            <polyline class="cls-1" points="206.75 17.5 273 17.5 273 85 273 17.5 140.5 150" />
+                        </svg>More</span>
                     </button>
                 </div>
             </section>

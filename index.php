@@ -3,7 +3,7 @@
 
 <head>
     <!--Meta Data-->
-    <title>ProfitProton - Your Guide to Making Money Online</title>
+    <title>ProfitProton | Your Guide to Making Money Online</title>
     <meta name="description" content="ProfitProton is a website dedicated to providing informative articles and guides on various ways to make money online. Explore our content and start your journey to financial success.">
     <meta name="keywords" content="make money online, online business, passive income, financial success, entrepreneurship, freelancing, e-commerce">
     <meta name="author" content="ProfitProton">

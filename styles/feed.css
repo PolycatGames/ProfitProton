@@ -292,6 +292,8 @@
 
 #categories-item-more,
 #categories-item-more polyline {
+    stroke: var(--main-color);
+    color: var(--main-color);
     transition: all .15s;
 }
 

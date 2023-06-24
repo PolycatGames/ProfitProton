@@ -12,11 +12,11 @@
   <!--Styles-->
   
 
-  <?php include 'assets/head.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/head.php'; ?>
 </head>
 
 <body>
-  <?php include 'assets/headernav.html'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/headernav.html'; ?>
 
   <main class="main-content">
     <article class="content-holder">
@@ -24,7 +24,7 @@
     </article>
   </main>
 
-  <?php include 'assets/footer.html'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/footer.html'; ?>
 </body>
 
 </html>
