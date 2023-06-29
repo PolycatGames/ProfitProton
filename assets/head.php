@@ -22,12 +22,12 @@
     $(document).ready(function() {
       // Function to execute the AJAX request
       function checkFileContent() {
+
         $.ajax({
           url: '/readFile.php',
           type: 'GET',
           success: function(response) {
             var fileContent = response.trim();
-
 
             if (fileContent === 'ReloadBrowser') {
               fileContent = '';
@@ -45,7 +45,7 @@
       checkFileContent();
 
       // Set interval to check for updates every 5 seconds (adjust as needed)
-      setInterval(checkFileContent, 100);
+      setInterval(checkFileContent, 500);
     });
 </script>
 
