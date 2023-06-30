@@ -66,48 +66,60 @@
             </div>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
-                    <div class="article-3x">
-                        <img src="images/placeholder/profitproton_placeholder.png">
-                        <span class="article-3x-tag article-3x-content">Category</span>
-                        <h3 class="article-3x-title article-3x-content">do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                        <p class="article-3x-description article-3x-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
-                        <span class="article-3x-date article-3x-content">6/5/2023</span>
-                    </div>
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                        </div>
+                    </a>
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                        </div>
+                    </a>
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                        </div>
+                    </a>
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                        </div>
+                    </a>
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                        </div>
+                    </a>
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular6); ?> href=<?php echo $data['link'] ?>>
+                        <div class="article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                        </div>
+                    </a>
                 </div>
             </section>
             <div class="articles-title">

@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
+    <!--Get Data-->
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
+    <?php define('num', 1); ?>
+    <?php $data = getDataFromTextFile(num); ?>
+
     <!--Meta Data-->
-    <title>ENTER TITLE</title>
+    <title><?php echo $data['title'] ?></title>
     <meta name="description" content="ENTER DESCRIPTION" />
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
+
     <!--<meta name="robots" content="index, follow">-->
 
     <!--Styles-->
-
-
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/head.php'; ?>
 </head>
 
@@ -24,29 +28,93 @@
                 <div class="pcl">
                     <div class="pcl-front">
                         <div>
-                            <div class="pcl-category">Category</div>
+                            <div class="pcl-category"><?php echo $data['category'] ?></div>
                         </div>
-                        <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing</h1>
+                        <h1><?php echo $data['title'] ?></h1>
                         <div class="pcl-front-flex">
                             <span class="pcl-date">6/28/2023 - by profitproton</span>
                             <a href="https://www.instagram.com/profitproton" target="_blank"><button class="pcl-button"><img src="/icons/socials/instagram.png" alt="Follow ProfitProton on Instagram"><span>Follow</span></button></a>
                         </div>
                         <img src="/images/placeholder/profitproton_placeholder.png" alt="" class="article-thumbnail">
                     </div>
-                    <p>
-                        Dropshipping has transformed the ecommerce industry by eliminating the need for inventory management.
-                    </p>
-                    <p>
-                        But now, there’s a game-changing tool that takes it to the next level: ChatGPT.
-                    </p>
-                    <p>
-                        This cutting-edge AI technology is here to revolutionize your ecommerce operations. From customer queries to SEO optimization, ChatGPT can help you achieve more in less time.
-                    </p>
-                    <p>
+                    <h2>The Rise of Dropshipping: A Revolutionary Business Model</h2>
 
-                    </p>
+                    <p>Dropshipping has revolutionized the world of e-commerce, offering entrepreneurs a low-risk and cost-effective way to start their own online businesses. With minimal upfront investment and the ability to sell products without stocking inventory, dropshipping has become an increasingly popular business model for aspiring entrepreneurs around the globe.</p>
 
-                    
+                    <h3>What is Dropshipping?</h3>
+
+                    <p>Dropshipping is a retail fulfillment method where online store owners don't need to keep the products they sell in stock. Instead, when a store owner sells a product, they simply purchase the item from a third-party supplier who then ships it directly to the customer's door. This means that the store owner never has to handle the product physically.</p>
+
+                    <p>Dropshipping is a retail fulfillment method where online store owners don't need to keep the products they sell in stock. Instead, when a store owner sells a product, they simply purchase the item from a third-party supplier who then ships it directly to the customer's door. This means that the store owner never has to handle the product physically.</p>
+
+                    <h3>The Advantages of Dropshipping</h3>
+
+                    <p>Dropshipping offers several advantages that make it an attractive option for aspiring entrepreneurs:</p>
+
+                    <ul>
+                        <li><strong>Low Startup Costs:</strong> Starting a traditional retail business can be costly, with expenses like inventory management, warehousing, and shipping. With dropshipping, you can launch an online store with minimal upfront investment.</li>
+
+                        <li><strong>No Inventory Hassles:</strong> One of the biggest challenges for traditional retailers is managing inventory. With dropshipping, you don't have to worry about stocking products or dealing with unsold inventory.</li>
+
+                        <li><strong>Wide Product Selection:</strong> Dropshipping allows you to offer a wide range of products to your customers without having to invest in inventory. You can source products from multiple suppliers and offer an extensive catalog to attract a diverse customer base.</li>
+
+                        <li><strong>Flexible Location:</strong> As long as you have an internet connection, you can manage your dropshipping business from anywhere in the world. This flexibility allows entrepreneurs to run their businesses while traveling or working remotely.</li>
+
+                        <li><strong>Scalability:</strong> Dropshipping enables entrepreneurs to scale their businesses rapidly. Since you don't have to worry about inventory management, fulfillment, or shipping, you can focus on growing your customer base and increasing sales.</li>
+                    </ul>
+
+                    <h3>Challenges and Tips for Success</h3>
+
+                    <p>While dropshipping offers numerous advantages, it also presents some challenges that entrepreneurs need to overcome:</p>
+
+                    <ul>
+                        <li><strong>Intense Competition:</strong> Dropshipping has gained popularity in recent years, resulting in increased competition. To stand out, it's essential to choose a niche market and offer unique products or exceptional customer service.</li>
+
+                        <li><strong>Supplier Reliability:</strong> The success of your dropshipping business depends on the reliability and efficiency of your suppliers. It's crucial to partner with reputable suppliers who can consistently deliver quality products on time.</li>
+
+                        <li><strong>Customer Service:</strong> As the face of your business, providing excellent customer service is crucial. Since you don't have direct control over the shipping process, it's essential to communicate transparently with your customers and address any concerns promptly.</li>
+
+                        <li><strong>Marketing and Branding:</strong> Building brand awareness and attracting customers to your dropshipping store requires effective marketing strategies. Utilize social media, content marketing, search engine optimization (SEO), and other digital marketing techniques to reach your target audience.</li>
+
+                        <li><strong>Continuous Learning:</strong> The e-commerce landscape is constantly evolving, and staying updated with the latest trends and strategies is vital for long-term success. Invest time in learning about marketing, technology, and industry developments to stay ahead of the competition.</li>
+                    </ul>
+
+                    <h3>In Conclusion</h3>
+
+
+
+                    <p>Dropshipping offers aspiring entrepreneurs an opportunity to start their own online businesses with minimal risk and investment. With its low startup costs, flexibility, and scalability, it has become an attractive business model for many. However, it's important to navigate the challenges and invest in strategies to differentiate your business and provide excellent customer service. With careful planning and execution, dropshipping can be a pathway to success in the e-commerce industry.</p>
+
+
+                    <div class="articles-3x-small">
+                        <span class="articles-3x-small-title">Read More</span>
+                        <div class="articles-3x-small-grid">
+                            <a <?php $entryNumber = $article;
+                                $data = getDataFromTextFile($entryNumber); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                                <div class="article-3x-small">
+                                    <img src=<?php echo $data['thumbnail'] ?>>
+                                    <span class="article-3x-small-title"><?php echo $data['title'] ?></span>
+                                    <span class="article-3x-small-date"><?php echo $data['date'] ?></span>
+                                </div>
+                            </a>
+                            <a <?php $entryNumber = $article;
+                                $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                                <div class="article-3x-small">
+                                    <img src=<?php echo $data['thumbnail'] ?>>
+                                    <span class="article-3x-small-title"><?php echo $data['title'] ?></span>
+                                    <span class="article-3x-small-date"><?php echo $data['date'] ?></span>
+                                </div>
+                            </a>
+                            <a <?php $entryNumber = $article;
+                                $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                                <div class="article-3x-small">
+                                    <img src=<?php echo $data['thumbnail'] ?>>
+                                    <span class="article-3x-small-title"><?php echo $data['title'] ?></span>
+                                    <span class="article-3x-small-date"><?php echo $data['date'] ?></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/subscribe.php'; ?>
                 </div>
                 <div class="pcr">
@@ -91,31 +159,45 @@
                     <div class="pcr-holder">
                         <span class="pcr-title">Popular</span>
                         <a href="">
+                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
                             <div class="pcr-article">
-                                <img src="/images/placeholder/profitproton_placeholder.png" alt="" class="pcr-popular">
-                                <span class="pcr-at">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit</span>
-                                <span class="pcr-ad">6/28/2023</span>
+                                <?php $data = getDataFromTextFile(Popular); ?>
+                                <img class="pcr-popular" src=<?php echo $data['thumbnail'] ?>>
+                                <span class="pcr-at"><?php echo $data['title'] ?></span>
+                                <span class="pcr-ad"><?php echo $data['date'] ?></span>
                             </div>
                         </a>
                     </div>
                     <div class="pcr-holder">
                         <span class="pcr-title">Latest</span>
-                        <div class="pcr-article-latest">
-                            <img src="/images/placeholder/profitproton_placeholder.png" alt="">
-                            <span class="pcr-lt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
-                        </div>
-                        <div class="pcr-article-latest">
-                            <img src="/images/placeholder/profitproton_placeholder.png" alt="">
-                            <span class="pcr-lt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
-                        </div>
-                        <div class="pcr-article-latest">
-                            <img src="/images/placeholder/profitproton_placeholder.png" alt="">
-                            <span class="pcr-lt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
-                        </div>
-                        <div class="pcr-article-latest">
-                            <img src="/images/placeholder/profitproton_placeholder.png" alt="">
-                            <span class="pcr-lt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
-                        </div>
+                        <a <?php $entryNumber = $article;
+                            $data = getDataFromTextFile($entryNumber); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                            <div class="pcr-article-latest">
+                                <img src=<?php echo $data['thumbnail'] ?>>
+                                <span class="pcr-lt"><?php echo $data['title'] ?></span>
+                            </div>
+                        </a>
+                        <a <?php $entryNumber = $article;
+                            $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                            <div class="pcr-article-latest">
+                                <img src=<?php echo $data['thumbnail'] ?>>
+                                <span class="pcr-lt"><?php echo $data['title'] ?></span>
+                            </div>
+                        </a>
+                        <a <?php $entryNumber = $article;
+                            $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                            <div class="pcr-article-latest">
+                                <img src=<?php echo $data['thumbnail'] ?>>
+                                <span class="pcr-lt"><?php echo $data['title'] ?></span>
+                            </div>
+                        </a>
+                        <a <?php $entryNumber = $article;
+                            $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
+                            <div class="pcr-article-latest">
+                                <img src=<?php echo $data['thumbnail'] ?>>
+                                <span class="pcr-lt"><?php echo $data['title'] ?></span>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
