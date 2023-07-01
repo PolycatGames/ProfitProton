@@ -136,7 +136,6 @@
                     if (isset($_GET['page'])) {
                         // Retrieve the value of article from the URL
                         $page = $_GET['page'];
-
                     } else {
                         $page = 1;
                     }
@@ -155,16 +154,16 @@
                         $dataArray[$i] = $data;
                         if ($entryNumber >= 1) {
                             $entryNumber--;
-                            $varr[$i] = 0;
+                            $showarticle[$i] = 0;
                         } else {
-                            $varr[$i] = 1;
+                            $showarticle[$i] = 1;
                         }
                     }
                     ?>
 
 
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
-                        <?php if ($varr[$i] !== 1) : ?>
+                        <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?php echo $dataArray[$i]['link']; ?>">
                                 <div class="article-3x">
                                     <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
@@ -230,6 +229,23 @@
                             localStorage.removeItem('scrollPosition');
                         }
                     };
+                </script>
+
+                <script>
+                    if (<?php echo $page ?> > Math.ceil(<?php echo (ceil(count($resultArray) - 1)) ?> / <?php echo $articleamount ?>)) {
+
+                        var url = new URL(window.location.href);
+                        url.searchParams.set('page', Math.ceil(<?php echo (ceil(count($resultArray) - 1)) ?> / <?php echo $articleamount ?>));
+                        window.history.replaceState(null, null, url);
+                        window.location.href = url;
+                    }
+                    if (<?php echo $page ?> < 1) {
+
+                        var url = new URL(window.location.href);
+                        url.searchParams.set('page', 1);
+                        window.history.replaceState(null, null, url);
+                        window.location.href = url;
+                    }
                 </script>
             </section>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/subscribe.php'; ?>

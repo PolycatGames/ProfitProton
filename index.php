@@ -132,35 +132,68 @@
 
 
                     <?php
+                    // Read the contents of the text file
+                    $data = file_get_contents('data.txt');
+
+                    // Parse the data into an array of entries
+                    $entries = preg_split('/(?<=})\s*(?=\d)/', $data, -1, PREG_SPLIT_NO_EMPTY);
+
+                    // Initialize an array to store the numbers
+                    $numberArray = array();
+
+                    // Loop through the entries to extract the numbers
+                    foreach ($entries as $entry) {
+                        // Extract the number from each entry
+                        preg_match('/(\d+)\s*{/', $entry, $matches);
+                        $number = intval($matches[1]);
+
+                        // Add the number to the array
+                        $numberArray[] = $number;
+                    }
+
+                    // Reverse the order of the array
+                    $numberArray = array_reverse($numberArray);
+
+                    // Create an array with the format "arraynumber - datanumber"
+                    $resultArray = array();
+                    for ($i = 0; $i < count($numberArray); $i++) {
+                        $resultArray[] = $numberArray[$i];
+                    }
+
+
+
+
                     $articleCount = 6; // Set the number of articles to display
-                    $entryNumber = $article;
+                    $entryNumber = count($resultArray) - 1;
                     $dataArray = array();
 
                     for ($i = 0; $i < $articleCount; $i++) {
-                        $data = getDataFromTextFile($entryNumber);
-
-                        while ($data['title'] === "No title found.") {
-                            $entryNumber--;
-                            $data = getDataFromTextFile($entryNumber);
-                        }
+                        $data = getDataFromTextFile($resultArray[$entryNumber]);
 
                         $dataArray[$i] = $data;
-                        $entryNumber--;
+                        if ($entryNumber >= 1) {
+                            $entryNumber--;
+                            $showarticle[$i] = 0;
+                        } else {
+                            $showarticle[$i] = 1;
+                        }
                     }
                     ?>
 
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
-                        <a class="article-2x" href="<?php echo $dataArray[$i]['link']; ?>">
-                            <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
-                            <div class="article-2x-info">
-                                <div class="article-2x-title">
-                                    <?php echo $dataArray[$i]['title']; ?>
+                        <?php if ($showarticle[$i] !== 1) : ?>
+                            <a class="article-2x" href="<?php echo $dataArray[$i]['link']; ?>">
+                                <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
+                                <div class="article-2x-info">
+                                    <div class="article-2x-title">
+                                        <?php echo $dataArray[$i]['title']; ?>
+                                    </div>
+                                    <div class="article-2x-description">
+                                        <?php echo $dataArray[$i]['author']; ?> - <?php echo $dataArray[$i]['date']; ?>
+                                    </div>
                                 </div>
-                                <div class="article-2x-description">
-                                    <?php echo $dataArray[$i]['author']; ?> - <?php echo $dataArray[$i]['date']; ?>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        <?php endif; ?>
                     <?php endfor; ?>
 
                 </div>
