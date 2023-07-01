@@ -11,6 +11,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="styles/home.css">
 
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
     <?php include 'assets/head.php'; ?>
 </head>
 
@@ -127,72 +128,41 @@
             </div>
             <section class="articles-2x">
                 <div class="articles-2x-grid">
-                    <div class="article-2x">
-                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="article-2x-info">
-                            <div class="article-2x-title">
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+
+
+                    <?php
+                    $articleCount = 6; // Set the number of articles to display
+                    $entryNumber = $article;
+                    $dataArray = array();
+
+                    for ($i = 0; $i < $articleCount; $i++) {
+                        $data = getDataFromTextFile($entryNumber);
+
+                        while ($data['title'] === "No title found.") {
+                            $entryNumber--;
+                            $data = getDataFromTextFile($entryNumber);
+                        }
+
+                        $dataArray[$i] = $data;
+                        $entryNumber--;
+                    }
+                    ?>
+
+                    <?php for ($i = 0; $i < $articleCount; $i++) : ?>
+                        <a class="article-2x" href="<?php echo $dataArray[$i]['link']; ?>">
+                            <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
+                            <div class="article-2x-info">
+                                <div class="article-2x-title">
+                                    <?php echo $dataArray[$i]['title']; ?>
+                                </div>
+                                <div class="article-2x-description">
+                                    <?php echo $dataArray[$i]['author']; ?> - <?php echo $dataArray[$i]['date']; ?>
+                                </div>
                             </div>
-                            <div class="article-2x-description">
-                                By ProfitProton - 6/6/2023
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article-2x">
-                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="article-2x-info">
-                            <div class="article-2x-title">
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </div>
-                            <div class="article-2x-description">
-                                By ProfitProton - 6/6/2023
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article-2x">
-                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="article-2x-info">
-                            <div class="article-2x-title">
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </div>
-                            <div class="article-2x-description">
-                                By ProfitProton - 6/6/2023
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article-2x">
-                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="article-2x-info">
-                            <div class="article-2x-title">
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </div>
-                            <div class="article-2x-description">
-                                By ProfitProton - 6/6/2023
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article-2x">
-                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="article-2x-info">
-                            <div class="article-2x-title">
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </div>
-                            <div class="article-2x-description">
-                                By ProfitProton - 6/6/2023
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article-2x">
-                        <img src="images/placeholder/profitproton_placeholder.png" alt="">
-                        <div class="article-2x-info">
-                            <div class="article-2x-title">
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            </div>
-                            <div class="article-2x-description">
-                                By ProfitProton - 6/6/2023
-                            </div>
-                        </div>
-                    </div>
+                        </a>
+                    <?php endfor; ?>
+
                 </div>
             </section>
             <div class="articles-title">

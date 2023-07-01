@@ -32,10 +32,10 @@
                         </div>
                         <h1><?php echo $data['title'] ?></h1>
                         <div class="pcl-front-flex">
-                            <span class="pcl-date">6/28/2023 - by profitproton</span>
+                            <span class="pcl-date"><?php echo $data['date'] ?> - by <?php echo $data['author'] ?></span>
                             <a href="https://www.instagram.com/profitproton" target="_blank"><button class="pcl-button"><img src="/icons/socials/instagram.png" alt="Follow ProfitProton on Instagram"><span>Follow</span></button></a>
                         </div>
-                        <img src="/images/placeholder/profitproton_placeholder.png" alt="" class="article-thumbnail">
+                        <img class="article-thumbnail" src=<?php echo $data['thumbnail'] ?>>
                     </div>
                     <h2>The Rise of Dropshipping: A Revolutionary Business Model</h2>
 

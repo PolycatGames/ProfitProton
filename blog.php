@@ -15,7 +15,7 @@
 
 
     <!--Styles-->
-
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
     <?php include 'assets/head.php'; ?>
 </head>
 
@@ -57,6 +57,7 @@
                         </a>
                         <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?>>
                             <button>
+
                                 <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>

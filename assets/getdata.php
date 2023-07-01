@@ -2,31 +2,48 @@
 // Function to extract specific data from the text file
 function getDataFromTextFile($entryNumber)
 {
-  // Read the contents of the text file
-  $data = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data.txt');
+    // Read the contents of the text file
+    $data = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data.txt');
 
-  // Remove line breaks while preserving spaces
-  $data = str_replace(array("\r\n", "\r", "\n"), '', $data);
+    // Remove line breaks while preserving spaces
+    $data = str_replace(array("\r\n", "\r", "\n"), '', $data);
 
-  // Modify the pattern to match the exact entry number
-  $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*}/';
+    // Modify the pattern to match the exact entry number
+    $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*author:\s*"([^"]+)"\s*}/';
 
-  // Use preg_match instead of preg_match_all to find a single match
-  preg_match($pattern, $data, $matches);
+    // Use preg_match instead of preg_match_all to find a single match
+    preg_match($pattern, $data, $matches);
 
-  if (!empty($matches)) {
-    $title = $matches[1];
-    $description = $matches[2];
-    $date = $matches[3];
-    $category = $matches[4];
-    $link = $matches[5];
-    $thumbnail = $matches[6];
-    return array('title' => $title, 'description' => $description, 'date' => $date, 'category' => $category, 'link' => $link, 'thumbnail' => $thumbnail);
-  } else {
-    return array('title' => 'No title found.', 'description' => 'No description found.', 'date' => 'No date found.', 'category' => 'No category found.', 'link' => 'No link found.', 'thumbnail' => 'No thumbnail found.');
-  }
+    if (!empty($matches)) {
+        $title = $matches[1];
+        $description = $matches[2];
+        $date = $matches[3];
+        $category = $matches[4];
+        $link = $matches[5];
+        $thumbnail = $matches[6];
+        $author = $matches[7]; // Add the author variable
+
+        return array(
+            'title' => $title,
+            'description' => $description,
+            'date' => $date,
+            'category' => $category,
+            'link' => $link,
+            'thumbnail' => $thumbnail,
+            'author' => $author // Include the author in the returned array
+        );
+    } else {
+        return array(
+            'title' => 'No title found.',
+            'description' => 'No description found.',
+            'date' => 'No date found.',
+            'category' => 'No category found.',
+            'link' => 'No link found.',
+            'thumbnail' => 'No thumbnail found.',
+            'author' => 'No author found.' // Provide a default value for author
+        );
+    }
 }
-
 
 // Read the data file
 $data = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data.txt');
@@ -39,21 +56,22 @@ $highestNumber = 0;
 
 // Loop through the entries to find the highest number
 foreach ($entries as $entry) {
-  // Extract the number from each entry
-  preg_match('/(\d+)\s*{/', $entry, $matches);
-  $number = intval($matches[1]);
+    // Extract the number from each entry
+    preg_match('/(\d+)\s*{/', $entry, $matches);
+    $number = intval($matches[1]);
 
-  // Check if the number is higher than the current highest number
-  if ($number > $highestNumber) {
-    $highestNumber = $number;
-  }
+    // Check if the number is higher than the current highest number
+    if ($number > $highestNumber) {
+        $highestNumber = $number;
+    }
 }
 
 // Check if the query parameter is present
 if (isset($_GET['article'])) {
-  // Retrieve the value of article from the URL
-  $article = $_GET['article'];
+    // Retrieve the value of article from the URL
+    $article = $_GET['article'];
 } else {
-  $article = $highestNumber;
+    $article = $highestNumber;
 }
+
 ?>
