@@ -65,7 +65,7 @@ foreach ($entries as $entry) {
         $highestNumber = $number;
     }
 }
-
+/*()
 // Check if the query parameter is present
 if (isset($_GET['article'])) {
     // Retrieve the value of article from the URL
@@ -73,5 +73,5 @@ if (isset($_GET['article'])) {
 } else {
     $article = $highestNumber;
 }
-
+*/
 ?>

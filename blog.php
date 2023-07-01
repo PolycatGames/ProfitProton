@@ -102,203 +102,117 @@
             </div>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
-                    <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="visibility: hidden;" <?php } ?>>
-                        <div class="article-3x">
-                            <img src=<?php
-                                        echo $data['thumbnail']
-                                        ?>>
-                            <span class="article-3x-tag article-3x-content">
-                                <?php
-                                echo $data['category']
-                                ?>
-                            </span>
-                            <h3 class="article-3x-title article-3x-content">
-                                <?php
-                                echo $data['title']
-                                ?>
-                            </h3>
-                            <p class="article-3x-description article-3x-content">
-                                <?php
-                                echo $data['description']
-                                ?>
-                            </p>
-                            <span class="article-3x-date article-3x-content">
-                                <?php
-                                echo $data['date']
-                                ?>
-                            </span>
-                        </div>
+                    <?php
+                    // Read the contents of the text file
+                    $data = file_get_contents('data.txt');
 
-                    </a>
-                    <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 1); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
-                        <div class="article-3x">
-                            <img src=<?php
-                                        echo $data['thumbnail']
-                                        ?>>
-                            <span class="article-3x-tag article-3x-content">
-                                <?php
-                                echo $data['category']
-                                ?>
-                            </span>
-                            <h3 class="article-3x-title article-3x-content">
-                                <?php
-                                echo $data['title']
-                                ?>
-                            </h3>
-                            <p class="article-3x-description article-3x-content">
-                                <?php
-                                echo $data['description']
-                                ?>
-                            </p>
-                            <span class="article-3x-date article-3x-content">
-                                <?php
-                                echo $data['date']
-                                ?>
-                            </span>
-                        </div>
+                    // Parse the data into an array of entries
+                    $entries = preg_split('/(?<=})\s*(?=\d)/', $data, -1, PREG_SPLIT_NO_EMPTY);
 
-                    </a>
-                    <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 2); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
-                        <div class="article-3x">
-                            <img src=<?php
-                                        echo $data['thumbnail']
-                                        ?>>
-                            <span class="article-3x-tag article-3x-content">
-                                <?php
-                                echo $data['category']
-                                ?>
-                            </span>
-                            <h3 class="article-3x-title article-3x-content">
-                                <?php
-                                echo $data['title']
-                                ?>
-                            </h3>
-                            <p class="article-3x-description article-3x-content">
-                                <?php
-                                echo $data['description']
-                                ?>
-                            </p>
-                            <span class="article-3x-date article-3x-content">
-                                <?php
-                                echo $data['date']
-                                ?>
-                            </span>
-                        </div>
+                    // Initialize an array to store the numbers
+                    $numberArray = array();
 
-                    </a>
-                    <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 3); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
-                        <div class="article-3x">
-                            <img src=<?php
-                                        echo $data['thumbnail']
-                                        ?>>
-                            <span class="article-3x-tag article-3x-content">
-                                <?php
-                                echo $data['category']
-                                ?>
-                            </span>
-                            <h3 class="article-3x-title article-3x-content">
-                                <?php
-                                echo $data['title']
-                                ?>
-                            </h3>
-                            <p class="article-3x-description article-3x-content">
-                                <?php
-                                echo $data['description']
-                                ?>
-                            </p>
-                            <span class="article-3x-date article-3x-content">
-                                <?php
-                                echo $data['date']
-                                ?>
-                            </span>
-                        </div>
+                    // Loop through the entries to extract the numbers
+                    foreach ($entries as $entry) {
+                        // Extract the number from each entry
+                        preg_match('/(\d+)\s*{/', $entry, $matches);
+                        $number = intval($matches[1]);
 
-                    </a>
-                    <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 4); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
-                        <div class="article-3x">
-                            <img src=<?php
-                                        echo $data['thumbnail']
-                                        ?>>
-                            <span class="article-3x-tag article-3x-content">
-                                <?php
-                                echo $data['category']
-                                ?>
-                            </span>
-                            <h3 class="article-3x-title article-3x-content">
-                                <?php
-                                echo $data['title']
-                                ?>
-                            </h3>
-                            <p class="article-3x-description article-3x-content">
-                                <?php
-                                echo $data['description']
-                                ?>
-                            </p>
-                            <span class="article-3x-date article-3x-content">
-                                <?php
-                                echo $data['date']
-                                ?>
-                            </span>
-                        </div>
+                        // Add the number to the array
+                        $numberArray[] = $number;
+                    }
 
-                    </a>
-                    <a <?php $entryNumber = $article;
-                        $data = getDataFromTextFile($entryNumber - 5); ?> href=<?php echo $data['link'] ?> <?php if ($data['title'] === "No title found.") { ?>style="display: none;" <?php } ?>>
-                        <div class="article-3x">
-                            <img src=<?php
-                                        echo $data['thumbnail']
-                                        ?>>
-                            <span class="article-3x-tag article-3x-content">
-                                <?php
-                                echo $data['category']
-                                ?>
-                            </span>
-                            <h3 class="article-3x-title article-3x-content">
-                                <?php
+                    // Reverse the order of the array
+                    $numberArray = array_reverse($numberArray);
 
-                                echo $data['title']
-                                ?>
-                            </h3>
-                            <p class="article-3x-description article-3x-content">
-                                <?php
-                                echo $data['description']
-                                ?>
-                            </p>
-                            <span class="article-3x-date article-3x-content">
-                                <?php
-                                echo $data['date']
-                                ?>
-                            </span>
-                        </div>
+                    // Create an array with the format "arraynumber - datanumber"
+                    $resultArray = array();
+                    for ($i = 0; $i < count($numberArray); $i++) {
+                        $resultArray[] = $numberArray[$i];
+                    }
 
-                    </a>
+
+                    // Check if the query parameter is present
+                    if (isset($_GET['page'])) {
+                        // Retrieve the value of article from the URL
+                        $page = $_GET['page'];
+
+                    } else {
+                        $page = 1;
+                    }
+
+
+
+
+                    $articleCount = 6; // Set the number of articles to display
+                    $entryNumber = (count($resultArray) - 1) - ($page  - 1) * 6;
+                    $dataArray = array();
+
+                    for ($i = 0; $i < $articleCount; $i++) {
+                        $data = getDataFromTextFile($resultArray[$entryNumber]);
+
+
+                        $dataArray[$i] = $data;
+                        if ($entryNumber >= 1) {
+                            $entryNumber--;
+                            $varr[$i] = 0;
+                        } else {
+                            $varr[$i] = 1;
+                        }
+                    }
+                    ?>
+
+
+                    <?php for ($i = 0; $i < $articleCount; $i++) : ?>
+                        <?php if ($varr[$i] !== 1) : ?>
+                            <a href="<?php echo $dataArray[$i]['link']; ?>">
+                                <div class="article-3x">
+                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
+                                    <span class="article-3x-tag article-3x-content">
+                                        <?php echo $dataArray[$i]['category']; ?>
+                                    </span>
+                                    <h3 class="article-3x-title article-3x-content">
+                                        <?php echo $dataArray[$i]['title']; ?>
+                                    </h3>
+                                    <p class="article-3x-description article-3x-content">
+                                        <?php echo $dataArray[$i]['description']; ?>
+                                    </p>
+                                    <span class="article-3x-date article-3x-content">
+                                        <?php echo $dataArray[$i]['date']; ?>
+                                    </span>
+                                </div>
+                            </a>
+                        <?php endif; ?>
+                    <?php endfor; ?>
                 </div>
             </section>
+
+
+
+
+
+
+
             <section class="pagination">
                 <?php $articleamount = 6; ?>
-                <button class="pagination-button" onclick="adjustarticle(<?php echo $articleamount ?>);" <?php if ($article == $highestNumber) { ?> disabled style="cursor:default;" <?php } ?>>Previous</button>
-                <div class="pagination-page"><?php echo (($highestNumber - $article) / $articleamount + 1) ?> / <?php echo ceil($highestNumber / $articleamount) ?></div>
-                <button class="pagination-button" onclick="adjustarticle(<?php echo -$articleamount ?>);" <?php if ($article - $articleamount <= 0) { ?> disabled style="cursor:default;" <?php } ?>>Next</button>
+                <button class="pagination-button" onclick="adjustpage(<?php echo $articleamount ?>);" <?php if ($page == 1) { ?> disabled style="cursor:default;" <?php } ?>>Previous</button>
+                <div class="pagination-page"><?php echo $page ?> / <?php echo ceil((count($resultArray) - 1) / $articleamount) ?></div>
+                <button class="pagination-button" onclick="adjustpage(<?php echo -$articleamount ?>);" <?php if ($page == ceil((count($resultArray) - 1) / $articleamount)) { ?> disabled style="cursor:default;" <?php } ?>>Next</button>
 
                 <script>
-                    var article = <?php echo $article; ?>;
+                    var page = <?php echo ((count($resultArray) - 1) - ($page - 1) * 6); ?>
 
-                    function adjustarticle(value) {
-                        var updatedValue = article + value;
-
+                    function adjustpage(value) {
+                        var updatedValue = page + value;
+                        console.log(updatedValue);
                         // Check if the updated value is valid
                         if (updatedValue >= 1) {
-                            article = updatedValue;
-                            console.log("Updated article: " + article);
+                            page = Math.ceil((<?php echo (count($resultArray) - 1) ?> - updatedValue + 1) / <?php echo $articleamount ?>);
+                            console.log("Updated page: " + page);
 
                             // Update the browser URL without reloading the article
                             var url = new URL(window.location.href);
-                            url.searchParams.set('article', article);
+                            url.searchParams.set('page', page);
                             window.history.replaceState(null, null, url);
 
                             // Store the scroll position in local storage
@@ -308,7 +222,6 @@
                             window.location.href = url;
                         }
                     }
-
                     // Restore the scroll position on article load
                     window.onload = function() {
                         var scrollPosition = localStorage.getItem('scrollPosition');
