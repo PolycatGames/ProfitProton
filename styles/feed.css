@@ -541,6 +541,15 @@
     font-weight: 700;
 }
 
+/*CATEGORY*/
+.category{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.category-title{
+    text-align: center;
+}
+
 @media (max-width: 1240px) {
     .pcr-lt {
         font-size: 14px;

@@ -22,15 +22,18 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/headernav.html'; ?>
 
     <main class="main-content">
-        <article class="content-holder">
-            <section class="articles-3x">
+        <article>
+            <section>
+                <h1 class="category-title">Dropshipping</h1>
+            </section>
+            <section class="articles-3x category">
                 <div class="articles-layout-3x-grid">
                     <?php
                     // Read the file contents
                     $fileContent = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data.txt');
 
                     // Define an empty array to store the matching numbers
-                    $dropshippingNumbers = [];
+                    $categoryNumbers = [];
 
                     // Regular expression pattern to match the desired category
                     $pattern = '/(\d+)\s+\{\s*title:\s*"[^"]*"\s*description:\s*"[^"]*"\s*date:\s*"[^"]*"\s*category:\s*"Dropshipping"/';
@@ -44,23 +47,23 @@
                     // Loop through the matched categories
                     foreach ($numbersArray as $number) {
                         // Add the number to the array
-                        $dropshippingNumbers[] = $number;
+                        $categoryNumbers[] = $number;
                     }
 
                     // Sort the array in ascending order
-                    sort($dropshippingNumbers);
+                    sort($categoryNumbers);
 
                     // Output the resulting array
-                    //echo $dropshippingNumbers[0];
+                    //echo $categoryNumbers[0];
 
 
 
 
-                    $entryNumber = count($dropshippingNumbers) - 1;
+                    $entryNumber = count($categoryNumbers) - 1;
                     $dataArray = array();
 
-                    for ($i = 0; $i < (count($dropshippingNumbers) - 1); $i++) {
-                        $data = getDataFromTextFile($dropshippingNumbers[$entryNumber]);
+                    for ($i = 0; $i < (count($categoryNumbers) - 1); $i++) {
+                        $data = getDataFromTextFile($categoryNumbers[$entryNumber]);
 
 
                         $dataArray[$i] = $data;
@@ -74,7 +77,7 @@
                     ?>
 
 
-                    <?php for ($i = 0; $i < (count($dropshippingNumbers) - 1); $i++) : ?>
+                    <?php for ($i = 0; $i < (count($categoryNumbers) - 1); $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?php echo $dataArray[$i]['link']; ?>">
                                 <div class="article-3x">
