@@ -187,12 +187,43 @@
                     <div class="pcr-holder">
                         <span class="pcr-title">Content</span>
                         <div class="pcr-content">
-                            <p>Lorep ipsum dolor sit amet, consectetuer</p>
-                            <p>Lorep ipsum dolor amet, consectetuer</p>
-                            <p>Lorep ipsum dolor sit amet, consectetuer</p>
-                            <p>Lorep ipsum dolor sit amet</p>
-                            <p>Lorep dolor sit amet, consectetuer</p>
+
                         </div>
+
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script>
+                            // Get the navigator container
+                            const navigatorContainer = document.querySelector('.pcr-content');
+
+                            // Get all the h3 elements
+                            const h3Elements = document.querySelectorAll('.pcl h3');
+
+                            // Create navigation paragraphs for each h3 element
+                            h3Elements.forEach((h3Element) => {
+                                // Create a new paragraph element
+                                const paragraph = document.createElement('p');
+
+                                // Set the text content of the paragraph to the h3 element's text
+                                paragraph.textContent = h3Element.textContent;
+
+                                // Add an onclick event to scroll to the corresponding content
+                                paragraph.onclick = () => {
+                                    // Get the next sibling of the h3 element
+                                    const nextSibling = h3Element.nextElementSibling;
+
+                                    // Scroll to the next sibling's top position
+                                    window.scrollTo({
+                                        top: nextSibling.offsetTop - 80,
+                                        behavior: 'smooth'
+                                    });
+                                };
+
+                                // Append the paragraph to the navigator container
+                                navigatorContainer.appendChild(paragraph);
+                            });
+                        </script>
+
+
                     </div>
                     <div class="pcr-holder">
                         <span class="pcr-title">Popular</span>
