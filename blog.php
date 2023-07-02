@@ -70,12 +70,12 @@
         <nav id="categories-holder">
             <section class="categories">
                 <div class="categories-grid">
-                    <button class="categories-item c1i1">E-commerce</button>
-                    <button class="categories-item c1i2">Freelancing</button>
-                    <button class="categories-item c1i3">Marketing</button>
-                    <button class="categories-item c1i4">AI</button>
-                    <button class="categories-item c1i5">Blogging</button>
-                    <button class="categories-item" id="categories-item-more">
+                    <a href="/category/e-commerce" class="categories-item c1i1">E-commerce</a>
+                    <a href="/category/freelancing" class="categories-item c1i2">Freelancing</a>
+                    <a href="/category/marketing" class="categories-item c1i3">Marketing</a>
+                    <a href="/category/ai" class="categories-item c1i4">AI</a>
+                    <a href="/category/blogging" class="categories-item c1i5">Blogging</a>
+                    <a href="/categories" class="categories-item" id="categories-item-more">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer_1" viewBox="0 0 290.5 291.99">
                             <defs>
                                 <style>
@@ -91,7 +91,7 @@
                             <polyline class="cls-1" points="252.5 156 252.5 274.49 17.5 274.49 17.5 35.39 137.66 35.39" />
                             <polyline class="cls-1" points="206.75 17.5 273 17.5 273 85 273 17.5 140.5 150" />
                         </svg>More</span>
-                    </button>
+                    </a>
                 </div>
             </section>
         </nav>

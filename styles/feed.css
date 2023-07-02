@@ -322,6 +322,7 @@
     border-radius: 20px;
     transition: background-color .15s;
     cursor: pointer;
+    text-align: center;
 }
 
 .categories-item:hover {

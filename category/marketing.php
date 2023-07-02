@@ -6,7 +6,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
 
     <!--Meta Data-->
-    <title>Dropshipping | ProfitProton</title>
+    <title>Marketing | ProfitProton</title>
     <meta name="description" content="ENTER DESCRIPTION" />
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
@@ -24,7 +24,7 @@
     <main class="main-content">
         <article>
             <section>
-                <h1 class="category-title">Dropshipping</h1>
+                <h1 class="category-title">Marketing</h1>
             </section>
             <section class="articles-3x category">
                 <div class="articles-layout-3x-grid">
@@ -36,7 +36,7 @@
                     $categoryNumbers = [];
 
                     // Regular expression pattern to match the desired category
-                    $pattern = '/(\d+)\s+\{\s*title:\s*"[^"]*"\s*description:\s*"[^"]*"\s*date:\s*"[^"]*"\s*category:\s*"Dropshipping"/';
+                    $pattern = '/(\d+)\s+\{\s*title:\s*"[^"]*"\s*description:\s*"[^"]*"\s*date:\s*"[^"]*"\s*category:\s*"Marketing"/';
 
                     // Match all occurrences of the pattern in the file content
                     preg_match_all($pattern, $fileContent, $matches);
@@ -50,8 +50,8 @@
                         $categoryNumbers[] = $number;
                     }
 
-                    // Sort the array in ascending order
-                    sort($categoryNumbers);
+                    // Sort the array in descending order
+                    rsort($categoryNumbers);
 
                     // Output the resulting array
                     //echo $categoryNumbers[0];
@@ -59,11 +59,11 @@
 
 
 
-                    $entryNumber = count($categoryNumbers) - 1;
+                    $entryNumber = count($categoryNumbers);
                     $dataArray = array();
 
-                    for ($i = 0; $i < (count($categoryNumbers) - 1); $i++) {
-                        $data = getDataFromTextFile($categoryNumbers[$entryNumber]);
+                    for ($i = 0; $i < (count($categoryNumbers)); $i++) {
+                        $data = getDataFromTextFile($categoryNumbers[$i]);
 
 
                         $dataArray[$i] = $data;
@@ -77,7 +77,7 @@
                     ?>
 
 
-                    <?php for ($i = 0; $i < (count($categoryNumbers) - 1); $i++) : ?>
+                    <?php for ($i = 0; $i < (count($categoryNumbers)); $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?php echo $dataArray[$i]['link']; ?>">
                                 <div class="article-3x">
