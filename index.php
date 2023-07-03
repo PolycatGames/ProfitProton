@@ -72,7 +72,7 @@
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
@@ -81,7 +81,7 @@
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
@@ -90,7 +90,7 @@
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
@@ -99,7 +99,7 @@
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
@@ -108,7 +108,7 @@
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
@@ -117,7 +117,7 @@
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content"><?php echo $data['description'] ?></p>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>

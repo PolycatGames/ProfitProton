@@ -9,38 +9,44 @@ function getDataFromTextFile($entryNumber)
     $data = str_replace(array("\r\n", "\r", "\n"), '', $data);
 
     // Modify the pattern to match the exact entry number
-    $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*author:\s*"([^"]+)"\s*}/';
+    $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*preview:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*keywords:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*author:\s*"([^"]+)"\s*}/';
 
     // Use preg_match instead of preg_match_all to find a single match
     preg_match($pattern, $data, $matches);
 
     if (!empty($matches)) {
         $title = $matches[1];
-        $description = $matches[2];
-        $date = $matches[3];
-        $category = $matches[4];
-        $link = $matches[5];
-        $thumbnail = $matches[6];
-        $author = $matches[7]; // Add the author variable
+        $preview = $matches[2];
+        $description = $matches[3];
+        $keywords = $matches[4];
+        $date = $matches[5];
+        $category = $matches[6];
+        $link = $matches[7];
+        $thumbnail = $matches[8];
+        $author = $matches[9];
 
         return array(
             'title' => $title,
+            'preview' => $preview,
             'description' => $description,
+            'keywords' => $keywords,
             'date' => $date,
             'category' => $category,
             'link' => $link,
             'thumbnail' => $thumbnail,
-            'author' => $author // Include the author in the returned array
+            'author' => $author
         );
     } else {
         return array(
             'title' => 'No title found.',
+            'preview' => 'No preview found.',
             'description' => 'No description found.',
+            'keywords' => 'No keywords found.',
             'date' => 'No date found.',
             'category' => 'No category found.',
             'link' => 'No link found.',
             'thumbnail' => 'No thumbnail found.',
-            'author' => 'No author found.' // Provide a default value for author
+            'author' => 'No author found.'
         );
     }
 }
@@ -65,6 +71,15 @@ foreach ($entries as $entry) {
         $highestNumber = $number;
     }
 }
+
+// Check if the query parameter is present
+if (isset($_GET['article'])) {
+    // Retrieve the value of article from the URL
+    $article = $_GET['article'];
+} else {
+    $article = $highestNumber;
+}
+
 /*()
 // Check if the query parameter is present
 if (isset($_GET['article'])) {

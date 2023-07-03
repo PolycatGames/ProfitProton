@@ -45,6 +45,10 @@ h3 {
     margin-bottom: 40px;
 }
 
+.truncate::after{
+content: "\2026"
+}
+
 
 /*GENERAL*/
 html {
@@ -183,8 +187,6 @@ article>*,
 
     box-sizing: border-box;
 }
-
-.subscribe-input::target-text {}
 
 .subscribe-input::placeholder {
     color: black;
