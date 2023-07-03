@@ -28,11 +28,11 @@
                         </p>
                         <div class="contact-page-social">
                             <div class="contact-page-social-item">
-                                <a href="https://www.instagram.com/profitproton/" target=”_blank”><button class="contact-page-button"><img class="contact-page-social-icon" src="icons/socials/instagram-white.png" alt="instagram logo"></button></a>
+                                <a href="https://www.instagram.com/profitproton/" target=”_blank”><button class="contact-page-button"><img class="contact-page-social-icon" src="icons/socials/instagram-white.png" alt="instagram logo" aria-label="Visit Instagram profile"></button></a>
                                 <div class="contact-page-social-text">@profitproton</div>
                             </div>
                             <div class="contact-page-social-item">
-                                <a href="mailto:support@profitproton.com" target=”_blank”><button class="contact-page-button"><img class="contact-page-social-icon" src="icons/socials/email-white.png" alt="email logo"></button></a>
+                                <a href="mailto:support@profitproton.com" target=”_blank”><button class="contact-page-button"><img class="contact-page-social-icon" src="icons/socials/email-white.png" alt="email logo" aria-label="Send email to support@profitproton.com"></button></a>
                                 <div class="contact-page-social-text">support@profitproton.com</div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                             <input class="contact-page-form-email form-item" placeholder="Subject" maxlength="100" type="subject" name="subject" required>
                             <input type="hidden" name="_captcha" value="false">
                             <textarea class="contact-page-form-message form-item" maxlength="4000" placeholder="Message" name="message" cols="30" rows="10"></textarea>
-                            <button class="contact-page-form-submit" type="submit">Submit</button>
+                            <button aria-label="Submit email" class="contact-page-form-submit" type="submit">Submit</button>
 
                             <input type="hidden" name="_next" value="https://profitproton.com/thankyou">
                         </form>

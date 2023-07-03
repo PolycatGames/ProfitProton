@@ -36,7 +36,8 @@
                     $categoryNumbers = [];
 
                     // Regular expression pattern to match the desired category
-                    $pattern = '/(\d+)\s+\{\s*title:\s*"[^"]*"\s*description:\s*"[^"]*"\s*date:\s*"[^"]*"\s*category:\s*"E-commerce"/';
+                    $pattern = '/(\d+)\s+\{\s*title:\s*"[^"]*"\s*preview:\s*"[^"]*"\s*description:\s*"[^"]*"\s*keywords:\s*"[^"]*"\s*date:\s*"[^"]*"\s*category:\s*"E-commerce"/';
+
 
                     // Match all occurrences of the pattern in the file content
                     preg_match_all($pattern, $fileContent, $matches);
@@ -89,7 +90,7 @@
                                         <?php echo $dataArray[$i]['title']; ?>
                                     </h3>
                                     <p class="article-3x-description article-3x-content">
-                                        <?php echo $dataArray[$i]['description']; ?>
+                                        <?php echo $dataArray[$i]['preview']; ?>
                                     </p>
                                     <span class="article-3x-date article-3x-content">
                                         <?php echo $dataArray[$i]['date']; ?>

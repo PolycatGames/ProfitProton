@@ -26,7 +26,7 @@
             </section>
             <section class="categories-page">
                 <div>
-                    <a class="category-button" style="color: #fae9f2;" href="/category/e-commerce">
+                    <a class="category-button" style="color: #fae9f2;" href="/category/e-commerce" aria-label="E-commerce category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #c73b8c;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg8" height="512" viewBox="0 0 8.4666665 8.4666669" width="512">
                                 <g id="layer1" transform="translate(0 -288.533)">
@@ -38,7 +38,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="category-button" style="color: #e4f1e6;" href="/category/freelancing">
+                    <a class="category-button" style="color: #e4f1e6;" href="/category/freelancing" aria-label="Freelancing category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #72b955;" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" height="512" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" width="512">
                                 <g id="Icon">
@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="category-button" style="color: #e1f2fc;" href="/category/content-creation">
+                    <a class="category-button" style="color: #e1f2fc;" href="/category/content-creation" aria-label="Content-creation category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #70c9eb;" xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 511.842 511.842" height="512" viewBox="0 0 511.842 511.842" width="512">
                                 <g>
@@ -73,7 +73,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="category-button" style="color: #fbece2;" href="/category/blogging">
+                    <a class="category-button" style="color: #fbece2;" href="/category/blogging" aria-label="Blogging category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #ea571f;" xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
                                 <g>
@@ -89,7 +89,7 @@
                 </div>
                 </div>
                 <div>
-                    <a class="category-button" style="color: #e4f2f2;" href="/category/ai">
+                    <a class="category-button" style="color: #e4f2f2;" href="/category/ai" aria-label="Artificial Intelligence category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #72c3b8;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
                                 <g>
@@ -143,7 +143,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="category-button" style="color: #fce0e1;" href="/category/marketing">
+                    <a class="category-button" style="color: #fce0e1;" href="/category/marketing" aria-label="Marketing category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #e96871;" xmlns="http://www.w3.org/2000/svg" id="Outline" height="512" viewBox="0 0 32 32" width="512">
                                 <g>
@@ -156,7 +156,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="category-button" style="color: #fff0c5;" href="/category/other">
+                    <a class="category-button" style="color: #fff0c5;" href="/category/other" aria-label="Other topics category">
                         <div class="category-button-icon-holder">
                             <svg class="category-button-icon" style="fill: #f7c649;" xmlns="http://www.w3.org/2000/svg" height="512" viewBox="0 0 32 32" width="512">
                                 <g id="Layer_15" data-name="Layer 15">

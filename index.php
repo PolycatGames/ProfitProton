@@ -39,26 +39,26 @@
         </article>
         <section class="bar">
             <div class="bar-holder">
-                <div class="bar-item">
-                    <img class="bar-item-image" src="icons/topics/freelancing.png" alt="Explore Freelancing Articles">
+                <a class="bar-item" href="/category/freelancing" aria-label="Explore Freelancing Articles">
+                    <img class="bar-item-image" src="icons/topics/freelancing.png" alt="Icon for Freelancing Articles">
                     <div class="bar-item-text">Freelancing</div>
-                </div>
-                <div class="bar-item">
-                    <img class="bar-item-image" src="icons/topics/e-commerce.png" alt="Explore E-Commerce Articles">
+                </a>
+                <a class="bar-item" href="/category/e-commerce" aria-label="Explore E-Commerce Articles">
+                    <img class="bar-item-image" src="icons/topics/e-commerce.png" alt="Icon for E-Commerce Articles">
                     <div class="bar-item-text">E-Commerce</div>
-                </div>
-                <div class="bar-item">
-                    <img class="bar-item-image" src="icons/topics/content-creation.png" alt="Explore Content Creation Articles">
+                </a>
+                <a class="bar-item" href="/category/content-creation" aria-label="Explore Content Creation Articles">
+                    <img class="bar-item-image" src="icons/topics/content-creation.png" alt="Icon for Content Creation Articles">
                     <div class="bar-item-text">Content Creation</div>
-                </div>
-                <div class="bar-item">
-                    <img class="bar-item-image" src="icons/topics/ai.png" alt="Explore Artificial Intelligence Articles">
+                </a>
+                <a class="bar-item" href="/category/ai" aria-label="Explore AI Articles">
+                    <img class="bar-item-image" src="icons/topics/ai.png" alt="Icon for Artificial Intelligence Articles">
                     <div class="bar-item-text">Artificial Intelligence</div>
-                </div>
-                <div class="bar-item">
-                    <img class="bar-item-image" src="icons/topics/marketing.png" alt="Explore Marketing Articles">
+                </a>
+                <a class="bar-item" href="/category/marketing" aria-label="Explore Marketing Articles">
+                    <img class="bar-item-image" src="icons/topics/marketing.png" alt="Icon for Marketing Articles">
                     <div class="bar-item-text">Marketing</div>
-                </div>
+                </a>
             </div>
         </section>
         <article>
@@ -67,8 +67,8 @@
             </div>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?>>
-                        <div class="article-3x">
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
@@ -76,8 +76,8 @@
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?>>
-                        <div class="article-3x">
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
@@ -85,8 +85,8 @@
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?>>
-                        <div class="article-3x">
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
@@ -94,8 +94,8 @@
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?>>
-                        <div class="article-3x">
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
@@ -103,8 +103,8 @@
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?>>
-                        <div class="article-3x">
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
@@ -112,8 +112,8 @@
                             <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular6); ?> href=<?php echo $data['link'] ?>>
-                        <div class="article-3x">
+                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular6); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?>>
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
@@ -182,7 +182,7 @@
 
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
-                            <a class="article-2x" href="<?php echo $dataArray[$i]['link']; ?>">
+                            <a class="article-2x" href="<?php echo $dataArray[$i]['link']; ?>" aria-label="Link to <?php echo $dataArray[$i]['title']; ?>">
                                 <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
                                 <div class="article-2x-info">
                                     <div class="article-2x-title">
@@ -206,23 +206,23 @@
                     <div class="home-suggested-platforms-grid">
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo.png" alt="Fiverr logo">
-                            <button class="home-suggested-platforms-grid-item-button">VISIT SITE</button>
+                            <a href="" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo.png" alt="Freelancer logo">
-                            <button class="home-suggested-platforms-grid-item-button">VISIT SITE</button>
+                            <a href="" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo.png" alt="Upwork logo">
-                            <button class="home-suggested-platforms-grid-item-button">VISIT SITE</button>
+                            <a href="" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <button class="view-more">
+                            <a href="" class="view-more" aria-label="View more Freelancing Platforms">
                                 <span class="view-more-circle" aria-hidden="true">
                                     <span class="view-more-arrow view-more-icon"></span>
                                 </span>
                                 <span class="view-more-text">View more</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
