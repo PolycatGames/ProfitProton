@@ -208,24 +208,24 @@
                     <div class="home-suggested-platforms-grid">
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo.png" alt="Fiverr logo" loading="lazy" srcset=" ">
-                            <a href="https://www.fiverr.com/" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
+                            <a href="https://www.fiverr.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo.png" alt="Freelancer logo">
-                            <a href="https://www.freelancer.com/" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
+                            <a href="https://www.freelancer.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo.png" alt="Upwork logo">
-                            <a href="https://www.upwork.com/" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
+                            <a href="https://www.upwork.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
                         </div>
-                        <div class="home-suggested-platforms-grid-item">
+                        <!--<div class="home-suggested-platforms-grid-item">
                             <a href="" class="view-more" aria-label="View more Freelancing Platforms">
                                 <span class="view-more-circle" aria-hidden="true">
                                     <span class="view-more-arrow view-more-icon"></span>
                                 </span>
                                 <span class="view-more-text">View more</span>
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </section>
