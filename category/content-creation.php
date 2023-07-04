@@ -35,8 +35,8 @@
                     // Define an empty array to store the matching numbers
                     $categoryNumbers = [];
 
-                    // Regular expression pattern to match the desired category
-                    $pattern = '/(\d+)\s+\{\s*title:\s*"[^"]*"\s*preview:\s*"[^"]*"\s*description:\s*"[^"]*"\s*keywords:\s*"[^"]*"\s*date:\s*"[^"]*"\s*category:\s*"Content Creation"/';
+    // Regular expression pattern to match the desired category
+    $pattern = '/(\d+)\s+\{\s*title:\s*"([^"]*)"\s*preview:\s*"([^"]*)"\s*description:\s*"([^"]*)"\s*keywords:\s*"([^"]*)"\s*time:\s*"([^"]*)"\s*date:\s*"([^"]*)"\s*category:\s*"Content Creation"/';
 
                     // Match all occurrences of the pattern in the file content
                     preg_match_all($pattern, $fileContent, $matches);

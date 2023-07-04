@@ -70,11 +70,11 @@
     </div>
     <div class="pcr-holder">
         <span class="pcr-title">Popular</span>
-        <a href="">
+        <a href="<?php echo $data['link'] ?>" aria-label="Link to <?php echo $data['title'] ?>">
             <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
             <div class="pcr-article">
                 <?php $data = getDataFromTextFile(Popular); ?>
-                <img class="pcr-popular" src=<?php echo $data['thumbnail'] ?>>
+                <img class="pcr-popular" src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                 <span class="pcr-at"><?php echo $data['title'] ?></span>
                 <span class="pcr-ad"><?php echo $data['date'] ?></span>
             </div>
@@ -132,9 +132,9 @@
         ?>
         <?php for ($i = 0; $i < $articleCount; $i++) : ?>
             <?php if ($showarticle[$i] !== 1) : ?>
-                <a>
-                    <div class="pcr-article-latest">
-                        <img src=<?php echo $dataArray[$i]['thumbnail']; ?>>
+                <a href="<?php echo $dataArray[$i]['link']; ?>">
+                    <div class="pcr-article-latest" aria-label="Link to <?php echo $dataArray[$i]['title']; ?>">
+                        <img src=<?php echo $dataArray[$i]['thumbnail']; ?> alt="<?php echo $dataArray[$i]['title']; ?>">
                         <span class="pcr-lt"><?php echo $dataArray[$i]['title']; ?></span>
                     </div>
                 </a>

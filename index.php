@@ -24,9 +24,9 @@
             <section class="banner">
                 <div class="banner-area">
                     <div class="banner-area-left">
-                        <div class="banner-area-left-title">Make your first $1000 online</div>
-                        <div class="banner-area-left-description">Small beginnings lead to great achievements - start
-                            your journey with us!</div>
+                        <h1 class="banner-area-left-title">Make your first $1000 online</h1>
+                        <p class="banner-area-left-description">Small beginnings lead to great achievements - start
+                            your journey with us!</p>
                         <div class="banner-area-left-buttons">
                             <a href="/blog" aria-label="Blog page"><button class="banner-area-left-buttons-button1">Get Started Today</button></a>
                         </div>
@@ -73,7 +73,7 @@
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
@@ -82,7 +82,7 @@
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
@@ -91,7 +91,7 @@
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
@@ -100,7 +100,7 @@
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
@@ -109,7 +109,7 @@
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular6); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
@@ -118,7 +118,7 @@
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <span class="article-3x-date article-3x-content"><?php echo $data['date'] ?></span>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
                 </div>
@@ -189,7 +189,9 @@
                                         <?php echo $dataArray[$i]['title']; ?>
                                     </div>
                                     <div class="article-2x-description">
-                                        <?php echo $dataArray[$i]['author']; ?> - <?php echo $dataArray[$i]['date']; ?>
+                                        <?php echo $dataArray[$i]['author']; ?>
+                                        <span>-</span>
+                                        <time datetime="<?php echo date('Y-m-d', strtotime($dataArray[$i]['date'])) . $dataArray[$i]['time']; ?>"><?php echo $dataArray[$i]['date']; ?></time>
                                     </div>
                                 </div>
                             </a>
@@ -205,16 +207,16 @@
                 <div style="display: flex; justify-content: center;">
                     <div class="home-suggested-platforms-grid">
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo.png" alt="Fiverr logo">
-                            <a href="" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo.png" alt="Fiverr logo" loading="lazy" srcset=" ">
+                            <a href="https://www.fiverr.com/" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo.png" alt="Freelancer logo">
-                            <a href="" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
+                            <a href="https://www.freelancer.com/" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo.png" alt="Upwork logo">
-                            <a href="" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
+                            <a href="https://www.upwork.com/" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
                             <a href="" class="view-more" aria-label="View more Freelancing Platforms">

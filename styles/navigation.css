@@ -125,15 +125,15 @@
     justify-content: end;
 }
 
-.header-right-search {
-    height: 22px;
-    width: 22px;
+.header-right-button {
+    height: 26px;
+    width: 26px;
     margin-right: 20px;
     cursor: pointer;
     transition: opacity .3s;
 }
 
-.header-right-search:hover {
+.header-right-button:hover {
     opacity: .8;
 }
 

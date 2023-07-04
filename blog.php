@@ -177,7 +177,7 @@
                                         <?php echo $dataArray[$i]['preview']; ?>
                                     </p>
                                     <span class="article-3x-date article-3x-content">
-                                        <?php echo $dataArray[$i]['date']; ?>
+                                        <time datetime="<?php echo date('Y-m-d', strtotime($dataArray[$i]['date'])) . $dataArray[$i]['time']; ?>"><?php echo $dataArray[$i]['date']; ?></time>
                                     </span>
                                 </div>
                             </a>

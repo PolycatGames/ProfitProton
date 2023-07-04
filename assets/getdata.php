@@ -9,7 +9,7 @@ function getDataFromTextFile($entryNumber)
     $data = str_replace(array("\r\n", "\r", "\n"), '', $data);
 
     // Modify the pattern to match the exact entry number
-    $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*preview:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*keywords:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*author:\s*"([^"]+)"\s*}/';
+    $pattern = '/\b' . $entryNumber . '\s*{\s*title:\s*"([^"]+)"\s*preview:\s*"([^"]+)"\s*description:\s*"([^"]+)"\s*keywords:\s*"([^"]+)"\s*time:\s*"([^"]+)"\s*date:\s*"([^"]+)"\s*category:\s*"([^"]+)"\s*link:\s*"([^"]+)"\s*thumbnail:\s*"([^"]+)"\s*author:\s*"([^"]+)"\s*}/';
 
     // Use preg_match instead of preg_match_all to find a single match
     preg_match($pattern, $data, $matches);
@@ -19,17 +19,19 @@ function getDataFromTextFile($entryNumber)
         $preview = $matches[2];
         $description = $matches[3];
         $keywords = $matches[4];
-        $date = $matches[5];
-        $category = $matches[6];
-        $link = $matches[7];
-        $thumbnail = $matches[8];
-        $author = $matches[9];
+        $time = $matches[5];
+        $date = $matches[6];
+        $category = $matches[7];
+        $link = $matches[8];
+        $thumbnail = $matches[9];
+        $author = $matches[10];
 
         return array(
             'title' => $title,
             'preview' => $preview,
             'description' => $description,
             'keywords' => $keywords,
+            'time' => $time,
             'date' => $date,
             'category' => $category,
             'link' => $link,
@@ -42,6 +44,7 @@ function getDataFromTextFile($entryNumber)
             'preview' => 'No preview found.',
             'description' => 'No description found.',
             'keywords' => 'No keywords found.',
+            'time' => 'No time found.',
             'date' => 'No date found.',
             'category' => 'No category found.',
             'link' => 'No link found.',
@@ -72,13 +75,6 @@ foreach ($entries as $entry) {
     }
 }
 
-// Check if the query parameter is present
-if (isset($_GET['article'])) {
-    // Retrieve the value of article from the URL
-    $article = $_GET['article'];
-} else {
-    $article = $highestNumber;
-}
 
 /*()
 // Check if the query parameter is present
