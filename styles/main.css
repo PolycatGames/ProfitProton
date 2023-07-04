@@ -64,6 +64,7 @@ body {
     color: var(--secondary-color);
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 300;
+    font-display: swap;
 }
 
 strong{
@@ -74,6 +75,7 @@ button,
 input,
 textarea {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-display: swap;
 }
 
 main {
