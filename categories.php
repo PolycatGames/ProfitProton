@@ -7,7 +7,7 @@
     <meta name="description" content="ENTER DESCRIPTION" />
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
-    <!--<meta name="robots" content="index, follow">-->
+    <meta name="robots" content="index, follow">
 
     <!--Styles-->
 

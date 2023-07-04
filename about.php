@@ -51,7 +51,7 @@
         <p>Our plan is to continually evolve and enhance our platform, equipping you with cutting-edge strategies and insights for the ever-changing digital landscape. With an unwavering commitment to your success, we are dedicated to bringing you even more groundbreaking articles and valuable information in the future. Stay connected as we navigate the exciting opportunities and trends, empowering you to seize the limitless potential of the online world.</p>
 
         <h3>Questions?</h3>
-        <p>Have any questions? Feel free to <a class="link" href="/contact.php">reach out to us!</a></p>
+        <p>Have any questions? Feel free to <a class="link" href="/contact.php" aria-label="Contact us">reach out to us!</a></p>
 
       </section>
     </article>

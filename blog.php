@@ -8,7 +8,7 @@
     <meta name="description" content="ENTER DESCRIPTION" />
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
-    <!--<meta name="robots" content="index, follow">-->
+    <meta name="robots" content="index, follow">
 
     <!--Scripts-->
 
@@ -24,9 +24,9 @@
     <main class="main-content">
         <article>
             <section class="blog-front">
-                <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?>>
+                <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                     <div>
-                        <img src=<?php echo $data['thumbnail'] ?>>
+                        <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                         <span class="stickypost-large-category"><?php echo $data['category'] ?></span>
                         <h1 class="stickypost-large-title"><?php echo $data['title'] ?></h1>
                     </div>
@@ -37,25 +37,25 @@
                         <h2>Most Popular</h2>
                     </div>
                     <div class="articles-1x-bottom">
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?>>
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?>>
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?>>
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?>>
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                             <button>
 
                                 <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
@@ -70,12 +70,12 @@
         <nav id="categories-holder">
             <section class="categories">
                 <div class="categories-grid">
-                    <a href="/category/e-commerce" class="categories-item c1i1">E-commerce</a>
-                    <a href="/category/freelancing" class="categories-item c1i2">Freelancing</a>
-                    <a href="/category/marketing" class="categories-item c1i3">Marketing</a>
-                    <a href="/category/ai" class="categories-item c1i4">AI</a>
-                    <a href="/category/blogging" class="categories-item c1i5">Blogging</a>
-                    <a href="/categories" class="categories-item" id="categories-item-more">
+                    <a href="/category/e-commerce" class="categories-item c1i1" aria-label="Explore E-commerce Category">E-commerce</a>
+                    <a href="/category/freelancing" class="categories-item c1i2" aria-label="Explore Freelancing Category">Freelancing</a>
+                    <a href="/category/marketing" class="categories-item c1i3" aria-label="Explore Marketing Category">Marketing</a>
+                    <a href="/category/ai" class="categories-item c1i4" aria-label="Explore AI Category">AI</a>
+                    <a href="/category/blogging" class="categories-item c1i5" aria-label="Explore Blogging Category">Blogging</a>
+                    <a href="/categories" class="categories-item" id="categories-item-more" aria-label="Explore More Categories">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer_1" viewBox="0 0 290.5 291.99">
                             <defs>
                                 <style>
@@ -164,9 +164,9 @@
 
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
-                            <a href="<?php echo $dataArray[$i]['link']; ?>">
+                            <a href="<?php echo $dataArray[$i]['link']; ?>" aria-label="<?php echo $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
+                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="<?php echo $dataArray[$i]['title']; ?>">
                                     <span class="article-3x-tag article-3x-content">
                                         <?php echo $dataArray[$i]['category']; ?>
                                     </span>
@@ -192,11 +192,11 @@
 
 
 
-            <section class="pagination">
+            <section class="pagination" aria-label="Pagination">
                 <?php $articleamount = 6; ?>
-                <button class="pagination-button" onclick="adjustpage(<?php echo $articleamount ?>);" <?php if ($page == 1) { ?> disabled style="cursor:default;" <?php } ?>>Previous</button>
+                <button class="pagination-button" onclick="adjustpage(<?php echo $articleamount ?>);" <?php if ($page == 1) { ?> disabled style="cursor:default;" <?php } ?> aria-label="Previous page">Previous</button>
                 <div class="pagination-page"><?php echo $page ?> / <?php echo ceil((count($resultArray) - 1) / $articleamount) ?></div>
-                <button class="pagination-button" onclick="adjustpage(<?php echo -$articleamount ?>);" <?php if ($page == ceil((count($resultArray) - 1) / $articleamount)) { ?> disabled style="cursor:default;" <?php } ?>>Next</button>
+                <button class="pagination-button" onclick="adjustpage(<?php echo -$articleamount ?>);" <?php if ($page == ceil((count($resultArray) - 1) / $articleamount)) { ?> disabled style="cursor:default;" <?php } ?> aria-label="Next page">Next</button>
 
                 <script>
                     var page = <?php echo ((count($resultArray) - 1) - ($page - 1) * 6); ?>

@@ -10,7 +10,7 @@
     <meta name="description" content="ENTER DESCRIPTION" />
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
-    <!--<meta name="robots" content="index, follow">-->
+    <meta name="robots" content="index, follow">
 
     <!--Styles-->
 
@@ -79,9 +79,9 @@
 
                     <?php for ($i = 0; $i < (count($categoryNumbers)); $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
-                            <a href="<?php echo $dataArray[$i]['link']; ?>">
+                            <a href="<?php echo $dataArray[$i]['link']; ?>" aria-label="Link to <?php echo $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="">
+                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="<?php echo $dataArray[$i]['title']; ?>">
                                     <span class="article-3x-tag article-3x-content">
                                         <?php echo $dataArray[$i]['category']; ?>
                                     </span>
