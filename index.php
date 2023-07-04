@@ -69,7 +69,7 @@
                 <div class="articles-layout-3x-grid">
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src=<?php echo $data['thumbnail'] ?>>
+                            <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
