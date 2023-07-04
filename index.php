@@ -62,9 +62,9 @@
             </div>
         </section>
         <article>
-            <div class="articles-title">
+            <h2 class="articles-title">
                 Popular
-            </div>
+            </h2>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
                     <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
@@ -123,9 +123,9 @@
                     </a>
                 </div>
             </section>
-            <div class="articles-title">
+            <h2 class="articles-title">
                 Latest
-            </div>
+            </h2>
             <section class="articles-2x">
                 <div class="articles-2x-grid">
 
@@ -185,9 +185,9 @@
                             <a class="article-2x" href="<?php echo $dataArray[$i]['link']; ?>" aria-label="Link to <?php echo $dataArray[$i]['title']; ?>">
                                 <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="<?php echo $dataArray[$i]['title']; ?>">
                                 <div class="article-2x-info">
-                                    <div class="article-2x-title">
+                                    <h3 class="article-2x-title">
                                         <?php echo $dataArray[$i]['title']; ?>
-                                    </div>
+                                    </h3>
                                     <div class="article-2x-description">
                                         <?php echo $dataArray[$i]['author']; ?>
                                         <span>-</span>
@@ -200,9 +200,9 @@
 
                 </div>
             </section>
-            <div class="articles-title">
+            <h2 class="articles-title">
                 Top Freelancing Platforms
-            </div>
+            </h2>
             <section class="home-suggested-platforms">
                 <div style="display: flex; justify-content: center;">
                     <div class="home-suggested-platforms-grid">
