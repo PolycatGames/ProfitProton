@@ -16,29 +16,47 @@
 <link rel="stylesheet" href="/styles/navigation.css">
 
 <!--Standard Scripts-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  if (location.hostname === "localhost")
-    $(document).ready(function() {
+  if (location.hostname === "localhost") {
+    var script = document.createElement("script");
+    script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+    script.onload = function() {
+      // Your code that depends on jQuery goes here
+      $(document).ready(function() {
+        // Function to execute the AJAX request
+        function checkFileContent() {
+          $.ajax({
+            url: '/readFile.php',
+            type: 'GET',
+            success: function(response) {
+              var fileContent = response.trim();
+
+              if (fileContent === 'ReloadBrowser') {
+                fileContent = '';
+                console.log('done');
+                location.reload();
+              }
+            },
+            error: function(xhr, status, error) {
+              console.error(error);
+            }
+          });
+        }
+
+        // Run the initial check
+        checkFileContent();
+
+        // Set interval to check for updates every 5 seconds (adjust as needed)
+        setInterval(checkFileContent, 500);
+      });
+    };
+    document.head.appendChild(script);
+  } else {
+    // Your code that doesn't depend on jQuery goes here
+    document.addEventListener("DOMContentLoaded", function() {
       // Function to execute the AJAX request
       function checkFileContent() {
-
-        $.ajax({
-          url: '/readFile.php',
-          type: 'GET',
-          success: function(response) {
-            var fileContent = response.trim();
-
-            if (fileContent === 'ReloadBrowser') {
-              fileContent = '';
-              console.log('done');
-              location.reload();
-            }
-          },
-          error: function(xhr, status, error) {
-            console.error(error);
-          }
-        });
+        // Your AJAX request code here
       }
 
       // Run the initial check
@@ -47,7 +65,9 @@
       // Set interval to check for updates every 5 seconds (adjust as needed)
       setInterval(checkFileContent, 500);
     });
+  }
 </script>
+
 
 
 <script>
@@ -189,7 +209,7 @@
   function activateBurger() {
     if (burgerActivated == false) {
       sidebar.style.display = "flex";
-      
+
       burgerActivated = true;
       console.log("inactive -> active")
     } else {
