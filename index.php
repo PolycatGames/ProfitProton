@@ -207,15 +207,15 @@
                 <div style="display: flex; justify-content: center;">
                     <div class="home-suggested-platforms-grid">
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo.png" alt="Fiverr logo" loading="lazy" srcset=" ">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo.png" alt="Fiverr logo" width="180px" height="180px" loading="lazy" srcset=" ">
                             <a href="https://www.fiverr.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo.png" alt="Freelancer logo">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr_small.webp" alt="Fiverr logo" width="180px" height="180px" loading="lazy" srcset="/images/company-logos/freelancer-logo.png 400w, /images/company-logos/shopify-logo.png 800w, /images/company-logos/fiverr_large.webp 1200w" sizes="40vw">
                             <a href="https://www.freelancer.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo.png" alt="Upwork logo">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo.png" alt="Upwork logo" width="180px" height="180px">
                             <a href="https://www.upwork.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
                         </div>
                         <!--<div class="home-suggested-platforms-grid-item">

@@ -89,8 +89,8 @@
                                     <h3 class="article-3x-title article-3x-content">
                                         <?php echo $dataArray[$i]['title']; ?>
                                     </h3>
-                                    <p class="article-3x-description article-3x-content">
-                                        <?php echo $dataArray[$i]['description']; ?>
+                                    <p class="article-3x-description article-3x-content truncate">
+                                        <?php echo $dataArray[$i]['preview']; ?>
                                     </p>
                                     <span class="article-3x-date article-3x-content">
                                         <?php echo $dataArray[$i]['date']; ?>

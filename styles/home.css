@@ -139,6 +139,8 @@
 
 .home-suggested-platforms-grid-item-image {
     width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
 .home-suggested-platforms-grid-item-text {

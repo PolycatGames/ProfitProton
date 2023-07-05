@@ -35,8 +35,8 @@
                     // Define an empty array to store the matching numbers
                     $categoryNumbers = [];
 
-    // Regular expression pattern to match the desired category
-    $pattern = '/(\d+)\s+\{\s*title:\s*"([^"]*)"\s*preview:\s*"([^"]*)"\s*description:\s*"([^"]*)"\s*keywords:\s*"([^"]*)"\s*time:\s*"([^"]*)"\s*date:\s*"([^"]*)"\s*category:\s*"E-commerce"/';
+                    // Regular expression pattern to match the desired category
+                    $pattern = '/(\d+)\s+\{\s*title:\s*"([^"]*)"\s*preview:\s*"([^"]*)"\s*description:\s*"([^"]*)"\s*keywords:\s*"([^"]*)"\s*time:\s*"([^"]*)"\s*date:\s*"([^"]*)"\s*category:\s*"E-commerce"/';
 
 
 
@@ -90,8 +90,8 @@
                                     <h3 class="article-3x-title article-3x-content">
                                         <?php echo $dataArray[$i]['title']; ?>
                                     </h3>
-                                    <p class="article-3x-description article-3x-content">
-                                        <?php echo $dataArray[$i]['description']; ?>
+                                    <p class="article-3x-description article-3x-content truncate">
+                                        <?php echo $dataArray[$i]['preview']; ?>
                                     </p>
                                     <span class="article-3x-date article-3x-content">
                                         <?php echo $dataArray[$i]['date']; ?>
