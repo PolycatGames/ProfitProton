@@ -33,6 +33,9 @@
 <link rel="stylesheet" href="/styles/navigation.css">
 
 <!--Standard Scripts-->
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/img-att.php'; ?>
+
 <script>
   if (location.hostname === "localhost") {
     var script = document.createElement("script");
@@ -254,8 +257,8 @@
   });
 </script>
 
-<!-- Google tag (gtag.js) -->
-<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
+<Google tag (gtag.js)>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
 <script>
   if (location.hostname !== "localhost")
 
@@ -267,7 +270,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CXQPHCFCPT');
-</script>-->
+</script>
 
 <!--Standard Elements-->
 <style>

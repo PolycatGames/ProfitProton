@@ -67,7 +67,16 @@
             </h2>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <div class=" article-3x">
+                            <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>"  srcset="" sizes="" loading="" decoding="">
+                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
+                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
+                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
+                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
+                        </div>
+                    </a>
+                    <a <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                         <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
@@ -76,7 +85,7 @@
                             <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                         <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
@@ -85,7 +94,7 @@
                             <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                         <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
@@ -94,7 +103,7 @@
                             <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                         <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
@@ -103,16 +112,7 @@
                             <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
-                        <div class=" article-3x">
-                            <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
-                            <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
-                            <h3 class="article-3x-title article-3x-content"><?php echo $data['title'] ?></h3>
-                            <p class="article-3x-description article-3x-content truncate"><?php echo $data['preview'] ?></p>
-                            <time class="article-3x-date article-3x-content" datetime="<?php echo date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?php echo $data['date'] ?></time>
-                        </div>
-                    </a>
-                    <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular6); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular6); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
                         <div class=" article-3x">
                             <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
                             <span class="article-3x-tag article-3x-content"><?php echo $data['category'] ?></span>
