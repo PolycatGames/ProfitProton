@@ -24,11 +24,11 @@
     <main class="main-content">
         <article>
             <section class="blog-front">
-                <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                     <div>
-                        <img src=<?php echo $data['thumbnail'] ?> alt="<?php echo $data['title'] ?>">
-                        <span class="stickypost-large-category"><?php echo $data['category'] ?></span>
-                        <h1 class="stickypost-large-title"><?php echo $data['title'] ?></h1>
+                        <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                        <span class="stickypost-large-category"><?= $data['category'] ?></span>
+                        <h1 class="stickypost-large-title"><?= $data['title'] ?></h1>
                     </div>
                 </a>
                 <div class="articles-1x">
@@ -37,29 +37,29 @@
                         <h2>Most Popular</h2>
                     </div>
                     <div class="articles-1x-bottom">
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
-                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
-                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
+                                <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
-                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
-                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
+                                <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
-                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
-                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
+                                <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?php echo $data['link'] ?> aria-label="Link to <?php echo $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
 
-                                <span class="articles-1x-bottom-category"><?php echo $data['category'] ?></span>
-                                <h3 class="articles-1x-bottom-title"><?php echo $data['title'] ?></h3>
+                                <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
+                                <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
                     </div>
@@ -164,20 +164,20 @@
 
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
-                            <a href="<?php echo $dataArray[$i]['link']; ?>" aria-label="<?php echo $dataArray[$i]['title']; ?>">
+                            <a href="<?= $dataArray[$i]['link']; ?>" aria-label="<?= $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="<?php echo $dataArray[$i]['title']; ?>">
+                                    <img src="<?= $dataArray[$i]['thumbnail']; ?>" alt="<?= $dataArray[$i]['title']; ?>">
                                     <span class="article-3x-tag article-3x-content">
-                                        <?php echo $dataArray[$i]['category']; ?>
+                                        <?= $dataArray[$i]['category']; ?>
                                     </span>
                                     <h3 class="article-3x-title article-3x-content">
-                                        <?php echo $dataArray[$i]['title']; ?>
+                                        <?= $dataArray[$i]['title']; ?>
                                     </h3>
                                     <p class="article-3x-description article-3x-content truncate">
-                                        <?php echo $dataArray[$i]['preview']; ?>
+                                        <?= $dataArray[$i]['preview']; ?>
                                     </p>
                                     <span class="article-3x-date article-3x-content">
-                                        <time datetime="<?php echo date('Y-m-d', strtotime($dataArray[$i]['date'])) . $dataArray[$i]['time']; ?>"><?php echo $dataArray[$i]['date']; ?></time>
+                                        <time datetime="<?= date('Y-m-d', strtotime($dataArray[$i]['date'])) . $dataArray[$i]['time']; ?>"><?= $dataArray[$i]['date']; ?></time>
                                     </span>
                                 </div>
                             </a>
@@ -194,19 +194,19 @@
 
             <section class="pagination" aria-label="Pagination">
                 <?php $articleamount = 6; ?>
-                <button class="pagination-button" onclick="adjustpage(<?php echo $articleamount ?>);" <?php if ($page == 1) { ?> disabled style="cursor:default;" <?php } ?> aria-label="Previous page">Previous</button>
-                <div class="pagination-page"><?php echo $page ?> / <?php echo ceil((count($resultArray) - 1) / $articleamount) ?></div>
-                <button class="pagination-button" onclick="adjustpage(<?php echo -$articleamount ?>);" <?php if ($page == ceil((count($resultArray) - 1) / $articleamount)) { ?> disabled style="cursor:default;" <?php } ?> aria-label="Next page">Next</button>
+                <button class="pagination-button" onclick="adjustpage(<?= $articleamount ?>);" <?php if ($page == 1) { ?> disabled style="cursor:default;" <?php } ?> aria-label="Previous page">Previous</button>
+                <div class="pagination-page"><?= $page ?> / <?= ceil((count($resultArray) - 1) / $articleamount) ?></div>
+                <button class="pagination-button" onclick="adjustpage(<?= -$articleamount ?>);" <?php if ($page == ceil((count($resultArray) - 1) / $articleamount)) { ?> disabled style="cursor:default;" <?php } ?> aria-label="Next page">Next</button>
 
                 <script>
-                    var page = <?php echo ((count($resultArray) - 1) - ($page - 1) * 6); ?>
+                    var page = <?= ((count($resultArray) - 1) - ($page - 1) * 6); ?>
 
                     function adjustpage(value) {
                         var updatedValue = page + value;
                         console.log(updatedValue);
                         // Check if the updated value is valid
                         if (updatedValue >= 1) {
-                            page = Math.ceil((<?php echo (count($resultArray) - 1) ?> - updatedValue + 1) / <?php echo $articleamount ?>);
+                            page = Math.ceil((<?= (count($resultArray) - 1) ?> - updatedValue + 1) / <?= $articleamount ?>);
                             console.log("Updated page: " + page);
 
                             // Update the browser URL without reloading the article
@@ -232,14 +232,14 @@
                 </script>
 
                 <script>
-                    if (<?php echo $page ?> > Math.ceil(<?php echo (ceil(count($resultArray) - 1)) ?> / <?php echo $articleamount ?>)) {
+                    if (<?= $page ?> > Math.ceil(<?= (ceil(count($resultArray) - 1)) ?> / <?= $articleamount ?>)) {
 
                         var url = new URL(window.location.href);
-                        url.searchParams.set('page', Math.ceil(<?php echo (ceil(count($resultArray) - 1)) ?> / <?php echo $articleamount ?>));
+                        url.searchParams.set('page', Math.ceil(<?= (ceil(count($resultArray) - 1)) ?> / <?= $articleamount ?>));
                         window.history.replaceState(null, null, url);
                         window.location.href = url;
                     }
-                    if (<?php echo $page ?> < 1) {
+                    if (<?= $page ?> < 1) {
 
                         var url = new URL(window.location.href);
                         url.searchParams.set('page', 1);

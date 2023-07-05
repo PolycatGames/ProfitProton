@@ -8,7 +8,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "E-commerce"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -21,7 +21,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Freelancing"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -34,7 +34,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Content Creation"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -47,7 +47,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Blogging"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -60,7 +60,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "AI"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -74,7 +74,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Marketing"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -87,7 +87,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Other"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/placeholder"
 author: "ProfitProton"
 }
 
@@ -100,7 +100,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Other"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -113,7 +113,7 @@ time: "T00:00:00"
 date: "6-11-2023"
 category: "Other"
 link: "/contact"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }
 
@@ -126,6 +126,6 @@ time: "T00:00:00"
 date: "7-3-2023"
 category: "Undefined"
 link: "/articles/0"
-thumbnail: "/images/placeholder/profitproton_placeholder.png"
+thumbnail: "/images/placeholder/profitproton_placeholder"
 author: "ProfitProton"
 }

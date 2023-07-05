@@ -54,11 +54,11 @@
 
         <?php for ($i = 0; $i < $articleCount; $i++) : ?>
             <?php if ($showarticle[$i] !== 1) : ?>
-                <a href="<?php echo $dataArray[$i]['link']; ?>" aria-label="Link to <?php echo $dataArray[$i]['title']; ?>">
+                <a href="<?= $dataArray[$i]['link']; ?>" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
                     <div class="article-3x-small">
-                        <img src=<?php echo $dataArray[$i]['thumbnail']; ?> alt="<?php echo $dataArray[$i]['title']; ?>">
-                        <span class="article-3x-small-title"><?php echo $dataArray[$i]['title']; ?></span>
-                        <span class="article-3x-small-date"><?php echo $dataArray[$i]['date']; ?></span>
+                        <img src=<?= $dataArray[$i]['thumbnail']; ?> alt="<?= $dataArray[$i]['title']; ?>">
+                        <span class="article-3x-small-title"><?= $dataArray[$i]['title']; ?></span>
+                        <span class="article-3x-small-date"><?= $dataArray[$i]['date']; ?></span>
                     </div>
                 </a>
             <?php endif; ?>
