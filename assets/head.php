@@ -88,6 +88,28 @@
   }
 </script>
 
+<script>
+  function setDimensions() {
+    var images = document.getElementsByTagName('img');
+
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+
+      var tempImg = new Image();
+      tempImg.src = img.src;
+
+      tempImg.onload = (function(image) {
+        return function() {
+          image.setAttribute('width', this.width + 'px');
+          image.setAttribute('height', this.height + 'px');
+        };
+      })(img);
+    }
+  }
+
+  window.onload = setDimensions;
+</script>
+
 
 
 <script>

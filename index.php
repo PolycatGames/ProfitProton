@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="banner-area-right">
-                        <img src="images/illustrations/landing-page-illustration.jpg" alt="An illustration depicting a man sitting at a desk in an office, working on a laptop. Money is flowing out from the laptop, symbolizing the concept of earning money online. Next to the illustration is a button that says 'Start Earning.">
+                        <img src="images/illustrations/landing-page-illustration.webp" alt="An illustration depicting a man sitting at a desk in an office, working on a laptop. Money is flowing out from the laptop, symbolizing the concept of earning money online. Next to the illustration is a button that says 'Start Earning.">
                     </div>
                 </div>
             </section>
@@ -69,15 +69,7 @@
                 <div class="articles-layout-3x-grid">
                     <a <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="
-                            <?= $data['thumbnail'] ?>_1.webp 400w, 
-                            <?= $data['thumbnail'] ?>_2.webp 720w,
-                            <?= $data['thumbnail'] ?>_3.webp 1200w
-                            
-                            " sizes="
-                            (min-width: 1080px) 33.3vw,
-                            (min-width: 730px) 50vw,
-                            100vw" loading="" decoding="">
+                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1.webp 400w, <?= $data['thumbnail'] ?>_2.webp 720w,<?= $data['thumbnail'] ?>_3.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -86,7 +78,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1.webp 400w, <?= $data['thumbnail'] ?>_2.webp 720w,<?= $data['thumbnail'] ?>_3.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -95,7 +87,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1.webp 400w, <?= $data['thumbnail'] ?>_2.webp 720w,<?= $data['thumbnail'] ?>_3.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -104,7 +96,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular4); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1.webp 400w, <?= $data['thumbnail'] ?>_2.webp 720w,<?= $data['thumbnail'] ?>_3.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -113,7 +105,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular5); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1.webp 400w, <?= $data['thumbnail'] ?>_2.webp 720w,<?= $data['thumbnail'] ?>_3.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -122,7 +114,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular6); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                            <img src="<?= $data['thumbnail'] ?>_1.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1.webp 400w, <?= $data['thumbnail'] ?>_2.webp 720w,<?= $data['thumbnail'] ?>_3.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -191,7 +183,7 @@
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a class="article-2x" href="<?= $dataArray[$i]['link']; ?>" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
-                                <img src="<?= $dataArray[$i]['thumbnail']; ?>" alt="<?= $dataArray[$i]['title']; ?>">
+                                <img src="<?= $dataArray[$i]['thumbnail'] ?>_1.webp" alt="<?= $dataArray[$i]['title']; ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>_1.webp 300w, <?= $dataArray[$i]['thumbnail'] ?>_2.webp 800w" sizes="(min-width: 1000px) 15vw, 30vw" loading="lazy" decoding="async">
                                 <div class="article-2x-info">
                                     <h3 class="article-2x-title">
                                         <?= $dataArray[$i]['title']; ?>

@@ -71,9 +71,9 @@
     <div class="pcr-holder">
         <span class="pcr-title">Popular</span>
         <a href="<?= $data['link'] ?>" aria-label="Link to <?= $data['title'] ?>">
-            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
+            <? require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
             <div class="pcr-article">
-                <?php $data = getDataFromTextFile(Popular); ?>
+                <? $data = getDataFromTextFile(Popular); ?>
                 <img class="pcr-popular" src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
                 <span class="pcr-at"><?= $data['title'] ?></span>
                 <span class="pcr-ad"><?= $data['date'] ?></span>
@@ -82,7 +82,7 @@
     </div>
     <div class="pcr-holder">
         <span class="pcr-title">Latest</span>
-        <?php
+        <?
         // Read the contents of the text file
         $data = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data.txt');
 
@@ -130,16 +130,16 @@
             }
         }
         ?>
-        <?php for ($i = 0; $i < $articleCount; $i++) : ?>
-            <?php if ($showarticle[$i] !== 1) : ?>
+        <? for ($i = 0; $i < $articleCount; $i++) : ?>
+            <? if ($showarticle[$i] !== 1) : ?>
                 <a href="<?= $dataArray[$i]['link']; ?>">
                     <div class="pcr-article-latest" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
                         <img src=<?= $dataArray[$i]['thumbnail']; ?> alt="<?= $dataArray[$i]['title']; ?>">
                         <span class="pcr-lt"><?= $dataArray[$i]['title']; ?></span>
                     </div>
                 </a>
-            <?php endif; ?>
-        <?php endfor; ?>
+            <? endif; ?>
+        <? endfor; ?>
     </div>
 
 </div>

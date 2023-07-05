@@ -1,7 +1,7 @@
 <div class="articles-3x-small">
     <span class="articles-3x-small-title">Read More</span>
     <div class="articles-3x-small-grid">
-        <?php
+        <?
         // Read the contents of the text file
         $data = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data.txt');
 
@@ -52,8 +52,8 @@
 
 
 
-        <?php for ($i = 0; $i < $articleCount; $i++) : ?>
-            <?php if ($showarticle[$i] !== 1) : ?>
+        <? for ($i = 0; $i < $articleCount; $i++) : ?>
+            <? if ($showarticle[$i] !== 1) : ?>
                 <a href="<?= $dataArray[$i]['link']; ?>" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
                     <div class="article-3x-small">
                         <img src=<?= $dataArray[$i]['thumbnail']; ?> alt="<?= $dataArray[$i]['title']; ?>">
@@ -61,7 +61,7 @@
                         <span class="article-3x-small-date"><?= $dataArray[$i]['date']; ?></span>
                     </div>
                 </a>
-            <?php endif; ?>
-        <?php endfor; ?>
+            <? endif; ?>
+        <? endfor; ?>
     </div>
 </div>

@@ -213,6 +213,7 @@
 
 .footer-content-top-contact-branding-logo {
     width: 50px;
+    height: auto;
 }
 
 .footer-content-top-contact-branding-name {
@@ -279,6 +280,7 @@
 
 .footer-content-top-social-list-item img {
     width: 25px;
+    height: auto;
     cursor: pointer;
     transition: width .15s, margin .15s;
 }
