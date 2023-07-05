@@ -278,14 +278,14 @@
     margin: 0px 15px;
 }
 
-.footer-content-top-social-list-item img {
+.footer-content-top-social-list-item svg {
     width: 25px;
     height: auto;
     cursor: pointer;
     transition: width .15s, margin .15s;
 }
 
-.footer-content-top-social-list-item img:hover {
+.footer-content-top-social-list-item svg:hover {
     width: 29px;
     margin: 0px 13px;
 }
