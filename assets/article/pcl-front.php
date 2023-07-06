@@ -11,5 +11,5 @@
         </div>
         <a href="https://www.instagram.com/profitproton" target="_blank" aria-label="Follow instagram profile"><button class="pcl-button"><img src="/icons/socials/instagram.png" alt="Follow ProfitProton on Instagram"><span>Follow</span></button></a>
     </div>
-    <img class="article-thumbnail" src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+    <img class="article-thumbnail" src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" loading="eager" srcset="<?= $data['thumbnail'] ?>_1x.webp 380w, <?= $data['thumbnail'] ?>_2x.webp 650w,<?= $data['thumbnail'] ?>_3x.webp 800w" sizes="(max-width: 700px) 100vw, 700px">
 </div>

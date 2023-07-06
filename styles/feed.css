@@ -219,6 +219,7 @@
 
 .article-3x-small img {
     width: 100%;
+    height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -441,11 +442,13 @@
 }
 
 .pcl-button img {
-    height: 22px;
+    width: 22px;
+    height: auto;
 }
 
 .article-thumbnail {
     width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -489,6 +492,7 @@
 .pcr-popular {
     border-radius: 5px;
     width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 

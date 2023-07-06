@@ -74,7 +74,7 @@
             <? require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
             <div class="pcr-article">
                 <? $data = getDataFromTextFile(Popular); ?>
-                <img class="pcr-popular" src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                <img class="pcr-popular" src="<?= $data['thumbnail']?>_2x.webp" alt="<?= $data['title'] ?>">
                 <span class="pcr-at"><?= $data['title'] ?></span>
                 <span class="pcr-ad"><?= $data['date'] ?></span>
             </div>
@@ -134,7 +134,7 @@
             <? if ($showarticle[$i] !== 1) : ?>
                 <a href="<?= $dataArray[$i]['link']; ?>">
                     <div class="pcr-article-latest" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
-                        <img src=<?= $dataArray[$i]['thumbnail']; ?> alt="<?= $dataArray[$i]['title']; ?>">
+                        <img src="<?= $dataArray[$i]['thumbnail'];?>_1x.webp" alt="<?= $dataArray[$i]['title']; ?>">
                         <span class="pcr-lt"><?= $dataArray[$i]['title']; ?></span>
                     </div>
                 </a>
