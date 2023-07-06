@@ -26,7 +26,7 @@
             <section class="blog-front">
                 <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                     <div>
-                        <img src=<?= $data['thumbnail'] ?> alt="<?= $data['title'] ?>">
+                        <img src="<?= $data['thumbnail'] ?>_2x.webp" alt="<?= $data['title'] ?>" loading="eager" decoding="async">
                         <span class="stickypost-large-category"><?= $data['category'] ?></span>
                         <h1 class="stickypost-large-title"><?= $data['title'] ?></h1>
                     </div>
@@ -166,7 +166,7 @@
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?= $dataArray[$i]['link']; ?>" aria-label="<?= $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?= $dataArray[$i]['thumbnail']; ?>" alt="<?= $dataArray[$i]['title']; ?>">
+                                    <img src="<?= $dataArray[$i]['thumbnail'] ?>_1x.webp" alt="<?= $dataArray[$i]['title'] ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>_1x.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>_2x.webp 720w,<?= $dataArray[$i]['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                                     <span class="article-3x-tag article-3x-content">
                                         <?= $dataArray[$i]['category']; ?>
                                     </span>

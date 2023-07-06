@@ -19,7 +19,7 @@
     <main class="main-content">
         <article class="greytext">
             <section class="contact-page-holder">
-                <img class="contact-page-illustration" src="images/illustrations/contact-page-illustration.png" alt="Assistant reaching out and communicating with customers">
+                <img class="contact-page-illustration" src="images/illustrations/contact-page-illustration.webp" alt="Assistant reaching out and communicating with customers" loading="eager" decoding="sync">
                 <div class="contact-page">
                     <h1 class="page-title">Get in touch</h1>
                     <div class="contact-page-info">
