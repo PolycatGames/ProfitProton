@@ -125,6 +125,7 @@
 .home-suggested-platforms-grid {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
     row-gap: 80px;
 }
