@@ -94,7 +94,8 @@
                             </defs>
                             <polyline class="cls-1" points="252.5 156 252.5 274.49 17.5 274.49 17.5 35.39 137.66 35.39" />
                             <polyline class="cls-1" points="206.75 17.5 273 17.5 273 85 273 17.5 140.5 150" />
-                        </svg>More</span>
+                        </svg>
+                        More
                     </a>
                 </div>
             </section>
