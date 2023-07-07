@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!--Meta Data-->
     <title>ProfitProton | Blog</title>
     <meta name="description" content="ENTER DESCRIPTION" />

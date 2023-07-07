@@ -548,6 +548,11 @@
     font-weight: 700;
 }
 
+.post-content img{
+    width: 100%;
+    height: auto;
+}
+
 /*CATEGORY*/
 .category{
     margin-top: 50px;

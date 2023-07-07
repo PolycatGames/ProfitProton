@@ -35,8 +35,8 @@
                     // Define an empty array to store the matching numbers
                     $categoryNumbers = [];
 
-    // Regular expression pattern to match the desired category
-    $pattern = '/(\d+)\s+\{\s*title:\s*"([^"]*)"\s*preview:\s*"([^"]*)"\s*description:\s*"([^"]*)"\s*keywords:\s*"([^"]*)"\s*time:\s*"([^"]*)"\s*date:\s*"([^"]*)"\s*category:\s*"AI"/';
+                    // Regular expression pattern to match the desired category
+                    $pattern = '/(\d+)\s+\{\s*title:\s*"([^"]*)"\s*preview:\s*"([^"]*)"\s*description:\s*"([^"]*)"\s*keywords:\s*"([^"]*)"\s*time:\s*"([^"]*)"\s*date:\s*"([^"]*)"\s*category:\s*"AI"/';
 
 
                     // Match all occurrences of the pattern in the file content
@@ -82,7 +82,7 @@
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?php echo $dataArray[$i]['link']; ?>" aria-label="Link to <?php echo $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?php echo $dataArray[$i]['thumbnail']; ?>" alt="<?php echo $dataArray[$i]['title']; ?>">
+                                    <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp" alt="<?= $dataArray[$i]['title'] ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x500.webp 800w,<?= $dataArray[$i]['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                                     <span class="article-3x-tag article-3x-content">
                                         <?php echo $dataArray[$i]['category']; ?>
                                     </span>
