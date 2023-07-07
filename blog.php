@@ -12,8 +12,6 @@
 
     <!--Scripts-->
 
-
-
     <!--Styles-->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
     <?php include 'assets/head.php'; ?>
@@ -26,14 +24,20 @@
             <section class="blog-front">
                 <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                     <div>
-                        <img src="<?= $data['thumbnail'] ?>_2x.webp" alt="<?= $data['title'] ?>" loading="eager" decoding="async">
+                        <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(max-width: 800px) 100vw, (min-width: 1240px) 670px, 50vw" loading="eager" decoding="async">
                         <span class="stickypost-large-category"><?= $data['category'] ?></span>
                         <h1 class="stickypost-large-title"><?= $data['title'] ?></h1>
                     </div>
                 </a>
                 <div class="articles-1x">
                     <div class="articles-1x-top">
-                        <img src="icons/other/popular.png" alt="popular-articles-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512">
+                            <g>
+                                <g>
+                                    <path fill="var(--main-color)" d="m12 23c-4.8 0-8.5-3.6-8.5-8.3 0-1.7.3-3 .9-4 .6-.9.9-1.3 1.4-1.8.2-.1.3-.3.5-.5l.3-.4c.5-.5.6-.6 1.1-1.5s.9-3 .9-4.5c0-.4.2-.7.6-.9.3-.2.7-.1 1 .1l.5.4c1.1.8 2.5 2 3.6 3.7.7 1.1 1.4 2.6 1.8 3.8.2-.4.4-.9.5-1.5.1-.4.4-.8.8-.9s.9.1 1.1.5c.7 1.2.8 1.4 1.4 3.2.6 1.9.7 3.1.7 4.2-.1 4.6-3.9 8.4-8.6 8.4zm-1.6-19c-.2 1.3-.5 2.6-1 3.5-.6 1-.8 1.3-1.3 1.9l-.3.3c-.2.2-.4.4-.5.6-.4.5-.7.8-1.2 1.5-.4.7-.6 1.7-.6 3 0 3.5 2.9 6.3 6.5 6.3s6.5-2.9 6.5-6.5c0-1 0-1.9-.6-3.5-.1-.3-.2-.5-.2-.7-.5.8-1.1 1.3-1.4 1.5s-.7.3-1.1.1c-.3-.2-.6-.5-.6-.9 0-.3-.8-3-1.9-4.7-.7-1-1.5-1.8-2.3-2.4z" fill="rgb(0,0,0)" />
+                                </g>
+                            </g>
+                        </svg>
                         <h2>Most Popular</h2>
                     </div>
                     <div class="articles-1x-bottom">
@@ -166,7 +170,7 @@
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?= $dataArray[$i]['link']; ?>" aria-label="<?= $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?= $dataArray[$i]['thumbnail'] ?>_1x.webp" alt="<?= $dataArray[$i]['title'] ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>_1x.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>_2x.webp 720w,<?= $dataArray[$i]['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                                    <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp" alt="<?= $dataArray[$i]['title'] ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x500.webp 800w,<?= $dataArray[$i]['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                                     <span class="article-3x-tag article-3x-content">
                                         <?= $dataArray[$i]['category']; ?>
                                     </span>
@@ -251,7 +255,9 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/subscribe.php'; ?>
         </article>
     </main>
-
+    <script>
+        setDimensions(); // Call the function directly without relying on window.onload
+    </script>
     <?php include 'assets/footer.html'; ?>
 </body>
 

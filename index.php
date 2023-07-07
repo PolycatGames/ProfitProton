@@ -143,7 +143,7 @@
                 <div class="articles-layout-3x-grid">
                     <a <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1x.webp 400w, <?= $data['thumbnail'] ?>_2x.webp 720w,<?= $data['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -152,7 +152,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1x.webp 400w, <?= $data['thumbnail'] ?>_2x.webp 720w,<?= $data['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -161,7 +161,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1x.webp 400w, <?= $data['thumbnail'] ?>_2x.webp 720w,<?= $data['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -170,7 +170,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular4); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1x.webp 400w, <?= $data['thumbnail'] ?>_2x.webp 720w,<?= $data['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -179,7 +179,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular5); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1x.webp 400w, <?= $data['thumbnail'] ?>_2x.webp 720w,<?= $data['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -188,7 +188,7 @@
                     </a>
                     <a <?php $data = getDataFromTextFile(Popular6); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>_1x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>_1x.webp 400w, <?= $data['thumbnail'] ?>_2x.webp 720w,<?= $data['thumbnail'] ?>_3x.webp 1200w" sizes="(min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -202,9 +202,6 @@
             </h2>
             <section class="articles-2x">
                 <div class="articles-2x-grid">
-
-
-
                     <?php
                     // Read the contents of the text file
                     $data = file_get_contents('data.txt');
@@ -257,7 +254,7 @@
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a class="article-2x" href="<?= $dataArray[$i]['link']; ?>" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
-                                <img src="<?= $dataArray[$i]['thumbnail'] ?>_1x.webp" alt="<?= $dataArray[$i]['title']; ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>_1x.webp 300w, <?= $dataArray[$i]['thumbnail'] ?>_2x.webp 800w" sizes="(min-width: 1000px) 15vw, 30vw" loading="lazy" decoding="async">
+                                <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp" alt="<?= $dataArray[$i]['title']; ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x500.webp 800w, <?= $dataArray[$i]['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1000px) 15vw, 30vw" loading="lazy" decoding="async">
                                 <div class="article-2x-info">
                                     <h3 class="article-2x-title">
                                         <?= $dataArray[$i]['title']; ?>
@@ -281,15 +278,15 @@
                 <div style="display: flex; justify-content: center;">
                     <div class="home-suggested-platforms-grid">
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo_1x.webp" alt="Fiverr logo" srcset="images/company-logos/fiverr-logo_1x.webp 190w, images/company-logos/fiverr-logo_2x.webp 420w, images/company-logos/fiverr-logo_3x.webp 700w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo-200x200.webp" alt="Fiverr logo" srcset="images/company-logos/fiverr-logo-200x200.webp 200w, images/company-logos/fiverr-logo-400x400.webp 400w, images/company-logos/fiverr-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
                             <a href="https://www.fiverr.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo_1x.webp" alt="Upwork logo" srcset="images/company-logos/upwork-logo_1x.webp 190w, images/company-logos/upwork-logo_2x.webp 420w, images/company-logos/upwork-logo_3x.webp 700w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo_1x.webp" alt="Upwork logo" srcset="images/company-logos/upwork-logo-200x200.webp 200w, images/company-logos/upwork-logo-400x400.webp 400w, images/company-logos/upwork-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
                             <a href="https://www.upwork.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo_1x.webp" alt="Freelancer logo" srcset="images/company-logos/freelancer-logo_1x.webp 190w, images/company-logos/freelancer-logo_2x.webp 420w, images/company-logos/freelancer-logo_3x.webp 700w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo_1x.webp" alt="Freelancer logo" srcset="images/company-logos/freelancer-logo-200x200.webp 200w, images/company-logos/freelancer-logo-400x400.webp 400w, images/company-logos/freelancer-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
                             <a href="https://www.freelancer.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
                         </div>
                         <!--<div class="home-suggested-platforms-grid-item">
