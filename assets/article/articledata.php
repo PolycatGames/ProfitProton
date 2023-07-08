@@ -86,4 +86,7 @@
             });
         });
     }
+    document.addEventListener('DOMContentLoaded', function() {
+        addAttributesToImages();
+    });
 </script>
