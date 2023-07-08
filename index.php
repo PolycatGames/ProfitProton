@@ -282,11 +282,11 @@
                             <a href="https://www.fiverr.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo_1x.webp" alt="Upwork logo" srcset="images/company-logos/upwork-logo-200x200.webp 200w, images/company-logos/upwork-logo-400x400.webp 400w, images/company-logos/upwork-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo-200x200.webp" alt="Upwork logo" srcset="images/company-logos/upwork-logo-200x200.webp 200w, images/company-logos/upwork-logo-400x400.webp 400w, images/company-logos/upwork-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
                             <a href="https://www.upwork.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
                         </div>
                         <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo_1x.webp" alt="Freelancer logo" srcset="images/company-logos/freelancer-logo-200x200.webp 200w, images/company-logos/freelancer-logo-400x400.webp 400w, images/company-logos/freelancer-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
+                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo-200x200.webp" alt="Freelancer logo" srcset="images/company-logos/freelancer-logo-200x200.webp 200w, images/company-logos/freelancer-logo-400x400.webp 400w, images/company-logos/freelancer-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
                             <a href="https://www.freelancer.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
                         </div>
                         <!--<div class="home-suggested-platforms-grid-item">
