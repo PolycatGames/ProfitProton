@@ -31,6 +31,21 @@
                     <div class="post-content">
                         Content Here
                         <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
+                        <img src="/images/cat-480x270.webp">
                     </div>
 
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/read-more.php'; ?>
@@ -44,9 +59,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/footer.html'; ?>
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        addAttributesToImages();
-    });
+
 </script>
 
 
