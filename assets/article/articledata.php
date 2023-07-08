@@ -58,7 +58,7 @@
                 var naturalWidth = tempImg.naturalWidth;
                 var naturalHeight = tempImg.naturalHeight;
 
-                var sizes = "(max-width: " + naturalWidth + "px) 100vw, " + naturalWidth + "px";
+                var sizes = "(max-width: " + 700 + "px) 100vw, " + 700 + "px";
 
                 // Get the directory path of the image
                 var directory = src.substring(0, src.lastIndexOf('/'));
