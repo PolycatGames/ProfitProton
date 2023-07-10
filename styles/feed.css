@@ -380,7 +380,8 @@
 }
 
 .pcl h3 {
-    margin-top: 60px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .pcl p {
@@ -441,7 +442,7 @@
     opacity: .6;
 }
 
-.pcl-button img {
+.pcl-button svg {
     width: 22px;
     height: auto;
 }
@@ -551,6 +552,26 @@
 .post-content img{
     width: 100%;
     height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.post-content a {
+
+    text-decoration: underline;
+    text-underline-offset: 5px ;
+    font-weight: 400;
+    color: rgb(0, 173, 109);
+    text-decoration-color: rgb(0, 173, 109);
+    transition: color .3s, text-decoration-color .3s;
+}
+.post-content a:hover {
+
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 /*CATEGORY*/

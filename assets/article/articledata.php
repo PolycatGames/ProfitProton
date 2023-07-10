@@ -67,16 +67,17 @@
                 var filename = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
                 var fileType = src.substring(src.lastIndexOf('.'));
 
-                // Get the width and height of the original image
-                var originalWidth = parseInt(filename.substring(filename.lastIndexOf('-') + 1, filename.lastIndexOf('x')));
-                var originalHeight = parseInt(filename.substring(filename.lastIndexOf('x') + 1));
+                // Get the width of the original image
+                var originalWidth = parseInt(filename.substring(filename.lastIndexOf('-') + 1));
+
 
                 // Generate the srcset attribute
                 srcset += " " + naturalWidth + "w";
-                if (originalWidth && originalHeight) {
-                    srcset += ", " + directory + "/" + filename.replace("-" + originalWidth + "x" + originalHeight, "-" + (originalWidth * 2) + "x" + (originalHeight * 2)) + fileType + " " + (originalWidth * 2) + "w";
-                    srcset += ", " + directory + "/" + filename.replace("-" + originalWidth + "x" + originalHeight, "-" + (originalWidth * 3) + "x" + (originalHeight * 3)) + fileType + " " + (originalWidth * 3) + "w";
+                if (originalWidth) {
+                    srcset += ", " + directory + "/" + filename.replace("-" + originalWidth, "-" + (originalWidth * 2)) + fileType + " " + (originalWidth * 2) + "w";
+                    srcset += ", " + directory + "/" + filename.replace("-" + originalWidth, "-" + (originalWidth * 3)) + fileType + " " + (originalWidth * 3) + "w";
                 }
+
 
                 // Add the attributes to the image element
                 img.setAttribute('srcset', srcset);
