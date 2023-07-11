@@ -577,6 +577,20 @@
     color: rgb(0, 0, 0);
     text-decoration-color: rgb(0, 0, 0);
 }
+.note{
+    border-left: 3px solid var(--main-color);
+    padding-left: 20px;
+    background-color: rgb(232, 255, 239);
+    padding: 10px 5px 10px 20px;
+    font-weight: 400;
+}
+.note::before {
+    content: open-quote;
+}
+
+.note::after {
+    content: close-quote;
+}
 
 /*CATEGORY*/
 .category{

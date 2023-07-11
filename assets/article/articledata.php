@@ -1,18 +1,20 @@
-<link rel="canonical" href="https://www.profitproton.comarticle-url<?php echo $data['link'] ?>">
+<link rel="canonical" href="https://profitproton.com<?php echo $data['link'] ?>">
 
 <meta property="og:title" content="<?php echo $data['title'] ?>">
 <meta property="og:description" content="<?php echo $data['description'] ?>">
-<meta property="og:image" content="https://www.profitproton.com<?php echo $data['thumbnail'] ?>">
-<meta property="og:url" content="https://www.profitproton.com<?php echo $data['link'] ?>">
+<meta property="og:image" content="https://profitproton.com<?php echo $data['thumbnail'] ?>">
+<meta property="og:url" content="https://profitproton.com<?php echo $data['link'] ?>">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="ProfitProton">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="<?php echo $data['date'] ?><?php echo $data['time'] ?>">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="<?php echo $data['title'] ?>">
 <meta name="twitter:description" content="<?php echo $data['description'] ?>">
-<meta name="twitter:image" content="https://www.profitproton.com<?php echo $data['thumbnail'] ?>">
+<meta name="twitter:image" content="https://profitproton.com<?php echo $data['thumbnail'] ?>">
 <meta name="twitter:site" content="@profitproton">
+<meta name="twitter:creator" content="@profitproton">
 
 
 <script type="application/ld+json">
@@ -21,11 +23,11 @@
         "@type": "Article",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.profitproton.com<?php echo $data['link'] ?>"
+            "@id": "https://profitproton.com<?php echo $data['link'] ?>"
         },
         "headline": "<?php echo $data['title'] ?>",
         "description": "<?php echo $data['description'] ?>",
-        "image": "https://www.profitproton.com<?php echo $data['thumbnail'] ?>",
+        "image": "https://profitproton.com<?php echo $data['thumbnail'] ?>",
         "author": {
             "@type": "Person",
             "name": "<?php echo $data['author'] ?>"
@@ -36,7 +38,7 @@
             "name": "ProfitProton",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.profitproton.com/logo.png",
+                "url": "https://profitproton.com/images/logo/profitproton-logo.png",
                 "width": 600,
                 "height": 60
             }
@@ -89,5 +91,19 @@
     }
     document.addEventListener('DOMContentLoaded', function() {
         addAttributesToImages();
+    });
+</script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const postContentDiv = document.querySelector('.post-content');
+        const links = postContentDiv.querySelectorAll('a');
+
+        links.forEach(link => {
+            if (!link.classList.contains('nospecify')) {
+                link.setAttribute('rel', 'noopener');
+                link.setAttribute('target', '_blank');
+            }
+        });
     });
 </script>
