@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://profitproton.com/sitemap.xml

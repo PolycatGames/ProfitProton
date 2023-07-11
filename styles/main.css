@@ -344,6 +344,8 @@ article>*,
 .subscribe-title {
     margin: 0;
     margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .subscribe-description {

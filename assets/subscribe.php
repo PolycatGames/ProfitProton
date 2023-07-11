@@ -1,5 +1,5 @@
 <section class="subscribe">
-    <h1 class="subscribe-title">Enjoy our content?</h1>
+    <span class="subscribe-title">Enjoy our content?</span>
     <p class="subscribe-description">Sign up for our newsletter and stay up to date with the latest side-hustles!</p>
     <form class="subscribe-sect" method="post" name="submit-to-google-sheet">
         <input class="subscribe-input" autocomplete="email" type="text" name="Email" placeholder="Enter your email" required>
