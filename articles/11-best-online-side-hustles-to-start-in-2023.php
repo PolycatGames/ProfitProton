@@ -12,7 +12,7 @@
     <meta name="description" content="<?= $data['description'] ?>" />
     <meta name="keywords" content="<?= $data['keywords'] ?>" />
     <meta name="author" content="<?= $data['author'] ?>" />
-    <!--<meta name="robots" content="index, follow">-->
+    <meta name="robots" content="index, follow">
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/articledata.php'; ?>
 
