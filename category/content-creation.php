@@ -6,7 +6,7 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
 
     <!--Meta Data-->
-    <title>Dropshipping | ProfitProton</title>
+    <title>Content Creation | ProfitProton</title>
     <meta name="description" content="ENTER DESCRIPTION" />
     <meta name="keywords" content="KEYWORDS" />
     <meta name="author" content="AUTHOR" />
