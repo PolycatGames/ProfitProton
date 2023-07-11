@@ -23,7 +23,7 @@
             <section class="blog-front">
                 <a class="stickypost-large" <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                     <div>
-                        <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(max-width: 800px) 100vw, (min-width: 1240px) 670px, 50vw" loading="eager" decoding="async">
+                        <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(max-width: 800px) 100vw, (min-width: 1240px) 670px, 50vw" loading="eager" decoding="async">
                         <span class="stickypost-large-category"><?= $data['category'] ?></span>
                         <h1 class="stickypost-large-title"><?= $data['title'] ?></h1>
                     </div>
@@ -40,25 +40,25 @@
                         <h2>Most Popular</h2>
                     </div>
                     <div class="articles-1x-bottom">
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular4); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular5); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
 
                                 <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
@@ -170,7 +170,7 @@
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a href="<?= $dataArray[$i]['link']; ?>" aria-label="<?= $dataArray[$i]['title']; ?>">
                                 <div class="article-3x">
-                                    <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp" alt="<?= $dataArray[$i]['title'] ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x500.webp 800w,<?= $dataArray[$i]['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                                    <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x.webp" alt="<?= $dataArray[$i]['title'] ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x.webp 800w,<?= $dataArray[$i]['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                                     <span class="article-3x-tag article-3x-content">
                                         <?= $dataArray[$i]['category']; ?>
                                     </span>

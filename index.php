@@ -141,54 +141,54 @@
             </h2>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
-                    <a <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php $data = getDataFromTextFile(Popular4); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular4); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php $data = getDataFromTextFile(Popular5); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular5); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php $data = getDataFromTextFile(Popular6); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                    <a <?php $data = getDataFromTextFile(Popular6); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
-                            <img src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
+                            <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
                             <h3 class="article-3x-title article-3x-content"><?= $data['title'] ?></h3>
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
@@ -254,7 +254,7 @@
                     <?php for ($i = 0; $i < $articleCount; $i++) : ?>
                         <?php if ($showarticle[$i] !== 1) : ?>
                             <a class="article-2x" href="<?= $dataArray[$i]['link']; ?>" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
-                                <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp" alt="<?= $dataArray[$i]['title']; ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x250.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x500.webp 800w, <?= $dataArray[$i]['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 1000px) 15vw, 30vw" loading="lazy" decoding="async">
+                                <img src="<?= $dataArray[$i]['thumbnail'] ?>-400x.webp" alt="<?= $dataArray[$i]['title']; ?>" srcset="<?= $dataArray[$i]['thumbnail'] ?>-400x.webp 400w, <?= $dataArray[$i]['thumbnail'] ?>-800x.webp 800w, <?= $dataArray[$i]['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1000px) 15vw, 30vw" loading="lazy" decoding="async">
                                 <div class="article-2x-info">
                                     <h3 class="article-2x-title">
                                         <?= $dataArray[$i]['title']; ?>

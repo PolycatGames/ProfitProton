@@ -56,7 +56,7 @@
             <?php if ($showarticle[$i] !== 1) : ?>
                 <a href="<?= $dataArray[$i]['link']; ?>" aria-label="Link to <?= $dataArray[$i]['title']; ?>">
                     <div class="article-3x-small">
-                        <img src="<?php echo $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title']; ?>" srcset="<?php echo $data['thumbnail'] ?>-400x250.webp 400w, <?php echo $data['thumbnail'] ?>-800x500.webp 800w, <?php echo $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(min-width: 630px) 200px, 100vw" loading="lazy" decoding="async">
+                        <img src="<?php echo $dataArray[$i]['thumbnail'] ?>-400x.webp" alt="<?= $dataArray[$i]['title']; ?>" srcset="<?php echo $dataArray[$i]['thumbnail'] ?>-400x.webp 400w, <?php echo $dataArray[$i]['thumbnail'] ?>-800x.webp 800w, <?php echo $dataArray[$i]['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 630px) 200px, 100vw" loading="lazy" decoding="async">
                         <span class=" article-3x-small-title"><?= $dataArray[$i]['title']; ?></span>
                         <span class="article-3x-small-date"><?= $dataArray[$i]['date']; ?></span>
                     </div>

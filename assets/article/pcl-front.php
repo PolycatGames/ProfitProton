@@ -59,5 +59,5 @@
                 </svg>
                 <span>Follow</span></button></a>
     </div>
-    <img class="article-thumbnail" src="<?= $data['thumbnail'] ?>-400x250.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x250.webp 400w, <?= $data['thumbnail'] ?>-800x500.webp 800w,<?= $data['thumbnail'] ?>-1200x750.webp 1200w" sizes="(max-width: 700px) 100vw, 700px" loading="eager" decoding="async">
+    <img class="article-thumbnail" src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(max-width: 700px) 100vw, 700px" loading="eager" decoding="async">
 </div>

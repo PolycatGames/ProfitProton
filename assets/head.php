@@ -280,7 +280,7 @@
 </script>
 
 <!-- Google tag (gtag.js) -->
-<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXQPHCFCPT"></script>
 <script>
   if (location.hostname !== "localhost")
 
@@ -292,7 +292,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CXQPHCFCPT');
-</script>-->
+</script>
 
 <!--Standard Elements-->
 <style>
