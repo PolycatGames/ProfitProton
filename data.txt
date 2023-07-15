@@ -1,3 +1,16 @@
+3 {
+title: "How to Make Money With Selling AI Generated Art?"
+preview: "AI-generated art is gaining popularity, and it presents an excellent opportunity to make"
+description: "Learn how to make money by selling AI generated art using the best strategies!"
+keywords: "AI, Image generator, Stock Images, Freelancing, Online business, Side-hustle, 2023, Midjourney, Print-on-demand products"
+time: "T15:15:30"
+date: "7-15-2023"
+category: "AI"
+link: "/articles/how-to-make-money-with-selling-ai-generated-art"
+thumbnail: "/uploads/2023/7/how-to-make-money-with-selling-ai-generated-art"
+author: "ProfitProton"
+}
+
 2 {
 title: "11 Best Online Side Hustles to Start in 2023"
 preview: "These days, the popularity of freelance work and online opportunities has skyrocketed. More"
@@ -19,7 +32,7 @@ keywords: "keywords"
 time: "T00:00:00"
 date: "7-3-2023"
 category: "Undefined"
-link: "/articles/0"
+link: "/articles/"
 thumbnail: "/images/placeholder/placeholder"
 author: "ProfitProton"
 }

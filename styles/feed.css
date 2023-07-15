@@ -375,6 +375,10 @@
     width: 100%;
 }
 
+.pcl p strong{
+    font-weight: 500;
+}
+
 .pcl h1 {
     margin: 25px 0;
 }
@@ -590,6 +594,13 @@
 
 .note::after {
     content: close-quote;
+}
+.codeblock{
+    background-color: rgb(50, 57, 70);
+    font-size: 80%;
+    padding: 3px 6px;
+    color: white;
+    border-radius: 5px;
 }
 
 /*CATEGORY*/

@@ -70,10 +70,10 @@
     </div>
     <div class="pcr-holder">
         <span class="pcr-title">Popular</span>
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
+        <?php $data = getDataFromTextFile(Popular); ?>
         <a href="<?= $data['link'] ?>" aria-label="Link to <?= $data['title'] ?>">
-            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
             <div class="pcr-article">
-                <?php $data = getDataFromTextFile(Popular); ?>
                 <img class="pcr-popular" src="<?= $data['thumbnail'] ?>-800x.webp" alt="<?= $data['title'] ?>" loading="lazy" decoding="async">
                 <span class="pcr-at"><?= $data['title'] ?></span>
                 <span class="pcr-ad"><?= $data['date'] ?></span>

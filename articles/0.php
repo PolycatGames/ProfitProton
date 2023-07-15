@@ -30,7 +30,6 @@
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/pcl-front.php'; ?>
                     <div class="post-content">
                         Content Here
-                        <img src="/images/test/cat-480x270.webp">
                     </div>
 
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/read-more.php'; ?>
