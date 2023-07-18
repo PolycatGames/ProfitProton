@@ -52,13 +52,13 @@
                                 <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular3); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
                                 <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
                                 <h3 class="articles-1x-bottom-title"><?= $data['title'] ?></h3>
                             </button>
                         </a>
-                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
+                        <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
                             <button>
 
                                 <span class="articles-1x-bottom-category"><?= $data['category'] ?></span>
