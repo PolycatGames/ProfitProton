@@ -1,3 +1,16 @@
+4 {
+title: "Top 10 Freelancing Skills to Learn in 2023 for Beginners"
+preview: "Freelancing has become an extremely popular way for people to earn money online. With the"
+description: "Explore a list of freelancing skills for beginners that are in high demand in 2023"
+keywords: "Freelancing, Skills, AI, SEO, Freelance rates, AI business ideas, Side hustles, ChatGPT, Fiverr, 2023, Online jobs"
+time: "T12:24:32"
+date: "7-18-2023"
+category: "Freelancing"
+link: "/articles/top-10-freelancing-skills-to-learn-in-2023-for-beginners"
+thumbnail: "/uploads/2023/7/top-10-freelancing-skills-to-learn-in-2023-for-beginners"
+author: "ProfitProton"
+}
+
 3 {
 title: "How to Make Money With Selling AI Generated Art?"
 preview: "AI-generated art is gaining popularity, and it presents an excellent opportunity to make"
