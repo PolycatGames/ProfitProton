@@ -612,6 +612,13 @@
     text-align: center;
 }
 
+/*INFOGRAPHIC*/
+.infographic{
+    font-size: 13px;
+    text-align: center;
+    margin: 0px 20px;
+}
+
 @media (max-width: 1240px) {
     .pcr-lt {
         font-size: 14px;
