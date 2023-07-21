@@ -80,7 +80,7 @@
                                 <div class="contact-page-social-text">@profitproton</div>
                             </div>
                             <div class="contact-page-social-item">
-                                <a href="mailto:support@profitproton.com" target=”_blank”><button class="contact-page-button">
+                                <a href="mailto:mail@profitproton.com" target=”_blank”><button class="contact-page-button">
                                         <svg class="contact-page-social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                             <g>
                                                 <g>
@@ -119,10 +119,10 @@
                                             </g>
                                         </svg>
                                     </button></a>
-                                <div class="contact-page-social-text">support@profitproton.com</div>
+                                <div class="contact-page-social-text">mail@profitproton.com</div>
                             </div>
                         </div>
-                        <form class="contact-page-form" action="https://formsubmit.co/profitproton@gmail.com" method="POST">
+                        <form class="contact-page-form" action="https://formsubmit.co/mail@profitproton.com" method="POST">
                             <input class="contact-page-form-email form-item" placeholder="Name" maxlength="100" type="name" name="name" required>
                             <input class="contact-page-form-email form-item" placeholder="Email" maxlength="100" type="email" name="email" required>
                             <input class="contact-page-form-email form-item" placeholder="Subject" maxlength="100" type="subject" name="subject" required>
@@ -142,7 +142,7 @@
     <script>
         function copyToClipboard() {
             /* Get the text you want to copy */
-            var text = "support@profitproton.com";
+            var text = "mail@profitproton.com";
 
             /* Create a temporary input element */
             var tempInput = document.createElement("input");
