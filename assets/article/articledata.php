@@ -100,9 +100,22 @@
         const links = postContentDiv.querySelectorAll('a');
 
         links.forEach(link => {
-            if (!link.classList.contains('nospecify')) {
-                link.setAttribute('rel', 'noopener');
-                link.setAttribute('target', '_blank');
+            const isInternalLink = link.href.startsWith(window.location.origin);
+
+            if (!link.classList.contains('nospecify') && !link.getAttribute('rel')) {
+                if (isInternalLink) {
+                    // If it's an internal link, we don't add the noopener attribute
+                } else {
+                    // If it's an external link, add the noopener attribute
+                    link.setAttribute('rel', 'noopener');
+                    link.setAttribute('target', '_blank');
+                }
+            } else if (!link.classList.contains('nospecify') && !link.getAttribute('rel').includes('noopener')) {
+                // If rel attribute is set but doesn't contain "noopener"
+                // and it's an external link, add the "noopener" attribute
+                if (!isInternalLink) {
+                    link.setAttribute('rel', link.getAttribute('rel') + ' noopener');
+                }
             }
         });
     });

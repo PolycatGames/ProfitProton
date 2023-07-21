@@ -1,3 +1,16 @@
+5 {
+title: "How to Start a Dropshipping Business in 2023"
+preview: "Starting an online dropshipping business is one of the most popular ecommerce models today"
+description: "Learn how to start a profitable dropshipping business in 2023, the ultimate guide!"
+keywords: "Dropshipping, Business, 2023, Beginner, Guide, Shopify, E-commerce, Online business, Side hustles, Dropshipping startup"
+time: "T07:24:57"
+date: "7-21-2023"
+category: "E-commerce"
+link: "/articles/how-to-start-a-dropshipping-business-in-2023"
+thumbnail: "/uploads/2023/7/top-10-freelancing-skills-to-learn-in-2023-for-beginners"
+author: "ProfitProton"
+}
+
 4 {
 title: "Top 10 Freelancing Skills to Learn in 2023 for Beginners"
 preview: "Freelancing has become an extremely popular way for people to earn money online. With the"
