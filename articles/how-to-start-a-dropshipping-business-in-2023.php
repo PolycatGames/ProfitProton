@@ -39,7 +39,7 @@
                         </figure>
                         <h3>1. Pick a Product Niche</h3>
                         <p>The first step in starting your dropshipping journey is to select a product niche. </p>
-                        <p><strong>electing the right niche for your dropshipping business is one of the most important steps, though it can be challenging. Take the time to thoroughly research and analyze potential niche ideas.</strong></p>
+                        <p><strong>Selecting the right niche for your dropshipping business is one of the most important steps, though it can be challenging. Take the time to thoroughly research and analyze potential niche ideas.</strong></p>
                         <img src="/uploads/2023/7/pick-a-product-niche-400x.webp" alt="Pick a product niche">
                         <p>Research different niche ideas to find one that fits these criteria:</p>
                         <ul>
