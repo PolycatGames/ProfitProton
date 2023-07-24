@@ -88,7 +88,7 @@
                         <p>Next, you need to purchase a domain name for your store. </p>
                         <p>.store extensions are typically cheaper, but .com can portray a more premium, professional look depending on your preference.</p>
                         <p>Choose an easy to remember name that can be turned into an identifiable brand. Buy the domain on Shopify or a platform like <a href="https://www.namecheap.com/" aria-label="Namecheap domain registrar">Namecheap</a>, which you can connect to your store.</p>
-                        <p>After securing your domain, select a visually appealing theme aligned with your brand identity. </p>
+                        <p>After securing your domain, select a visually appealing theme aligned with your brand identity. Consider reading <a href="https://theshopzila.com/the-best-shopify-theme-for-your-website-speed/" aria-label="Find the right theme for your website's performance">this article</a> to learn tips for choosing a fast, responsive theme that will improve your website's performance.</p>
                         <p><strong>Customize it by adding your logo, product photos, color palette, and text. Import products, write compelling descriptions, set pricing, and integrate payment gateways and shipping methods.</strong></p>
                         <p>Remember to optimize your store for mobile, as many customers will be browsing on their smartphones. </p>
                         <p>Also, don&rsquo;t forget to include high-quality images and detailed product information to effectively showcase offerings. </p>
