@@ -6,8 +6,6 @@
     <title>Page not found</title>
     <meta name="description" content="Page not found - 404">
     <meta name="keywords" content="404">
-    <meta name="author" content="ProfitProton">
-    <meta name="robots" content="index, follow">
 
     <?php include 'assets/head.php'; ?>
 </head>

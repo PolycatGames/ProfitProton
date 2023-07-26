@@ -270,10 +270,244 @@
     display: flex;
     justify-content: center;
 }
+
+/*BUSINESS IDEA GENERATOR*/
+.business-idea-generator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.business-idea-generator h1 {
+font-size: 60px;
+}
+.business-idea-generator h1 span {
+    color: var(--main-color);
+}
+.idea-options{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.idea-option{
+    padding: 12px 22px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+.generate-idea{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .15s;
+    cursor: pointer;
+}
+.generate-idea:hover {
+    background-color: var(--main-color-hover);
+}
+.generate-idea:active{
+    background-color: var(--main-color-active);
+}
+.generate-idea svg{
+fill: white;
+width: 30px;
+padding-right: 8px;
+translate: 0px  -2px;
+}
+.idea-budget{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.idea-budget input{
+    max-width: 170px;
+text-indent: 16px;
+caret-color: var(--secondary-color);
+transition: outline-color .15s;
+    background-color: transparent;
+}
+.idea-budget input::placeholder{
+    opacity: .5;
+    color: var(--secondary-color);
+}
+.idea-budget input:focus{
+    outline-color: var(--main-color);
+}
+.idea-budget span{
+    position: absolute;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.idea-categories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.idea-categories select{
+    appearance: none;
+    width: 230px;
+    background-color: transparent;
+    transition: background-color .15s;
+    cursor: pointer;
+}
+#idea-categories-select option{
+    background-color: white;
+    color: var(--secondary-color);
+}
+#idea-categories-select div {
+font-size: 50px;
+}
+
+.idea-categories svg{
+    width: 10px;
+    height: auto;
+    position: absolute;
+    pointer-events: none;
+    translate: 90px;
+
+}
+/* Change colors when hovering on select */
+.idea-categories select:hover,
+.idea-categories select:hover ~ svg
+{
+    fill: white;
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.green-gradient{
+background: linear-gradient(0deg, rgba(118, 218, 176, 1) 0%, rgba(255, 255, 255, 1) 100%);
+position: absolute;
+left: 0;
+right: 0;
+height: 100%;
+z-index: -2;
+}
+
+.business-idea-blank{
+    max-width: 1000px;
+    min-width: 700px;
+    height: auto;
+    z-index: 1;
+pointer-events: none;
+}
+
+.idea-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        overflow-x: hidden;
+}
+
+.idea-generator-background{
+position: fixed;
+    top: 50%;
+    transform: translate(0, -75%);
+    z-index: -1;
+    max-width: 1400px;
+    min-width: 800px;
+}
+
+.idea-generator-share{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    text-transform:uppercase;
+    font-weight: 600;
+    margin-top: -18px;
+    transition: background-color .15s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.idea-generator-share:hover {
+    background-color: var(--secondary-color-hover);
+}
+.idea-generator-share:active {
+    background-color: var(--secondary-color-active);
+}
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+}
+
+#messageBox {
+    position: relative;
+    background-color: var(--main-color);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+
+#messageBox.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.idea-generated-section{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+        height: auto;
+}
+.svg-text{
+    z-index: 1;
+    top: 8%;
+    font-size: 3vw;
+    position: absolute;
+    min-width: 490px;
+    max-width: 720px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
 @media (max-width: 1050px) {
 .categories-page {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+@media (max-width: 1020px) {
+.svg-text{
+    width: 70%;
+        max-width: unset;
+}
+}
+@media (min-width: 1000px) {
+    .svg-text {
+        font-size: 32px;
+    }
+}
+@media (max-width: 810px) {
+.idea-options{
+    flex-direction: column;
+    align-items: center;
+}
 }
 @media (max-width: 800px) {
     .blog-front {
@@ -290,6 +524,9 @@
         flex-direction: column;
         gap: 20px;
     }
+                .svg-text {
+                    font-size: 28px;
+                }
 }
 
 @media (max-width: 600px) {
@@ -306,7 +543,13 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
+@media (max-width: 525px) {
+.svg-text {
+        width: 95%;
+        min-width: unset;
+        font-size: 19px;
+    }
+}
 @media (max-width: 500px) {
     .contact-page-info-description {
         font-size: 18px;
