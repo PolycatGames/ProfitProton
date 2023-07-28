@@ -438,16 +438,3 @@ article>*,
         margin-right: 20px;
     }
 }
-
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 2s forwards;
-}

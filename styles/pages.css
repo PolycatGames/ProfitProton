@@ -389,7 +389,11 @@ font-size: 50px;
 
 .green-gradient{
 background: linear-gradient(0deg, rgba(118, 218, 176, 1) 0%, rgba(255, 255, 255, 1) 100%);
-z-index: -1;
+position: absolute;
+left: 0;
+right: 0;
+height: 100%;
+z-index: -2;
 }
 
 .business-idea-blank{
@@ -472,7 +476,6 @@ position: fixed;
         height: auto;
 }
 .svg-text{
-    opacity: 0;
     z-index: 1;
     top: 8%;
     font-size: 3vw;
@@ -482,16 +485,6 @@ position: fixed;
     text-align: center;
     font-weight: 700;
     color: var(--secondary-color);
-}
-
-.generator-split{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.generator-split-item{
-    width: 100%;
-    border: 1px solid red;
-    height: auto;
 }
 
 @media (max-width: 1050px) {
