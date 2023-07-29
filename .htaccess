@@ -4,23 +4,21 @@ RewriteEngine On
 RewriteRule ^index\.php$ / [L,R=301]
 
 # Remove .php extension and enforce the non-php version
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)\.php$ /$1 [L,R=301]
 
-# Remove .html extension and enforce the non-html version
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 
-# Append .php extension internally (if the non-php version does not exist)
-RewriteCond %{REQUEST_FILENAME} !-d
+# Append .php extension internally
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteCond %{REQUEST_URI} !\.php$
 RewriteRule ^(.*)$ $1.php [L]
 
-# Append .html extension internally (if the non-html version does not exist)
-RewriteCond %{REQUEST_FILENAME} !-d
+# Append .html extension internally
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteCond %{REQUEST_URI} !\.html$
 RewriteRule ^(.*)$ $1.html [L]
 
 # Redirect www to non-www and use https
