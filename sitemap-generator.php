@@ -43,6 +43,12 @@ function scan($directory, $rootDirectory)
                     $relativePath
                 );
 
+                // Avoid adding "index" to the URL
+                if (basename($url) === 'index'
+                ) {
+                    $url = rtrim($url, 'index');
+                }
+
                 // Add URL to the array
                 $urls[$url] = $modifiedTime ? $modifiedTime : date('c');
             }

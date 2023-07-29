@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /readFile.php
 
 Sitemap: https://profitproton.com/sitemap.xml

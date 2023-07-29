@@ -4,12 +4,47 @@
 <head>
     <!--Meta Data-->
     <title>ProfitProton | Your Guide to Making Money Online</title>
-    <meta name="description" content="ProfitProton is a website dedicated to providing informative articles and guides on various ways to make money online. Explore our content and start your journey to financial success.">
+    <meta name="description" content="Learn how to make money online with the latest tips and side hustle ideas! Start your business journey today!">
     <meta name="keywords" content="make money online, online business, passive income, financial success, entrepreneurship, freelancing, e-commerce">
     <meta name="author" content="ProfitProton">
     <meta name="robots" content="index, follow">
     <!--Styles-->
     <link rel="stylesheet" href="styles/home.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ProfitProton",
+            "url": "https://profitproton.com/",
+            "logo": "https://profitproton.com/images/logo/profitproton-logo.png",
+            "sameAs": [
+                "https://twitter.com/profitproton/",
+                "https://www.instagram.com/profitproton/",
+                "https://www.tiktok.com/@profitproton"
+
+            ]
+        }
+    </script>
+
+    <link rel="canonical" href="https://profitproton.com/">
+
+    <!-- Open Graph (OG) tags -->
+    <meta property="og:url" content="https://profitproton.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ProfitProton | Your Guide to Making Money Online">
+    <meta property="og:description" content="Learn how to make money online with the latest tips and side hustle ideas! Start your business journey today!">
+    <meta property="og:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta property="og:site_name" content="ProfitProton">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProfitProton | Your Guide to Making Money Online">
+    <meta name="twitter:description" content="Learn how to make money online with the latest tips and side hustle ideas! Start your business journey today!">
+    <meta name="twitter:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta name="twitter:site" content="@profitproton">
+    <meta name="twitter:creator" content="@profitproton">
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>
     <?php include 'assets/head.php'; ?>

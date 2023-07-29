@@ -1,3 +1,16 @@
+6 {
+title: "How to Get Customers on Fiverr in 2023"
+preview: "Getting that first customer on Fiverr can feel downright impossible after you’ve set up your"
+description: "If you're not doing these things to your Fiverr gig, you'll never get noticed..."
+keywords: "Fiverr, Freelancing, Customers, Gig, Tips, Orders, Side hustle, Example, Online business, Guide, 2023, Business, Online jobs"
+time: "T09:34:01"
+date: "7-29-2023"
+category: "Freelancing"
+link: "/articles/how-to-get-customers-on-fiverr-in-2023"
+thumbnail: "/uploads/2023/7/how-to-get-customers-on-fiverr-in-2023"
+author: "ProfitProton"
+}
+
 5 {
 title: "How to Start a Dropshipping Business in 2023"
 preview: "Starting an online dropshipping business is one of the most popular ecommerce models today"

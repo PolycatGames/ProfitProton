@@ -8,7 +8,49 @@
     <meta name="keywords" content="contact us, support, assistance, online money-making, side-hustles, inquiries, feedback, technical support, maximize profits, business growth">
     <meta name="author" content="ProfitProton">
     <meta name="robots" content="index, follow">
-    <!--Styles-->
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "mainEntity": {
+                "@type": "ContactPoint",
+                "contactType": "customer support"
+            },
+            "sameAs": [
+                "https://twitter.com/profitproton/",
+                "https://www.instagram.com/profitproton/",
+                "https://www.tiktok.com/@profitproton"
+            ],
+            "url": "https://profitproton.com/contact",
+            "potentialAction": {
+                "@type": "FindAction",
+                "target": "https://profitproton.com/contact",
+                "query-input": "required name=contact"
+            }
+        }
+    </script>
+
+
+
+    <link rel="canonical" href="https://profitproton.com/contact">
+
+    <!-- Open Graph (OG) tags -->
+    <meta property="og:url" content="https://profitproton.com/contact">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us - ProfitProton">
+    <meta property="og:description" content="Get in touch with ProfitProton and explore money-making opportunities online. Start your business journey today!">
+    <meta property="og:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta property="og:site_name" content="ProfitProton">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - ProfitProton">
+    <meta name="twitter:description" content="Get in touch with ProfitProton and explore money-making opportunities online. Start your business journey today!">
+    <meta name="twitter:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta name="twitter:site" content="@profitproton">
+    <meta name="twitter:creator" content="@profitproton">
 
     <?php include 'assets/head.php'; ?>
 </head>
