@@ -15,7 +15,7 @@ RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 
 # Append .php extension internally
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*)$ $1.php [L]
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 
 # Append .html extension internally
 RewriteCond %{REQUEST_FILENAME}.html -f
