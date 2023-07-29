@@ -1,7 +1,8 @@
 RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
 
 # Redirect www to non-www and use https
 RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
