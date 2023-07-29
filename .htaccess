@@ -21,6 +21,8 @@ RewriteRule ^(.*)$ $1.php [L]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+# Redirect www to non-www and use https
+RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://profitproton.com/$1 [R=301,L]
+
