@@ -4,12 +4,54 @@
 <head>
     <!--Meta Data-->
     <title>ProfitProton | Blog</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Learn the latest tips and strategies for earning money online." />
+    <meta name="keywords" content="Side hustles, Online, Money, Earn, Passive income, Freelancing, E-commerce, Blog, Articles" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
 
-    <!--Scripts-->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://profitproton.com/blog"
+            },
+            "headline": "ProfitProton | Blog",
+            "description": "Explore various profitable side hustles and learn how to make money online with the help of expert tips and guides on ProfitProton.com",
+            "author": {
+                "@type": "Person",
+                "name": "Sjoerd Visser"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ProfitProton",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://profitproton.com/images/logo/profitproton-logo.png"
+                }
+            }
+        }
+    </script>
+
+    <link rel="canonical" href="https://profitproton.com/blog">
+
+    <!-- Open Graph (OG) tags -->
+    <meta property="og:url" content="https://profitproton.com/blog">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ProfitProton | Blog">
+    <meta property="og:description" content="Learn the latest tips and strategies for earning money online.">
+    <meta property="og:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta property="og:site_name" content="ProfitProton">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProfitProton | Blog">
+    <meta name="twitter:description" content="Learn the latest tips and strategies for earning money online.">
+    <meta name="twitter:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta name="twitter:site" content="@profitproton">
+    <meta name="twitter:creator" content="@profitproton">
 
     <!--Styles-->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/getdata.php'; ?>

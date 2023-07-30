@@ -221,7 +221,7 @@
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
                     </a>
-                    <a <?php $data = getDataFromTextFile(Popular6); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
+                    <!--<a <?php $data = getDataFromTextFile(Popular6); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
                             <img src="<?= $data['thumbnail'] ?>-400x.webp" alt="<?= $data['title'] ?>" srcset="<?= $data['thumbnail'] ?>-400x.webp 400w, <?= $data['thumbnail'] ?>-800x.webp 800w,<?= $data['thumbnail'] ?>-1200x.webp 1200w" sizes="(min-width: 1240px) 340px, (min-width: 1080px) 33.3vw, (min-width: 730px) 50vw, 100vw" loading="lazy" decoding="async">
                             <span class="article-3x-tag article-3x-content"><?= $data['category'] ?></span>
@@ -229,7 +229,7 @@
                             <p class="article-3x-description article-3x-content truncate"><?= $data['preview'] ?></p>
                             <time class="article-3x-date article-3x-content" datetime="<?= date('Y-m-d', strtotime($data['date'])) . $data['time']; ?>"><?= $data['date'] ?></time>
                         </div>
-                    </a>
+                    </a>-->
                 </div>
             </section>
             <h2 class="articles-title">
