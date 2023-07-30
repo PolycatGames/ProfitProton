@@ -4,12 +4,98 @@
 <head>
     <!--Meta Data-->
     <title>ProfitProton | Categories</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Choose a category to explore money making ideas - affiliate marketing strategies, blogging tips, social media monetization, dropshipping guides, and more." />
+    <meta name="keywords" content="Blog, Side hustle, Money, Passive income, Categories, Freelancing, E-commerce, Articles, Work from home" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
 
-    <!--Styles-->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://profitproton.com/categories"
+            },
+            "headline": "ProfitProton - Categories",
+            "description": "Choose a category to explore money making ideas - affiliate marketing strategies, blogging tips, social media monetization, dropshipping guides, and more.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "ProfitProton",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://profitproton.com/images/logo/profitproton-logo.png"
+                }
+            },
+            "articleSection": "Categories",
+            "mainEntity": {
+                "@type": "ItemList",
+                "name": "Article Categories",
+                "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "E-commerce",
+                        "item": "https://profitproton.com/category/e-commerce"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Freelancing",
+                        "item": "https://profitproton.com/categories/freelancing"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Content Creation",
+                        "item": "https://profitproton.com/categories/content-creation"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Blogging",
+                        "item": "https://profitproton.com/categories/blogging"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "AI",
+                        "item": "https://profitproton.com/categories/ai"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "name": "Marketing",
+                        "item": "https://profitproton.com/categories/marketing"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 7,
+                        "name": "Other",
+                        "item": "https://profitproton.com/categories/other"
+                    }
+                ]
+            }
+        }
+    </script>
+
+    <link rel="canonical" href="https://profitproton.com/categories">
+
+    <!-- Open Graph (OG) tags -->
+    <meta property="og:url" content="https://profitproton.com/categories">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ProfitProton | Categories">
+    <meta property="og:description" content="Choose a category to explore money making ideas - affiliate marketing strategies, blogging tips, social media monetization, dropshipping guides, and more.">
+    <meta property="og:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta property="og:site_name" content="ProfitProton">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProfitProton | Categories">
+    <meta name="twitter:description" content="Choose a category to explore money making ideas - affiliate marketing strategies, blogging tips, social media monetization, dropshipping guides, and more.">
+    <meta name="twitter:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta name="twitter:site" content="@profitproton">
+    <meta name="twitter:creator" content="@profitproton">
 
 
     <?php include 'assets/head.php'; ?>
