@@ -31,7 +31,7 @@
             "screenshot": "https://profitproton.com/images/screenshots/business-idea-generator-screenshot.png",
             "softwareRequirements": {
                 "@type": "SoftwareApplication",
-                "operatingSystem": "All",
+                "operatingSystem": "All"
             }
         }
     </script>
