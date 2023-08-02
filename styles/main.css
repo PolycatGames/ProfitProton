@@ -448,6 +448,22 @@ article>*,
     }
 }
 
+@keyframes fadeInFast{
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+        60% {
+        opacity: 1;
+    }
+}
+
 .fade-in {
     animation: fadeIn 2s forwards;
+}
+
+.fade-in-fast {
+    animation: fadeInFast 1s forwards;
 }

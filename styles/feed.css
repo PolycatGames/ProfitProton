@@ -564,7 +564,7 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
 }
 
-.post-content a {
+.post-content a, .green-link a{
 
     text-decoration: underline;
     text-underline-offset: 5px ;
@@ -573,7 +573,7 @@
     text-decoration-color: rgb(0, 173, 109);
     transition: color .3s, text-decoration-color .3s;
 }
-.post-content a:hover {
+.post-content a:hover, .green-link a:hover{
 
     text-decoration: underline;
     text-underline-offset: 5px;

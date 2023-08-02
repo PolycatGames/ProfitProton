@@ -3,12 +3,57 @@
 
 <head>
     <!--Meta Data-->
-    <title>Business Idea Generator</title>
-    <meta name="description" content="-" />
-    <meta name="keywords" content="Business Idea Generator, Side Hustles" />
+    <title>Business Idea Generator - The Best Side Hustle Ideas</title>
+    <meta name="description" content="The best free online business idea generator tool to quickly generate ideas for your next startup or side hustle." />
+    <meta name="keywords" content="Business idea generator, Side hustles, AI, Startup, Idea generator, Free, Tool, Freelancing, Ideas, Make money online, Online business" />
     <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
-    <meta name="article:modified_time" content="2023-07-25T08:18:07Z">
+
+    <link rel="canonical" href="https://profitproton.com/tools/business-idea-generator">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebApplication",
+            "name": "Business Idea Generator - The Best Side Hustle Ideas",
+            "description": "The best free online business idea generator tool to quickly generate ideas for your next startup or side hustle.",
+            "url": "https://profitproton.com/tools/business-idea-generator",
+            "applicationCategory": "Business",
+            "operatingSystem": "All",
+            "author": {
+                "@type": "Organization",
+                "name": "ProfitProton",
+                "url": "https://profitproton.com"
+            },
+            "version": "1.0.0",
+            "releaseDate": "2023-08-02",
+            "inLanguage": "en",
+            "screenshot": "https://profitproton.com/images/screenshots/business-idea-generator-screenshot.png",
+            "softwareRequirements": {
+                "@type": "SoftwareApplication",
+                "operatingSystem": "All",
+            }
+        }
+    </script>
+
+
+
+    <!-- Open Graph (OG) tags -->
+    <meta property="og:url" content="https://profitproton.com/tools/business-idea-generator">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Business Idea Generator - The Best Side Hustle Ideas">
+    <meta property="og:description" content="The best free online business idea generator tool to quickly generate ideas for your next startup or side hustle.">
+    <meta property="og:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta property="og:site_name" content="ProfitProton">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Business Idea Generator - The Best Side Hustle Ideas">
+    <meta name="twitter:description" content="The best free online business idea generator tool to quickly generate ideas for your next startup or side hustle.">
+    <meta name="twitter:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta name="twitter:site" content="@profitproton">
+    <meta name="twitter:creator" content="@profitproton">
 
     <!--Styles-->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/head.php'; ?>
@@ -216,6 +261,32 @@
                     <span class="svg-text" id="fade-in-element"></span>
                 </div>
                 <button id="shareButton" onclick="copyLink()" class="idea-generator-share">Share</button>
+
+                <script>
+                    // script.js
+                    const shakeButton = document.getElementById('shareButton');
+                    let isShaking = false;
+
+                    function shakeButtonAnimation() {
+                        if (!isShaking) {
+                            isShaking = true;
+
+                            // Add the "shaking" class to the button to start the animation
+                            shakeButton.classList.add('shaking');
+
+                            // After 500ms (0.5s), remove the "shaking" class to reset the button's position
+                            setTimeout(() => {
+                                shakeButton.classList.remove('shaking');
+                                isShaking = false;
+                            }, 250);
+                        }
+                    }
+
+                    shakeButton.addEventListener('click', () => {
+                        requestAnimationFrame(shakeButtonAnimation);
+                    });
+                </script>
+
                 <div id="messageBox" class="hidden">Link Copied</div>
 
 
@@ -1002,20 +1073,56 @@
             </div>
         </div>
         <article>
-            <section>
+            <section class="generator-text green-link">
                 <div class="generator-split">
                     <div class="split-item">
                         <h2>Find the Right Side Hustle for You</h2>
                         <p>With ProfitProton&apos;s business idea generator, you can easily come up with profitable new side hustle concepts related to your unique interests and skills.</p>
                         <p>Avoid wasting time on brainstorming for hours and hours to find the right idea for you, and quickly discover the perfect match with our tool!</p>
                     </div>
-                    <img class="split-item" src="/uploads/2023/7/business-idea-generator-400x.webp" srcset="/uploads/2023/7/business-idea-generator-400x.webp 400w, /uploads/2023/7/business-idea-generator-800x.webp 800w, /uploads/2023/7/business-idea-generator-1200x.webp 1200w" sizes="(max-width: 700px) 100vw, 700px" loading="eager" decoding="sync" alt="Business idea generator">
+                    <img class="split-item" src="/uploads/2023/7/business-idea-generator-400x.webp" srcset="/uploads/2023/7/business-idea-generator-400x.webp 400w, /uploads/2023/7/business-idea-generator-800x.webp 800w, /uploads/2023/7/business-idea-generator-1200x.webp 1200w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 545px" loading="eager" decoding="sync" alt="Business idea generator" title="Business Idea Generator">
+                </div>
+                <div class="generator-split">
+                    <img class="split-item temp" src="/uploads/2023/7/how-to-use-the-business-idea-generator-800x.webp" srcset="/uploads/2023/7/how-to-use-the-business-idea-generator-400x.webp 400w, /uploads/2023/7/how-to-use-the-business-idea-generator-800x.webp 800w, /uploads/2023/7/how-to-use-the-business-idea-generator-1200x.webp 1200w" loading="lazy" decoding="async" sizes="(max-width: 1240px) 50vw, 545px" alt="How to use the idea generator">
+                    <div class="split-item">
+                        <h2>How to Use The Idea Generator</h2>
+                        <ul>
+                            <li>Select a <strong>category</strong> you are interested in, or browse all categories to spark new ideas.</li>
+                            <li>Choose your <strong>starting budget</strong>, either low startup cost ideas or businesses requiring a higher initial investment. Every suggestion has the potential to become a highly profitable business. </li>
+                            <li>Click <strong>generate</strong> and our tool does the rest! It will instantly provide you with a random business idea you can bring to life!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="generator-split">
+                    <div class="split-item">
+                        <h2>Use Cases</h2>
+                        <ul>
+                            <li>Entrepreneurs can use this tool to effortlessly brainstorm new business ideas based on their niche, passions, and current market needs.</li>
+                            <li>People seeking online side hustles get customized suggestions for weekend businesses, gig work, ecommerce stores, and other money-making opportunities that fit their lifestyle.</li>
+                            <li>Students looking for unique <a href="/articles/top-10-freelancing-skills-to-learn-in-2023-for-beginners" aria-label="Top 10 Freelancing Skills to Learn in 2023 for Beginners">freelance opportunity ideas</a> to earn extra income can find the perfect match for their skills and interests.</li>
+                            <li>Innovators searching for new concepts related to technology startups, apps, websites, and platforms can get inspiration.</li>
+                        </ul>
+                        <p>Overall, the tool provides realistic ideas, saving time and research for any individual or group looking for a business idea to start (from home).</p>
+                    </div>
+                    <img class="split-item temp" src="/uploads/2023/7/use-cases-business-idea-generator-800x.webp" srcset="/uploads/2023/7/use-cases-business-idea-generator-400x.webp 400w, /uploads/2023/7/use-cases-business-idea-generator-800x.webp 800w, /uploads/2023/7/use-cases-business-idea-generator-1200x.webp 1200w" loading="lazy" decoding="async" sizes="(max-width: 1240px) 50vw, 545px" alt="Use cases business idea generator">
+                </div>
+                <div class="generator-single">
+                    <h2>What's the Next Step?</h2>
+                    <ul>
+                        <li>Do some research on the business idea. Consider checking out our article about <a href="/articles/11-best-online-side-hustles-to-start-in-2023" aria-label="11 Best Online Side Hustles to Start in 2023">11 of the best online side hustles to start in 2023</a>.</li>
+                        <li>Take action! Turn that idea into a reality with a step-by-step plan and timeline. Our business idea generator aims to provide the spark, you provide the hustle.</li>
+                    </ul>
                 </div>
             </section>
         </article>
     </main>
     <script>
+        let isFirstClick = true; // Flag to track first click
+
         function copyLink() {
+            fadeInMessage();
+
+
             const link = 'https://profitproton.com/tools/business-idea-generator'; // Replace this with the actual link you want to copy
 
             // Create a temporary textarea element to copy the link
@@ -1035,12 +1142,7 @@
 
             // Show the message box
             const messageBox = document.getElementById('messageBox');
-            messageBox.classList.add('show');
-
-            // Hide the message box after a short delay (e.g., 2 seconds)
-            setTimeout(() => {
-                messageBox.classList.remove('show');
-            }, 2000);
+            messageBox.innerText = 'Link copied!';
         }
     </script>
 
@@ -1048,6 +1150,7 @@
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
+
         const categoryFileMap = {
             'Freelancing': 'freelancing.xls',
             'Content Creation': 'content_creation.xls',
@@ -1082,6 +1185,8 @@
                 });
         }
 
+        let previousSelectedCategory = null;
+
         function generateIdea() {
             const categorySelect = document.getElementById('idea-categories-select');
             const budgetInput = document.getElementById('idea-budget-input');
@@ -1093,11 +1198,18 @@
             if (selectedCategory === allCategories) {
                 fetchIdeasFromAllCategories(budget)
                     .then((allIdeas) => {
+                        if (isNaN(budget) || budget < 0) {
+                            ideaSpan.textContent = 'Please enter a valid budget';
+                            return;
+                        }
                         if (allIdeas.length === 0) {
                             ideaSpan.textContent = 'No idea found within your budget for all categories';
                         } else {
-                            ideaQueue = allIdeas;
-                            lastDisplayedIdea = null; // Reset lastDisplayedIdea for new category
+                            if (selectedCategory !== previousSelectedCategory) {
+                                ideaQueue = shuffleArray(allIdeas); // Reset and shuffle the queue for new category
+                                lastDisplayedIdea = null; // Reset lastDisplayedIdea for new category
+                                previousSelectedCategory = selectedCategory;
+                            }
                             displayRandomIdea();
                         }
                     })
@@ -1106,7 +1218,7 @@
                         console.error(error);
                     });
             } else {
-                if (isNaN(budget) || budget < 0) {
+                if (isNaN(budget) || budget <= 0) {
                     ideaSpan.textContent = 'Please enter a valid budget';
                     return;
                 }
@@ -1122,8 +1234,11 @@
                         if (ideas.length === 0) {
                             ideaSpan.textContent = 'No idea found within your budget for the selected category';
                         } else {
-                            ideaQueue = ideas;
-                            lastDisplayedIdea = null; // Reset lastDisplayedIdea for new category
+                            if (selectedCategory !== previousSelectedCategory) {
+                                ideaQueue = shuffleArray(ideas); // Reset and shuffle the queue for new category
+                                lastDisplayedIdea = null; // Reset lastDisplayedIdea for new category
+                                previousSelectedCategory = selectedCategory;
+                            }
                             displayRandomIdea();
                         }
                     })
@@ -1135,7 +1250,7 @@
         }
 
         function fetchIdeasFromFile(fileName, budget) {
-            return fetch('/data/ideas/' + fileName) // Updated the path to /tempid/
+            return fetch('/data/ideas/' + fileName)
                 .then((response) => response.text())
                 .then((data) => {
                     const lines = data.split('\n');
@@ -1153,6 +1268,15 @@
                 });
         }
 
+        function shuffleArray(array) {
+            // Shuffle the array to generate a new queue in a different order
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
         function displayRandomIdea() {
             const ideaSpan = document.querySelector('.svg-text');
             if (ideaQueue.length > 1) {
@@ -1166,9 +1290,55 @@
             } else if (ideaQueue.length === 1) {
                 lastDisplayedIdea = ideaQueue[0];
                 ideaSpan.textContent = lastDisplayedIdea;
-                ideaQueue = [];
+                ideaQueue = []; // Clear the queue after displaying the last idea
             } else {
-                ideaSpan.textContent = 'No more ideas for the selected category. Click Generate again to start over.';
+                // Queue is empty
+                const categorySelect = document.getElementById('idea-categories-select');
+                const selectedCategory = categorySelect.value;
+                const budgetInput = document.getElementById('idea-budget-input');
+                const budget = parseInt(budgetInput.value);
+
+                if (selectedCategory === allCategories) {
+                    fetchIdeasFromAllCategories(budget)
+                        .then((allIdeas) => {
+                            if (isNaN(budget) || budget < 0) {
+                                ideaSpan.textContent = 'Please enter a valid budget';
+                                return;
+                            }
+                            if (allIdeas.length === 0) {
+                                ideaSpan.textContent = 'No idea found within your budget for all categories';
+                            } else {
+                                ideaQueue = shuffleArray(allIdeas); // Reset and shuffle the queue for new category
+                                lastDisplayedIdea = null; // Reset lastDisplayedIdea for new category
+                                displayRandomIdea();
+                            }
+                        })
+                        .catch((error) => {
+                            ideaSpan.textContent = 'An error occurred while fetching the data. Please try again.';
+                            console.error(error);
+                        });
+                } else {
+                    const fileName = categoryFileMap[selectedCategory];
+                    if (!fileName) {
+                        ideaSpan.textContent = 'No XLS file found for the selected category';
+                        return;
+                    }
+
+                    fetchIdeasFromFile(fileName, budget)
+                        .then((ideas) => {
+                            if (ideas.length === 0) {
+                                ideaSpan.textContent = 'No idea found within your budget for the selected category';
+                            } else {
+                                ideaQueue = shuffleArray(ideas); // Reset and shuffle the queue for new category
+                                lastDisplayedIdea = null; // Reset lastDisplayedIdea for new category
+                                displayRandomIdea();
+                            }
+                        })
+                        .catch((error) => {
+                            ideaSpan.textContent = 'An error occurred while fetching the data. Please try again.';
+                            console.error(error);
+                        });
+                }
             }
         }
 
@@ -1187,8 +1357,6 @@
     </script>
 
 
-
-
     <script>
         function fadeInElement() {
             var element = document.getElementById("fade-in-element");
@@ -1202,7 +1370,17 @@
         }
     </script>
 
+    <script>
+        function fadeInMessage() {
+            var element = document.getElementById("messageBox");
+            element.classList.remove("fade-in-fast");
+            void element.offsetWidth; // Trigger a reflow to force the removal to take effect
 
+            setTimeout(function() {
+                element.classList.add("fade-in-fast");
+            }, 10);
+        }
+    </script>
 
 
 
