@@ -136,13 +136,12 @@
                         <p>Tools like <a href="https://www.tubebuddy.com/" aria-label="Tubebuddy">Tubebuddy</a> or <a href="https://vidiq.com/" aria-label="VidIQ">VidIQ</a> can help you find keywords with low competition and high search volume, allowing you to rank higher in search results.</p>
                         <p>Find a balance between quantity and quality, ensuring that you consistently upload valuable content to engage your audience.</p>
                         <h2>How to Get Monetized on YouTube</h2>
-                        <p>Once you meet the threshold of 1,000 subscribers and 4,000 watch hours in the past year, you can apply for YouTube monetization.</p>
+                        <p>Once you meet the threshold of 1000 subscribers and 4000 watch hours in the past year, you can apply for YouTube monetization.</p>
                         <p>If you have 10 million views on YouTube shorts instead of 4000 watch hours, you are also liable for the partnership program. Meeting these milestones with AI automation becomes much more attainable than ever before.</p>
                         <h2>Final Thoughts</h2>
                         <p>Starting a YouTube automation channel with AI is a great way to generate passive income. By following the steps outlined in this guide, you can create a successful YouTube channel without being in front of the camera.</p>
                         <p>Remember to choose a niche that you are passionate about, analyze your competitors, and automate the content creation process using AI tools.</p>
                         <p>With consistency and quality content, you can grow your channel and monetize it through the YouTube Partner Program and other revenue streams. So, why wait? Start your YouTube automation journey today!</p>
-                        <p><i> Note : This guide provides general information and suggestions. It is always important to stay updated on YouTube&apos;s policies and guidelines to ensure compliance with their terms of service.</i></p>
                     </div>
 
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/read-more.php'; ?>
