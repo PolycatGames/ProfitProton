@@ -4,7 +4,7 @@ preview: "Are you looking for a side hustle that has a low barrier to entry and 
 description: "Learn how to start an automated YouTube channel using AI tools with this step-by-step guide!"
 keywords: "AI, Business, YouTube Automation, Shorts, Guide, SEO, E-commerce, Online business, Side hustles, Faceless YouTube channel"
 time: "T18:50:10"
-date: "08-05-2023"
+date: "8-5-2023"
 category: "Content Creation"
 link: "/articles/how-to-start-a-youtube-automation-channel-with-ai"
 thumbnail: "/uploads/2023/8/how-to-start-a-youtube-automation-channel-with-ai"
