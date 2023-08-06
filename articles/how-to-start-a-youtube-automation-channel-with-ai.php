@@ -38,9 +38,9 @@
                         <h3>1. Pick a Niche</h3>
                         <p>The first step in starting a YouTube Automation channel is to choose a niche. Selecting the right niche is really important for the success of your channel as it determines your target audience and content focus.</p>
                         <p>When choosing a niche, consider three important criteria: demand, profitability, and competition.</p>
-                        <p><strong>Demand:</strong> Opt for niches that have a consistent trend of interest and viewership. Look for topics that people are actively searching for and engaging with on YouTube.</p>
-                        <p><strong>Profitability:</strong> Ensure that your chosen niche can be monetized easily through ad revenue, affiliate marketing, or e-commerce.</p>
-                        <p><strong>Competition:</strong> Avoid highly saturated niches and instead focus on niching down further to attract a more specific audience. By narrowing your focus, you can stand out from the competition and build a loyal following.</p>
+                        <p><strong class="stroke">Demand:</strong> Opt for niches that have a consistent trend of interest and viewership. Look for topics that people are actively searching for and engaging with on YouTube.</p>
+                        <p><strong class="stroke">Profitability:</strong> Ensure that your chosen niche can be monetized easily through ad revenue, affiliate marketing, or e-commerce.</p>
+                        <p><strong class="stroke">Competition:</strong> Avoid highly saturated niches and instead focus on niching down further to attract a more specific audience. By narrowing your focus, you can stand out from the competition and build a loyal following.</p>
                         <h3>2. Analyze Your Competitors</h3>
                         <img src="/uploads/2023/8/socialblade-400x.webp" alt="Socialblade YouTube">
                         <p>Once you have selected your niche, it&apos;s important to analyze your competitors. Study successful YouTube channels within your niche to understand their content strategy, video format, and audience engagement.</p>
@@ -108,7 +108,7 @@
                                 <p><a href="https://www.capcut.com/" rel="nofollow" aria-label="Capcut video editing">Capcut</a></p>
                             </li>
                         </ul>
-                        <p>Source: <a href="https://youtu.be/KsAZpp5gy1c" rel="nofollow" aria-label="AI Video Editing - Top 5 Tools We Recommend!">AI Video Editing - Top 5 Tools We Recommend!</a></p>
+                        <p class="source">Source: <a href="https://youtu.be/KsAZpp5gy1c" rel="nofollow" aria-label="AI Video Editing - Top 5 Tools We Recommend!">AI Video Editing - Top 5 Tools We Recommend!</a></p>
                         <h3>7. Create a Thumbnail</h3>
                         <img src="/uploads/2023/7/midjourney-ai-400x.webp" alt="Midjourney AI">
                         <p>A visually appealing thumbnail is very important for attracting clicks to your YouTube videos.</p>
