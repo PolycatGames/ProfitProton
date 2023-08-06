@@ -7,10 +7,11 @@
 
     <!--Meta Data-->
     <title>Other | ProfitProton</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Learn how to make money with various business ideas, start your side hustle today!" />
+    <meta name="keywords" content="Other" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://profitproton.com/category/other">
 
     <!--Styles-->
 

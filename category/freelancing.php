@@ -7,10 +7,11 @@
 
     <!--Meta Data-->
     <title>Freelancing | ProfitProton</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Learn how to make money with freelancing, start your side hustle today!" />
+    <meta name="keywords" content="Freelancing" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://profitproton.com/category/freelancing">
 
     <!--Styles-->
 

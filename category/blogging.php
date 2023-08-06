@@ -7,10 +7,11 @@
 
     <!--Meta Data-->
     <title>Blogging | ProfitProton</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Learn how to make money with blogging, start your side hustle today!" />
+    <meta name="keywords" content="Blogging" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://profitproton.com/category/blogging">
 
     <!--Styles-->
 

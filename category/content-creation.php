@@ -7,10 +7,11 @@
 
     <!--Meta Data-->
     <title>Content Creation | ProfitProton</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Learn how to make money with content creation, start your side hustle today!" />
+    <meta name="keywords" content="Content Creation" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://profitproton.com/category/content-creation">
 
     <!--Styles-->
 

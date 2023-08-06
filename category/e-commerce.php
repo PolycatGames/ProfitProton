@@ -7,10 +7,11 @@
 
     <!--Meta Data-->
     <title>E-commerce | ProfitProton</title>
-    <meta name="description" content="ENTER DESCRIPTION" />
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="Learn how to make money with E-commerce, start your side hustle today!" />
+    <meta name="keywords" content="E-commerce" />
+    <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://profitproton.com/category/e-commerce">
 
     <!--Styles-->
 
