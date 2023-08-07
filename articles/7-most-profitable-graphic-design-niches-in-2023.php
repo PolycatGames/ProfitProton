@@ -38,7 +38,7 @@
                         <img src="/uploads/2023/7/logo-design-illustration-400x.webp" alt="Logo design">
                         <p>Almost every business is constantly on the lookout to expand their brand identity. As a graphic designer specializing in branding and logo design, you will attract businesses looking for such service.</p>
                         <p>In order to be noticed by these potential clients, you will need some sort of portfolio and contact page. A quick way to set this up without building your own website is by offering logo design services on platforms such as <a href="https://go.fiverr.com/visit/?bta=600726&brand=fiverrcpa" aria-label="Fiverr" rel="nofollow">Fiverr</a> and <a href="https://www.upwork.com/" aria-label="Upwork">Upwork</a>.</p>
-                        <p>It can be tricky to drive traffic to your page, which is why we published a separate article guiding you through this process step by step: <a href="/articles/how-to-get-customers-on-fiverr-in-2023.php" aria-label="How to Get Customers on Fiverr in 2023">How to Get Customers on Fiverr in 2023</a></p>
+                        <p>It can be tricky to drive traffic to your page, which is why we published a separate article guiding you through this process step by step: <a href="/articles/how-to-get-customers-on-fiverr-in-2023" aria-label="How to Get Customers on Fiverr in 2023">How to Get Customers on Fiverr in 2023</a></p>
                         <p class="note">As more entrepreneurs start small businesses, the demand grows.</p>
                         <h3>2. Flat Illustration</h3>
                         <img src="/uploads/2023/8/flat-illustration-400x.webp" alt="Flat illustration">
