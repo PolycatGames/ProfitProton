@@ -23,11 +23,11 @@
         "@type": "Article",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://profitproton.com<?php echo $data['link'] ?>"
+            "@id": "https://profitproton.com<?php echo $data['link']?>"
         },
         "headline": "<?php echo $data['title'] ?>",
         "description": "<?php echo $data['description'] ?>",
-        "image": "https://profitproton.com<?php echo $data['thumbnail'] ?>",
+        "image": "https://profitproton.com<?php echo $data['thumbnail']?>-1200x.webp",
         "author": {
             "@type": "Person",
             "name": "<?php echo $data['author'] ?>"
@@ -39,8 +39,8 @@
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://profitproton.com/images/logo/profitproton-logo.png",
-                "width": 600,
-                "height": 60
+                "width": "720",
+                "height": "720"
             }
         }
     }
