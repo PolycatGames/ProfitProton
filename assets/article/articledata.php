@@ -23,11 +23,25 @@
         "@type": "Article",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://profitproton.com<?php echo $data['link']?>"
+            "@id": "https://profitproton.com<?php echo $data['link'] ?>"
         },
         "headline": "<?php echo $data['title'] ?>",
         "description": "<?php echo $data['description'] ?>",
-        "image": "https://profitproton.com<?php echo $data['thumbnail']?>-1200x.webp",
+        "image": [
+            {
+                "@type": "ImageObject",
+                "url": "https://profitproton.com<?php echo $data['thumbnail'] ?>-1200x.webp",
+                "caption": "<?php echo $data['title']?>"
+            }
+            <?php
+                $fileNumber = num;
+                $file = $_SERVER['DOCUMENT_ROOT'] . '/data/image-data/' . $fileNumber . '.php';
+
+                    if (file_exists($file)) {
+                        include $file;
+                    }
+            ?>
+        ],
         "author": {
             "@type": "Person",
             "name": "<?php echo $data['author'] ?>"

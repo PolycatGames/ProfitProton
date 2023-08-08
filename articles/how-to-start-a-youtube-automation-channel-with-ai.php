@@ -78,7 +78,7 @@
                         </ol>
                         <p class="note">Remember, you can always improve your branding later on, so don&apos;t overthink it at the beginning.</p>
                         <h3>4. Generate a Video Script</h3>
-                        <img src="/uploads/2023/8/writesonic-400x.webp" alt="Writesonic AI">
+                        <img src="/uploads/2023/8/writesonic-400x.webp" alt="Writesonic dashboard AI">
                         <p>To automate your YouTube channel&apos;s content creation process, you can use AI tools like <a href="https://chat.openai.com/" aria-label="ChatGPT">ChatGPT</a> or <a href="https://writesonic.com/">Writesonic</a> to generate a video script.</p>
                         <p>These tools can provide you with an outline for your video based on the topic you input. You can then edit and expand on this outline to create a full-fledged script for your video.</p>
                         <p>You can also consider using <a href="https://claude.ai/" aria-label="Claude.ai">Claude.ai</a>, which is relatively good in making it sound very natural to hide the fact that it&rsquo;s written by an AI.</p>
@@ -110,7 +110,7 @@
                         </ul>
                         <p class="source">Source: <a href="https://youtu.be/KsAZpp5gy1c" rel="nofollow" aria-label="AI Video Editing - Top 5 Tools We Recommend!">AI Video Editing - Top 5 Tools We Recommend!</a></p>
                         <h3>7. Create a Thumbnail</h3>
-                        <img src="/uploads/2023/7/midjourney-ai-400x.webp" alt="Midjourney AI">
+                        <img src="/uploads/2023/7/midjourney-ai-400x.webp" alt="Midjourney AI Community Showcase">
                         <p>A visually appealing thumbnail is very important for attracting clicks to your YouTube videos.</p>
                         <p>When creating a thumbnail, consider the following tips:</p>
                         <ul>

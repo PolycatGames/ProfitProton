@@ -34,7 +34,7 @@
                         <h2>How to Start a Dropshipping Business?</h2>
                         <p>If you&apos;re thinking about starting a dropshipping business in 2023, this step-by-step guide will walk you through everything you need to know. The infographic below provides a helpful visual overview of the key steps covered in this guide:</p>
                         <figure class="infographic">
-                            <img src="/uploads/2023/7/how-to-start-dropshipping-infographic-400x.png" alt="How to start a dropshipping business infographic">
+                            <img src="/uploads/2023/7/how-to-start-dropshipping-infographic-400x.webp" alt="How to start a dropshipping business infographic" title="How to start a dropshipping business infographic">
                             <span>Infographic by: <a href="https://profitproton.com/">ProfitProton</a></span>
                         </figure>
                         <h3>1. Pick a Product Niche</h3>
