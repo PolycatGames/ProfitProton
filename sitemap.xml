@@ -5,7 +5,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://profitproton.com/about</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:31+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/11-best-online-side-hustles-to-start-in-2023</loc>
@@ -32,55 +32,64 @@
 		<lastmod>2023-08-05T18:50:10+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://profitproton.com/articles/how-to-start-affiliate-marketing</loc>
+		<lastmod>2023-08-09T19:58:21+00:00</lastmod>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/8/how-to-start-affiliate-marketing-infographic-1200x.webp</image:loc>
+			<image:caption>How to start affiliate marketing infographic</image:caption>
+			<image:title>How to Start Affiliate Marketing Infographic</image:title>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://profitproton.com/articles/top-10-freelancing-skills-to-learn-in-2023-for-beginners</loc>
 		<lastmod>2023-08-03T07:30:00+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/blog</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/categories</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/ai</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/blogging</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/content-creation</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/e-commerce</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/freelancing</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/marketing</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/other</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/contact</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/tools/business-idea-generator</loc>
-		<lastmod>2023-08-07T20:21:03+00:00</lastmod>
+		<lastmod>2023-08-09T20:01:32+00:00</lastmod>
 	</url>
 </urlset>

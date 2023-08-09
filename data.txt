@@ -1,3 +1,16 @@
+9 {
+title: "How to Start Affiliate Marketing"
+preview: "Affiliate marketing is a popular way for bloggers, website owners, influencers, and"
+description: "Learn how to start an affiliate marketing business in just a few steps!"
+keywords: "Freelancing, Graphic design, Side hustle, Art, Niche, Job, Art, Profitable, Website, Software, Online, 3D, Online jobs, Business"
+time: "T19:58:21"
+date: "8-9-2023"
+category: "Marketing"
+link: "/articles/how-to-start-affiliate-marketing"
+thumbnail: "/uploads/2023/8/how-to-start-affiliate-marketing"
+author: "ProfitProton"
+}
+
 8 {
 title: "7 Most Profitable Graphic Design Niches In 2023"
 preview: "Freelancing in graphic design can be an effective way to earn extra income or even start a"

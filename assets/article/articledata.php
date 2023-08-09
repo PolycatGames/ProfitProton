@@ -27,19 +27,18 @@
         },
         "headline": "<?php echo $data['title'] ?>",
         "description": "<?php echo $data['description'] ?>",
-        "image": [
-            {
+        "image": [{
                 "@type": "ImageObject",
                 "url": "https://profitproton.com<?php echo $data['thumbnail'] ?>-1200x.webp",
-                "caption": "<?php echo $data['title']?>"
+                "caption": "<?php echo $data['title'] ?>"
             }
             <?php
-                $fileNumber = num;
-                $file = $_SERVER['DOCUMENT_ROOT'] . '/data/image-data/' . $fileNumber . '.php';
+            $fileNumber = num;
+            $file = $_SERVER['DOCUMENT_ROOT'] . '/data/image-data/' . $fileNumber . '.php';
 
-                    if (file_exists($file)) {
-                        include $file;
-                    }
+            if (file_exists($file)) {
+                include $file;
+            }
             ?>
         ],
         "author": {
@@ -96,10 +95,21 @@
 
 
                 // Add the attributes to the image element
-                img.setAttribute('srcset', srcset);
-                img.setAttribute('sizes', sizes);
-                img.setAttribute('loading', 'lazy');
-                img.setAttribute('decoding', 'async');
+                if (!img.hasAttribute('srcset')) {
+                    img.setAttribute('srcset', srcset);
+                }
+
+                if (!img.hasAttribute('sizes')) {
+                    img.setAttribute('sizes', sizes);
+                }
+
+                if (!img.hasAttribute('loading')) {
+                    img.setAttribute('loading', 'lazy');
+                }
+
+                if (!img.hasAttribute('decoding')) {
+                    img.setAttribute('decoding', 'async');
+                }
             });
         });
     }
