@@ -510,7 +510,7 @@
                 "Upwork": "https://www.upwork.com",
                 "CGTrader": "https://www.cgtrader.com/",
                 "Wordpress": "https://wordpress.com/",
-                "Shopify": "https://www.shopify.com/",
+                "Shopify": "https://shopify.pxf.io/c/4675978/1061744/13624",
                 "itch.io": "https://itch.io/",
                 // Add more keywords and URLs here
             };
