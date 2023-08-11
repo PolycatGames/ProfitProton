@@ -1,3 +1,16 @@
+10 {
+title: "Is a Print on Demand Business Profitable?"
+preview: "Print-on-demand (POD) is a popular ecommerce business model where you sell customized"
+description: "Is a print on demand business still profitable these days even if it's saturated?"
+keywords: "Print on demand, Prinful, Side hustle, POD, POD business, Print on demand merch, Online business, T-shirt business, POD passive income"
+time: "T19:25:18"
+date: "8-11-2023"
+category: "E-commerce"
+link: "/articles/is-a-print-on-demand-business-profitable"
+thumbnail: "/uploads/2023/8/is-a-print-on-demand-business-profitable"
+author: "ProfitProton"
+}
+
 9 {
 title: "How to Start Affiliate Marketing"
 preview: "Affiliate marketing is a popular way for bloggers, website owners, influencers, and"
