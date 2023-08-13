@@ -45,7 +45,8 @@ function scan($directory, $rootDirectory)
                 }
 
                 // Find images with class name "indeximg"
-                $images = findImages($path, $baseUrl . dirname($relativePath));
+                $images = findImages($path, $baseUrl, dirname($relativePath));
+
 
                 // Add URL and image data to the array
                 $urls[] = array(
@@ -58,8 +59,9 @@ function scan($directory, $rootDirectory)
     }
 }
 
+
 // Function to find images with class name "indeximg"
-function findImages($file, $baseUrl)
+function findImages($file)
 {
     $html = file_get_contents($file);
     $images = array();
@@ -72,7 +74,7 @@ function findImages($file, $baseUrl)
 
         foreach ($imageElements as $image) {
             if ($image->hasAttribute('class') && strpos($image->getAttribute('class'), 'indeximg') !== false) {
-                $imageData = array('loc' => $baseUrl . '/' . $image->getAttribute('src'));
+                $imageData = array('loc' => 'https://profitproton.com' . $image->getAttribute('src'));
 
                 if ($image->hasAttribute('alt')) {
                     $imageData['caption'] = $image->getAttribute('alt');
@@ -86,6 +88,7 @@ function findImages($file, $baseUrl)
 
     return $images;
 }
+
 
 // Function to check if file contains the required meta element
 function checkMetaElement($file)
