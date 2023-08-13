@@ -34,19 +34,19 @@
                         <p>In this article, we&rsquo;ll cover all the crucial elements you need to keep in mind when trying to get customers on Fiverr. Including a few real examples on Fiverr.</p>
                         <h2>7 Tips to Get Customers on <a href="https://www.fiverr.com/" aria-label="Fiverr freelancing"><strong>Fiverr</strong></a></h2>
                         <h3>1. Optimize Your Gig Title and Description</h3>
-                        <img src="/uploads/2023/7/fiverr-gig-title-400x.webp" alt="Fiverr gig title example">
+                        <img class="indeximg" src="/uploads/2023/7/fiverr-gig-title-800x.webp" alt="Fiverr gig title example">
                         <p>Fiverr&rsquo;s algorithm is by far not as complex as Google&rsquo;s, which is why it&rsquo;s really important to directly target certain keywords by implementing them in your gig&rsquo;s title and description.</p>
                         <p>Aim for a short title that clearly summarizes what you offer. Make sure to include several keywords relevant to your service that people are searching for.</p>
                         <p class="note">For example: &ldquo;<a href="https://www.fiverr.com/jojopro/3d-model-your-product" aria-label="Fiverr gig example">I will do 3D modeling, product design, texturing and rendering</a>&rdquo;. This title includes several lower competition subjects related to 3D modeling, as well as the main keyword &ldquo;3D modeling&rdquo;.</p>
                         <p><strong>When making the description for your Fiverr gig, use bullet points, headings, and bold text to make your description easy to scan. Don&rsquo;t forget to include keywords naturally where relevant to get found in search results.</strong></p>
                         <h3>2. Make an Appealing Thumbnail</h3>
-                        <img src="/uploads/2023/7/fiverr-thumbnail-400x.webp" alt="Fiverr thumbnail example">
+                        <img class="indeximg" src="/uploads/2023/7/fiverr-thumbnail-800x.webp" alt="Fiverr thumbnail example">
                         <p>Nobody is going to click on a gig with 0 reviews and a boring thumbnail, this is why it&rsquo;s crucial to make a thumbnail that is unique to stand out from your competitors.</p>
                         <p>Make a screenshot of the page where you want your gig to rank, and try to adjust your thumbnail until you have something that would grab your attention among all the other thumbnails.</p>
                         <p><strong>One way to stand out from your competitors is by using colorful and contrasted colors.</strong></p>
                         <p>Try to imagine what your potential customers would like to see when searching for a service. For instance, if someone is searching for 3D character modeling services, they are looking for a thumbnail that displays a 3D model of a character.</p>
                         <h3>3. Start at Very Low Prices</h3>
-                        <img src="/uploads/2023/7/fiverr-budget-setting-400x.webp" alt="Fiverr budget filter">
+                        <img class="indeximg" src="/uploads/2023/7/fiverr-budget-setting-800x.webp" alt="Fiverr budget filter">
                         <p>Your own views and impressions don&rsquo;t count on Fiverr, so it&rsquo;s likely that you are missing out on a sale every time a person visits your gig.</p>
                         <p>They wouldn&rsquo;t click on your gig if they weren&rsquo;t interested in your service, so there must be something that is holding them back from placing an order.</p>
                         <p>This is why it&rsquo;s very important to start at low prices when working your way towards your first customer, while still providing really high quality deliveries.</p>
@@ -59,7 +59,7 @@
                         <p><strong>Adding multiple languages to your Fiverr profile is easy. Just go to your Seller Profile page, and on the left menu you&apos;ll see the option to add languages.</strong></p>
                         <p>With just a little effort to reach global customers in their native language, you can unlock huge opportunities to grow your Fiverr business and attract more traffic.</p>
                         <h3>5. Stay Online and Responsive</h3>
-                        <img src="/uploads/2023/7/fiverr-online-profile-400x.webp" alt="Fiverr online seller profile example">
+                        <img class="indeximg" src="/uploads/2023/7/fiverr-online-profile-800x.webp" alt="Fiverr online seller profile example">
                         <p>Being online and responsive on Fiverr can help you land that first order from a buyer.</p>
                         <p>When searching for sellers, buyers can filter by &quot;Online Sellers&quot; to view only gig sellers that are currently active on the platform.</p>
                         <p><strong>By staying signed in and attentive, you automatically increase your chances of being contacted for new projects.</strong></p>
@@ -67,12 +67,12 @@
                         <p>Download the Fiverr mobile app and set up notifications so you never miss an important message.</p>
                         <p class="note">Your &quot;Response Time&quot; is displayed on your profile, so always strive for fast and effective communication.</p>
                         <h3>6. Reply to Buyer Requests</h3>
-                        <img src="/uploads/2023/7/fiverr-brief-example-400x.webp" alt="Fiverr buyer request brief example">
+                        <img class="indeximg" src="/uploads/2023/7/fiverr-brief-example-800x.webp" alt="Fiverr buyer request brief example">
                         <p>Responding to buyer requests can connect you with potential customers on Fiverr. These buyers have already described in detail what services they need, so it&apos;s a great opportunity if your gig is a good match.</p>
                         <p>Most buyers look for proven sellers with high ratings, but this doesn&rsquo;t mean you don&rsquo;t make a chance if you have 0 ratings. When reaching out, remember to write your message in a friendly, helpful tone that showcases your experience in this field to deliver exactly what they want.</p>
                         <p class="note">Buyer requests automatically appear in your Fiverr notifications. Just be sure to optimize your gig title, description, and tags so the algorithm can match you with relevant requests.</p>
                         <h3>7. Nail That First Order</h3>
-                        <img src="/uploads/2023/7/fiverr-impressions-analytics-400x.webp" alt="Fiverr gig impressions analytics example">
+                        <img class="indeximg" src="/uploads/2023/7/fiverr-impressions-analytics-800x.webp" alt="Fiverr gig impressions analytics example">
                         <p>Your first order on Fiverr is critical for setting yourself up for success. While it may be tempting to do the bare minimum on a low-paying order, view it as an investment in your reputation.</p>
                         <p><strong>It&rsquo;s important to provide the buyer with that &ldquo;<a href="https://saragilbert.coach/wow-effect-business-success/" aria-label="Wow effect"><strong>wow effect</strong></a>&rdquo;. Put in extra time and effort, provide excellent communication, and deliver work that goes above and beyond. The reputation is worth far more than what you&apos;ll earn on that first order.</strong></p>
                         <p>Consider it a pyramid - that first 5-star review is the foundation, leading to your next happy customers. Additional good reviews multiply your credibility and visibility, making it easier and easier to get orders and grow your Fiverr business.</p>

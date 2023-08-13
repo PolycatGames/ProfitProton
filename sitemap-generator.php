@@ -8,7 +8,7 @@ $scanDirectory = __DIR__;
 // Set the location of the sitemap file
 $sitemapFile = __DIR__ . "/sitemap.xml";
 
-// Array to store URLs with modified time
+// Array to store URLs with modified time and image data
 $urls = array();
 
 // Function to recursively scan files and directories
@@ -19,8 +19,7 @@ function scan($directory, $rootDirectory)
     $items = scandir($directory);
 
     foreach ($items as $item) {
-        if ($item == '.' || $item == '..'
-        ) {
+        if ($item == '.' || $item == '..') {
             continue;
         }
 
@@ -38,22 +37,54 @@ function scan($directory, $rootDirectory)
                 $relativePath = substr($path, strlen($rootDirectory));
 
                 // Remove the .php extension from the URL
-                $url = $baseUrl . preg_replace('/\.php$/',
-                    '',
-                    $relativePath
-                );
+                $url = $baseUrl . preg_replace('/\.php$/', '', $relativePath);
 
                 // Avoid adding "index" to the URL
-                if (basename($url) === 'index'
-                ) {
+                if (basename($url) === 'index') {
                     $url = rtrim($url, 'index');
                 }
 
-                // Add URL to the array
-                $urls[$url] = $modifiedTime ? $modifiedTime : date('c');
+                // Find images with class name "indeximg"
+                $images = findImages($path, $baseUrl . dirname($relativePath));
+
+                // Add URL and image data to the array
+                $urls[] = array(
+                    'url' => $url,
+                    'lastmod' => $modifiedTime ? $modifiedTime : date('c'),
+                    'images' => $images
+                );
             }
         }
     }
+}
+
+// Function to find images with class name "indeximg"
+function findImages($file, $baseUrl)
+{
+    $html = file_get_contents($file);
+    $images = array();
+
+    if (!empty($html)) {
+        $dom = new DOMDocument();
+        @$dom->loadHTML($html);
+
+        $imageElements = $dom->getElementsByTagName('img');
+
+        foreach ($imageElements as $image) {
+            if ($image->hasAttribute('class') && strpos($image->getAttribute('class'), 'indeximg') !== false) {
+                $imageData = array('loc' => $baseUrl . '/' . $image->getAttribute('src'));
+
+                if ($image->hasAttribute('alt')) {
+                    $imageData['caption'] = $image->getAttribute('alt');
+                    $imageData['title'] = $image->getAttribute('alt');
+                }
+
+                $images[] = $imageData;
+            }
+        }
+    }
+
+    return $images;
 }
 
 // Function to check if file contains the required meta element
@@ -129,10 +160,26 @@ $sitemap .= '      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 $sitemap .= '      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9' . "\n";
 $sitemap .= '            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">' . "\n";
 
-foreach ($urls as $url => $modifiedTime) {
+foreach ($urls as $urlData) {
     $sitemap .= "\t<url>\n";
-    $sitemap .= "\t\t<loc>{$url}</loc>\n";
-    $sitemap .= "\t\t<lastmod>{$modifiedTime}</lastmod>\n";
+    $sitemap .= "\t\t<loc>{$urlData['url']}</loc>\n";
+    $sitemap .= "\t\t<lastmod>{$urlData['lastmod']}</lastmod>\n";
+
+    foreach ($urlData['images'] as $image) {
+        $sitemap .= "\t\t<image:image>\n";
+        $sitemap .= "\t\t\t<image:loc>{$image['loc']}</image:loc>\n";
+
+        if (isset($image['caption'])) {
+            $sitemap .= "\t\t\t<image:caption>{$image['caption']}</image:caption>\n";
+        }
+
+        if (isset($image['title'])) {
+            $sitemap .= "\t\t\t<image:title>{$image['title']}</image:title>\n";
+        }
+
+        $sitemap .= "\t\t</image:image>\n";
+    }
+
     $sitemap .= "\t</url>\n";
 }
 
@@ -143,3 +190,4 @@ file_put_contents($sitemapFile, $sitemap);
 
 // Output success message
 echo "Sitemap generated and saved to sitemap.xml";
+?>

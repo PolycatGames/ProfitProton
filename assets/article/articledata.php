@@ -64,59 +64,49 @@
         var images = document.querySelectorAll('.post-content img');
         images.forEach(function(img) {
             var src = img.getAttribute('src');
-            var srcset = src;
+            var srcset = "";
 
-            // Create a new image element to load the image and get its natural width and height
-            var tempImg = new Image();
-            tempImg.src = src;
-            tempImg.addEventListener('load', function() {
-                var naturalWidth = tempImg.naturalWidth;
-                var naturalHeight = tempImg.naturalHeight;
+            var sizes = "(max-width: " + 700 + "px) 100vw, " + 700 + "px";
 
-                var sizes = "(max-width: " + 700 + "px) 100vw, " + 700 + "px";
+            // Extract the directory and filename without extension
+            var directory = src.substring(0, src.lastIndexOf('/'));
+            var filename = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
 
-                // Get the directory path of the image
-                var directory = src.substring(0, src.lastIndexOf('/'));
+            // Extract the file extension
+            var fileType = src.substring(src.lastIndexOf('.'));
 
-                // Get the filename without extension and file type
-                var filename = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
-                var fileType = src.substring(src.lastIndexOf('.'));
+            // Generate the srcset attribute
+            var newSrcset = [
+                directory + "/" + filename.replace(/\d+x/, "400x") + fileType + " 400w",
+                directory + "/" + filename.replace(/\d+x/, "800x") + fileType + " 800w",
+                directory + "/" + filename.replace(/\d+x/, "1200x") + fileType + " 1200w"
+            ];
+            srcset = newSrcset.join(", ");
 
-                // Get the width of the original image
-                var originalWidth = parseInt(filename.substring(filename.lastIndexOf('-') + 1));
+            // Add the attributes to the image element
+            if (!img.hasAttribute('srcset')) {
+                img.setAttribute('srcset', srcset);
+            }
 
+            if (!img.hasAttribute('sizes')) {
+                img.setAttribute('sizes', sizes);
+            }
 
-                // Generate the srcset attribute
-                srcset += " " + naturalWidth + "w";
-                if (originalWidth) {
-                    srcset += ", " + directory + "/" + filename.replace("-" + originalWidth, "-" + (originalWidth * 2)) + fileType + " " + (originalWidth * 2) + "w";
-                    srcset += ", " + directory + "/" + filename.replace("-" + originalWidth, "-" + (originalWidth * 3)) + fileType + " " + (originalWidth * 3) + "w";
-                }
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', 'lazy');
+            }
 
-
-                // Add the attributes to the image element
-                if (!img.hasAttribute('srcset')) {
-                    img.setAttribute('srcset', srcset);
-                }
-
-                if (!img.hasAttribute('sizes')) {
-                    img.setAttribute('sizes', sizes);
-                }
-
-                if (!img.hasAttribute('loading')) {
-                    img.setAttribute('loading', 'lazy');
-                }
-
-                if (!img.hasAttribute('decoding')) {
-                    img.setAttribute('decoding', 'async');
-                }
-            });
+            if (!img.hasAttribute('decoding')) {
+                img.setAttribute('decoding', 'async');
+            }
         });
     }
     document.addEventListener('DOMContentLoaded', function() {
         addAttributesToImages();
     });
 </script>
+
+
 
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {

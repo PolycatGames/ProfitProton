@@ -39,7 +39,7 @@
                         <p><strong>In short, affiliate marketing is a win-win business model that allows you to earn money by promoting brands, services and products you love.</strong></p>
                         <p>This article will walk through 5 of the main steps to starting a successful affiliate marketing business from scratch.</p>
                         <h2>Start Affiliate Marketing in a Few Steps</h2>
-                        <img src="/uploads/2023/8/how-to-start-affiliate-marketing-infographic-400x.webp" alt="How to start affiliate marketing infographic" title="How to start affiliate marketing infographic" loading="eager" decoding="sync">
+                        <img class="indeximg" src="/uploads/2023/8/how-to-start-affiliate-marketing-infographic-800x.webp" alt="How to start affiliate marketing infographic" title="How to start affiliate marketing infographic" loading="eager" decoding="sync">
                         <h3>Choose a Niche</h3>
                         <p>Choosing a niche is the first thing you&rsquo;ll come across when starting out. Focus on an area you&apos;re already quite passionate about so you can create targeted content.</p>
                         <p>Popular niches include:</p>
