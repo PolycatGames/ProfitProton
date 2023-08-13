@@ -46,17 +46,17 @@
                         <p class="note">It is suggested to target multiple languages to increase the chances of getting your first client.</p>
                         <h3>2. Affiliate Marketing</h3>
                         <img src="/uploads/2023/7/amazon-associates-400x.webp" alt="Amazon associates page">
-                        <p>Affiliate marketing is a popular side hustle that involves promoting products or services and earning a commission for each sale or lead generated through your referrals. It&apos;s a performance-based marketing model that can be a real money-making machine when done right.</p>
+                        <p><a href="/articles/how-to-start-affiliate-marketing">Affiliate marketing</a> is a popular side hustle that involves promoting products or services and earning a commission for each sale or lead generated through your referrals. It&apos;s a performance-based marketing model that can be a real money-making machine when done right.</p>
                         <p>How do you become an affiliate marketer?</p>
                         <ul>
                             <li>
-                                <p>Select your product.Choose which types of products you prefer to promote. We suggest picking a product/service which is relevant for you in your daily life.</p>
+                                <p>Select your product. Choose which types of products you prefer to promote. We suggest picking a product/service which is relevant for you in your daily life.</p>
                             </li>
                             <li>
-                                <p>Sign up for an affiliate program.Consider joining platforms such as &ldquo;Amazon Associates&rdquo; or &ldquo;Shopify Affiliate Program&rdquo; depending on your interests.</p>
+                                <p>Sign up for an affiliate program. Consider joining platforms such as &ldquo;Amazon Associates&rdquo; or &ldquo;Shopify Affiliate Program&rdquo; depending on your interests.</p>
                             </li>
                             <li>
-                                <p>Promote your affiliate link.Effective affiliate marketing requires a strategic marketing approach. You can promote your link using social media, email marketing, or even create a niche-specific website or blog to attract and engage your audience. By providing valuable information, product reviews, and actionable insights, you can drive conversions and earn commissions.</p>
+                                <p>Promote your affiliate link. Effective affiliate marketing requires a strategic marketing approach. You can promote your link using social media, email marketing, or even create a niche-specific website or blog to attract and engage your audience. By providing valuable information, product reviews, and actionable insights, you can drive conversions and earn commissions.</p>
                             </li>
                         </ul>
                         <p class="note">Place your affiliate link strategically, try to include your affiliate link in a way that doesn&apos;t make it too obvious that you&apos;re earning money by promoting someone else&apos;s product or service.</p>

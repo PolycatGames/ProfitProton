@@ -35,6 +35,7 @@
                         <p><strong>There are several ways to monetize AI-generated images: selling AI-art as stock photos, providing an AI image Generation Service, creating print-on-demand products, maintaining an Instagram AI theme page and selling coloring books.</strong> With these strategies you can easily start making money with AI today.</p>
                         <h2>Best AI Image Generators in 2023</h2>
                         <p>Before we dive into the money-making strategies, let&apos;s take a look at some of the best AI image generators available in 2023. These platforms allow you to create stunning images using artificial intelligence, even if you don&apos;t have any design skills.</p>
+                        <p>You can find more of these AI image generators in this article: <a href="/articles/5-best-ai-image-generators-in-2023">5 Best AI Image Generators in 2023</a></p>
                         <h3><a href="https://www.midjourney.com/" aria-label="Midjourney"><strong>Midjourney</strong></a></h3>
                         <img src="/uploads/2023/7/midjourney-ai-400x.webp" alt="Midjourney community showcase">
                         <p><strong>Midjourney is a fantastic platform for generating high-quality images with AI. Although it offers paid plans starting at $8 a month, the results are worth it.</strong></p>
