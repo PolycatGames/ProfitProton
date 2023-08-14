@@ -169,7 +169,7 @@
                                 <p><strong>1400 credits: </strong>$50</p>
                             </li>
                         </ul>
-                        <h2>Which image generator is right for me?</h2>
+                        <h2 class="faqquestion">Which image generator is right for me?</h2>
                         <p>When selecting an AI image generator, consider the following key factors:</p>
                         <p><strong class="stroke">Accessibility: </strong>Some services like DALL-E 2 still have limited availability, while others like NightCafe and Leonardo are openly accessible.</p>
                         <p><strong class="stroke">Cost: </strong>Pricing and free credit options vary. Midjourney requires a subscription, while Leonardo provides generous free credits daily.</p>
@@ -177,7 +177,7 @@
                         <p><strong class="stroke">Flexibility: </strong>NightCafe offers diverse art styles. Photoshop Firefly integrates directly into your workflow.</p>
                         <p><strong class="stroke">Community: </strong>Joining the Midjourney Discord allows you to connect with a collaborative community. Others operate as standalone (web)apps.</p>
                         <p><strong class="stroke">Use&nbsp;case: </strong>If you want to sell AI art commercially, check the license terms. Some are for personal use only. Learn more about that in <a href="https://deep-image.ai/blog/copyright-of-images-generated-by-artificial-intelligence-example-of-midjourney-dall-e/" rel="nofollow" target="_blank" aria-label="AI generated image license information">this article</a>.</p>
-                        <p>The best AI image generator for you depends on your specific needs and preferences. If you&apos;re new to AI art, services like NightCafe and Leonardo.ai offer accessible starting points.&nbsp;</p>
+                        <p class="faqanswer">The best AI image generator for you depends on your specific needs and preferences. If you&apos;re new to AI art, services like NightCafe and Leonardo.ai offer accessible starting points.&nbsp;</p>
                         <p>For greater quality and more customization, Midjourney would be the to-go tool but currently only offers their services against a price. Weigh the factors above to select a platform that fits your needs!</p>
                     </div>
 

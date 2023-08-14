@@ -104,8 +104,8 @@
                         </ul>
                         <p><strong>The key takeaway is to provide incredible value upfront, even if the first orders are low-paying. Your goal is building a great reputation. Satisfied early customers will lead to more sales and long-term success on Fiverr.</strong></p>
                         <h2>FAQ</h2>
-                        <h3>How to add tags on Fiverr?</h3>
-                        <ul>
+                        <h3 class="faqquestion">How to add tags on Fiverr?</h3>
+                        <ul class="faqanswer">
                             <li>
                                 <p>Go to your Gig page and click "Edit Gig" to open the gig editor.</p>
                             </li>
@@ -116,8 +116,8 @@
                                 <p>Scroll down to the "Tags" section. Here you can add tags that describe your gig.</p>
                             </li>
                         </ul>
-                        <h3>How to promote your Fiverr gigs?</h3>
-                        <ul>
+                        <h3 class="faqquestion">How to promote your Fiverr gigs?</h3>
+                        <ul class="faqanswer">
                             <li>
                                 <p>Share the link of your gig on social media platforms such as Twitter, Facebook, Instagram, and relevant forums and communities. Write engaging posts explaining what you offer.</p>
                             </li>
@@ -128,8 +128,8 @@
                                 <p>Use paid ads if you have some budget to spend. Target specific keywords related to your gig.</p>
                             </li>
                         </ul>
-                        <h3>What is the best freelancing service to offer on Fiverr?</h3>
-                        <p>some of the most in-demand freelancing skills right now include copywriting, graphic design, web development, digital marketing, data entry, and more.</p>
+                        <h3 class="faqquestion">What is the best freelancing service to offer on Fiverr?</h3>
+                        <p class="faqanswer">some of the most in-demand freelancing skills right now include copywriting, graphic design, web development, digital marketing, data entry, and more.</p>
                         <p>For a more extended list of top skills to consider, check out our recent article "<a href="https://profitproton.com/articles/top-10-freelancing-skills-to-learn-in-2023-for-beginners" aria-label="Top 10 Freelancing Skills to Learn in 2023 for Beginners">Top 10 Freelancing Skills to Learn in 2023 for Beginners</a>".</p>
                     </div>
 

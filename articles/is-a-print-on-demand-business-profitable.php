@@ -34,8 +34,8 @@
                         <p>When a customer places an order, the print on demand service prints your design onto products like t-shirts, mugs, and phone cases. Then the order is shipped directly to the customer.</p>
                         <p>With this business model you don&rsquo;t have to invest in equipment or materials until a sale is made. This is why print on demand businesses are an incredibly accessible way for anyone to start an online business with a very low amount of financial risks.</p>
                         <p>The accessibility also has downsides, lots of competition&hellip;</p>
-                        <h2>Is Print on Demand Profitable in 2023?</h2>
-                        <p>Yes, print on demand is a profitable business model in 2023. In the next couple of years, this will only increase more and more according to the estimated statistics.</p>
+                        <h2 class="faqquestion">Is Print on Demand Profitable in 2023?</h2>
+                        <p class="faqanswer">Yes, print on demand is a profitable business model in 2023. In the next couple of years, this will only increase more and more according to the estimated statistics.</p>
                         <ul>
                             <li>
                                 <p>The print-on-demand industry is expected to grow from $8.0 billion in 2023 to over $10.2 billion by 2025.</p>
@@ -98,16 +98,16 @@
                         <p>Create blog posts around your products to establish expertise and improve SEO. Answer audience questions.</p>
                         <h2>FAQ&rsquo;s</h2>
                         <p>Here are answers to some of the most frequently asked questions about starting a profitable print-on-demand business.</p>
-                        <h3>How much does it cost to start?</h3>
-                        <p>The great thing about print-on-demand is that you can launch for less than $20 in most cases. You just need a website, graphics software, and nominal platform fees. Inventory and manufacturing costs are handled by the supplier.</p>
-                        <h3>What are the profit margins for print on demand?</h3>
-                        <p>Profit margins vary by product but generally range from 15-40%. Simple apparel has lower margins while home decor and accessories earn higher profits.</p>
-                        <h3>Is print on demand worth it in 2023?</h3>
-                        <p>Absolutely. As an easy, low-cost business model with built-in demand and integrations with major platforms, print-on-demand is still very much worth it in 2023.</p>
-                        <h3>How do I make designs for my print on demand products?</h3>
-                        <p>You can use basic graphics software like&nbsp;<a href="https://www.canva.com/" aria-label="Canva">Canva</a> or invest in a program like Illustrator. There are also talented designers to hire on freelance sites such as&nbsp;<a href="https://www.fiverr.com/" aria-label="Fiverr">Fiverr</a>.</p>
-                        <h3>What are the biggest mistakes you can make?</h3>
-                        <p>Some common mistakes are poor quality designs, trying to fulfill orders yourself, not marketing enough, paying for tools you don&rsquo;t need, and investing too much upfront before testing products.</p>
+                        <h3 class="faqquestion">How much does it cost to start a print on demand business?</h3>
+                        <p class="faqanswer">To start a print on demand business, you can launch for less than $20 in most cases. You just need a website, graphics software, and nominal platform fees. Inventory and manufacturing costs are handled by the supplier.</p>
+                        <h3 class="faqquestion">What are the profit margins for print on demand?</h3>
+                        <p class="faqanswer">Profit margins vary by product but generally range from 15-40%. Simple apparel has lower margins while home decor and accessories earn higher profits.</p>
+                        <h3 class="faqquestion">Is print on demand worth it in 2023?</h3>
+                        <p class="faqanswer">Absolutely. As an easy, low-cost business model with built-in demand and integrations with major platforms, print-on-demand is still very much worth it in 2023.</p>
+                        <h3 class="faqquestion">How do I make designs for my print on demand products?</h3>
+                        <p class="faqanswer">You can use basic graphics software like&nbsp;<a href="https://www.canva.com/" aria-label="Canva">Canva</a> or invest in a program like Illustrator. There are also talented designers to hire on freelance sites such as&nbsp;<a href="https://www.fiverr.com/" aria-label="Fiverr">Fiverr</a>.</p>
+                        <h3 class="faqquestion">What are the biggest mistakes you can make?</h3>
+                        <p class="faqanswer">Some common mistakes are poor quality designs, trying to fulfill orders yourself, not marketing enough, paying for tools you don&rsquo;t need, and investing too much upfront before testing products.</p>
                     </div>
 
                     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/read-more.php'; ?>

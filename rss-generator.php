@@ -55,3 +55,5 @@ $rssFeed .= '
 
 // Write the RSS feed content to rss.php
 file_put_contents('rss.xml', $rssFeed);
+
+echo "RSS generated and saved to rss.xml";

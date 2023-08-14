@@ -135,8 +135,8 @@
                         <p>Before you hit the publish button, it&apos;s important to optimize your video&apos;s title and description for Search Engine Optimization (SEO).</p>
                         <p>Tools like <a href="https://www.tubebuddy.com/" aria-label="Tubebuddy">Tubebuddy</a> or <a href="https://vidiq.com/" aria-label="VidIQ">VidIQ</a> can help you find keywords with low competition and high search volume, allowing you to rank higher in search results.</p>
                         <p>Find a balance between quantity and quality, ensuring that you consistently upload valuable content to engage your audience.</p>
-                        <h2>How to Get Monetized on YouTube</h2>
-                        <p>Once you meet the threshold of 1000 subscribers and 4000 watch hours in the past year, you can apply for YouTube monetization.</p>
+                        <h2 class="faqquestion">How to Get Monetized on YouTube</h2>
+                        <p class="faqanswer">Once you meet the threshold of 1000 subscribers and 4000 watch hours in the past year, you can apply for YouTube monetization.</p>
                         <p>If you have 10 million views on YouTube shorts instead of 4000 watch hours, you are also liable for the partnership program. Meeting these milestones with AI automation becomes much more attainable than ever before.</p>
                         <h2>Final Thoughts</h2>
                         <p>Starting a YouTube automation channel with AI is a great way to generate passive income. By following the steps outlined in this guide, you can create a successful YouTube channel without being in front of the camera.</p>
