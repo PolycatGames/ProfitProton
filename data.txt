@@ -1,3 +1,16 @@
+12 {
+title: "How to Make Money with 3D Printing"
+preview: "With the increasing accessibility of 3D printers, more people are wondering, can you actually"
+description: "Turn your 3D printer in a money machine with these strategies on how to make money with 3D printing!"
+keywords: "3D printing, Side hustle, Online business, Make money online, 3D printer, Business, 3D, Online course, 3D models, 3D modeling"
+time: "T20:23:49"
+date: "8-15-2023"
+category: "Freelancing"
+link: "/articles/how-to-make-money-with-3d-printing"
+thumbnail: "/uploads/2023/8/how-to-make-money-with-3d-printing"
+author: "ProfitProton"
+}
+
 11 {
 title: "5 Best AI Image Generators in 2023"
 preview: "Artificial intelligence (AI) image generators are changing digital art and content"
