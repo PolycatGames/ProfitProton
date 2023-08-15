@@ -129,7 +129,7 @@
                             </li>
                         </ul>
                         <h3 class="faqquestion">What is the best freelancing service to offer on Fiverr?</h3>
-                        <p class="faqanswer">some of the most in-demand freelancing skills right now include copywriting, graphic design, web development, digital marketing, data entry, and more.</p>
+                        <p class="faqanswer">Some of the most in-demand freelancing skills right now include copywriting, graphic design, web development, digital marketing, data entry, and more.</p>
                         <p>For a more extended list of top skills to consider, check out our recent article "<a href="https://profitproton.com/articles/top-10-freelancing-skills-to-learn-in-2023-for-beginners" aria-label="Top 10 Freelancing Skills to Learn in 2023 for Beginners">Top 10 Freelancing Skills to Learn in 2023 for Beginners</a>".</p>
                     </div>
 
