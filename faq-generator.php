@@ -26,6 +26,12 @@ foreach ($articleFiles as $articleFile) {
                 $elements = trim($qaMatch[2]);
                 $answer = trim(strip_tags($qaMatch[3]));
 
+                // Replace HTML entities with actual characters
+                $answer = str_replace('&nbsp;', ' ', $answer);
+                $answer = str_replace('&apos;', "'", $answer);
+                $answer = str_replace('&rsquo;', "'", $answer);
+                $answer = str_replace('"', "", $answer);
+
                 $generatedContent .= "{\n";
                 $generatedContent .= "  \"@type\": \"Question\",\n";
                 $generatedContent .= "  \"name\": \"$question\",\n";

@@ -174,8 +174,9 @@
                                 <p><strong>Low risk:</strong> Since you&apos;re not purchasing inventory upfront, the risk of unsold products is minimized, reducing potential financial losses.</p>
                             </li>
                         </ul>
-                        <h3>How Much Money Can You Make from Dropshipping?</h3>
-                        <p>The average dropshipping business makes around $500-2500 a month. However, the potential earnings from dropshipping can vary based on several factors:</p>
+                        <h3 class="faqquestion">How Much Money Can You Make from Dropshipping?</h3>
+                        <p class="faqanswer">The average dropshipping business makes around $500-2500 a month.</p>
+                        <p>However, the potential earnings from dropshipping can vary based on several factors:</p>
                         <ul>
                             <li>
                                 <p><strong>Product niche:</strong> Some niches may be more profitable than others due to higher demand and better profit margins.</p>

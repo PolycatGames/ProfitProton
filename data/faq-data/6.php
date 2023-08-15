@@ -3,7 +3,7 @@
   "name": "How to add tags on Fiverr?",
   "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Go to your Gig page and click "Edit Gig" to open the gig editor."
+    "text": "Go to your Gig page and click Edit Gig to open the gig editor."
   }
 },
 {
@@ -19,6 +19,6 @@
   "name": "What is the best freelancing service to offer on Fiverr?",
   "acceptedAnswer": {
     "@type": "Answer",
-    "text": "some of the most in-demand freelancing skills right now include copywriting, graphic design, web development, digital marketing, data entry, and more."
+    "text": "Some of the most in-demand freelancing skills right now include copywriting, graphic design, web development, digital marketing, data entry, and more."
   }
 }

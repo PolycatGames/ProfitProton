@@ -137,8 +137,8 @@
                         <p>To start a successful blog, choose a niche that aligns with your interests and expertise.</p>
                         <p class="note">Consistently publish high-quality blog posts and engage with your readers through comments and social media.</p>
                         <p>Monetization options for blogs include display advertising, sponsored content, affiliate marketing, and selling digital or physical products.</p>
-                        <h2>Which side hustle is right for me?</h2>
-                        <p>This is a question that many aspiring side hustlers ask themselves when exploring the world of online opportunities. The truth is, there is no one-size-fits-all answer. The right side hustle for you depends on your skills, interests, and goals.</p>
+                        <h2 class="faqquestion">Which side hustle is right for me?</h2>
+                        <p class="faqanswer">This is a question that many aspiring side hustlers ask themselves when exploring the world of online opportunities. The truth is, there is no one-size-fits-all answer. The right side hustle for you depends on your skills, interests, and goals.</p>
                         <p>Consider what you enjoy doing and what you&apos;re good at. Are you a talented writer who loves sharing knowledge? Blogging might be the perfect fit for you. Do you have a creative eye and a passion for design? Graphic design or creating and selling AI-generated stock photos could be your calling.</p>
                         <p>It&apos;s important to also think about the income potential and market demand for each side hustle. Research the different options and assess their earning potential based on factors like competition, industry trends, and target audience.</p>
                         <img src="/uploads/2023/7/side-hustle-400x.webp" alt="Side hustles">

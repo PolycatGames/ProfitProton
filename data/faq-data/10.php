@@ -35,7 +35,7 @@
   "name": "How do I make designs for my print on demand products?",
   "acceptedAnswer": {
     "@type": "Answer",
-    "text": "You can use basic graphics software like&nbsp;Canva"
+    "text": "You can use basic graphics software like Canva"
   }
 },
 {
@@ -43,6 +43,6 @@
   "name": "What are the biggest mistakes you can make?",
   "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Some common mistakes are poor quality designs, trying to fulfill orders yourself, not marketing enough, paying for tools you don&rsquo;t need, and investing too much upfront before testing products."
+    "text": "Some common mistakes are poor quality designs, trying to fulfill orders yourself, not marketing enough, paying for tools you don't need, and investing too much upfront before testing products."
   }
 }
