@@ -2,7 +2,7 @@
 
 <meta property="og:title" content="<?php echo $data['title'] ?>">
 <meta property="og:description" content="<?php echo $data['description'] ?>">
-<meta property="og:image" content="https://profitproton.com<?php echo $data['thumbnail']?>-800x">
+<meta property="og:image" content="https://profitproton.com<?php echo $data['thumbnail']?>-800x.webp">
 <meta property="og:url" content="https://profitproton.com<?php echo $data['link'] ?>">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="ProfitProton">
@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="<?php echo $data['title'] ?>">
 <meta name="twitter:description" content="<?php echo $data['description'] ?>">
-<meta name="twitter:image" content="https://profitproton.com<?php echo $data['thumbnail']?>-800x">
+<meta name="twitter:image" content="https://profitproton.com<?php echo $data['thumbnail']?>-800x.webp">
 <meta name="twitter:site" content="@profitproton">
 <meta name="twitter:creator" content="@profitproton">
 
