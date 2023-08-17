@@ -326,6 +326,23 @@ article>*,
     text-decoration-color: var(--linktext);
 }
 
+.button-standard{
+    padding: 15px 36px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    transition: background-color .15s;
+    cursor: pointer;
+}
+.button-standard:hover {
+    background-color: var(--main-color-hover);
+}
+.button-standard:active {
+    background-color: var(--main-color-active);
+}
 
 /*NAVIGATION*/
 .sidebar {
