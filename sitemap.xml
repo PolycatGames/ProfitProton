@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://profitproton.com/about</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/10-best-websites-to-sell-your-stock-photos-in-2023</loc>
@@ -118,50 +118,55 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/blog</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/categories</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/ai</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/blogging</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/content-creation</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/e-commerce</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/freelancing</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/marketing</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/other</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/contact</loc>
-		<lastmod>2023-08-17T20:38:43+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/</loc>
-		<lastmod>2023-08-17T20:38:44+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/tools/business-idea-generator</loc>
-		<lastmod>2023-08-17T20:38:44+00:00</lastmod>
+		<lastmod>2023-08-18T15:49:48+00:00</lastmod>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp</image:loc>
+			<image:caption>Business idea generator</image:caption>
+			<image:title>Business idea generator</image:title>
+		</image:image>
 	</url>
 </urlset>

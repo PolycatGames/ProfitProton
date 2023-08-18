@@ -28,7 +28,14 @@
             "version": "1.0.0",
             "releaseDate": "2023-08-02",
             "inLanguage": "en",
-            "screenshot": "https://profitproton.com/images/screenshots/business-idea-generator-screenshot.png",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp",
+                "caption": "Business idea generator",
+                "description": "Business idea generator",
+                "width": 800,
+                "height": 600
+            },
             "softwareRequirements": {
                 "@type": "SoftwareApplication",
                 "operatingSystem": "All"
@@ -43,7 +50,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Business Idea Generator - The Best Side Hustle Ideas">
     <meta property="og:description" content="The best free online business idea generator tool to quickly generate ideas for your next startup or side hustle.">
-    <meta property="og:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta property="og:image" content="https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp">
     <meta property="og:site_name" content="ProfitProton">
     <meta property="og:locale" content="en_US">
 
@@ -51,7 +58,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Business Idea Generator - The Best Side Hustle Ideas">
     <meta name="twitter:description" content="The best free online business idea generator tool to quickly generate ideas for your next startup or side hustle.">
-    <meta name="twitter:image" content="https://profitproton.com/images/logo/profitproton-logo.png">
+    <meta name="twitter:image" content="https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp">
     <meta name="twitter:site" content="@profitproton">
     <meta name="twitter:creator" content="@profitproton">
 
@@ -300,7 +307,7 @@
                         <p>With ProfitProton&apos;s business idea generator, you can easily come up with profitable new side hustle concepts related to your unique interests and skills.</p>
                         <p>Avoid wasting time on brainstorming for hours and hours to find the right idea for you, and quickly discover the perfect match with our tool!</p>
                     </div>
-                    <img class="split-item" src="/uploads/2023/7/business-idea-generator-400x.webp" srcset="/uploads/2023/7/business-idea-generator-400x.webp 400w, /uploads/2023/7/business-idea-generator-800x.webp 800w, /uploads/2023/7/business-idea-generator-1200x.webp 1200w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 545px" loading="eager" decoding="sync" alt="Business idea generator" title="Business Idea Generator">
+                    <img class="indeximg split-item" src="/uploads/2023/7/business-idea-generator-800x.webp" srcset="/uploads/2023/7/business-idea-generator-400x.webp 400w, /uploads/2023/7/business-idea-generator-800x.webp 800w, /uploads/2023/7/business-idea-generator-1200x.webp 1200w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 545px" loading="eager" decoding="sync" alt="Business idea generator" title="Business Idea Generator">
                 </div>
                 <div class="generator-split">
                     <img class="split-item temp" src="/uploads/2023/7/how-to-use-the-business-idea-generator-800x.webp" srcset="/uploads/2023/7/how-to-use-the-business-idea-generator-400x.webp 400w, /uploads/2023/7/how-to-use-the-business-idea-generator-800x.webp 800w, /uploads/2023/7/how-to-use-the-business-idea-generator-1200x.webp 1200w" loading="lazy" decoding="async" sizes="(max-width: 1240px) 50vw, 545px" alt="How to use the idea generator">

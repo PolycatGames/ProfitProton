@@ -56,7 +56,8 @@
                         <h3>1. Selling AI Art as Stock Photos</h3>
                         <img src="/uploads/2023/7/ai-art-stock-photo-400x.webp" alt="AI-generated stock photo">
                         <p>One of the most popular and profitable ways to monetize AI-generated art is by selling it as stock photos.</p>
-                        <p>Many online marketplaces allow you to upload and sell your AI art to a wide audience of potential buyers.</p>
+                        <p>Many online marketplaces allow you to upload and sell your AI art to a wide audience of potential buyers. If you're interested in a list of these stock photo marketplaces, it might be worth to check it this article:</p>
+                        <p><a href="/articles/10-best-websites-to-sell-your-stock-photos-in-2023">10 Best Websites to Sell your Stock Photos</a></p>
                         <p><strong>Some of the best platforms for selling AI art as stock photos include Shutterstock, Adobe Stock, and iStock.</strong></p>
                         <p>When uploading your AI-generated images to these platforms, make sure to follow their guidelines and licensing requirements.</p>
                         <p><strong>While AI-generated art may not require a license in some cases, it&apos;s always best to check the specific regulations of each platform to avoid any potential issues.</strong></p>

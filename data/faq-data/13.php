@@ -11,7 +11,7 @@
   "name": "Which stock photo website offers the highest royalty rates?",
   "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Currently, Stocksy provides the most generous royalty payments to photographers - between 50-75% commissions on licensing fees. Other platforms with high rates include Envato Elements (50%) and Alamy (50%). Sites like Shutterstock (15-40%) and iStock (15%) sit on the lower end of the commission spectrum."
+    "text": "Currently, Stocksy provides the most generous royalty payments to photographers, between 50-75% commissions on licensing fees. Other platforms with high rates include Envato Elements (50%) and Alamy (50%). Sites like Shutterstock (15-40%) and iStock (15%) sit on the lower end of the commission spectrum."
   }
 },
 {
