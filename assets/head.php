@@ -137,16 +137,6 @@
       }
     }, interval);
   }
-
-  if (location.hostname === "localhost") {
-    window.addEventListener("load", function() {
-      var elements = document.getElementsByClassName("whitescreen");
-
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].style.visibility = "hidden";
-      }
-    });
-  }
 </script>
 
 <script>
@@ -177,8 +167,11 @@
 
 <script>
   function loadUpdatedStylesheet() {
-    if (location.hostname !== "localhost")
-      fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+
+
+
+    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+
       .then(response => response.json())
       .then(data => {
         var latestCommit = data[0].sha; // Extract the latest commit hash
@@ -228,7 +221,14 @@
           })
           .catch(error => console.log(error));
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.log(error)
+        fadeOutElementsByClass("whitescreen");
+      });
+
+
+
+
   }
 
   loadUpdatedStylesheet();
