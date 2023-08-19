@@ -1,3 +1,16 @@
+14 {
+title: "How to Make Money With Video Editing: 10 Ideas"
+preview: "With so many people creating content for YouTube, TikTok, Instagram and more, there is a huge demand for"
+description: "Learn 10 ways to make money with video editing, from side hustle to full time profitable business!"
+keywords: "Video editing, Side hustle, Make money, Online, Business, Ideas, Editing, TikTok, YouTube, Videos, Monetization, Passive income"
+time: "T20:07:12"
+date: "8-19-2023"
+category: "Freelancing"
+link: "/articles/how-to-make-money-with-video-editing"
+thumbnail: "/uploads/2023/8/how-to-make-money-with-video-editing"
+author: "ProfitProton"
+}
+
 13 {
 title: "10 Best Websites to Sell Your Stock Photos in 2023"
 preview: "In this article, we will look at the 10 best stock photo websites and compare the royalty percentages they"
