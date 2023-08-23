@@ -13,7 +13,7 @@
     <meta name="keywords" content="<?= $data['keywords'] ?>" />
     <meta name="author" content="<?= $data['author'] ?>" />
     <meta name="robots" content="index, follow">
-    <meta name="article:modified_time" content="2023-08-23T19:49:02Z">
+    <meta name="article:modified_time" content="2023-08-23T20:14:02Z">
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/articledata.php'; ?>
 
@@ -40,31 +40,31 @@
                         <p>Valuable content works to organically build awareness, trust, and interest over time through search, social media, and other channels.</p>
                         <h2>How to Start With Content Marketing?</h2>
                         <img class="indeximg" src="/uploads/2023/8/how-to-start-with-content-marketing-infographic-1200x.webp" alt="How to start with content marketing infographic" title="How to start with content marketing infographic">
-                        <h3>Define Your Target Audience</h3>
+                        <h3>1. Define Your Target Audience</h3>
                         <p>First, you&rsquo;ll have to consider who you want to reach with your content. Without a clear focus on a target audience, it&apos;s almost impossible to create content that truly aligns with their interests and desires.</p>
                         <p>Start by gathering basic demographic information about your ideal customers, including age range, gender, location, income level, education status, and any other relevant attributes.</p>
                         <p>Try to paint a complete picture of their lifestyles, values, challenges, motivations, and buying behaviors. What exactly do they care about and why?</p>
                         <p>If possible, do some research about your existing customer base. See what insights can be useful to fully determine your target audience.</p>
-                        <h3>Analyze Your Competition</h3>
+                        <h3>2. Analyze Your Competition</h3>
                         <img src="/uploads/2023/7/analyze-competitors-400x.webp" alt="Analyze Competitors">
                         <p>Once you understand who you want to reach, analyze what content your competitors are already creating for that audience.</p>
                         <p>Look at the content they are publishing on their own sites and channels. What topics do they consistently create content around? What formats seem to resonate best with readers? How in-depth is their content? Does it take a more educational or entertaining approach?</p>
                         <p>Also consider third-party sites, forums, reviews, and social media. What do customers and industry influencers praise about competitive content? What do they complain about or say is missing?</p>
                         <p class="note">Try to view competitor content from the eyes of your target audience. What content best speaks to their interests and answers their key questions? What feels like it&apos;s missing or falls short?</p>
                         <p>This way you&rsquo;ll uncover the gaps of your competitors which you can improve upon.</p>
-                        <h3>Optimize Existing Content</h3>
+                        <h3>3. Optimize Existing Content</h3>
                         <p>Apart from only creating new content, it&apos;s really important to improve the content you already have.</p>
                         <p>Make updates to the content that falls behind by adding new sections, including better graphics, or expanding the depth.</p>
                         <p class="note">Make sure all content is well-optimized for SEO, including meta descriptions and titles. Add relevant links between content to improve page authority.</p>
                         <p>Don&rsquo;t be afraid to experiment with new formats like video, podcasts, or visuals. This gives existing content new life.</p>
-                        <h3>Promote Your Content</h3>
+                        <h3>4. Promote Your Content</h3>
                         <img src="/uploads/2023/7/promote-your-online-store-marketing-400x.webp" alt="Promote your content">
                         <p>Do not only focus on putting content out there, as it&rsquo;s also important to actively promote it to your target audience.</p>
                         <p>Make use of many social media channels like TikTok, X, Instagram, etc.</p>
                         <p>While promoting content you should keep in mind to engage followers, and promote the most valuable pieces.</p>
                         <p>You can also make your content highly discoverable through SEO best practices. Do <a href="https://ahrefs.com/blog/keyword-research/" aria-label="Keyword research Ahrefs">keyword research</a> to optimize pages and posts. Get backlinks from authoritative sites. Produce shareable assets like graphics and videos that can gain traction.</p>
                         <p>If you have some budget to spend, consider paid promotion through social media ads, retargeting, and content amplification platforms to expand reach. Start small for testing and double down on what performs.</p>
-                        <h3>Analyze and Improve</h3>
+                        <h3>5. Analyze and Improve</h3>
                         <p>The key to effective content marketing is constantly measuring results and optimizing based on insights. Analytics should inform your strategy every step of the way.</p>
                         <p>Look at key metrics like pageviews, clicks, shares, conversions, and backlinks for each piece of content. These indicate how well the content is performing.</p>
                         <p>Compare each piece of content with the others. For example, if one is performing worse than all the others, it would be a great move to update it.</p>
