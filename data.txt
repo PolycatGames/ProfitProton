@@ -1,3 +1,16 @@
+16 {
+title: "How to Do Content Marketing in 2023"
+preview: "Content marketing has become an essential strategy for businesses looking to attract and engage online"
+description: "You might be marketing your content in the wrong way, discover the latest trends and strategies in 2023!"
+keywords: "Content marketing, Marketing, Business, Side hustle, Strategies, 2023, Make money, Online, Ideas, Startup, Profitable, Guide"
+time: "T19:49:02"
+date: "8-23-2023"
+category: "Marketing"
+link: "/articles/how-to-do-content-marketing-in-2023"
+thumbnail: "/uploads/2023/8/how-to-do-content-marketing"
+author: "ProfitProton"
+}
+
 15 {
 title: "How to Come Up With a Business Idea"
 preview: "To come up with a profitable business idea, consider what strategy works best for you. This article will"
