@@ -51,7 +51,7 @@
                         <p>While Dalle-2 is a free AI image generator, it doesn&apos;t always produce the highest-quality outcomes. Apart from that, it&apos;s still worth to give it a try, especially if you&apos;re experimenting with different art styles.</p>
                         <p>The free access makes it a great option if you&apos;re just starting out with this business model.</p>
                         <p>Additionally, Dalle-2 provides a user-friendly interface that is easy to use for beginners on this topic.</p>
-                        <button href="/articles/5-best-ai-image-generators-in-2023" aria-label="Best AI image generators" class="button-standard">View more AI image generators</button>
+                        <a href="/articles/5-best-ai-image-generators-in-2023" aria-label="Best AI image generators"><button class="button-standard">View more AI image generators</button></a>
                         <h2>Best Ways to Make Money with AI Art</h2>
                         <h3>1. Selling AI Art as Stock Photos</h3>
                         <img src="/uploads/2023/7/ai-art-stock-photo-400x.webp" alt="AI-generated stock photo">
