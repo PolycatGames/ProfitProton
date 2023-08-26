@@ -8,6 +8,7 @@
     <meta name="keywords" content="Side hustles, Online, Money, Earn, Passive income, Freelancing, E-commerce, Blog, Articles" />
     <meta name="author" content="ProfitProton" />
     <meta name="robots" content="index, follow">
+    <link rel="alternate" type="application/rss+xml" href="https://profitproton.com/rss.xml">
 
     <script type="application/ld+json">
         {
