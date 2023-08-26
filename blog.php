@@ -224,7 +224,7 @@
                                         <?= $dataArray[$i]['preview']; ?>
                                     </p>
                                     <span class="article-3x-date article-3x-content">
-                                        <time datetime="<?= date('Y-m-d', strtotime($dataArray[$i]['date'])) . $dataArray[$i]['time']; ?>"><?= $dataArray[$i]['date']; ?></time>
+                                        <span><?= $dataArray[$i]['date']; ?></span>
                                     </span>
                                 </div>
                             </a>
