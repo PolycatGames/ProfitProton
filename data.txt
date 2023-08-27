@@ -1,3 +1,16 @@
+18 {
+title: "Will AI Replace 3D Artists in The Future?"
+preview: "Artificial intelligence (AI) image generators are changing digital art and content creation forever. Using deep learning algorithms"
+description: "Will 3D artists be replaced by AI? Or will it only improve the workflow? There are several stages which are discussed in this article!"
+keywords: "AI, 3D artists, Job, Technology, News, Side hustle, Business, Future, Replacement, Artificial intelligence, Opportunities, 3D modeling, Tools"
+time: "T19:47:19"
+date: "8-27-2023"
+category: "AI"
+link: "/articles/will-ai-replace-3d-artists-in-the-future"
+thumbnail: "/uploads/2023/8/will-ai-replace-3d-artists-in-the-future"
+author: "ProfitProton"
+}
+
 17 {
 title: "The 12 Best Blogging Niches With Low Competition in 2023"
 preview: "Starting a successful blog can be a challenge, especially in popular niches where there is lots of competition. But there are"
