@@ -13,7 +13,7 @@
     <meta name="keywords" content="<?= $data['keywords'] ?>" />
     <meta name="author" content="<?= $data['author'] ?>" />
     <meta name="robots" content="index, follow">
-    <meta name="article:modified_time" content="2023-08-13T19:05:38Z">
+    <meta name="article:modified_time" content="2023-08-28T13:01:23Z">
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/articledata.php'; ?>
 
@@ -135,7 +135,7 @@
                         <p><strong>Pricing:</strong></p>
                         <ul>
                             <li>
-                                <p><strong>Photoshop:</strong> $19.99</p>
+                                <p><strong>Photoshop:</strong> $19.99/month</p>
                             </li>
                         </ul>
                         <h3>Nightcafe</h3>

@@ -13,7 +13,7 @@
     <meta name="keywords" content="<?= $data['keywords'] ?>" />
     <meta name="author" content="<?= $data['author'] ?>" />
     <meta name="robots" content="index, follow">
-    <meta name="article:modified_time" content="2023-08-07T19:51:24Z">
+    <meta name="article:modified_time" content="2023-08-28T13:35:55Z">
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/articledata.php'; ?>
 
@@ -54,6 +54,7 @@
                         <h3>4. 3D Modeling</h3>
                         <img src="/uploads/2023/7/3d-modeling-illustration-400x.webp" alt="3D modeling">
                         <p>3D modeling is an exciting niche that has gained a lot of traction in recent years due to increasing popularity in games and other virtual industries.</p>
+                        <p class="note">Related: <a href="/articles/will-ai-replace-3d-artists-in-the-future">Will AI Replace 3D Artists in The Future?</a></p>
                         <p>It involves creating 3D graphics using software such as <a href="https://www.blender.org/">Blender</a>. In most categories it also requires you to learn texturing to give your models some nice colors.</p>
                         <p>While being one of the most popular niches in this list, it sure is not the easiest to learn. If you decide to specialize in this field, any 3D artist would recommend you to watch the <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD" aria-label="Donut Tutorial by Blender Guru">Donut Tutorial</a> by Blender Guru.</p>
                         <p class="note">Wondering how to make money as a 3D artist? Consider offering your services to people on Fiverr, or creating 3D models for sale on online platforms such as <a href="https://www.cgtrader.com/" aria-label="CGTrader">CGTrader</a>.</p>
