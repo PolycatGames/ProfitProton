@@ -2,17 +2,67 @@
 
 <meta property="og:title" content="<?php echo $data['title'] ?>">
 <meta property="og:description" content="<?php echo $data['description'] ?>">
-<meta property="og:image" content="https://profitproton.com<?php echo $data['thumbnail']?>-800x.webp">
+<meta property="og:image" content="https://profitproton.com<?php echo $data['thumbnail'] ?>-800x.webp">
 <meta property="og:url" content="https://profitproton.com<?php echo $data['link'] ?>">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="ProfitProton">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="<?php echo $data['date'] ?><?php echo $data['time'] ?>">
+<?php
+function convertToISO8601($dateString, $timeString)
+{
+    $dateParts = explode('-', $dateString);
+
+    if (count($dateParts) !== 3) {
+        return false; // Invalid date format
+    }
+
+    $month = intval($dateParts[0]);
+    $day = intval($dateParts[1]);
+    $year = intval($dateParts[2]);
+
+    if ($month < 1 || $month > 12 || $day < 1 || $day > 31 || $year < 1000) {
+        return false; // Invalid date values
+    }
+
+    // Assuming valid time format like "HH:MM:SS"
+    $timeParts = explode(':', $timeString);
+    if (count($timeParts) !== 3) {
+        return false; // Invalid time format
+    }
+
+    $hour = intval($timeParts[0]);
+    $minute = intval($timeParts[1]);
+    $second = intval($timeParts[2]);
+
+    if ($hour < 0 || $hour > 23 || $minute < 0 || $minute > 59 || $second < 0 || $second > 59) {
+        return false; // Invalid time values
+    }
+
+    // Create DateTime object and format as ISO 8601
+    $dateTime = new DateTime(sprintf('%04d-%02d-%02dT%02d:%02d:%02d', $year, $month, $day, $hour, $minute, $second));
+    return $dateTime->format('Y-m-d\TH:i:s\Z');
+}
+
+            $dateString = $data['date'];
+            $timeString = $data['time'];
+
+            // Convert date string to ISO 8601 format (assuming "month-day-year" format)
+            $dateTime = DateTime::createFromFormat('m-d-Y', $dateString);
+
+            if ($dateTime) {
+                $iso8601Date = $dateTime->format('Y-m-d');
+                $iso8601DateTime = $iso8601Date . 'T' . $timeString . 'Z';
+                echo '<meta property="article:published_time" content="' . $iso8601DateTime . '">';
+            } else {
+                echo '<!-- Invalid date format -->';
+            }
+?>
+
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="<?php echo $data['title'] ?>">
 <meta name="twitter:description" content="<?php echo $data['description'] ?>">
-<meta name="twitter:image" content="https://profitproton.com<?php echo $data['thumbnail']?>-800x.webp">
+<meta name="twitter:image" content="https://profitproton.com<?php echo $data['thumbnail'] ?>-800x.webp">
 <meta name="twitter:site" content="@profitproton">
 <meta name="twitter:creator" content="@profitproton">
 
