@@ -51,7 +51,7 @@ function convertToISO8601($dateString, $timeString)
 
             if ($dateTime) {
                 $iso8601Date = $dateTime->format('Y-m-d');
-                $iso8601DateTime = $iso8601Date . 'T' . $timeString . 'Z';
+                $iso8601DateTime = $iso8601Date . $timeString . 'Z';
                 echo '<meta property="article:published_time" content="' . $iso8601DateTime . '">';
             } else {
                 echo '<!-- Invalid date format -->';
