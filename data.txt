@@ -1,3 +1,16 @@
+19 {
+title: "Ecommerce SEO Tips to Get More Organic Traffic"
+preview: "Getting more visitors to your ecommerce store is crucial for growing your business. One of the best ways to drive consistent traffic is through"
+description: "Learn how to get more visitors on your E-commerce store using the latest SEO tactics, read this article to boost your organic traffic!"
+keywords: "E-commerce, SEO, Tips, Traffic, Organic, Dropshipping, Side hustle, Business, Online, Make money online, Google Search"
+time: "T20:10:46"
+date: "8-29-2023"
+category: "E-commerce"
+link: "/articles/ecommerce-seo-tips-to-get-more-organic-traffic"
+thumbnail: "/uploads/2023/8/ecommerce-seo-tips-to-get-more-organic-traffic"
+author: "ProfitProton"
+}
+
 18 {
 title: "Will AI Replace 3D Artists in The Future?"
 preview: "Artificial intelligence (AI) image generators are changing digital art and content creation forever. Using deep learning algorithms"

@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://profitproton.com/about</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/10-best-websites-to-sell-your-stock-photos-in-2023</loc>
@@ -18,7 +18,7 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/5-best-ai-image-generators-in-2023</loc>
-		<lastmod>2023-08-13T19:05:38+00:00</lastmod>
+		<lastmod>2023-08-28T13:01:23+00:00</lastmod>
 		<image:image>
 			<image:loc>https://profitproton.com/uploads/2023/8/best-ai-image-generators-list-800x.webp</image:loc>
 			<image:caption>List of the best AI image generators</image:caption>
@@ -27,7 +27,11 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/7-most-profitable-graphic-design-niches-in-2023</loc>
-		<lastmod>2023-08-07T19:51:24+00:00</lastmod>
+		<lastmod>2023-08-28T13:35:55+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://profitproton.com/articles/ecommerce-seo-tips-to-get-more-organic-traffic</loc>
+		<lastmod>2023-08-29T20:10:46+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/how-to-come-up-with-a-business-idea</loc>
@@ -93,7 +97,7 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/how-to-make-money-with-3d-printing</loc>
-		<lastmod>2023-08-15T20:23:49+00:00</lastmod>
+		<lastmod>2023-08-28T13:19:24+00:00</lastmod>
 		<image:image>
 			<image:loc>https://profitproton.com/uploads/2023/8/6-ways-to-make-money-with-3d-printing-800x.webp</image:loc>
 			<image:caption>6 ways to make money with 3d printing</image:caption>
@@ -164,7 +168,7 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/will-ai-replace-3d-artists-in-the-future</loc>
-		<lastmod>2023-08-27T19:21:19+00:00</lastmod>
+		<lastmod>2023-08-27T19:47:19+00:00</lastmod>
 		<image:image>
 			<image:loc>https://profitproton.com/uploads/2023/8/ai-art-affecting-3d-artists-graph-800x.webp</image:loc>
 			<image:caption>AI affecting 3D artists graph</image:caption>
@@ -178,51 +182,51 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/blog</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/categories</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/ai</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/blogging</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/content-creation</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/e-commerce</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/freelancing</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/marketing</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/other</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/contact</loc>
-		<lastmod>2023-08-27T19:30:43+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/</loc>
-		<lastmod>2023-08-27T19:30:44+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/tools/business-idea-generator</loc>
-		<lastmod>2023-08-27T19:30:44+00:00</lastmod>
+		<lastmod>2023-08-29T20:16:29+00:00</lastmod>
 		<image:image>
 			<image:loc>https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp</image:loc>
 			<image:caption>Business idea generator</image:caption>
