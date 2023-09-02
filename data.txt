@@ -1,3 +1,16 @@
+20 {
+title: "How to Make Money With Product Reviews"
+preview: "In this article, I'll share ten methods for scoring free products to review and earning cash for your opinions. Whether you love"
+description: "Product reviews will always be relevant as people are looking for trust when buying a product."
+keywords: "Product reviews, Make money online, Writing reviews, Affiliate, Business, Side hustle, Experience, Usertesting, Social media"
+time: "T20:40:51"
+date: "9-2-2023"
+category: "Content Creation"
+link: "/articles/how-to-make-money-with-product-reviews"
+thumbnail: "/uploads/2023/9/how-to-make-money-with-product-reviews"
+author: "ProfitProton"
+}
+
 19 {
 title: "Ecommerce SEO Tips to Get More Organic Traffic"
 preview: "Getting more visitors to your ecommerce store is crucial for growing your business. One of the best ways to drive consistent traffic is through"
