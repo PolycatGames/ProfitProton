@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://profitproton.com/about</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/10-best-websites-to-sell-your-stock-photos-in-2023</loc>
@@ -131,6 +131,40 @@
 		<lastmod>2023-08-19T20:07:12+00:00</lastmod>
 	</url>
 	<url>
+		<loc>https://profitproton.com/articles/how-to-promote-yourself-as-a-freelancer</loc>
+		<lastmod>2023-09-08T20:28:23+00:00</lastmod>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/9/guest-posting-400x.webp</image:loc>
+			<image:caption>Guest posting</image:caption>
+			<image:title>Guest posting</image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/9/social-media-400x.webp</image:loc>
+			<image:caption>Social media</image:caption>
+			<image:title>Social media</image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/9/seo-400x.webp</image:loc>
+			<image:caption>SEO - Search Engine Optimization</image:caption>
+			<image:title>SEO - Search Engine Optimization</image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/9/portfolio-example-400x.webp</image:loc>
+			<image:caption>Portfolio example</image:caption>
+			<image:title>Portfolio example</image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/9/networking-400x.webp</image:loc>
+			<image:caption>Networking</image:caption>
+			<image:title>Networking</image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/9/digital-ads-400x.webp</image:loc>
+			<image:caption>Ads</image:caption>
+			<image:title>Ads</image:title>
+		</image:image>
+	</url>
+	<url>
 		<loc>https://profitproton.com/articles/how-to-start-a-dropshipping-business-in-2023</loc>
 		<lastmod>2023-07-21T12:38:47+00:00</lastmod>
 		<image:image>
@@ -195,51 +229,51 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/blog</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/categories</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/ai</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/blogging</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/content-creation</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/e-commerce</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/freelancing</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/marketing</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/other</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/contact</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/tools/business-idea-generator</loc>
-		<lastmod>2023-09-05T20:30:43+00:00</lastmod>
+		<lastmod>2023-09-08T20:36:07+00:00</lastmod>
 		<image:image>
 			<image:loc>https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp</image:loc>
 			<image:caption>Business idea generator</image:caption>

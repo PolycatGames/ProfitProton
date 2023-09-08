@@ -1,3 +1,16 @@
+22 {
+title: "How to Promote Yourself as a Freelancer"
+preview: "Starting and growing a freelance business is not easy. With so much competition out there, how can you make your services stand out"
+description: "Grow your freelancing business with these practical tips to promote yourself as a freelancer!"
+keywords: "Freelancing, Side hustle, Make money online, Digital, Online, Fiverr, Money, Online, Work from home, Business, Freelancer"
+time: "T20:28:23"
+date: "9-8-2023"
+category: "Freelancing"
+link: "/articles/how-to-promote-yourself-as-a-freelancer"
+thumbnail: "/uploads/2023/9/how-to-promote-yourself-as-a-freelancer"
+author: "ProfitProton"
+}
+
 21 {
 title: "8 Ways to Make Money Online With ChatGPT"
 preview: "The internet has opened up lots of opportunities to make money online. But much of the work still requires specialized skills like"
