@@ -1,3 +1,16 @@
+24 {
+title: "How to Make Money From Blogging"
+preview: "Want to earn money from home by doing something you love? Blogging can be an incredibly rewarding way to make an income online"
+description: "Blogging can make you thousands of dollars per month if you use the right monitization strategies on your blog, read this article to learn more!"
+keywords: "Blogging, Business, Make money, Online business, Side hustle, Writing, Work from home, Content, CPC, Ideas, Affiliate, Online"
+time: "T20:01:51"
+date: "9-22-2023"
+category: "Blogging"
+link: "/articles/how-to-make-money-from-blogging"
+thumbnail: "/uploads/2023/9/how-to-make-money-from-blogging"
+author: "ProfitProton"
+}
+
 23 {
 title: "How to Never Run Out of Content Ideas"
 preview: "Coming up with ideas for content can be a struggle, whether you're writing blog posts, making Instagram posts, or creating any other"
