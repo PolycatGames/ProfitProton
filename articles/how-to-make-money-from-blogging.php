@@ -13,7 +13,7 @@
     <meta name="keywords" content="<?= $data['keywords'] ?>" />
     <meta name="author" content="<?= $data['author'] ?>" />
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="article:modified_time" content="2023-09-22T20:01:51Z">
+    <meta name="article:modified_time" content="2023-09-23T06:17:51Z">
 
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/article/articledata.php'; ?>
 
