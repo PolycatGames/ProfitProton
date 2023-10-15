@@ -38,21 +38,27 @@
             // Get the navigator container
             const navigatorContainer = document.querySelector('.pcr-content');
 
-            // Get all the h3 elements
-            const h3Elements = document.querySelectorAll('.pcl h3');
+            // Get all the h2 and h3 elements within .pcl
+            const headings = document.querySelectorAll('.pcl h2, .pcl h3');
 
-            // Create navigation paragraphs for each h3 element
-            h3Elements.forEach((h3Element) => {
+            // Create navigation paragraphs for each h2 and h3 element
+            headings.forEach((heading) => {
                 // Create a new paragraph element
                 const paragraph = document.createElement('p');
 
-                // Set the text content of the paragraph to the h3 element's text
-                paragraph.textContent = h3Element.textContent;
+                // Set the text content of the paragraph to the heading's text
+                paragraph.textContent = heading.textContent;
+
+                // Check if the heading is an h3 element before applying the style
+                if (heading.tagName.toLowerCase() === 'h3') {
+                    // Add a CSS style to give the paragraph a left padding of 20px
+                    paragraph.style.paddingLeft = '20px';
+                }
 
                 // Add an onclick event to scroll to the corresponding content
                 paragraph.onclick = () => {
-                    // Get the next sibling of the h3 element
-                    const nextSibling = h3Element.nextElementSibling;
+                    // Get the next sibling of the heading
+                    const nextSibling = heading.nextElementSibling;
 
                     // Scroll to the next sibling's top position
                     window.scrollTo({
@@ -65,6 +71,9 @@
                 navigatorContainer.appendChild(paragraph);
             });
         </script>
+
+
+
 
 
     </div>

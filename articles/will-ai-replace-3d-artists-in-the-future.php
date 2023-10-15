@@ -45,6 +45,7 @@
                         <p><strong>The early capabilities of AI will be limited to simple tasks that don&apos;t require much creative judgment. So at this stage, AI will just help speed up workflow rather than replace artists. It will handle the busywork while artists focus on higher-level creative direction.</strong></p>
                         <p>This first phase will enable 3D artists to work faster and be more productive. The technology will be more of an asset than a threat in these early days.</p>
                         <h3>Stage 2: Great Opportunity</h3>
+                        <img src="/uploads/2023/10/earning-money-400x.webp" alt="Earning money">
                         <p>In this stage, AI will expand beyond basic tasks and start automating more complex 3D work. Artists may need to learn new technical skills to leverage these advanced AI tools.</p>
                         <p>The technology will be able to generate full 3D models with less human input. Artists will mainly need to provide high-level creative direction and refine the AI output.</p>
                         <p>Many companies and clients will find it more efficient to use AI for their 3D needs rather than hiring traditional artists. The technology will become capable of partially replacing human work across both simple and complex tasks.</p>
