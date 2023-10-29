@@ -73,7 +73,7 @@
         <div class="green-gradient">
             <article>
                 <section class="business-idea-generator">
-                    <h1>Business <span>Idea</span> Generator</h1>
+                    <h1 class="title">Business <span>Idea</span> Generator</h1>
                     <div class="idea-options">
                         <div class="idea-categories">
                             <select class="idea-option" name="Categories" id="idea-categories-select">
@@ -303,7 +303,7 @@
             <section class="generator-text green-link">
                 <div class="generator-split">
                     <div class="split-item">
-                        <h2>Find the Right Side Hustle for You</h2>
+                        <h2 class="title">Find the Right Side Hustle for You</h2>
                         <p>With ProfitProton&apos;s business idea generator, you can easily come up with profitable new side hustle concepts related to your unique interests and skills.</p>
                         <p>Avoid wasting time on brainstorming for hours and hours to find the right idea for you, and quickly discover the perfect match with our tool!</p>
                     </div>
@@ -312,7 +312,7 @@
                 <div class="generator-split">
                     <img class="split-item temp" src="/uploads/2023/7/how-to-use-the-business-idea-generator-800x.webp" srcset="/uploads/2023/7/how-to-use-the-business-idea-generator-400x.webp 400w, /uploads/2023/7/how-to-use-the-business-idea-generator-800x.webp 800w, /uploads/2023/7/how-to-use-the-business-idea-generator-1200x.webp 1200w" loading="lazy" decoding="async" sizes="(max-width: 1240px) 50vw, 545px" alt="How to use the idea generator">
                     <div class="split-item">
-                        <h2>How to Use The Idea Generator</h2>
+                        <h2 class="title">How to Use The Idea Generator</h2>
                         <ul>
                             <li>Select a <strong>category</strong> you are interested in, or browse all categories to spark new ideas.</li>
                             <li>Choose your <strong>starting budget</strong>, either low startup cost ideas or businesses requiring a higher initial investment. Every suggestion has the potential to become a highly profitable business. </li>
@@ -322,7 +322,7 @@
                 </div>
                 <div class="generator-split">
                     <div class="split-item">
-                        <h2>Use Cases</h2>
+                        <h2 class="title">Use Cases</h2>
                         <ul>
                             <li>Entrepreneurs can use this tool to effortlessly brainstorm new business ideas based on their niche, passions, and current market needs.</li>
                             <li>People seeking online side hustles get customized suggestions for weekend businesses, gig work, ecommerce stores, and other money-making opportunities that fit their lifestyle.</li>
@@ -334,7 +334,7 @@
                     <img class="split-item temp" src="/uploads/2023/7/use-cases-business-idea-generator-800x.webp" srcset="/uploads/2023/7/use-cases-business-idea-generator-400x.webp 400w, /uploads/2023/7/use-cases-business-idea-generator-800x.webp 800w, /uploads/2023/7/use-cases-business-idea-generator-1200x.webp 1200w" loading="lazy" decoding="async" sizes="(max-width: 1240px) 50vw, 545px" alt="Use cases business idea generator">
                 </div>
                 <div class="generator-single">
-                    <h2>What's the Next Step?</h2>
+                    <h2 class="title">What's the Next Step?</h2>
                     <ul>
                         <li>Do some research on the business idea. Consider checking out our article about <a href="/articles/11-best-online-side-hustles-to-start-in-2023" aria-label="11 Best Online Side Hustles to Start in 2023">11 of the best online side hustles to start in 2023</a>.</li>
                         <li>Take action! Turn that idea into a reality with a step-by-step plan and timeline. Our business idea generator aims to provide the spark, you provide the hustle.</li>
