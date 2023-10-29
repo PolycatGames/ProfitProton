@@ -59,11 +59,10 @@
             <section class="banner">
                 <div class="banner-area">
                     <div class="banner-area-left">
-                        <h1 class="banner-area-left-title">Make your first $1000 online</h1>
-                        <p class="banner-area-left-description">Small beginnings lead to great achievements - start
-                            your journey with us!</p>
+                        <h1 class="banner-area-left-title">MAKE YOUR FIRST <span style="color: var(--main-color);">$1000</span> ONLINE</h1>
+                        <p class="banner-area-left-description">Small beginnings lead to great achievements, start your journey with us!</p>
                         <div class="banner-area-left-buttons">
-                            <a href="/blog" aria-label="Blog page"><button class="banner-area-left-buttons-button1">Get Started Today</button></a>
+                            <a href="/blog" aria-label="Blog page"><button class="banner-area-left-buttons-button1">Learn more</button></a>
                         </div>
                     </div>
                     <div class="banner-area-right">
@@ -171,9 +170,13 @@
             </div>
         </section>
         <article>
-            <h2 class="articles-title">
-                Popular
-            </h2>
+            <div class="articles-title-holder">
+                <span class="articles-title-category">Popular</span>
+                <h2 class="articles-title title">
+                    The top articles
+                </h2>
+                <p class="articles-title-subtext">The best articles to read when learning about making money online!</p>
+            </div>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">
                     <a <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
@@ -226,9 +229,13 @@
                     </a>
                 </div>
             </section>
-            <h2 class="articles-title">
-                Latest
-            </h2>
+            <div class="articles-title-holder">
+                <span class="articles-title-category">Latest</span>
+                <h2 class="articles-title title">
+                    New profitable ventures
+                </h2>
+                <p class="articles-title-subtext">Learn about the latest profitable online ventures to start making some extra cash! </p>
+            </div>
             <section class="articles-2x">
                 <div class="articles-2x-grid">
                     <?php
@@ -300,35 +307,7 @@
 
                 </div>
             </section>
-            <h2 class="articles-title">
-                Top Freelancing Platforms
-            </h2>
-            <section class="home-suggested-platforms">
-                <div style="display: flex; justify-content: center;">
-                    <div class="home-suggested-platforms-grid">
-                        <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/fiverr-logo-200x200.webp" alt="Fiverr logo" srcset="images/company-logos/fiverr-logo-200x200.webp 200w, images/company-logos/fiverr-logo-400x400.webp 400w, images/company-logos/fiverr-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
-                            <a href="https://www.fiverr.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Fiverr">VISIT SITE</a>
-                        </div>
-                        <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/upwork-logo-200x200.webp" alt="Upwork logo" srcset="images/company-logos/upwork-logo-200x200.webp 200w, images/company-logos/upwork-logo-400x400.webp 400w, images/company-logos/upwork-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
-                            <a href="https://www.upwork.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Upwork">VISIT SITE</a>
-                        </div>
-                        <div class="home-suggested-platforms-grid-item">
-                            <img class="home-suggested-platforms-grid-item-image" src="images/company-logos/freelancer-logo-200x200.webp" alt="Freelancer logo" srcset="images/company-logos/freelancer-logo-200x200.webp 200w, images/company-logos/freelancer-logo-400x400.webp 400w, images/company-logos/freelancer-logo-800x800.webp 800w" sizes="(max-width: 900px) 50vw, (max-width: 1300px) 14vw, 182px" loading="lazy" decoding="async">
-                            <a href="https://www.freelancer.com/" target="_blank" rel="nofollow noopener" class="home-suggested-platforms-grid-item-button" aria-label="Visit Freelancer">VISIT SITE</a>
-                        </div>
-                        <!--<div class="home-suggested-platforms-grid-item">
-                            <a href="" class="view-more" aria-label="View more Freelancing Platforms">
-                                <span class="view-more-circle" aria-hidden="true">
-                                    <span class="view-more-arrow view-more-icon"></span>
-                                </span>
-                                <span class="view-more-text">View more</span>
-                            </a>
-                        </div>-->
-                    </div>
-                </div>
-            </section>
+            <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/subscribe.php'; ?>
         </article>
     </main>
     <?php include 'assets/footer.html'; ?>

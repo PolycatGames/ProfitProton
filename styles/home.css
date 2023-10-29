@@ -24,14 +24,18 @@
 }
 
 .banner-area-left-title {
-    font-size: 70px;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-family: 'Impact', 'DMSans';
+    color: #1a362a;
+    font-size: 75px;
+    font-weight: 200;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .banner-area-left-description {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 40px;
+    padding-right: 100px;
 }
 
 .banner-area-left-buttons {
@@ -41,12 +45,12 @@
 
 .banner-area-left-buttons-button1 {
     font-size: 17px;
-    padding: 22px 28px;
+    padding: 18px 30px;
     background-color: var(--main-color);
     border: none;
     color: white;
-    font-weight: 700;
-    border-radius: 50px;
+    font-weight: 900;
+    border-radius: 5px;
     transition: background-color 0.15s;
     cursor: pointer;
 }

@@ -107,7 +107,7 @@
     <main class="main-content">
         <article class="content-holder">
             <section class="categories-page-top">
-                <h1>Categories</h1>
+                <h1 class="title">Categories</h1>
                 <p>Explore a range of profitable categories to kickstart your online income journey.</p>
             </section>
             <section class="categories-page">

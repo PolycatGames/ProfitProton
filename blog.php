@@ -80,7 +80,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <h2>Most Popular</h2>
+                        <h2 class="title">Most Popular</h2>
                     </div>
                     <div class="articles-1x-bottom">
                         <a <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?> <?php $data = getDataFromTextFile(Popular2); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>">
@@ -144,8 +144,10 @@
         </nav>
 
         <article>
-            <div class="articles-title">
-                Latest posts
+            <div class="articles-title-holder">
+                <h2 class="articles-title title">
+                    Latest Posts
+                </h2>
             </div>
             <section class="articles-3x">
                 <div class="articles-layout-3x-grid">

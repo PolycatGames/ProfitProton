@@ -30,7 +30,7 @@
           </defs>
           <path class="cls-1" d="m0,282.42s373,50.58,681-67.42,550,10,886,16,593-117,593-117V0H0v282.42Z" />
         </svg>
-        <h1 class="about-title">Welcome to ProfitProton</h1>
+        <h1 class="about-title title">Welcome to ProfitProton</h1>
       </div>
     </section>
     <article id="about-content-holder">
