@@ -147,48 +147,72 @@
 </script>
 
 <script>
-  function loadUpdatedResources() {
+  function loadUpdatedStylesheet() {
+
+
+
     fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+
       .then(response => response.json())
       .then(data => {
         var latestCommit = data[0].sha; // Extract the latest commit hash
-
-        // Cache-busting for stylesheets
-        var styleLinks = document.querySelectorAll('link[rel="stylesheet"]');
-        styleLinks.forEach(function(link) {
-          var originalHref = link.getAttribute('href');
-          var updatedHref = originalHref + '?v=' + latestCommit; // Add cache-busting parameter
-          link.setAttribute('href', updatedHref);
-
-          var preloadPromise = new Promise((resolve, reject) => {
-            var preloadLink = document.createElement('link');
-            preloadLink.setAttribute('rel', 'preload');
-            preloadLink.setAttribute('as', 'style');
-            preloadLink.setAttribute('href', updatedHref);
-            preloadLink.addEventListener('load', resolve);
-            preloadLink.addEventListener('error', reject);
-            document.head.appendChild(preloadLink);
-          });
-        });
-
-        // Cache-busting for fonts
+        var links = document.querySelectorAll('link[rel="stylesheet"]');
         var preloadPromises = [];
 
-        // Wait for all preload promises to resolve
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          var href = link.getAttribute('href');
+
+          if (href) {
+            var updatedHref = href + '?v=' + latestCommit;
+            var preloadPromise = new Promise((resolve, reject) => {
+              var preloadLink = document.createElement('link');
+              preloadLink.setAttribute('rel', 'preload');
+              preloadLink.setAttribute('as', 'style');
+              preloadLink.setAttribute('href', updatedHref);
+              preloadLink.addEventListener('load', resolve);
+              preloadLink.addEventListener('error', reject);
+              document.head.appendChild(preloadLink);
+            });
+
+            preloadPromises.push(preloadPromise);
+          }
+        }
+
         Promise.all(preloadPromises)
           .then(() => {
-            console.log("All Fonts and Styles Loaded");
+            for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              var href = link.getAttribute('href');
+
+              if (href) {
+                var updatedHref = href + '?v=' + latestCommit;
+                var newLink = document.createElement('link');
+                newLink.setAttribute('rel', 'stylesheet');
+                newLink.setAttribute('href', updatedHref);
+                document.head.appendChild(newLink);
+                link.parentNode.removeChild(link);
+              }
+            }
+            console.log("All Loaded");
             fadeOutElementsByClass("whitescreen");
+            // All stylesheets have been loaded, remove the default stylesheet
+            var defaultStylesheet = document.querySelector('link[href="default.css"]');
+            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
           })
           .catch(error => console.log(error));
       })
       .catch(error => {
-        console.log(error);
+        console.log(error)
         fadeOutElementsByClass("whitescreen");
       });
+
+
+
+
   }
 
-  loadUpdatedResources();
+  loadUpdatedStylesheet();
 </script>
 
 
