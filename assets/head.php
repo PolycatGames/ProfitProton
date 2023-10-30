@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!--Fonts-->
-<link rel="preload" href="/assets/fonts/poppins/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<!--<link rel="preload" href="/assets/fonts/poppins/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/poppins/Poppins-Italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/poppins/Poppins-Thin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/poppins/Poppins-ThinItalic.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,7 +22,7 @@
 <link rel="preload" href="/assets/fonts/poppins/Poppins-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/poppins/Poppins-ExtraBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/poppins/Poppins-Black.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/poppins/Poppins-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins/Poppins-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>-->
 
 <link rel="preload" href="/assets/fonts/dmsans/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/dmsans/DMSans-Italic.woff2" as="font" type="font/woff2" crossorigin>
@@ -186,73 +186,72 @@
 </script>
 
 <script>
-  function loadUpdatedStylesheet() {
-
-
-
+  function loadUpdatedResources() {
     fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
-
       .then(response => response.json())
       .then(data => {
         var latestCommit = data[0].sha; // Extract the latest commit hash
-        var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+        // Cache-busting for stylesheets
+        var styleLinks = document.querySelectorAll('link[rel="stylesheet"]');
+        styleLinks.forEach(function(link) {
+          var originalHref = link.getAttribute('href');
+          var updatedHref = originalHref + '?v=' + latestCommit; // Add cache-busting parameter
+          link.setAttribute('href', updatedHref);
+
+          var preloadPromise = new Promise((resolve, reject) => {
+            var preloadLink = document.createElement('link');
+            preloadLink.setAttribute('rel', 'preload');
+            preloadLink.setAttribute('as', 'style');
+            preloadLink.setAttribute('href', updatedHref);
+            preloadLink.addEventListener('load', resolve);
+            preloadLink.addEventListener('error', reject);
+            document.head.appendChild(preloadLink);
+          });
+        });
+
+        // Cache-busting for fonts
+        var fontLinks = document.querySelectorAll('link[as="font"]');
         var preloadPromises = [];
 
-        for (var i = 0; i < links.length; i++) {
-          var link = links[i];
-          var href = link.getAttribute('href');
+        fontLinks.forEach(function(link) {
+          var originalHref = link.getAttribute('href');
+          var updatedHref = originalHref + '?v=' + latestCommit; // Add cache-busting parameter
+          link.setAttribute('href', updatedHref);
+          
 
-          if (href) {
-            var updatedHref = href + '?v=' + latestCommit;
-            var preloadPromise = new Promise((resolve, reject) => {
-              var preloadLink = document.createElement('link');
-              preloadLink.setAttribute('rel', 'preload');
-              preloadLink.setAttribute('as', 'style');
-              preloadLink.setAttribute('href', updatedHref);
-              preloadLink.addEventListener('load', resolve);
-              preloadLink.addEventListener('error', reject);
-              document.head.appendChild(preloadLink);
-            });
+          var preloadPromise = new Promise((resolve, reject) => {
+            var preloadLink = document.createElement('link');
+            preloadLink.setAttribute('rel', 'preload');
+            preloadLink.setAttribute('as', 'font');
+            preloadLink.setAttribute('href', updatedHref);
+            preloadLink.addEventListener('load', resolve);
+            preloadLink.addEventListener('error', reject);
+            document.head.appendChild(preloadLink);
+          });
 
-            preloadPromises.push(preloadPromise);
-          }
-        }
+          preloadPromises.push(preloadPromise);
+        });
 
+        // Wait for all preload promises to resolve
         Promise.all(preloadPromises)
           .then(() => {
-            for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              var href = link.getAttribute('href');
-
-              if (href) {
-                var updatedHref = href + '?v=' + latestCommit;
-                var newLink = document.createElement('link');
-                newLink.setAttribute('rel', 'stylesheet');
-                newLink.setAttribute('href', updatedHref);
-                document.head.appendChild(newLink);
-                link.parentNode.removeChild(link);
-              }
-            }
-            console.log("All Loaded");
+            console.log("All Fonts and Styles Loaded");
             fadeOutElementsByClass("whitescreen");
-            // All stylesheets have been loaded, remove the default stylesheet
-            var defaultStylesheet = document.querySelector('link[href="default.css"]');
-            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
           })
           .catch(error => console.log(error));
       })
       .catch(error => {
-        console.log(error)
+        console.log(error);
         fadeOutElementsByClass("whitescreen");
       });
-
-
-
-
   }
 
-  loadUpdatedStylesheet();
+  loadUpdatedResources();
 </script>
+
+
+
 
 <script>
   let burgerActivated = false;
