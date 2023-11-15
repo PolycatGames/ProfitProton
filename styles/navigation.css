@@ -3,9 +3,9 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 80px;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    transition: opacity .3s ease;
     font-weight: 500;
     display: flex;
     flex-direction: row;
@@ -65,6 +65,10 @@
 }
 
 .header-left-text {
+    font-weight: 900;
+    color: var(--dark-green);
+    text-transform: uppercase;
+    font-size: 16px;
     margin: 0px 13px;
     cursor: pointer;
     transition: color 0.3s;
@@ -81,7 +85,8 @@
 }
 
 .dropdown-content {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 100%;
     left: 8px;
@@ -89,6 +94,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     z-index: 1;
     width: max-content;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .dropdown-content a {
@@ -104,7 +110,8 @@
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -130,22 +137,31 @@
 }
 
 .header-right button {
-    padding: 5px 10px;
+    padding: 8px 8px;
     font-size: 15px;
     font-weight: 500;
-    background-color: var(--main-color);
-    color: white;
     border: none;
-    border-radius: 5px;
+    background-color: transparent;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color .15s;
+    transition: background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.header-right button svg{
+    fill: var(--main-color);
+    width: 30px;
+    height: auto;
+}
+
+
 .header-right button:hover {
-    background-color: var(--main-color-hover);
+    background-color: rgba(17, 193, 119, .2);
 }
 .header-right button:active {
-    background-color: var(--main-color-active);
+    background-color: rgba(13, 182, 111, .3);
 }
 
 /*SIDEBAR*/
@@ -284,19 +300,18 @@
 }
 
 .footer-content-top-social-list-item {
-    margin: 0px 15px;
+    margin: 0px 30px;
 }
 
 .footer-content-top-social-list-item svg {
     width: 25px;
     height: auto;
     cursor: pointer;
-    transition: width .15s, margin .15s;
+    transition: transform .2s;
 }
 
 .footer-content-top-social-list-item svg:hover {
-    width: 29px;
-    margin: 0px 13px;
+    transform: scale(1.12);
 }
 
 .footer-content-bottom {

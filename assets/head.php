@@ -59,7 +59,7 @@
     document.addEventListener("DOMContentLoaded", function() {
       // Function to execute the AJAX request
       function checkFileContent() {
-        // Your AJAX request code here
+
       }
 
       // Run the initial check
@@ -69,6 +69,29 @@
       setInterval(checkFileContent, 500);
     });
   }
+</script>
+
+<script>
+  const elements = document.getElementsByClassName('header');
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
+
+    if (scrollY > lastScrollY) {
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.opacity = 0;
+        elements[i].style.pointerEvents = 'none';
+      }
+    } else if (scrollY < lastScrollY) {
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.opacity = 1;
+        elements[i].style.pointerEvents = 'auto';
+      }
+    }
+
+    lastScrollY = scrollY;
+  });
 </script>
 
 <script>
