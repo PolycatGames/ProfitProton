@@ -1,3 +1,4 @@
+
 /*COLORS*/
 :root {
     --main-color: rgba(13, 201, 123, 1);
@@ -7,6 +8,8 @@
     --light-orange: rgb(255, 240, 235);
     --soft-green: #73c0a0;
     --dark-green: #1a362a;
+    --dark-green-hover: #234436;
+    --dark-green-active: #2b4f40;
     --secondary-color: #46484d;
     --secondary-color-hover: rgb(48, 58, 68);
         --secondary-color-active: rgb(59, 69, 79);
@@ -65,9 +68,10 @@ h3 {
 }
 
 .title{
-    font-family: 'Impact', 'DM Sans';
+    font-family: 'Impact', 'IMP', system-ui;
     color: var(--dark-green);
     font-weight: 200;
+    font-display: swap;
 }
 
 .description-centered {
@@ -77,6 +81,13 @@ h3 {
 
 .truncate::after{
 content: "\2026"
+}
+
+@font-face {
+    font-family: 'IMP';
+    src: url('/assets/fonts/impact/impact.woff2') format('woff2'),
+        url('/assets/fonts/impact/impact.woff') format('woff');
+    font-display: swap;
 }
 
 
@@ -90,9 +101,9 @@ body {
     flex-direction: column;
     min-height: 100%;
     margin: 0;
-    padding-top: 70px;
+    margin-top: 80px;
     color: var(--secondary-color);
-    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', system-ui, sans-serif, Helvetica;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -117,14 +128,12 @@ a {
     color: black;
 }
 
-article,
-.content-holder {
+article {
     margin-left: 40px;
     margin-right: 40px;
 }
 
-article>*,
-.content-holder>* {
+article>*{
     max-width: 1140px;
     position: relative;
     margin: auto;
@@ -351,9 +360,9 @@ article>*,
 }
 
 @media (max-width: 550px) {
-    .content-holder {
-        margin-left: 35px;
-        margin-right: 35px;
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .subscribe-sect {
@@ -365,12 +374,6 @@ article>*,
     }
 }
 
-@media (max-width: 300px) {
-    .content-holder {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
 
 @keyframes fadeIn{
     from{

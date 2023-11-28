@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!--Fonts-->
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap" media="print" onload="this.media='all'" />
 
 <!--Standard Styles-->
 <link rel="stylesheet" href="/styles/feed.css">
@@ -15,9 +14,14 @@
 <link rel="stylesheet" href="/styles/pages.css">
 <link rel="stylesheet" href="/styles/navigation.css">
 
+
 <!--Standard Scripts-->
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/img-att.php'; ?>
+
+<script>
+  const version = 1;
+</script>
 
 <script>
   if (location.hostname === "localhost") {
@@ -173,72 +177,56 @@
 
 <script>
   function loadUpdatedStylesheet() {
+    // Replace this constant with the desired commit hash
+    const latestCommit = version; // Set to a specific commit hash
 
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    var preloadPromises = [];
 
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      var href = link.getAttribute('href');
 
-    fetch('https://api.github.com/repos/PolycatGames/ProfitProton/commits')
+      if (href) {
+        var updatedHref = href + '?v=' + latestCommit;
+        var preloadPromise = new Promise((resolve, reject) => {
+          var preloadLink = document.createElement('link');
+          preloadLink.setAttribute('rel', 'preload');
+          preloadLink.setAttribute('as', 'style');
+          preloadLink.setAttribute('href', updatedHref);
+          preloadLink.addEventListener('load', resolve);
+          preloadLink.addEventListener('error', reject);
+          document.head.appendChild(preloadLink);
+        });
 
-      .then(response => response.json())
-      .then(data => {
-        var latestCommit = data[0].sha; // Extract the latest commit hash
-        var links = document.querySelectorAll('link[rel="stylesheet"]');
-        var preloadPromises = [];
+        preloadPromises.push(preloadPromise);
+      }
+    }
 
+    Promise.all(preloadPromises)
+      .then(() => {
         for (var i = 0; i < links.length; i++) {
           var link = links[i];
           var href = link.getAttribute('href');
 
           if (href) {
             var updatedHref = href + '?v=' + latestCommit;
-            var preloadPromise = new Promise((resolve, reject) => {
-              var preloadLink = document.createElement('link');
-              preloadLink.setAttribute('rel', 'preload');
-              preloadLink.setAttribute('as', 'style');
-              preloadLink.setAttribute('href', updatedHref);
-              preloadLink.addEventListener('load', resolve);
-              preloadLink.addEventListener('error', reject);
-              document.head.appendChild(preloadLink);
-            });
-
-            preloadPromises.push(preloadPromise);
+            var newLink = document.createElement('link');
+            newLink.setAttribute('rel', 'stylesheet');
+            newLink.setAttribute('href', updatedHref);
+            document.head.appendChild(newLink);
+            link.parentNode.removeChild(link);
           }
         }
-
-        Promise.all(preloadPromises)
-          .then(() => {
-            for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              var href = link.getAttribute('href');
-
-              if (href) {
-                var updatedHref = href + '?v=' + latestCommit;
-                var newLink = document.createElement('link');
-                newLink.setAttribute('rel', 'stylesheet');
-                newLink.setAttribute('href', updatedHref);
-                document.head.appendChild(newLink);
-                link.parentNode.removeChild(link);
-              }
-            }
-            console.log("All Loaded");
-            fadeOutElementsByClass("whitescreen");
-            // All stylesheets have been loaded, remove the default stylesheet
-            var defaultStylesheet = document.querySelector('link[href="default.css"]');
-            defaultStylesheet.parentNode.removeChild(defaultStylesheet);
-          })
-          .catch(error => console.log(error));
+        // All stylesheets have been loaded, remove the default stylesheet
+        var defaultStylesheet = document.querySelector('link[href="default.css"]');
       })
-      .catch(error => {
-        console.log(error)
-        fadeOutElementsByClass("whitescreen");
-      });
-
-
-
-
+      .catch(error => console.log(error));
   }
 
   loadUpdatedStylesheet();
 </script>
+
 
 
 
@@ -250,8 +238,8 @@
   function setSidebar() {
     sidebar = document.querySelector(".sidebar");
     if (sidebar !== null) {
+      sidebar.style.opacity = "0"; // Initially set opacity to 0
       sidebar.style.display = "none";
-      console.log(sidebar + " found");
     } else {
       console.log(sidebar + " not found");
     }
@@ -260,27 +248,29 @@
   function activateBurger() {
     if (burgerActivated == false) {
       sidebar.style.display = "flex";
+      setTimeout(() => {
+        sidebar.style.opacity = "1"; // Fade in sidebar with opacity transition
+      }, 50);
 
       burgerActivated = true;
-      console.log("inactive -> active")
+      console.log("inactive -> active");
     } else {
       deactivateBurger();
-      console.log("active -> inactive")
+      console.log("active -> inactive");
     }
   }
 
   function deactivateBurger() {
-    sidebar.style.display = "none";
+    sidebar.style.opacity = "0"; // Fade out sidebar with opacity transition
+    setTimeout(() => {
+      sidebar.style.display = "none";
+    }, 300); // Adjust timing to match your transition duration
     burgerActivated = false;
   }
 
-
-
   window.addEventListener('resize', () => {
-    // Get the width of the window
     const windowWidth = window.innerWidth;
 
-    // Do something with the width
     if (windowWidth > 760) {
       sidebar.style.display = "none";
       burgerActivated = false;
@@ -302,17 +292,3 @@
 
   gtag('config', 'G-CXQPHCFCPT');
 </script>
-
-<!--Standard Elements-->
-<style>
-  .whitescreen {
-    position: fixed;
-    z-index: 9999;
-    background-color: rgb(255, 255, 255);
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 0;
-  }
-</style>
-<div class="whitescreen"></div>

@@ -166,17 +166,18 @@
 
 /*SIDEBAR*/
 .sidebar {
+    transition: opacity 0.3s ease;
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 69px;
+    top: 0px;
     left: 0;
     bottom: 0;
     width: 180px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     z-index: 99;
-    padding-top: 20px;
+    padding-top: 89px;
     font-size: 18px;
 }
 
@@ -185,7 +186,9 @@
     cursor: pointer;
     transition: color 0.3s;
     display: inline-block;
-    font-weight: 400;
+    color: var(--dark-green);
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .sidebar-item:hover {
@@ -195,20 +198,18 @@
 
 /*FOOTER*/
 .footer {
-
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, .1);
     display: flex;
-    height: 500px;
     align-items: center;
     justify-content: center;
     background-color: white;
 }
 
 .footer-content {
-    left: 0;
-    right: 0;
-    position: absolute;
-
+    max-width: 1200px;
+    margin: 0 50px;
     display: flex;
     flex-direction: column;
 }

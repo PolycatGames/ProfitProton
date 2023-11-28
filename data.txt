@@ -281,7 +281,7 @@ date: "7-15-2023"
 category: "AI"
 link: "/articles/how-to-make-money-with-selling-ai-generated-art"
 thumbnail: "/uploads/2023/7/how-to-make-money-with-selling-ai-generated-art"
-author: "ProfitProton"
+author: "Sjoerd Visser"
 }
 
 2 {

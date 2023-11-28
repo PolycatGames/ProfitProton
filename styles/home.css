@@ -1,16 +1,21 @@
-.banner {
-    left: 0;
-    right: 0;
-    padding-top: 50px;
+#home{
+    margin-top: 0;
+}
+
+.banner-holder{
+    background-color: var(--light-orange);
     padding-bottom: 50px;
+}
+
+.banner {
+
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .banner-area {
-    height: 500px;
-    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,6 +31,7 @@
 .banner-area-left-title {
     font-family: 'Impact', 'DMSans';
     color: #1a362a;
+    text-transform: uppercase;
     font-size: 75px;
     font-weight: 200;
     margin-bottom: 0px;
@@ -42,11 +48,12 @@
 .banner-area-left-buttons {
     display: flex;
     flex-direction: row;
+    margin-bottom: 120px;
 }
 
 .banner-area-left-buttons-button1 {
     font-size: 17px;
-    padding: 18px 30px;
+    padding: 18px 50px;
     background-color: var(--main-color);
     border: none;
     color: white;
@@ -63,6 +70,41 @@
 .banner-area-left-buttons-button1:active {
     background-color: #0db66f;
 }
+
+.banner-area-left-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.banner-area-left-socials button{
+    background-color: var(--dark-green);
+    border-radius: 100px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+.banner-area-left-socials button:hover {
+    background-color: var(--dark-green-hover);
+}
+
+.banner-area-left-socials button:active {
+    background-color: var(--dark-green-active);
+}
+
+.banner-area-left-socials svg{
+    fill: white;
+    width: 20px;
+    height: auto;
+}
+
+
 
 .banner-area-right {
     height: 100%;
@@ -88,6 +130,7 @@
 .bar-holder {
     width: 100%;
     gap: 7%;
+    row-gap: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: start;
@@ -318,8 +361,8 @@
 }
 
 /*STANDARD SPACING*/
-.standard-spacing{
-    margin-bottom: 50px;
+#standard-spacing{
+    margin-bottom: 120px;
 }
 
 
@@ -336,8 +379,14 @@
 }
 
 @media (max-width: 1080px) {
-    .banner-area-right {
-        display: none;
+
+
+    .banner-area {
+        flex-direction: column-reverse;
+    }
+    .banner-area-right{
+        padding-top: 30px;
+        max-width: 700px;
     }
 
     .banner-area-left-description {
@@ -386,13 +435,16 @@
 
     .banner-area-left-buttons-button1 {
         font-size: 16px;
-        padding: 18px 24px;
     }
 
 
 }
 
 @media (max-width: 600px) {
+
+    .banner-area-left-buttons{
+        margin-bottom: 40px;
+    }
 
     .home-suggested-platforms-grid-item-button:hover::before,
     .home-suggested-platforms-grid-item-button:hover::after {
@@ -419,9 +471,5 @@
     .banner-area-left-buttons-button1 {
         font-size: 15px;
         padding: 18px 24px;
-    }
-
-    .banner {
-        padding-top: 0px;
     }
 }

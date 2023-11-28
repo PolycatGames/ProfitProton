@@ -28,10 +28,12 @@
         </script>
 
 
-        <div class="pcl-date">
+        <div class="pcl-info">
             <time id="lastmod"></time>
-            <span>-</span>
-            <span>by <?= $data['author'] ?></span>
+            <div class="pcl-author">
+                <img src="/images/logo/profitproton-logo-120x.png" alt="ProfitProton Logo">
+                <span><?= $data['author'] ?></span>
+            </div>
         </div>
         <a href="https://www.instagram.com/profitproton" target="_blank" aria-label="Follow instagram profile"><button class="pcl-button">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 409.61 409.61" style="enable-background:new 0 0 409.61 409.61;" xml:space="preserve">

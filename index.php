@@ -52,22 +52,81 @@
 
 
 
-<body>
+<body id="home">
     <?php include 'assets/headernav.html'; ?>
     <main class="main-content">
-        <div style="background-color: var(--light-orange);">
+        <div class="banner-holder">
             <article>
                 <section class="banner">
                     <div class="banner-area">
                         <div class="banner-area-left">
-                            <h1 class="banner-area-left-title">MAKE YOUR FIRST <span style="color: var(--main-color);">$1000</span> ONLINE</h1>
+                            <h1 class="banner-area-left-title">Make your first <span style="color: var(--main-color);">$1000</span> online</h1>
                             <p class="banner-area-left-description">Small beginnings lead to great achievements, start your journey with us!</p>
                             <div class="banner-area-left-buttons">
                                 <a href="/blog" aria-label="Blog page"><button class="banner-area-left-buttons-button1">Learn more</button></a>
                             </div>
+                            <div class="banner-area-left-socials">
+                                <a href="https://pinterest.com/profitproton/" target="_blank" rel="noopener">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 511.998 511.998" style="enable-background:new 0 0 511.998 511.998;" xml:space="preserve">
+                                            <path d="M405.017,52.467C369.774,18.634,321.001,0,267.684,0C186.24,0,136.148,33.385,108.468,61.39  c-34.114,34.513-53.675,80.34-53.675,125.732c0,56.993,23.839,100.737,63.76,117.011c2.68,1.098,5.377,1.651,8.021,1.651  c8.422,0,15.095-5.511,17.407-14.35c1.348-5.071,4.47-17.582,5.828-23.013c2.906-10.725,0.558-15.884-5.78-23.353  c-11.546-13.662-16.923-29.817-16.923-50.842c0-62.451,46.502-128.823,132.689-128.823c68.386,0,110.866,38.868,110.866,101.434  c0,39.482-8.504,76.046-23.951,102.961c-10.734,18.702-29.609,40.995-58.585,40.995c-12.53,0-23.786-5.147-30.888-14.121  c-6.709-8.483-8.921-19.441-6.222-30.862c3.048-12.904,7.205-26.364,11.228-39.376c7.337-23.766,14.273-46.213,14.273-64.122  c0-30.632-18.832-51.215-46.857-51.215c-35.616,0-63.519,36.174-63.519,82.354c0,22.648,6.019,39.588,8.744,46.092  c-4.487,19.01-31.153,132.03-36.211,153.342c-2.925,12.441-20.543,110.705,8.618,118.54c32.764,8.803,62.051-86.899,65.032-97.713  c2.416-8.795,10.869-42.052,16.049-62.495c15.817,15.235,41.284,25.535,66.064,25.535c46.715,0,88.727-21.022,118.298-59.189  c28.679-37.02,44.474-88.618,44.474-145.282C457.206,127.983,438.182,84.311,405.017,52.467z" />
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="https://www.instagram.com/profitproton" target="_blank" rel="noopener">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 20 20" height="512" viewBox="0 0 20 20" width="512">
+                                            <g>
+                                                <path d="m15 0h-10c-2.8 0-5 2.2-5 5v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5v-10c0-2.8-2.2-5-5-5zm3 15c0 1.7-1.3 3-3 3h-10c-1.7 0-3-1.3-3-3v-10c0-1.7 1.3-3 3-3h10c1.7 0 3 1.3 3 3z" />
+                                                <path d="m10 5c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" />
+                                                <circle cx="15" cy="5" r="1" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="https://www.tiktok.com/@profitproton" target="_blank" rel="noopener">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                                            <g>
+                                                <path d="m480.32 128.39c-29.22 0-56.18-9.68-77.83-26.01-24.83-18.72-42.67-46.18-48.97-77.83-1.56-7.82-2.4-15.89-2.48-24.16h-83.47v228.08l-.1 124.93c0 33.4-21.75 61.72-51.9 71.68-8.75 2.89-18.2 4.26-28.04 3.72-12.56-.69-24.33-4.48-34.56-10.6-21.77-13.02-36.53-36.64-36.93-63.66-.63-42.23 33.51-76.66 75.71-76.66 8.33 0 16.33 1.36 23.82 3.83v-62.34-22.41c-7.9-1.17-15.94-1.78-24.07-1.78-46.19 0-89.39 19.2-120.27 53.79-23.34 26.14-37.34 59.49-39.5 94.46-2.83 45.94 13.98 89.61 46.58 121.83 4.79 4.73 9.82 9.12 15.08 13.17 27.95 21.51 62.12 33.17 98.11 33.17 8.13 0 16.17-.6 24.07-1.77 33.62-4.98 64.64-20.37 89.12-44.57 30.08-29.73 46.7-69.2 46.88-111.21l-.43-186.56c14.35 11.07 30.04 20.23 46.88 27.34 26.19 11.05 53.96 16.65 82.54 16.64v-60.61-22.49c.02.02-.22.02-.24.02z" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                         <div class="banner-area-right">
-                            <img src="images/illustrations/landing-page-illustration.webp" alt="An illustration depicting a man sitting at a desk in an office, working on a laptop. Money is flowing out from the laptop, symbolizing the concept of earning money online. Next to the illustration is a button that says 'Start Earning.">
+                            <img src="/images/banner/profitproton-banner.webp" alt="ProfitProton landing page">
                         </div>
                     </div>
                 </section>
@@ -188,7 +247,7 @@
                 </h2>
                 <p class="articles-title-subtext">The best articles to read when learning about making money online!</p>
             </div>
-            <section class="articles-3x">
+            <section class="articles-3x" id="standard-spacing">
                 <div class="articles-layout-3x-grid">
                     <a <?php $data = getDataFromTextFile(Popular); ?> href=<?= $data['link'] ?> aria-label="Link to <?= $data['title'] ?>" style="display: <?= ($data['title'] === 'No title found.') ? 'none' : 'block'; ?>">
                         <div class=" article-3x">
@@ -239,11 +298,25 @@
                         </div>
                     </a>
                 </div>
+                <div class="view-more">
+                    <a href="/blog">
+                        <button>
+                            <span>View more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                                <g id="Layer_2_00000138552524522459854550000011744709226081174206_">
+                                    <g id="chevron_down">
+                                        <path d="m511 138.2c-3-13.8-11.2-23.1-25.2-27-15.3-4.3-28 .4-38.8 11.3-41.9 42-83.7 84.1-125.5 126.2-21 21-42.2 41.9-65.4 65l-191.4-191.4c-16-16-38.8-16.9-53.6-2.8s-15 38 .6 53.7c72.2 72.6 144.7 145.1 217.3 217.3 15.8 15.7 38 16.1 53.5.6 73-72.5 145.7-145.2 218.2-218.1 9.5-9.6 13.3-21.4 10.3-34.8z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
             </section>
         </article>
-        <article class="no-p-margin">
+        <article class="no-p-margin" id="standard-spacing">
             <section class="split split-normal">
-                <div>
+                <div style="width: 100%;">
                     <img class="split-img" src="/uploads/2023/11/dropshipping-profitproton-400x.webp" alt="Start dropshipping" srcset="/uploads/2023/11/dropshipping-profitproton-400x.webp 400w, /uploads/2023/11/dropshipping-profitproton-800x.webp 800w, /uploads/2023/11/dropshipping-profitproton-1200x.webp 1200w" sizes="(min-width: 820px) 50vw, 100vw" loading="lazy" decoding="async" width="400px" height="225px">
                 </div>
                 <div class="split-text">
@@ -264,12 +337,12 @@
                     <div>With ProfitProton's business idea generator, you can easily come up with profitable new side hustle concepts related to your unique interests and skills.</div>
                     <a href="/tools/business-idea-generator"><button class="button-standard">Generate Idea</button></a>
                 </div>
-                <div>
-                    <img class="split-img" src="/images/placeholder/placeholder-1200x.webp" alt="">
+                <div style="width: 100%;">
+                    <img class="split-img" src="/uploads/2023/11/profitproton-banner-400x.webp" alt="Business idea generator" srcset="/uploads/2023/11/profitproton-banner-400x.webp 400w, /uploads/2023/11/profitproton-banner-800x.webp 800w, /uploads/2023/11/profitproton-banner-1200x.webp 1200w" sizes="(min-width: 820px) 50vw, 100vw" loading="lazy" decoding="async" width="400px" height="225px">
                 </div>
             </section>
         </article>
-        <article>
+        <article id="standard-spacing">
             <div class="articles-title-holder">
                 <span class="articles-title-category">Latest</span>
                 <h2 class="articles-title title">
@@ -346,6 +419,20 @@
                         <?php endif; ?>
                     <?php endfor; ?>
 
+                </div>
+                <div class="view-more">
+                    <a href="/blog">
+                        <button>
+                            <span>View more</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                                <g id="Layer_2_00000138552524522459854550000011744709226081174206_">
+                                    <g id="chevron_down">
+                                        <path d="m511 138.2c-3-13.8-11.2-23.1-25.2-27-15.3-4.3-28 .4-38.8 11.3-41.9 42-83.7 84.1-125.5 126.2-21 21-42.2 41.9-65.4 65l-191.4-191.4c-16-16-38.8-16.9-53.6-2.8s-15 38 .6 53.7c72.2 72.6 144.7 145.1 217.3 217.3 15.8 15.7 38 16.1 53.5.6 73-72.5 145.7-145.2 218.2-218.1 9.5-9.6 13.3-21.4 10.3-34.8z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </section>
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/subscribe.php'; ?>

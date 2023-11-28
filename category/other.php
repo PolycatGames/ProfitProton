@@ -25,7 +25,7 @@
     <main class="main-content">
         <article>
             <section>
-                <h1 class="category-title">Other</h1>
+                <h1 class="category-title title">Other</h1>
             </section>
             <section class="articles-3x category">
                 <div class="articles-layout-3x-grid">

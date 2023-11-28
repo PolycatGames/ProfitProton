@@ -35,18 +35,18 @@
                         <h2>Best AI Image Generators in 2023</h2>
                         <img class="indeximg" src="/uploads/2023/8/best-ai-image-generators-list-800x.webp" alt="Best AI Image Generators" title="Best AI Image Generators">
                         <p>Before we dive into the money-making strategies, let&apos;s take a look at some of the best AI image generators available in 2023. These platforms allow you to create beautiful images using artificial intelligence, even if you don&apos;t have any design skills.</p>
-                        <h3><a href="https://www.midjourney.com/" aria-label="Midjourney"><strong>Midjourney</strong></a></h3>
+                        <h3><a href="https://www.midjourney.com/" aria-label="Midjourney">Midjourney</a></h3>
                         <img src="/uploads/2023/7/midjourney-ai-400x.webp" alt="Midjourney community showcase">
                         <p>Midjourney is a fantastic platform for generating high-quality images with AI. Although it offers paid plans starting at $8 a month, the results are worth it.</p>
                         <p>To create images on Midjourney, you can join their Discord community, enter an image generation channel, and type <span class="codeblock">/imagine [your prompt]</span>.</p>
                         <p>After typing the command, Midjourney&apos;s AI analyzes your prompt and generates a unique image based on the provided input.</p>
                         <p>It&apos;s fascinating to see how the AI interprets your prompt and translates it into a visually stunning artwork.</p>
-                        <h3><a href="https://leonardo.ai/" aria-label="Leonardo-ai"><strong>Leonardo.ai</strong></a></h3>
+                        <h3><a href="https://leonardo.ai/" aria-label="Leonardo-ai">Leonardo.ai</a></h3>
                         <img src="/uploads/2023/7/leonardo-ai-400x.webp" alt="Leonardo.ai user-interface">
                         <p>If you&apos;re looking for a free AI image generator with customization options, Leonardo.ai is a great choice.</p>
                         <p>It offers a range of prompt customization features, allowing you to tweak the generation process to achieve your desired outcome.</p>
                         <p>With different image generation models to choose from, Leonardo.ai provides versatility and creativity.</p>
-                        <h3><a href="https://openai.com/dall-e-2" aria-label="Dall-e 2"><strong>Dalle-2</strong></a></h3>
+                        <h3><a href="https://openai.com/dall-e-2" aria-label="Dall-e 2">Dalle-2</a></h3>
                         <img src="/uploads/2023/7/dalle-2-ai-400x.webp" alt="Dall-e 2 user-interface">
                         <p>While Dalle-2 is a free AI image generator, it doesn&apos;t always produce the highest-quality outcomes. Apart from that, it&apos;s still worth to give it a try, especially if you&apos;re experimenting with different art styles.</p>
                         <p>The free access makes it a great option if you&apos;re just starting out with this business model.</p>
