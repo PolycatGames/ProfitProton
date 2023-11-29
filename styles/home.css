@@ -29,8 +29,6 @@
 }
 
 .banner-area-left-title {
-    font-family: 'Impact', 'DMSans';
-    color: #1a362a;
     text-transform: uppercase;
     font-size: 75px;
     font-weight: 200;
@@ -167,9 +165,6 @@
 }
 
 .bar-item-text {
-    font-weight: 100;
-    font-family: Impact;
-    color: var(--dark-green);
     opacity: .3;
     transition: opacity .3s;
     margin: auto;

@@ -60,7 +60,7 @@
                 <section class="banner">
                     <div class="banner-area">
                         <div class="banner-area-left">
-                            <h1 class="banner-area-left-title">Make your first <span style="color: var(--main-color);">$1000</span> online</h1>
+                            <h1 class="banner-area-left-title title">Make your first <span style="color: var(--main-color);">$1000</span> online</h1>
                             <p class="banner-area-left-description">Small beginnings lead to great achievements, start your journey with us!</p>
                             <div class="banner-area-left-buttons">
                                 <a href="/blog" aria-label="Blog page"><button class="banner-area-left-buttons-button1">Learn more</button></a>
@@ -151,7 +151,7 @@
                                 <path d="m8.628 9.349s-1.042.595-1.989 1.136c-1.168.668-1.889 1.91-1.889 3.256v2.259c0 .414.336.75.75.75s.75-.336.75-.75c0 0 0-1.181 0-2.259 0-.807.433-1.553 1.134-1.954.946-.541 1.988-1.136 1.988-1.136.36-.205.485-.664.279-1.023-.205-.36-.664-.485-1.023-.279z" />
                             </g>
                         </svg>
-                        <div class="bar-item-text">Freelancing</div>
+                        <div class="bar-item-text title">Freelancing</div>
                     </a>
                     <a class="bar-item" href="/category/e-commerce" aria-label="Explore E-Commerce Articles">
                         <svg class="bar-item-image" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg8" height="512" viewBox="0 0 8.4666665 8.4666669" width="512">
@@ -159,7 +159,7 @@
                                 <path id="rect823" d="m12.003906 1.0039062c-1.424723 0-2.6676113 1.0089587-2.9472654 2.40625l-.3183594 1.5898438h-4.7382812c-1.6447007 0-3 1.3553008-3 3v16c0 1.644699 1.3552994 3 3 3h8.378906l-1.003906 2.003906h-1.373047c-.034482-.0018-.069033-.0018-.1035155 0-1.3025295.09647-1.202014 2.038512.1035155 2h11.996094c1.363604.03062 1.363604-2.030615 0-2h-1.378906l-1-2.003906h8.380859c1.644701 0 3-1.355301 3-3v-16c0-1.6446992-1.355299-3-3-3h-4.738281l-.31836-1.5898438c-.279654-1.3972913-1.520589-2.40625-2.945312-2.40625zm0 1.9921876h7.994141c.484679 0 .885393.3376023.980469.8125l2.001953 9.9941402c.12929.645959-.325175 1.205078-.982422 1.205078h-11.996094c-.6572465 0-1.1097583-.559119-.9804686-1.205078l1.9999996-9.9941402c.09508-.4750489.497744-.8125.982422-.8125zm1.976563 1.9863281c-.552307.010737-.991306.4672266-.980469 1.0195312v2c0 1.6446992 1.351387 2.9960939 2.996094 2.9960939 1.644706 0 3.005859-1.3513947 3.005859-2.9960939v-2c0-1.3346348-2.001953-1.3346348-2.001953 0v2c0 .5713134-.432613.9960938-1.003906.9960938-.571294 0-.996094-.4247804-.996094-.9960938v-2c.01114-.5676217-.451909-1.030671-1.019531-1.0195312zm-9.980469 2.0175781h4.3378906l-1.28125 6.404297c-.3678085 1.837682 1.069657 3.595703 2.9453124 3.595703h11.996094c1.875655 0 3.313119-1.758021 2.945312-3.595703l-1.28125-6.404297h4.337891c.571345 0 1 .4286488 1 1v13h-19c-1.3523131-.01912-1.3523131 2.019116 0 2h19v1c0 .571351-.428655 1-1 1h-24c-.571345 0-1-.428649-1-1v-1h3c1.3523131.01912 1.3523131-2.019116 0-2h-3v-13c0-.5713512.4286551-1 1-1zm10.615234 20.001953h2.769532l.996093 2.001953h-4.761718z" fill-rule="evenodd" transform="matrix(.265 0 0 .265 0 288.533)" font-variant-ligatures="normal" font-variant-position="normal" font-variant-caps="normal" font-variant-numeric="normal" font-variant-alternates="normal" font-feature-settings="normal" text-indent="0" text-align="start" text-decoration-line="none" text-decoration-style="solid" text-decoration-color="rgb(0,0,0)" text-transform="none" text-orientation="mixed" white-space="normal" shape-padding="0" isolation="auto" mix-blend-mode="normal" solid-color="rgb(0,0,0)" solid-opacity="1" vector-effect="none" paint-order="stroke fill markers" />
                             </g>
                         </svg>
-                        <div class="bar-item-text">E-Commerce</div>
+                        <div class="bar-item-text title">E-Commerce</div>
                     </a>
                     <a class="bar-item" href="/category/content-creation" aria-label="Explore Content Creation Articles">
                         <svg class="bar-item-image" xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 511.842 511.842" height="512" viewBox="0 0 511.842 511.842" width="512">
@@ -173,7 +173,7 @@
                                 <path d="m62.678 82.309-28.366-13.122c-7.519-3.479-16.434-.202-19.912 7.316-3.479 7.519-.203 16.434 7.316 19.912l28.366 13.122c7.344 3.448 16.425.278 19.911-7.316 3.479-7.52.203-16.434-7.315-19.912z" />
                             </g>
                         </svg>
-                        <div class="bar-item-text">Content</div>
+                        <div class="bar-item-text title">Content</div>
                     </a>
                     <a class="bar-item" href="/category/ai" aria-label="Explore AI Articles">
                         <svg class="bar-item-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
@@ -223,7 +223,7 @@
                             <g>
                             </g>
                         </svg>
-                        <div class="bar-item-text">AI</div>
+                        <div class="bar-item-text title">AI</div>
                     </a>
                     <a class="bar-item" href="/categories" aria-label="Explore Marketing Articles">
                         <svg class="bar-item-image bar-item-more" xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
@@ -233,7 +233,7 @@
                                 <circle cx="56.889" cy="256" r="56.889" />
                             </g>
                         </svg>
-                        <div class="bar-item-text">More</div>
+                        <div class="bar-item-text title">More</div>
                     </a>
                 </div>
             </section>
