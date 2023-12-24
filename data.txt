@@ -207,16 +207,16 @@ author: "ProfitProton"
 }
 
 8 {
-title: "7 Most Profitable Graphic Design Niches In 2023"
+title: "Most Profitable Graphic Design Niches In 2024"
 preview: "Freelancing in graphic design can be an effective way to earn extra income or even start a"
 description: "Find the best money-making graphic design niches for your new side hustle or career path!"
 keywords: "Freelancing, Graphic design, Side hustle, Art, Niche, Job, Art, Profitable, Website, Software, Online, 3D, Online jobs, Business"
 time: "T19:51:24"
 date: "8-7-2023"
 category: "Freelancing"
-link: "/articles/7-most-profitable-graphic-design-niches-in-2023"
-thumbnail: "/uploads/2023/8/7-most-profitable-graphic-design-niches"
-author: "ProfitProton"
+link: "/articles/most-profitable-graphic-design-niches-in-2024"
+thumbnail: "/uploads/2023/8/most-profitable-graphic-design-niches"
+author: "Sjoerd Visser"
 }
 
 7 {
