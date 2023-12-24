@@ -2,7 +2,8 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^articles/7-most-profitable-graphic-design-niches-in-2023$ /articles/most-profitable-graphic-design-niches-in-2024 [R=301,L]
+
+Redirect 301 /articles/7-most-profitable-graphic-design-niches-in-2023 https://profitproton.com/articles/most-profitable-graphic-design-niches-in-2024
 
 # Redirect www to non-www and use https
 RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
