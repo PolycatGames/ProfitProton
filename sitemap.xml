@@ -6,11 +6,16 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://profitproton.com/about</loc>
-		<lastmod>2023-12-29T09:43:41+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/10-best-websites-to-sell-your-stock-photos-in-2023</loc>
-		<lastmod>2023-08-17T20:37:24+00:00</lastmod>
+		<lastmod>2023-12-29T17:41:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://profitproton.com/uploads/2023/12/fiverr-photography-400x.webp</image:loc>
+			<image:caption>Fiverr Photography</image:caption>
+			<image:title>Fiverr Photography</image:title>
+		</image:image>
 	</url>
 	<url>
 		<loc>https://profitproton.com/articles/11-best-online-side-hustles-to-start-in-2023</loc>
@@ -266,51 +271,51 @@
 	</url>
 	<url>
 		<loc>https://profitproton.com/blog</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/categories</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/ai</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/blogging</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/content-creation</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/e-commerce</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/freelancing</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/marketing</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/category/other</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/contact</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://profitproton.com/tools/business-idea-generator</loc>
-		<lastmod>2023-12-29T09:43:42+00:00</lastmod>
+		<lastmod>2023-12-29T17:43:40+00:00</lastmod>
 		<image:image>
 			<image:loc>https://profitproton.com/uploads/2023/7/business-idea-generator-800x.webp</image:loc>
 			<image:caption>Business idea generator</image:caption>
