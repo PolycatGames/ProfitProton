@@ -305,7 +305,7 @@ keywords: "Side-hustles, Passive income, Online jobs, Freelancing, Money-making 
 time: "T10:29:30"
 date: "7-11-2023"
 category: "Other"
-link: "/articles/11-best-online-side-hustles-to-start-in-2023"
+link: "/articles/best-online-side-hustles"
 thumbnail: "/uploads/2023/12/30-best-online-side-hustles-to-start-in-2024"
 author: "Sjoerd Visser"
 }
