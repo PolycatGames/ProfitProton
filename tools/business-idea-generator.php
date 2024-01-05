@@ -336,7 +336,7 @@
                 <div class="generator-single">
                     <h2 class="title">What's the Next Step?</h2>
                     <ul>
-                        <li>Do some research on the business idea. Consider checking out our article about <a href="/articles/11-best-online-side-hustles-to-start-in-2023" aria-label="11 Best Online Side Hustles to Start in 2023">11 of the best online side hustles to start in 2023</a>.</li>
+                        <li>Do some research on the business idea. Consider checking out our article about <a href="/articles/best-online-side-hustles" aria-label="Best Online Side Hustles">30 of the best online side hustles to start in 2024</a>.</li>
                         <li>Take action! Turn that idea into a reality with a step-by-step plan and timeline. Our business idea generator aims to provide the spark, you provide the hustle.</li>
                     </ul>
                 </div>
