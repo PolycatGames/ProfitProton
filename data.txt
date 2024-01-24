@@ -1,3 +1,16 @@
+26 {
+title: "12 Best AI Side Hustles to Make Money in 2024"
+preview: "In 2024, Artificial Intelligence (AI) isn't just a buzzword, it's a game changer, especially when it comes to side hustles."
+description: "Discover the top 12 AI side hustles to start today and make money with artificial intelligence in 2024. Find your way to earn extra income with AI tools!"
+keywords: "Artificial Intelligence, AI, Side hustles, Make money online, Business, Online, Digital, Money, Startup, Innovative, Ideas, List"
+time: "T21:08:24"
+date: "1-24-2023"
+category: "AI"
+link: "/articles/best-ai-side-hustles-to-make-money"
+thumbnail: "/uploads/2024/1/best-ai-side-hustles-to-make-money"
+author: "Sjoerd Visser"
+}
+
 25 {
 title: "How to Get Organic Traffic from Pinterest in 2024"
 preview: "Are you struggling to attract more visitors to your website? Have you considered making use of the power of Pinterest?"
