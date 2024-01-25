@@ -17,6 +17,8 @@
 
 
 <!--Standard Scripts-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5427386850840028"
+     crossorigin="anonymous"></script>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/config.php'; ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/img-att.php'; ?>
 
