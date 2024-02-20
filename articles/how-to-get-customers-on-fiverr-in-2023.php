@@ -36,26 +36,7 @@
                         <p>Getting that first customer on Fiverr can feel downright impossible after you&rsquo;ve set up your gig. The platform is crowded with experienced sellers who already have great reviews. But here&rsquo;s the good news: if you meet all the requirements buyers are searching for, it is almost guaranteed that you will finally get your first sale.</p>
                         <p>In this article, we&rsquo;ll cover all the crucial elements you need to keep in mind when trying to get customers on Fiverr. Including a few real examples on Fiverr.</p>
                         <h2>7 Tips to Get Customers on <a href="https://www.fiverr.com/" aria-label="Fiverr freelancing"><strong>Fiverr</strong></a></h2>
-                        <amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-5427386850840028"
-     data-ad-slot="7505108393"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
----
 
-<!-- Horizontal -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5427386850840028"
-     data-ad-slot="7505108393"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
                         <h3>1. Optimize Your Gig Title and Description</h3>
                         <img class="indeximg" src="/uploads/2023/7/fiverr-gig-title-800x.webp" alt="Fiverr gig title example">
                         <p>Fiverr&rsquo;s algorithm is by far not as complex as Google&rsquo;s, which is why it&rsquo;s really important to directly target certain keywords by implementing them in your gig&rsquo;s title and description.</p>
