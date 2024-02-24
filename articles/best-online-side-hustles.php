@@ -47,6 +47,7 @@
                         <p class="note">Related: <a href="/articles/how-to-make-money-with-video-editing" aria-label="How to Make Money With Video Editing">How to Make Money With Video Editing: 10 Ideas</a></p>
                         <h3>5. Affiliate Marketing</h3>
                         <p><a href="/articles/how-to-start-affiliate-marketing" aria-label="How to Start Affiliate Marketing">Affiliate marketing</a> allows you to earn commission by promoting products or services of other businesses. Create content such as product reviews or recommendations and include affiliate links. When someone makes a purchase through your link, you earn a percentage of the sale. Amazon Associates offers a great affiliate program you can get started with.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/merch.php'; ?>
                         <h3>6. Monetize YouTube Videos</h3>
                         <p>If you enjoy creating video content, consider monetizing your YouTube channel. Once you meet the requirements, such as having 1,000 subscribers and 4,000 watch hours in the past 12 months, you can join the YouTube Partner Program and earn revenue from ads, sponsorships, and memberships. Also consider starting a <a href="/articles/how-to-start-a-youtube-automation-channel-with-ai">YouTube automation channel with AI</a>, especially in 2024 this can be an efficient and profitable side hustle.</p>
                         <h3>7. 2D Graphic Design</h3>

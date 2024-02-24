@@ -608,6 +608,76 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
 }
 
+#noshadow{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+
+.merch-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    color: white;
+
+}
+.clickbait{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.merch-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Green color with 50% opacity */
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+.merch-container:hover .merch-filter{
+    opacity: 0;
+}
+#merch-image{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.merch-text{
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+#merch-click-anim{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#merch-click-anim-img{
+    width: 70px;
+    transition: transform .4s;
+    box-shadow: none;
+}
+
+.merch-container:hover #merch-click-anim-img{
+    transform:translateY(-200px);
+}
+
+.merch-container:hover #merch-image{
+    transform:scale(1.2);
+}
+.merch-container:hover .merch-text{
+    opacity: 0;
+}
+
 .post-content a{
     font-weight: 500;
 }
