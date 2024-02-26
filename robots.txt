@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /readFile.php
+Disallow: /easteregg.php
 
 Sitemap: https://profitproton.com/sitemap.xml
