@@ -22,7 +22,7 @@
 
         footer {
             position: absolute;
-            bottom: 0;
+            bottom: 20px;
         }
 
         .gameMain {
