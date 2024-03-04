@@ -64,6 +64,7 @@
                         <p><strong>CPC:</strong>&nbsp;$0.18</p>
                         <p><strong>Volume:</strong> ~1.8M/month</p>
                         <p>Fitness itself might be quite a saturated niche but you can still find some space by narrowing your focus to a more specific subcategory. Pick one sport like running or cycling and blog about it. Or cover a goal like weight loss or flexibility. You can make money by reviewing sport equipment and monetizing it with affiliate product links.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <h3>7. Photoshop</h3>
                         <p><strong>Competition:</strong> 0.28</p>
                         <p><strong>CPC:</strong>&nbsp;$0.15</p>

@@ -60,6 +60,7 @@
                         <p>Printful is one of the leading print-on-demand dropshipping platforms. They offer integration with various ecommerce sites and great print quality for shirts, mugs, hats, and more. Printful handles fulfillment and has decent profit margins.</p>
                         <h3><a href="https://www.shopify.com/" aria-label="Shopify">Shopify</a></h3>
                         <p>Shopify isn&apos;t solely a POD platform but it&apos;s a great option for setting up your online store. Shopify offers a user-friendly website builder and full integration with multiple print-on-demand suppliers. Besides that, you also get powerful ecommerce features and support.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <h3><a href="https://www.redbubble.com/" aria-label="Redbubble">Redbubble</a></h3>
                         <p>Redbubble is a marketplace for independent artists and designers. You can upload your designs and have them printed on items such as t-shirts, stickers, phone cases, and other similar products. Redbubble also handles fulfillment and has a large built-in audience of buyers.</p>
                         <p>The right POD platform for you depends on your goals and technical abilities. However, Printful, Shopify, and Redbubble are all excellent choices with many successful user cases.</p>

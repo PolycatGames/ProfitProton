@@ -52,6 +52,7 @@
                         <img class="indeximg" src="/uploads/2023/9/seo-400x.webp" alt="SEO - Search Engine Optimization">
                         <p>Optimizing your online presence for SEO (search engine optimization) makes it easier for potential clients to find and learn about your freelance services through a search engine.</p>
                         <p>SEO is about increasing your visibility on search engines like Google. The goal is to rank higher in results for keywords and queries related to your service offerings.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <p>Start by researching relevant keywords. Think about terms clients would search when looking for someone offering your services. Use these throughout your website content, page titles, headers, URLs, and meta descriptions.</p>
                         <p>Also optimize your freelance profiles on platforms like LinkedIn, Upwork, and Fiverr with these keywords.</p>
                         <p>Produce blog posts and videos that target specific keyword terms. Link to this content from other sites when possible.</p>

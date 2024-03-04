@@ -39,6 +39,7 @@
                         <p>For example, if you love gaming, you could make that your niche. Gaming is a massive industry with tons of potential topics to cover.</p>
                         <p>Make sure to pick a niche you're truly passionate about, since that passion will come through in your content. Your niche should also have enough depth that you can create content around it consistently.</p>
                         <p>Once you've picked your main niche, you can move onto the next step.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <h3>Divide the Niche into Categories</h3>
                         <p>Once you've chosen your main niche, the next step is to divide it into logical categories and subcategories. Sticking with gaming as the example, you could split it into categories like:</p>
                         <ul>

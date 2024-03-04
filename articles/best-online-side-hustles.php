@@ -47,9 +47,9 @@
                         <p class="note">Related: <a href="/articles/how-to-make-money-with-video-editing" aria-label="How to Make Money With Video Editing">How to Make Money With Video Editing: 10 Ideas</a></p>
                         <h3>5. Affiliate Marketing</h3>
                         <p><a href="/articles/how-to-start-affiliate-marketing" aria-label="How to Start Affiliate Marketing">Affiliate marketing</a> allows you to earn commission by promoting products or services of other businesses. Create content such as product reviews or recommendations and include affiliate links. When someone makes a purchase through your link, you earn a percentage of the sale. Amazon Associates offers a great affiliate program you can get started with.</p>
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/merch.php'; ?>
                         <h3>6. Monetize YouTube Videos</h3>
                         <p>If you enjoy creating video content, consider monetizing your YouTube channel. Once you meet the requirements, such as having 1,000 subscribers and 4,000 watch hours in the past 12 months, you can join the YouTube Partner Program and earn revenue from ads, sponsorships, and memberships. Also consider starting a <a href="/articles/how-to-start-a-youtube-automation-channel-with-ai">YouTube automation channel with AI</a>, especially in 2024 this can be an efficient and profitable side hustle.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <h3>7. 2D Graphic Design</h3>
                         <p>If you have a talent for graphic design, offer your skills to create logos, illustrations, or social media graphics. Freelancing platforms such as Fiverr, Upwork and 99designs are great places to find clients and build your portfolio. Pick a <a href="/articles/most-profitable-graphic-design-niches-in-2024" aria-label="Most Profitable Graphic Design Niches">profitable graphic design niche</a> and turn your passion into a lucrative side hustle.</p>
                         <h3>8. Sell on Etsy</h3>
@@ -85,6 +85,7 @@
                         <p>Offer your organizational and administrative skills as a virtual assistant. Many entrepreneurs and small business owners are in need of assistance with tasks such as email management, scheduling, or social media management. Use platforms like Upwork or Virtudesk to find virtual assistant opportunities.</p>
                         <h3>23. Monetize AI Tools</h3>
                         <p>If you have expertise in artificial intelligence (AI), consider creating and monetizing AI tools or software. From chatbots to image recognition algorithms, there is a growing market for AI-powered solutions. Develop your own tools and sell them to businesses or individuals who can benefit from their functionalities.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/merch.php'; ?>
                         <h3>24. Sell AI Generated Books</h3>
                         <p>AI is really popular these days, therefore it might be a great idea to use AI technology to generate books or written content. Platforms like OpenAI&apos;s GPT-4 and Claude 2 can create human-like text based on given prompts. Use this technology to produce e-books or written content that can be sold on platforms like <a href="https://kdp.amazon.com/en_US/">Amazon Kindle Direct Publishing</a>.</p>
                         <h3>25. Copywriting</h3>

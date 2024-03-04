@@ -44,6 +44,7 @@
                         <h3>2. Create an internal linking structure</h3>
                         <p>Having a good internal linking structure reinforces to search engines what pages are most important on your site.</p>
                         <p>Link related products and categories together within content. This helps search bots better crawl and index your site.</p>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <p>Use descriptive anchor text for internal links. For example say &quot;shop women&apos;s dresses&quot; instead of just clicking &quot;here&quot;. Anchor text is the visible, clickable text in a link.</p>
                         <p>The more you link to a certain product or category page internally, the more authority you pass to that page. So be strategic with internal links pointing to key pages like product URLs and your home page.</p>
                         <p class="note">Make sure to check for any broken links on your site occasionally. These are links that go to 404 error pages rather than working pages. Fix or remove broken links when found.</p>

@@ -90,7 +90,8 @@
                         <p>Then start doing research about the skill you are interested in, once you come across certain questions that are not answered by searching on google, try asking ChatGPT!</p>
                         <p>The more valuable skills you add to your resume, the more money you can make either as an employee or running your own business.</p>
                         <p class="note">Related: <a href="https://profitproton.com/articles/top-10-freelancing-skills-to-learn-in-2023-for-beginners" aria-label="Top 10 Freelancing Skills to Learn in 2023 for Beginners">Top 10 Freelancing Skills to Learn in 2023 for Beginners</a></p>
-                        <h2>FAQs</h2>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
+                        <h2>FAQ</h2>
                         <h3 class="faqquestion">Can you use ChatGPT to make a passive income?</h3>
                         <p class="faqanswer">Absolutely, you can make a passive income using ChatGPT. Business ideas such as selling AI-generated scripts, ebooks, and blog content can lead to hands-off passive income streams. The key is setting things up so the AI does most of the ongoing work while you make continuous profits.</p>
                         <h3 class="faqquestion">How much does ChatGPT cost?</h3>

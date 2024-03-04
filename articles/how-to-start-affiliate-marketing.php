@@ -88,6 +88,7 @@
                         <p>The special links provided will contain your unique ID so you get credit for resulting sales or leads.</p>
                         <p>Be sure to only share your own affiliate links, not general product links. This is how you get tracked and paid for referrals.</p>
                         <h3>Promote the Product/Service</h3>
+                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/fiverr-banner.php'; ?>
                         <p>Here are some proven tips for effectively promoting your affiliate products and links:</p>
                         <p><strong class="stroke">Write&nbsp;in&nbsp;depth&nbsp;reviews&nbsp;and&nbsp;comparisons:</strong> Don&apos;t just share the link, write a detailed review or comparison of products explaining the pros/cons from your testing and research. This builds trust and interest.</p>
                         <p><strong class="stroke">Create&nbsp;roundups&nbsp;and&nbsp;buying&nbsp;guides:</strong> Roundup posts like &quot;10 Best Products for X&quot; or buying guides add lots of value for readers while allowing you to naturally include affiliate links.</p>
