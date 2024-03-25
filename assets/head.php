@@ -21,7 +21,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/data/img-att.php'; ?>
 
 <script>
-  const version = 4;
+  const version = 5;
 </script>
 
 <script>

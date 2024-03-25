@@ -6,6 +6,11 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 Redirect 301 /articles/7-most-profitable-graphic-design-niches-in-2023 https://profitproton.com/articles/most-profitable-graphic-design-niches-in-2024
 Redirect 301 /articles/11-best-online-side-hustles-to-start-in-2023 https://profitproton.com/articles/best-online-side-hustles
 Redirect 302 /fiverr https://go.fiverr.com/visit/?bta=600726&brand=fiverrmarketplace
+Redirect 302 /shopify https://shopify.pxf.io/c/4675978/1061744/13624
+Redirect 302 /usertesting https://www.usertesting.com/
+Redirect 302 /swagbucks https://www.swagbucks.com/
+Redirect 302 /inboxdollars https://www.inboxdollars.com/
+Redirect 302 /swagbucks https://www.swagbucks.com/
 
 # Redirect www to non-www and use https
 RewriteCond %{HTTP_HOST} ^www\. [NC,OR]

@@ -1,3 +1,16 @@
+27 {
+    title: "12 Ways to Earn Money Online Without Investment"
+    preview: "There are lots of ways to earn money online without having to pay anything upfront. Whether you want to earn some extra"
+    description: "Looking for a way to make money online without any investment? Check out these 12 free ways to earn money online, no upfront payment needed!"
+    keywords: "earn money online, no investment income, passive income strategies, online earning methods, work from home jobs, free online earnings, earn from home, online side hustles, make money online free, zero investment profits"
+    time: "T15:21:45"
+    date: "3-25-2024"
+    category: "Other"
+    link: "/articles/earn-money-online-without-investment"
+    thumbnail: "/uploads/2024/3/earn-money-online-without-investment"
+    author: "Sjoerd Visser"
+}
+
 26 {
     title: "12 Best AI Side Hustles to Make Money in 2024"
     preview: "In 2024, Artificial Intelligence (AI) isn't just a buzzword, it's a game changer, especially when it comes to side hustles."
